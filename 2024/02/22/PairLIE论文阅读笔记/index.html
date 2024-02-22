@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="chinese" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>PairLIE论文阅读笔记 | Alex_Fall的博客</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}}</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>:root {
+ --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+ --light-background: url('/img/bk.jpg');
+ --theme-encrypt-confirm: 'confirm'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.6.1/MathJax.js"></script><script>MathJax.Hub.Config({
+  menuSettings: {
+    zoom: "None"
+  },
+  showMathMenu: false,
+  jax: ["input/TeX","output/CommonHTML"],
+  extensions: ["tex2jax.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js"],
+    equationNumbers: {
+      autoNumber: "AMS"
+    }
+  },
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]]
+  }
+});
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.busuanzi'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);document.addEventListener('pjax:success', _ => bszCaller.fetch(
+ "//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback", a => {
+  bszTag.texts(a),
+  bszTag.shows()
+}));reset()})</script><meta name="generator" content="Hexo 6.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">主页</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">档案</span></a></li><li class="navItem"><a class="navBlock" href="/prize/"><span class="navItemTitle">打赏</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>PairLIE论文阅读笔记</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2024-02-22T15:55:43.000Z" id="date"> 2024-02-22</time></div></span><br><span>Last Update: <div class="control"><time datetime="2024-02-22T16:11:19.124Z" id="updated"> 2024-02-23</time></div></span><br><span id="busuanzi_container_page_pv">Page View: <span class="control" id="busuanzi_value_page_pv">loading...</span></span></div></div><hr><div id="post-content"><h1 id="PairLIE论文阅读笔记"><a href="#PairLIE论文阅读笔记" class="headerlink" title="PairLIE论文阅读笔记"></a>PairLIE论文阅读笔记</h1><blockquote>
+<p>论文为2023CVPR的Learning a Simple Low-light Image Enhancer from Paired Low-light Instances.论文链接如下：</p>
+<p><a target="_blank" rel="noopener" href="https://openaccess.thecvf.com/content/CVPR2023/papers/Fu_Learning_a_Simple_Low-Light_Image_Enhancer_From_Paired_Low-Light_Instances_CVPR_2023_paper.pdf">openaccess.thecvf.com&#x2F;content&#x2F;CVPR2023&#x2F;papers&#x2F;Fu_Learning_a_Simple_Low-Light_Image_Enhancer_From_Paired_Low-Light_Instances_CVPR_2023_paper.pdf</a></p>
+</blockquote>
+<p>[TOC]</p>
+<h2 id="出发点"><a href="#出发点" class="headerlink" title="出发点"></a>出发点</h2><blockquote>
+<p>1.However, collecting high-quality reference maps in real-world scenarios is time-consuming and expensive.</p>
+</blockquote>
+<p>__出发点1__：在低光照领域，从现实世界中获取高质量的参考照片进行监督学习，既费时又困难，成本昂贵。</p>
+<p>因为获得低光环境的照片是容易的，而此低光照片对应的亮度较大的参考图片是难得的。</p>
+<blockquote>
+<p>2.To tackle the issues of limited information in a single low-light image and the poor adaptability of handcrafted priors, we propose to leverage paired low-light instances to train the LIE network.</p>
+<p>Additionally, twice-exposure images provide useful information for solving the LIE task. As a result, our solution can reduce the demand for handcrafted priors and improve the adaptability of the network.</p>
+</blockquote>
+<p>__出发点2__：为了解决手动设置的先验的低适应性，减少手动设置先验的需求，同时提升模型对陌生环境的适应性。</p>
+<h2 id="创新点"><a href="#创新点" class="headerlink" title="创新点"></a>创新点</h2><blockquote>
+<p>The core insight of our approach is to sufficiently exploit priors from paired low-light images.</p>
+<p>Those low-light image pairs share the same scene content but different illumination. Mathematically, Retinex decomposition with low-light image pairs can be expressed as:</p>
+</blockquote>
+<p class='item-img' data-src='/../../public/img/second.png'><img src="/../../public/img/second.png" alt="image"></p>
+<p>__创新点1__：作者利用两张低光图片进行训练，以充分提取低光图片的信息。</p>
+<blockquote>
+<p>instead of directly imposing the Retinex decomposition on original low-light images, we adopt a simple self-supervised mechanism to remove inappropriate features and implement the Retinex decomposition on the optimized image.</p>
+</blockquote>
+<p>__创新点2__：作者基于Retinex理论，但是并不循旧地直接运用Retinex的分解。作者采用一个简单的自监督机制以实现不合理特征的去除（通常是一些噪音）以及更好地实现Retinex理论。</p>
+<h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><p class='item-img' data-src='/../../public/img/first.png'><img src="/../../public/img/first.png" alt="image"></p>
+<p>将两张同一场景不同曝光的低光图片送入训练中，图片I1与I2先经过P-Net去除噪音，得到i1与i2，然后利用L-Net与R-Net分解为照度L1与反射R1（对应有L2与R2）。</p>
+<p>在测试，只需要输入一张低光照图片I，经过P-Net的噪音去除，得到i，然后用L-Net与R-Net分解为照度和反射，然后对照度L进行增强，操作为g(L)，把增强结果与反射R进行元素乘法，得到增强后的图片Enhanced Image。</p>
+<h2 id="设计及其损失"><a href="#设计及其损失" class="headerlink" title="设计及其损失"></a>设计及其损失</h2><blockquote>
+<p>Note that, this paper does not focus on designing modernistic network structures. L-Net and R-Net are very similar and simple,</p>
+</blockquote>
+<p>1.模型使用的L-Net与R-Net十分简单。整体架构只是单纯的卷积神经网络。</p>
+<blockquote>
+<p>Apart from L-Net and R-Net, we introduce P-Net to remove inappropriate features from the original image. Specifically, the structure of the P-Net is identical to the R-Net.</p>
+</blockquote>
+<p>2,P-Net被设计用于去除不合理特征。<br>$$<br>L_p &#x3D; \mid\mid I_1 - i_1 \mid\mid^2_2<br>$$</p>
+<blockquote>
+<p>Note that the projection loss needs to cooperate with the other constraints to avoid a trivial solution.i,e.,i1 &#x3D; I1.</p>
+</blockquote>
+<p>3.Projection Loss：最大程度限制去除不合理特征后的i1和原始低光图片I1的区别。</p>
+<p>这个损失需要避免一个特例，即降噪后图片与原图相同，即未降噪。<br>$$<br>L_c &#x3D; \mid\mid R_1 - R_2 \mid\mid^2_2\tag{1}<br>$$</p>
+<blockquote>
+<p>Since sensor noise hidden in dark regions will be amplified when the contrast is improved.</p>
+<p>In our method, the sensor noise can be implicitly removed by Eq. 1.</p>
+</blockquote>
+<p>4.Reflection Loss：通常用传感或摄影设备拍摄低光场景照片会携带一定的设备噪音，这个损失最大限度保证两张图片的反射是相同的，减少传感或摄影设备的影响，这是因为图片场景的内容相同。</p>
+<p>这个损失是确保反射的一致性。<br>$$<br>L_R &#x3D; \mid\mid R \circ L - i \mid\mid^2_2 + \mid\mid R - i &#x2F; stopgrad(L)\mid\mid^2_2 + \mid\mid L - L_0 \mid\mid^2_2 + \mid\mid \nabla L \mid\mid_1<br>$$</p>
+<blockquote>
+<p>$\mid\mid R \circ L - i \mid\mid^2_2$ is applied to ensure a reasonable decomposition.</p>
+<p>$\mid\mid R - i &#x2F; stopgrad(L) \mid\mid^2_2$ is to guide the decomposition.</p>
+<p>Specifically, the initialized illumination L0 is calculated via the maximum of the R, G, and B channels：$L_0 &#x3D; \underset{c \in{R, G, B}}{max} I^c(x).$</p>
+</blockquote>
+<p>5.Retinex Loss：Retinex损失是为了限制分解组块L-Net和R-Net以满足Retinex的理论要求。</p>
+<blockquote>
+<p>本文毕</p>
+</blockquote>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-end"><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2024/02/22/test/">test Prev →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="To Catalog">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">Dr.Alex_Fall</a></h1><div id="description"><p>描述</p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#PairLIE%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">PairLIE论文阅读笔记</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BA%E5%8F%91%E7%82%B9"><span class="toc-number">1.1.</span> <span class="toc-text">出发点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E6%96%B0%E7%82%B9"><span class="toc-number">1.2.</span> <span class="toc-text">创新点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.3.</span> <span class="toc-text">模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%85%B6%E6%8D%9F%E5%A4%B1"><span class="toc-number">1.4.</span> <span class="toc-text">设计及其损失</span></a></li></ol></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
