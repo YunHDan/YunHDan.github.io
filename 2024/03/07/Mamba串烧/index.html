@@ -175,7 +175,7 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">大厅</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">档案室</span></a></li><li class="navItem"><a class="navBlock" href="/%E7%AE%80%E5%8E%86/"><span class="navItemTitle">人事简历</span></a></li><li class="navItem"><a class="navBlock" href="/music/"><span class="navItemTitle">塞壬唱片</span></a></li><li class="navItem"><a class="navBlock" href="/%E5%8D%B1%E6%9C%BA%E5%90%88%E7%BA%A6/"><span class="navItemTitle">危机合约</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>Mamba串烧</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2024-03-06T16:00:00.000Z" id="date"> 2024-03-07</time></div></span><br><span>Last Update: <div class="control"><time datetime="2024-03-07T14:30:58.742Z" id="updated"> 2024-03-07</time></div></span><br><span>Word Count: <div class="control">4.9k</div></span><br><span id="busuanzi_container_page_pv">Page View: <span class="control" id="busuanzi_value_page_pv">loading...</span></span></div></div><hr><div id="post-content"><h1 id="Mamba串烧"><a href="#Mamba串烧" class="headerlink" title="Mamba串烧"></a>Mamba串烧</h1><p>[TOC]</p>
+</style></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">大厅</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">档案室</span></a></li><li class="navItem"><a class="navBlock" href="/%E7%AE%80%E5%8E%86/"><span class="navItemTitle">人事简历</span></a></li><li class="navItem"><a class="navBlock" href="/music/"><span class="navItemTitle">塞壬唱片</span></a></li><li class="navItem"><a class="navBlock" href="/%E5%8D%B1%E6%9C%BA%E5%90%88%E7%BA%A6/"><span class="navItemTitle">危机合约</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>Mamba串烧</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2024-03-06T16:00:00.000Z" id="date"> 2024-03-07</time></div></span><br><span>Last Update: <div class="control"><time datetime="2024-10-15T07:26:44.756Z" id="updated"> 2024-10-15</time></div></span><br><span>Word Count: <div class="control">4.9k</div></span><br><span id="busuanzi_container_page_pv">Page View: <span class="control" id="busuanzi_value_page_pv">loading...</span></span></div></div><hr><div id="post-content"><h1 id="Mamba串烧"><a href="#Mamba串烧" class="headerlink" title="Mamba串烧"></a>Mamba串烧</h1><p>[TOC]</p>
 <h2 id="Mamba-Linear-Time-Sequence-Modeling-with-Selective-State-Spaces"><a href="#Mamba-Linear-Time-Sequence-Modeling-with-Selective-State-Spaces" class="headerlink" title="Mamba: Linear-Time Sequence Modeling with Selective State Spaces"></a>Mamba: Linear-Time Sequence Modeling with Selective State Spaces</h2><blockquote>
 <p>本文核心内容与思想搬运自该博文中的核心与精华：<a target="_blank" rel="noopener" href="https://blog.csdn.net/v_JULY_v/article/details/134923301">一文通透想颠覆Transformer的Mamba：从SSM、HiPPO、S4到Mamba_mamba模型-CSDN博客</a>。</p>
 </blockquote>
@@ -286,77 +286,82 @@ mjx-container[display="true"] + br {
 <p>同样，无论输入如何，A和C也保持固定。</p>
 <p class='item-img' data-src='/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/8878eb69248d4d1c830a60609846eb0d.png'><img src="/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/8878eb69248d4d1c830a60609846eb0d.png" alt="image"></p>
 <h3 id="Mamba组成结构与原理简析"><a href="#Mamba组成结构与原理简析" class="headerlink" title="Mamba组成结构与原理简析"></a>Mamba组成结构与原理简析</h3><p>​    简言之，Mamba是一种状态空间模型(SSM)，建立在更现代的适用于深度学习的结构化SSM (简称S6)基础上，与经典架构RNN有相似之处。</p>
-<h4 id="Mamba-有选择处理信息-硬件感知算法-更简单SSM架构"><a href="#Mamba-有选择处理信息-硬件感知算法-更简单SSM架构" class="headerlink" title="Mamba = 有选择处理信息 + 硬件感知算法 + 更简单SSM架构"></a>Mamba = 有选择处理信息 + 硬件感知算法 + 更简单SSM架构</h4><p>与先前的研究相比，Mamba主要有三点创新：</p>
-<p><strong>1.对输入信息有选择性处理(Selection Mechanism)</strong></p>
-<p>相比SSM压缩所有历史记录(当然，transformer则是不压缩所有历史记录)，mamba设计了一个简单的选择机制，通过“参数化</p>
-<p>SSM的输入”，以便关注或忽略特定的输入。这样一来，模型能够过滤掉与问题无关的信息，并且可以长期记住与问题相关的信息。</p>
-<p><strong>2.硬件感知的算法(Hardware-aware Algorithm)</strong></p>
-<p>该算法采用“并行扫描算法”而非“卷积”来进行模型的循环计算，但为了减少GPU内存层次结构中不同级别之间的IO访问，</p>
+<h4 id="Mamba-有选择处理信息-硬件感知算法-更简单SSM架构"><a href="#Mamba-有选择处理信息-硬件感知算法-更简单SSM架构" class="headerlink" title="Mamba = 有选择处理信息 + 硬件感知算法 + 更简单SSM架构"></a>Mamba = 有选择处理信息 + 硬件感知算法 + 更简单SSM架构</h4><p>与先前的研究相比，<code>Mamba</code>主要有三点创新：</p>
+<p><strong>1.对输入信息有选择性处理<code>(Selection Mechanism)</code></strong></p>
+<p>相比<code>SSM</code>压缩所有历史记录(当然，<code>transformer</code>则是不压缩所有历史记录)，<code>mamba</code>设计了一个简单的选择机制，通过“参数化</p>
+<p><code>SSM</code>的输入”，以便关注或忽略特定的输入。这样一来，模型能够过滤掉与问题无关的信息，并且可以长期记住与问题相关的信息。</p>
+<p><strong>2.硬件感知的算法<code>(Hardware-aware Algorithm)</code></strong></p>
+<p>该算法采用“并行扫描算法”而非“卷积”来进行模型的循环计算，但为了减少<code>GPU</code>内存层次结构中不同级别之间的<code>IO</code>访问，</p>
 <p>没有具体化扩展状态。</p>
-<p>当然，这点也是受到了S5(Simplified State Space Layers for Sequence Modeling)的启发。</p>
+<p>当然，这点也是受到了<code>S5(Simplified State Space Layers for Sequence Modeling)</code>的启发。</p>
 <p><strong>3.更简单的架构</strong></p>
-<p>将SSM架构的设计与transformer的MLP块合并为一个块(combining the design of prior SSM architectures with the MLP block of</p>
-<p>Transformers into a single block)，来简化过去的深度序列模型架构，从而得到一个包含selective state space的架构设计。</p>
-<h4 id="选择性状态空间模型：从S4到S6"><a href="#选择性状态空间模型：从S4到S6" class="headerlink" title="选择性状态空间模型：从S4到S6"></a>选择性状态空间模型：从S4到S6</h4><p>​    作者认为，序列建模的一个基础问题是把上下文压缩成更小的状态(<em>We argue that a fundamental problem of sequence modeling is compressing context into a smaller state</em>)，从这个角度来看：</p>
+<p>将<code>SSM</code>架构的设计与<code>transformer</code>的<code>MLP</code>块合并为一个块<code>(combining the design of prior SSM architectures with the MLP block of Transformers into a single block)</code>，来简化过去的深度序列模型架构，从而得到一个包含<code>selective state space</code>的架构设计。</p>
+<h4 id="选择性状态空间模型：从S4到S6"><a href="#选择性状态空间模型：从S4到S6" class="headerlink" title="选择性状态空间模型：从S4到S6"></a>选择性状态空间模型：从<code>S4</code>到<code>S6</code></h4><p>​    作者认为，序列建模的一个基础问题是把上下文压缩成更小的状态(<code>We argue that a fundamental problem of sequence modeling is compressing context into a smaller state</code>)，从这个角度来看：</p>
 <ul>
-<li><p>注意力机制虽然有效果但效率不算很高，毕竟其需要显式地存储整个上下文(storing the entire context，也就是KV缓存)，直接导致训练和推理消耗算力大。好比，Transformer就像人类每写一个字之前，都把前面的所有字+输入都复习一遍，所以写的慢。</p>
+<li><p>注意力机制虽然有效果但效率不算很高，毕竟其需要显式地存储整个上下文(<code>storing the entire context</code>，也就是<code>KV</code>缓存)，直接导致训练和推理消耗算力大。好比，<code>Transformer</code>就像人类每写一个字之前，都把前面的所有字+输入都复习一遍，所以写的慢。</p>
 </li>
-<li><p>RNN的推理和训练效率高，但性能容易受到对上下文压缩程度的限制。</p>
+<li><p><code>RNN</code>的推理和训练效率高，但性能容易受到对上下文压缩程度的限制。</p>
 </li>
 </ul>
-<p>On the other hand, recurrent models are efficient because they have a finite state, implying constant-time inference and linear-time </p>
-<p>training. However, their effectiveness is limited by how well this state has compressed the context。</p>
-<p>好比，RNN每次只参考前面固定的字数(仔细体会这句话：When generating the output, the RNN only needs to consider the previous hidden state and current input. It prevents recalculating all previous hidden states which is what a Transformer would do)，写的快是快，但容易忘掉更前面的内容。</p>
+<blockquote>
+<p><code>On the other hand, recurrent models are efficient because they have a finite state, implying constant-time inference and linear-time training. However, their effectiveness is limited by how well this state has compressed the context。</code></p>
+</blockquote>
+<p>好比，<code>RNN</code>每次只参考前面固定的字数(仔细体会这句话：<code>When generating the output, the RNN only needs to consider the previous hidden state and current input. It prevents recalculating all previous hidden states which is what a Transformer would do</code>)，写的快是快，但容易忘掉更前面的内容。</p>
 <ul>
-<li>而SMM的问题在于其中的矩阵A B C始终是不变的，无法针对不同的输入针对性的推理，详见上文</li>
+<li>而<code>SMM</code>的问题在于其中的矩阵A B C始终是不变的，无法针对不同的输入针对性的推理，详见上文</li>
 </ul>
 <p class='item-img' data-src='/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/5b0c8ec1c046453499ced2e2bafde6a5.png'><img src="/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/5b0c8ec1c046453499ced2e2bafde6a5.png" alt="image"></p>
 <ul>
-<li>最终，Mamba的解决办法是，让模型对信息有选择性处理，可以关注或忽略<strong>特定</strong>的内容，即使状态大小固定也能压缩上下文。好比，Mamba每次参考前面所有内容的一个概括，越往后写对前面内容概括得越狠，丢掉细节、保留大意。</li>
+<li>最终，<code>Mamba</code>的解决办法是，让模型对信息有选择性处理，可以关注或忽略<strong>特定</strong>的内容，即使状态大小固定也能压缩上下文。好比，<code>Mamba</code>每次参考前面所有内容的一个概括，越往后写对前面内容概括得越狠，丢掉细节、保留大意。</li>
 </ul>
 <p>总之，序列模型的效率与效果的权衡点在于它们对状态的压缩程度：</p>
 <ul>
-<li><p>高效的模型必须有一个小的状态(比如RNN或S4)</p>
+<li><p>高效的模型必须有一个小的状态(比如<code>RNN</code>或<code>S4</code>)</p>
 </li>
-<li><p>而有效的模型必须有一个包含来自上下文的所有必要信息的状态(比如transformer)</p>
+<li><p>而有效的模型必须有一个包含来自上下文的所有必要信息的状态(比如<code>transformer</code>)</p>
 </li>
 </ul>
-<p>而mamba为了兼顾效率和效果，选择性的关注必须关注的、过滤掉可以忽略的：</p>
+<p>而<code>mamba</code>为了兼顾效率和效果，选择性的关注必须关注的、过滤掉可以忽略的：</p>
 <p class='item-img' data-src='/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/6d9309b4a9f241089edb08f6df5acec5.png'><img src="/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/6d9309b4a9f241089edb08f6df5acec5.png" alt="image"></p>
-<p>为方便大家理解，再进一步阐述mamba与其前身结构化空间模型S4的优势。</p>
-<p>首先，在其前身S4中，其有4个参数<strong>(∆, A, B, C)</strong>。</p>
+<p>为方便大家理解，再进一步阐述<code>mamba</code>与其前身结构化空间模型<code>S4</code>的优势。</p>
+<p>首先，在其前身<code>S4</code>中，其有4个参数<strong>(∆, A, B, C)</strong>。</p>
 <p class='item-img' data-src='/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/2159452e3e7148aab51e4d978bc44a97.png'><img src="/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/2159452e3e7148aab51e4d978bc44a97.png" alt="image"></p>
 <p>且它们都是固定的，不随输入变化(即与输入无关)，这些参数控制了以下两个阶段：<br class='item-img' data-src='/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/572c09fc3f6147178af7163c41287af9.png'><img src="/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/572c09fc3f6147178af7163c41287af9.png" alt="image"></p>
 <ul>
-<li><p><strong>第一阶段(1a 1b)</strong>，通常采用固定公式A = 𝑓𝐴(∆, A)和B = 𝑓𝐵(∆, A, B)，将“连续参数”(∆,A,B)转化为“离散参数”(A,B)，其中(𝑓𝐴, 𝑓𝐵) 称为离散化规则，且可以使用多种规则来实现这一转换。</p>
-<p>  The first stage transforms the “continuous parameters” (∆, A, B) to “discrete parameters” (A, B) through fixed formulas A = 𝑓𝐴(∆, A) and B = 𝑓𝐵(∆, A, B), where the pair (𝑓𝐴, 𝑓𝐵) is called a discretization rule.</p>
-<p>  例如下述方程中定义的零阶保持(ZOH)：<br>  <em>Various rules can be used such as the zero-order hold (ZOH) defined in equation (4).</em></p>
+<li><p><strong>第一阶段(<code>1a 1b</code>)</strong>，通常采用固定公式<code>A = 𝑓𝐴(∆, A)和B = 𝑓𝐵(∆, A, B)</code>，将“连续参数”<code>(∆,A,B)</code>转化为“离散参数”<code>(A,B)</code>，其中<code>(𝑓𝐴, 𝑓𝐵)</code>称为离散化规则，且可以使用多种规则来实现这一转换。</p>
+<blockquote>
+<p><code>The first stage transforms the “continuous parameters” (∆, A, B) to “discrete parameters” (A, B) through fixed formulas A = 𝑓𝐴(∆, A) and B = 𝑓𝐵(∆, A, B), where the pair (𝑓𝐴, 𝑓𝐵) is called a discretization rule.</code></p>
+</blockquote>
+<p>例如下述方程中定义的零阶保持(<code>ZOH</code>)：</p>
+<blockquote>
+<p><code>Various rules can be used such as the zero-order hold (ZOH) defined in equation (4).</code></p>
+</blockquote>
 <p class='item-img' data-src='/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/eq (1'><img src="/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/eq (1" alt="image">.png)</p>
 </li>
-<li><p><strong>第二阶段(2a 2b，和3a 3b)</strong>，在参数由(∆，A, B, C)变换为(A, B, C)后，模型可以用两种方式计算，即线性递归(2)或全局卷积(3)。</p>
-<p>  After the parameters have been transformed from (∆, A, B, C) ↦ (A, B, C), the model can be computed in two ways, either as a linear recurrence (2) or a global convolution (3)</p>
+<li><p><strong>第二阶段(<code>2a 2b</code>，和<code>3a 3b</code>)</strong>，在参数由<code>(∆，A, B, C)</code>变换为<code>(A, B, C)</code>后，模型可以用两种方式计算，即线性递归(2)或全局卷积(3)。</p>
+<blockquote>
+<p><code>After the parameters have been transformed from (∆, A, B, C) ↦ (A, B, C), the model can be computed in two ways, either as a linear recurrence (2) or a global convolution (3)。</code></p>
+</blockquote>
 </li>
 </ul>
 <p>如之前所说的</p>
-<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="4.149ex" height="1.505ex" role="img" focusable="false" viewbox="0 -583 1833.8 665"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/></g><g data-mml-node="mo" transform="translate(1055.8,0)"><path data-c="3E" d="M84 520Q84 528 88 533T96 539L99 540Q106 540 253 471T544 334L687 265Q694 260 694 250T687 235Q685 233 395 96L107 -40H101Q83 -38 83 -20Q83 -19 83 -17Q82 -10 98 -1Q117 9 248 71Q326 108 378 132L626 250L378 368Q90 504 86 509Q84 513 84 520Z"/></g></g></g></svg></mjx-container>模型通常使用卷积模式(3)可以进行高效的并行化训练「 其中整个输入序列提前看到，为何可以做高效的并行化呢，因为该模式能够绕过状态计算，并实现仅包含(B, L, D)的卷积核(3a)，即Thus the more efficient convolution mode wasintroduced which could bypass the state computation and materializes a convolution kernel (3a) of only (𝙱, 𝙻, 𝙳)」</p>
-<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="4.149ex" height="1.505ex" role="img" focusable="false" viewbox="0 -583 1833.8 665"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"/></g><g data-mml-node="mo" transform="translate(1055.8,0)"><path data-c="3E" d="M84 520Q84 528 88 533T96 539L99 540Q106 540 253 471T544 334L687 265Q694 260 694 250T687 235Q685 233 395 96L107 -40H101Q83 -38 83 -20Q83 -19 83 -17Q82 -10 98 -1Q117 9 248 71Q326 108 378 132L626 250L378 368Q90 504 86 509Q84 513 84 520Z"/></g></g></g></svg></mjx-container>并切换到循环模式(2)以高效的自回归推理(其中输入每次只看到一个时间步)<br>the model uses the convolutional mode (3) for efficient parallelizable training (where the whole input sequence is seen ahead of time), </p>
-<p>and switched into recurrent mode (2) for efficient autoregressive inference (wheret he inputs are seen one timestep at a time).</p>
 <blockquote>
+<p>模型通常使用卷积模式(3)可以进行高效的并行化训练「 其中整个输入序列提前看到，为何可以做高效的并行化呢，因为该模式能够绕过状态计算，并实现仅包含(B, L, D)的卷积核(3a)，即<code>Thus the more efficient convolution mode wasintroduced which could bypass the state computation and materializes a convolution kernel (3a) of only (𝙱, 𝙻, 𝙳)」</code>。</p>
+<p>并切换到循环模式(2)以高效的自回归推理(其中输入每次只看到一个时间步)<br><code>the model uses the convolutional mode (3) for efficient parallelizable training (where the whole input sequence is seen ahead of time), and switched into recurrent mode (2) for efficient autoregressive inference (wheret he inputs are seen one timestep at a time).</code></p>
 <p>下面，再分析下各个变量的含义</p>
 <ul>
-<li><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.62ex" role="img" focusable="false" viewbox="0 -716 833 716"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="394" d="M51 0Q46 4 46 7Q46 9 215 357T388 709Q391 716 416 716Q439 716 444 709Q447 705 616 357T786 7Q786 4 781 0H51ZM507 344L384 596L137 92L383 91H630Q630 93 507 344Z"/></g></g></g></svg></mjx-container> 一个标量，类似遗忘门<br>  如sonta所说，这个量跟RNN里的gating有着深刻的联系(∆ in SSMs can be seen to play a generalized role of the RNN gating mechanism)。<br>  即data dependent的 Δ 跟RNN的forget gate的功能类似(step size Δ that represents the resolution of the input discretization of SSMs is the principled foundation of heuristic gating mechanisms.)<br>  B，起到的作用类似于：进RNN的memory<br>  C，起到的作用类似于：取RNN的memory</li>
+<li><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.885ex" height="1.62ex" role="img" focusable="false" viewbox="0 -716 833 716"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="394" d="M51 0Q46 4 46 7Q46 9 215 357T388 709Q391 716 416 716Q439 716 444 709Q447 705 616 357T786 7Q786 4 781 0H51ZM507 344L384 596L137 92L383 91H630Q630 93 507 344Z"/></g></g></g></svg></mjx-container> 一个标量，类似遗忘门<br>  如<code>sonta</code>所说，这个量跟<code>RNN</code>里的<code>gating</code>有着深刻的联系<code>(∆ in SSMs can be seen to play a generalized role of the RNN gating mechanism)。</code><br>  即<code>data dependent</code>的 Δ 跟<code>RNN</code>的<code>forget gate</code>的功能类似<code>(step size Δ that represents the resolution of the input discretization of SSMs is the principled foundation of heuristic gating mechanisms.)</code><br>  B，起到的作用类似于：进RNN的<code>memory</code><br>  C，起到的作用类似于：取RNN的<code>memory</code></li>
 </ul>
 <p>咋理解？我拿出上文第二部分的这个图 一摆，就一目了然了。</p>
 <p class='item-img' data-src='/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/aac3331c3cd04b0286d2be468873d6b8.png'><img src="/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/aac3331c3cd04b0286d2be468873d6b8.png" alt="image"></p>
-<p>所以有人说，data dependent的<img src="https://latex.csdn.net/eq?B/C" alt="B/C">的功能跟RNN的input/output gate类似。</p>
+<p>所以有人说，<code>data dependent</code>的<img src="https://latex.csdn.net/eq?B/C" alt="B/C">的功能跟RNN的<code>input/output gate</code>类似。</p>
 <ul>
-<li>A，意味着对应这个维度的SSM来说，A在每个hidden state维度上的作用可以不相同，起到multi-scale/fine-grained gating的作用，这也是LSTM网络里面用element-wise product的原因。</li>
+<li>A，意味着对应这个维度的<code>SSM</code>来说，A在每个<code>hidden state</code>维度上的作用可以不相同，起到<code>multi-scale/fine-grained gating</code>的作用，这也是<code>LSTM</code>网络里面用<code>element-wise product</code>的原因。</li>
 </ul>
 </blockquote>
-<p>​    其次，通过之前的讲解，可知<img src="https://latex.csdn.net/eq?%5Cboldsymbol%7BA%7D%20%5Cin%20%5Cmathbb%7BR%7D%5E%7BN%20%5Ctimes%20N%7D%2C%20%5Cboldsymbol%7BB%7D%20%5Cin%20%5Cmathbb%7BR%7D%5E%7BN%20%5Ctimes%201%7D%2C%20%5Cboldsymbol%7BC%7D%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B1%20%5Ctimes%20N%7D" alt="\boldsymbol{A} \in \mathbb{R}^{N \times N}, \boldsymbol{B} \in \mathbb{R}^{N \times 1}, \boldsymbol{C} \in \mathbb{R}^{1 \times N}">矩阵都可以由<img src="https://latex.csdn.net/eq?N" alt="N">个数字表示(<em>the <strong>A</strong> ∈ ℝ𝑁×𝑁, <strong>B</strong> ∈ ℝ𝑁×1 , <strong>C</strong> ∈ ℝ1×𝑁 matrices can all be represented by 𝑁 numbers.</em>)</p>
+<p>​    其次，通过之前的讲解，可知<img src="https://latex.csdn.net/eq?%5Cboldsymbol%7BA%7D%20%5Cin%20%5Cmathbb%7BR%7D%5E%7BN%20%5Ctimes%20N%7D%2C%20%5Cboldsymbol%7BB%7D%20%5Cin%20%5Cmathbb%7BR%7D%5E%7BN%20%5Ctimes%201%7D%2C%20%5Cboldsymbol%7BC%7D%20%5Cin%20%5Cmathbb%7BR%7D%5E%7B1%20%5Ctimes%20N%7D" alt="\boldsymbol{A} \in \mathbb{R}^{N \times N}, \boldsymbol{B} \in \mathbb{R}^{N \times 1}, \boldsymbol{C} \in \mathbb{R}^{1 \times N}">矩阵都可以由<img src="https://latex.csdn.net/eq?N" alt="N">个数字表示<code>(*the **A** ∈ ℝ𝑁×𝑁, **B** ∈ ℝ𝑁×1 , **C** ∈ ℝ1×𝑁 matrices can all be represented by 𝑁 numbers.*)</code></p>
 <p class='item-img' data-src='/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/7f0b831f99254a6683c03cf64eb60759.png'><img src="/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/7f0b831f99254a6683c03cf64eb60759.png" alt="image"></p>
-<p>​    为了对批量大小为、长度为、具有个通道(类似R G B三个通道)的输入序列进行操作，SSM被独立地应用于每个通道(To </p>
-<p>operate over an input sequence 𝑥 of batch size 𝐵 and length 𝐿 with 𝐷 channels, the SSM is applied independently to each channel)。</p>
+<p>​    为了对批量大小为、长度为、具有个通道(类似R G B三个通道)的输入序列进行操作，SSM被独立地应用于每个通道<code>(To operate over an input sequence 𝑥 of batch size 𝐵 and length 𝐿 with 𝐷 channels, the SSM is applied independently to each channel)。</code></p>
 <p class='item-img' data-src='/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/c736fb4bda884483bf470331b4dea8f7.png'><img src="/2024/03/07/Mamba%E4%B8%B2%E7%83%A7/c736fb4bda884483bf470331b4dea8f7.png" alt="image"></p>
 <p>​    请注意，在这种情况下，每个输入的总隐藏状态具有维，在序列长度上计算它需要时间和内存(the total hidden state has dimension 𝐷𝑁 per input, and computing it over the sequence length requires 𝑂(𝐵𝐿𝐷𝑁) time and memory)。</p>
 <p>​    最后，在Mamaba中，作者让这些参数矩阵、矩阵、成为输入的函数(即可学习或可训练的)，让模型能够根据输入内容自适应地调整其行为。</p>
