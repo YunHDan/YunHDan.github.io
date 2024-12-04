@@ -121,7 +121,7 @@
             <guid isPermalink="true">https://yunhdan.github.io/research/%E8%AE%BA%E6%96%87%E7%B2%BE%E7%82%BC/</guid>
             <title>CV论文精炼</title>
             <link>https://yunhdan.github.io/research/%E8%AE%BA%E6%96%87%E7%B2%BE%E7%82%BC/</link>
-            <category term="research" scheme="https://yunhdan.github.io/categories/research/" />
+            <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
             <pubDate>Fri, 26 Jul 2024 11:42:00 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;low-level&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#low-level&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Low-Level&lt;/code&gt;&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -392,7 +392,7 @@
             <guid isPermalink="true">https://yunhdan.github.io/research/Mamba%E4%B8%B2%E7%83%A7/</guid>
             <title>Mamba串烧</title>
             <link>https://yunhdan.github.io/research/Mamba%E4%B8%B2%E7%83%A7/</link>
-            <category term="research" scheme="https://yunhdan.github.io/categories/research/" />
+            <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
             <pubDate>Thu, 07 Mar 2024 00:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;mamba串烧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mamba串烧&#34;&gt;#&lt;/a&gt; Mamba 串烧&lt;/h1&gt;
 &lt;h2 id=&#34;mamba-linear-time-sequence-modeling-with-selective-state-spaces&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mamba-linear-time-sequence-modeling-with-selective-state-spaces&#34;&gt;#&lt;/a&gt; Mamba: Linear-Time Sequence Modeling with Selective State Spaces&lt;/h2&gt;
@@ -679,7 +679,7 @@ C，起到的作用类似于：取 RNN 的 &lt;code&gt;memory&lt;/code&gt;&lt;/l
             <guid isPermalink="true">https://yunhdan.github.io/research/EnlightenGAN%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</guid>
             <title>EnlightenGAN论文详解</title>
             <link>https://yunhdan.github.io/research/EnlightenGAN%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</link>
-            <category term="research" scheme="https://yunhdan.github.io/categories/research/" />
+            <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
             <pubDate>Sat, 24 Feb 2024 00:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;enlightengan论文详解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#enlightengan论文详解&#34;&gt;#&lt;/a&gt; EnlightenGAN 论文详解&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -787,7 +787,7 @@ L_G^{Local} = \mathbb{E}_{x_r \sim \mathbb{P}_{fake-patches}}[(D(x_f) - 1)^2],\t
             <guid isPermalink="true">https://yunhdan.github.io/research/Retinexformer%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</guid>
             <title>Retinexformer论文详解</title>
             <link>https://yunhdan.github.io/research/Retinexformer%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</link>
-            <category term="research" scheme="https://yunhdan.github.io/categories/research/" />
+            <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
             <pubDate>Sat, 24 Feb 2024 00:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;retinexformer论文详解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#retinexformer论文详解&#34;&gt;#&lt;/a&gt; Retinexformer 论文详解&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -864,7 +864,7 @@ L_G^{Local} = \mathbb{E}_{x_r \sim \mathbb{P}_{fake-patches}}[(D(x_f) - 1)^2],\t
             <guid isPermalink="true">https://yunhdan.github.io/research/PairLIE%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</guid>
             <title>PairLIE论文详解</title>
             <link>https://yunhdan.github.io/research/PairLIE%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</link>
-            <category term="research" scheme="https://yunhdan.github.io/categories/research/" />
+            <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
             <pubDate>Thu, 22 Feb 2024 23:55:43 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;pairlie论文详解&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pairlie论文详解&#34;&gt;#&lt;/a&gt; PairLIE 论文详解&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -938,7 +938,7 @@ L_G^{Local} = \mathbb{E}_{x_r \sim \mathbb{P}_{fake-patches}}[(D(x_f) - 1)^2],\t
             <guid isPermalink="true">https://yunhdan.github.io/test/code-highlight/</guid>
             <title>Code Highlight Style test</title>
             <link>https://yunhdan.github.io/test/code-highlight/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Thu, 25 Jul 2019 16:43:00 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Make sure all the code blocks highlighted correctly. All the code samples are come from the demo of &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oaWdobGlnaHRqcy5vcmc=&#34;&gt;https://highlightjs.org&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -948,7 +948,7 @@ L_G^{Local} = \mathbb{E}_{x_r \sim \mathbb{P}_{fake-patches}}[(D(x_f) - 1)^2],\t
             <guid isPermalink="true">https://yunhdan.github.io/test/markdown/</guid>
             <title>Markdown Style test</title>
             <link>https://yunhdan.github.io/test/markdown/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <category term="Foo" scheme="https://yunhdan.github.io/tags/Foo/" />
             <category term="Bar" scheme="https://yunhdan.github.io/tags/Bar/" />
             <pubDate>Tue, 24 Jul 2018 23:31:06 +0800</pubDate>
@@ -1164,7 +1164,7 @@ alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height
             <guid isPermalink="true">https://yunhdan.github.io/test/images/</guid>
             <title>Images</title>
             <link>https://yunhdan.github.io/test/images/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Thu, 26 Dec 2013 22:46:49 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;cover-httpscdnjsdelivrnetghamehimeshokalatestimagesavatarjpg&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cover-httpscdnjsdelivrnetghamehimeshokalatestimagesavatarjpg&#34;&gt;#&lt;/a&gt; cover: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2FtZWhpbWUvc2hva2FAbGF0ZXN0L2ltYWdlcy9hdmF0YXIuanBn&#34;&gt;https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;This is a image test post.&lt;/p&gt;
@@ -1178,7 +1178,7 @@ alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height
             <guid isPermalink="true">https://yunhdan.github.io/test/no-title/</guid>
             <title></title>
             <link>https://yunhdan.github.io/test/no-title/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Wed, 25 Dec 2013 22:57:49 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;tags&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tags&#34;&gt;#&lt;/a&gt; tags:&lt;/h2&gt;
 &lt;p&gt;This post doesn&#39;t have a title. Make sure it&#39;s accessible.&lt;/p&gt;
@@ -1188,7 +1188,7 @@ alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height
             <guid isPermalink="true">https://yunhdan.github.io/test/excerpts/</guid>
             <title>Excerpts</title>
             <link>https://yunhdan.github.io/test/excerpts/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Wed, 25 Dec 2013 00:23:23 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;The following contents should be invisible in home/archive page.&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -1200,7 +1200,7 @@ alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height
             <guid isPermalink="true">https://yunhdan.github.io/test/videos/</guid>
             <title>Videos</title>
             <link>https://yunhdan.github.io/test/videos/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Wed, 25 Dec 2013 00:19:15 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;This is a video test post.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Youtube&lt;/strong&gt;&lt;/p&gt;
@@ -1213,7 +1213,7 @@ alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height
             <guid isPermalink="true">https://yunhdan.github.io/test/gallery-post/</guid>
             <title>Gallery Post</title>
             <link>https://yunhdan.github.io/test/gallery-post/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Wed, 25 Dec 2013 00:16:18 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;This post contains 4 photos:&lt;/p&gt;
 &lt;ul&gt;
@@ -1230,7 +1230,7 @@ alt=&amp;quot;IMAGE ALT TEXT HERE&amp;quot; width=&amp;quot;240&amp;quot; height
             <guid isPermalink="true">https://yunhdan.github.io/test/tag-plugins/</guid>
             <title>Tag Plugins</title>
             <link>https://yunhdan.github.io/test/tag-plugins/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Wed, 25 Dec 2013 00:14:39 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;This post is used for testing tag plugins. See &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3plc3BpYS50dy9oZXhvL2RvY3MvdGFnLXBsdWdpbnMuaHRtbA==&#34;&gt;docs&lt;/span&gt; for more info.&lt;/p&gt;
 &lt;h2 id=&#34;block-quote&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#block-quote&#34;&gt;#&lt;/a&gt; Block Quote&lt;/h2&gt;
@@ -1289,7 +1289,7 @@ http.createServer((req, res) &amp;#x3D;&amp;gt; {
             <guid isPermalink="true">https://yunhdan.github.io/test/link-post-without-title/</guid>
             <title></title>
             <link>https://yunhdan.github.io/test/link-post-without-title/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Tue, 24 Dec 2013 23:44:13 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;link-httpwwwgooglecom&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#link-httpwwwgooglecom&#34;&gt;#&lt;/a&gt; link: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5nb29nbGUuY29tLw==&#34;&gt;http://www.google.com/&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;This is a link post without a title. The title should be the link with or without protocol. Clicking on the link should open &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5nb29nbGUuY29tLw==&#34;&gt;Google&lt;/span&gt; in a new tab or window.&lt;/p&gt;
@@ -1299,7 +1299,7 @@ http.createServer((req, res) &amp;#x3D;&amp;gt; {
             <guid isPermalink="true">https://yunhdan.github.io/test/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</guid>
             <title>日本語テスト</title>
             <link>https://yunhdan.github.io/test/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Tue, 24 Dec 2013 23:33:26 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;tags&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tags&#34;&gt;#&lt;/a&gt; tags:&lt;/h2&gt;
 &lt;p&gt;This is a Japanese test post.&lt;/p&gt;
@@ -1318,7 +1318,7 @@ http.createServer((req, res) &amp;#x3D;&amp;gt; {
             <guid isPermalink="true">https://yunhdan.github.io/test/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</guid>
             <title>中文測試</title>
             <link>https://yunhdan.github.io/test/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Tue, 24 Dec 2013 23:31:30 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;tags&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tags&#34;&gt;#&lt;/a&gt; tags:&lt;/h2&gt;
 &lt;p&gt;This is a Chinese test post.&lt;/p&gt;
@@ -1336,7 +1336,7 @@ http.createServer((req, res) &amp;#x3D;&amp;gt; {
             <guid isPermalink="true">https://yunhdan.github.io/test/long-title/</guid>
             <title>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</title>
             <link>https://yunhdan.github.io/test/long-title/</link>
-            <category term="test" scheme="https://yunhdan.github.io/categories/test/" />
+            <category term="本博客示例功能" scheme="https://yunhdan.github.io/categories/test/" />
             <pubDate>Tue, 24 Dec 2013 23:31:06 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;tags&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tags&#34;&gt;#&lt;/a&gt; tags:&lt;/h2&gt;
 &lt;p&gt;This post has a long title. Make sure the title displayed right.&lt;/p&gt;
