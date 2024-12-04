@@ -222,14 +222,14 @@ L_G^{Local} = \mathbb{E}_{x_r \sim \mathbb{P}_{fake-patches}}[(D(x_f) - 1)^2],\t
 &lt;p&gt;The core insight of our approach is to sufficiently exploit priors from paired low-light images.&lt;/p&gt;
 &lt;p&gt;Those low-light image pairs share the same scene content but different illumination. Mathematically, Retinex decomposition with low-light image pairs can be expressed as:&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;../../assets/first.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/first.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;创新点 1&lt;/strong&gt;：作者利用两张低光图片进行训练，以充分提取低光图片的信息。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;instead of directly imposing the Retinex decomposition on original low-light images, we adopt a simple self-supervised mechanism to remove inappropriate features and implement the Retinex decomposition on the optimized image.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;创新点 2&lt;/strong&gt;：作者基于 Retinex 理论，但是并不循旧地直接运用 Retinex 的分解。作者采用一个简单的自监督机制以实现不合理特征的去除（通常是一些噪音）以及更好地实现 Retinex 理论。&lt;/p&gt;
 &lt;h2 id=&#34;模型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#模型&#34;&gt;#&lt;/a&gt; 模型&lt;/h2&gt;
-&lt;p&gt;&lt;img data-src=&#34;../../assets/4.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/4.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;将两张同一场景不同曝光的低光图片送入训练中，图片 I1 与 I2 先经过 P-Net 去除噪音，得到 i1 与 i2，然后利用 L-Net 与 R-Net 分解为照度 L1 与反射 R1（对应有 L2 与 R2）。&lt;/p&gt;
 &lt;p&gt;在测试，只需要输入一张低光照图片 I，经过 P-Net 的噪音去除，得到 i，然后用 L-Net 与 R-Net 分解为照度和反射，然后对照度 L 进行增强，操作为 g (L)，把增强结果与反射 R 进行元素乘法，得到增强后的图片 Enhanced Image。&lt;/p&gt;
 &lt;h2 id=&#34;设计及其损失&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#设计及其损失&#34;&gt;#&lt;/a&gt; 设计及其损失&lt;/h2&gt;
