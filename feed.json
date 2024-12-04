@@ -1,9 +1,9 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Derek Runfar的博客",
+    "title": "好耶!开始学习啦!",
     "subtitle": null,
     "icon": "https://yunhdan.github.io/images/favicon.ico",
-    "description": "人工智障，机器不学习，学习不深度",
+    "description": "计算机视觉 & 图像恢复",
     "home_page_url": "https://yunhdan.github.io",
     "items": [
         {

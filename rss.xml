@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <rss version="2.0">
     <channel>
-        <title>Derek Runfar的博客</title>
+        <title>好耶!开始学习啦!</title>
         <subtitle></subtitle>
         <icon>https://yunhdan.github.io/images/favicon.ico</icon>
         <link>https://yunhdan.github.io</link>
         <author>
           <name>Derek Runfar</name>
         </author>
-        <description>人工智障，机器不学习，学习不深度</description>
+        <description>计算机视觉 &amp; 图像恢复</description>
         <language>zh-CN</language>
         <pubDate>Tue, 11 Jun 2024 00:00:00 +0800</pubDate>
         <lastBuildDate>Tue, 11 Jun 2024 00:00:00 +0800</lastBuildDate>
