@@ -1,7 +1,7 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "",
-    "subtitle": "你已登录PRTS",
+    "title": "你已登录PRTS",
+    "subtitle": null,
     "icon": "https://yunhdan.github.io/images/favicon.ico",
     "description": "计算机视觉 & 图像恢复",
     "home_page_url": "https://yunhdan.github.io",
