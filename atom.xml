@@ -661,13 +661,36 @@ C，起到的作用类似于：取 RNN 的 &lt;code&gt;memory&lt;/code&gt;&lt;/l
         <title>公告</title>
         <link rel="alternate" href="https://yunhdan.github.io/%E5%85%AC%E5%91%8A/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;img data-src=&#34;../assets/20241204.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
-&lt;h1 id=&#34;最近&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最近&#34;&gt;#&lt;/a&gt; 最近&lt;/h1&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;h1 id=&#34;最近做了什么&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最近做了什么&#34;&gt;#&lt;/a&gt; 最近做了什么&lt;/h1&gt;
+&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;换了博客主页，更新了新的内容。&lt;/li&gt;
-&lt;li&gt;认真学习专业课。&lt;/li&gt;
-&lt;li&gt;正准备为下学期的比赛做筹划。&lt;/li&gt;
-&lt;li&gt;思考了很多深刻的问题，自己的认知在这个时期得到了新的变化。&lt;/li&gt;
-&lt;li&gt;对论文进行了小修。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;换了博客主页，更新了新的内容。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;认真学习专业课。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正准备为下学期的比赛做筹划。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;思考了很多深刻的问题，自己的认知在这个时期得到了新的变化。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;对论文进行了小修。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;note warning&#34;&gt;
+&lt;h1 id=&#34;todo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#todo&#34;&gt;#&lt;/a&gt; TODO&lt;/h1&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;修复无法搜索的 bug。&lt;/li&gt;
+&lt;li&gt;将知识库整理好。&lt;/li&gt;
+&lt;li&gt;将一些关于深度学习的小项目放出来。&lt;/li&gt;
+&lt;li&gt;将更多的博客内的组件功能完善，比如看板娘。&lt;/li&gt;
+&lt;li&gt;修复评论区主人头像无法显示的问题。&lt;/li&gt;
+&lt;li&gt;增加图库图片数量以丰富页面。&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <updated>2024-02-27T15:13:27.000Z</updated>
