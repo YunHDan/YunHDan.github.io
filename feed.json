@@ -49,7 +49,7 @@
             "url": "https://yunhdan.github.io/%E5%85%AC%E5%91%8A/",
             "title": "公告",
             "date_published": "2024-02-27T15:13:27.000Z",
-            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"\\assets\\css\\APlayer.min.css\"><script src=\"\\assets\\js\\APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p><img data-src=\"../assets/20241204.jpg\" alt=\"image\" /></p>\n<div class=\"note info\">\n<p>最近做了什么</p>\n</div>\n<ul>\n<li>\n<p>换了博客主页，更新了新的内容。</p>\n</li>\n<li>\n<p>认真学习专业课。</p>\n</li>\n<li>\n<p>正准备为下学期的比赛做筹划。</p>\n</li>\n<li>\n<p>思考了很多深刻的问题，自己的认知在这个时期得到了新的变化。</p>\n</li>\n<li>\n<p>对论文进行了小修。</p>\n</li>\n</ul>\n<div class=\"note warning\">\n<p>TODO</p>\n</div>\n<ul>\n<li>修复无法搜索的 bug。</li>\n<li>将知识库整理好。</li>\n<li>将一些关于深度学习的小项目放出来。</li>\n<li>将更多的博客内的组件功能完善，比如看板娘。</li>\n<li>修复评论区主人头像无法显示的问题。</li>\n<li>增加图库图片数量以丰富页面。</li>\n</ul>\n",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"\\assets\\css\\APlayer.min.css\"><script src=\"\\assets\\js\\APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p><img data-src=\"../assets/20241204.jpg\" alt=\"image\" /></p>\n<div class=\"note info\">\n<p>做了什么</p>\n</div>\n<ul>\n<li>\n<p>已将原来的博客大部分内容搬回来。</p>\n</li>\n<li>\n<p>增加了音乐功能。</p>\n</li>\n<li>\n<p>增加了与我有关的链接在侧栏。</p>\n</li>\n<li></li>\n</ul>\n<div class=\"note warning\">\n<p>TODO</p>\n</div>\n<ul>\n<li>修复无法搜索的 bug。</li>\n<li>将知识库整理好。</li>\n<li>将一些关于深度学习的小项目放出来。</li>\n<li>将更多的博客内的组件功能完善，比如看板娘。</li>\n<li>修复评论区主人头像无法显示的问题。</li>\n<li>增加图库图片数量以丰富页面。</li>\n</ul>\n",
             "tags": []
         },
         {
