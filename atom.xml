@@ -8,7 +8,105 @@
     <author>
       <name>Derek Runfar</name>
     </author>
-    <updated>2024-12-16T16:12:28.000Z</updated>
+    <updated>2025-01-03T05:36:13.000Z</updated>
+    <entry>
+        <id>https://yunhdan.github.io/knowledge-database/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</id>
+        <title>编译原理核心知识</title>
+        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;参考教材：清华大学《编译原理》第三版。&lt;br /&gt;
+另参考：本人的编译原理老师的授课内容。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;目的：梳理编译原理课程的核心知识，另一方面为了更好地备考期末。&lt;br /&gt;
+形式：目录罗列知识结构、问答题强化知识、信息栏回忆知识。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;编译时多态主要指运算符重载与函数重载，而运行时多态主要指虚函数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz multi&#34;&gt;
+&lt;p&gt;有基类  &lt;code&gt;SHAPE&lt;/code&gt; ，派生类  &lt;code&gt;CIRCLE&lt;/code&gt; ，声明如下变量： &lt;/p&gt;
+&lt;figure class=&#34;highlight cpp&#34;&gt;&lt;figcaption data-lang=&#34;C++&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;SHAPE shape1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;p1&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;CIRCLE circle1&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt;q1&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;```&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;下列哪些项是 “派生类对象替换基类对象”。&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; `p1&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;circle1&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;` &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;correct&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; `q1&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;amp;&lt;/span&gt;shape1&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;`&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; `shape1&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;circle1&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;` &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;correct&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; `circle1&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;shape1&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;`&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;options&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;heavy_check_mark&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; 令基类对象的指针指向派生类对象&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;x&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; 派生类指针指向基类的引用&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;heavy_check_mark&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; 派生类对象给基类对象赋值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt;x&lt;span class=&#34;token operator&#34;&gt;:&lt;/span&gt; 基类对象给派生类对象赋值&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;options&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li class=&#34;quiz&#34;&gt;
+&lt;p&gt;下列叙述正确的是 &lt;span class=&#34;gap&#34;&gt;&lt;/span&gt; 。&lt;/p&gt;
+&lt;ul class=&#34;options&#34;&gt;
+&lt;li&gt;虚函数只能定义成无参函数&lt;/li&gt;
+&lt;li&gt;虚函数不能有返回值&lt;/li&gt;
+&lt;li&gt;能定义虚构造函数&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;A、B、C 都不对&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;如果定义  &lt;code&gt;int e=8; double f=6.4, g=8.9;&lt;/code&gt; ，则表达式  &lt;code&gt;f+int (e/3*int (f+g)/2)%4&lt;/code&gt;  的值为 &lt;span class=&#34;gap&#34;&gt;9.4&lt;/span&gt;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意运算顺序和数据类型&lt;br /&gt;
+&lt;span class=&#34;mistake&#34;&gt; 8.4&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;第一章概论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章概论&#34;&gt;#&lt;/a&gt; 第一章：概论&lt;/h1&gt;
+&lt;h2 id=&#34;编译过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译过程&#34;&gt;#&lt;/a&gt; 编译过程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;编译过程主要有哪几个阶段？ &lt;span class=&#34;gap&#34;&gt;词法分析、语法分析、语义分析、中间代码生成、代码优化、目标代码生成&lt;/span&gt;。
+&lt;blockquote&gt;
+&lt;p&gt;考察编译原理的基本认识。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;词法分析是编译过程第一个阶段。这个阶段的任务是从左到右一个字符一个字符地输入源程序，对构成源程序的字符流进行扫描和分解，从而识别出一个个单词。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;词法分析的输入是什么？输出是什么？ &lt;span class=&#34;gap&#34;&gt;输入是字符，输出是单词（token）序列&lt;/span&gt;
+&lt;blockquote&gt;
+&lt;p&gt;考察词法分析的输入和输出。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;语法分析是编译过程的第二个阶段。语法分析在词法分析的基础上将单词序列分解成各类语法短语，得到抽象语法树。语法分析依据的是语言的语法规则，通过语法分析确定整个输入串是否构成一个语法上正确的程序。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;语法分析的输入是什么？输出是什么？ &lt;span class=&#34;gap&#34;&gt;输入是词法分析输出的 token 序列，输出一般是抽象语法树&lt;/span&gt;
+&lt;blockquote&gt;
+&lt;p&gt;考察语法分析的输入和输出。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;语义分析审查源程序有无语义错误，为代码生成阶段收集类型信息。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;语义分析的输入是什么？输出是什么？ &lt;span class=&#34;gap&#34;&gt;输入输出均为标识符。具体来说，输入是 token ($id, 标识符名表地址)，输出是新的 token ($id, 符号表地址)&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;中间代码生成将源程序变成一种内部表示形式，即中间代码，这是一种结构简单、含义明确的记号系统。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li class=&#34;quiz&#34;&gt;中间代码的一种常见形式是近似 “三地址指令” 的四元式，请问四元式形式是 &lt;span class=&#34;gap&#34;&gt;&lt;/span&gt;。
+&lt;ul class=&#34;options&#34;&gt;
+&lt;li class=&#34;correct&#34;&gt;(运算符，运算对象 1，运算对象 2，结果)&lt;/li&gt;
+&lt;li&gt;(运算对象 1，运算符，运算对象 2，结果)&lt;/li&gt;
+&lt;li&gt;(结果，运算符，运算对象 1，运算对象 2)&lt;/li&gt;
+&lt;li&gt;(运算符，运算对象 1，运算对象 2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;代码优化是对前一阶段产生的中间代码进行变换或改造，目的是使得生成的目标代码更加高效，节省时间与空间。&lt;br /&gt;
+目标代码生成把中间代码变换成特定机器上的绝对指令代码或可重定位的指令代码或汇编指令代码，与硬件系统结构和指令含义有关。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;编译程序结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译程序结构&#34;&gt;#&lt;/a&gt; 编译程序结构&lt;/h2&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;上述编译过程的 6 个阶段的任务可以分别由 6 个模块完成，分别称作词法分析程序、语法分析程序、语义分析程序、中间代码生成程序、代码优化程序和目标代码生成程序。此外，一个完整的编译程序还必须包括 &lt;span class=&#34;gap&#34;&gt;表格管理程序和出错处理程序&lt;/span&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;编译阶段的组合&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#编译阶段的组合&#34;&gt;#&lt;/a&gt; 编译阶段的组合&lt;/h2&gt;
+&lt;h2 id=&#34;解释程序与存储组织&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#解释程序与存储组织&#34;&gt;#&lt;/a&gt; 解释程序与存储组织&lt;/h2&gt;
+</content>
+        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <updated>2025-01-03T05:36:13.000Z</updated>
+    </entry>
     <entry>
         <id>https://yunhdan.github.io/research/%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E5%9F%BA%E7%A1%80%E6%8A%80%E6%9C%AF/</id>
         <title>具身智能基础技术</title>
