@@ -1377,71 +1377,6 @@ int main()
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://yunhdan.github.io/research/Retinexformer%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</guid>
-            <title>Retinexformer论文详解</title>
-            <link>https://yunhdan.github.io/research/Retinexformer%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</link>
-            <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
-            <pubDate>Sat, 24 Feb 2024 00:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;Retinexformer论文详解&#34;&gt;&lt;a href=&#34;#Retinexformer论文详解&#34; class=&#34;headerlink&#34; title=&#34;Retinexformer论文详解&#34;&gt;&lt;/a&gt;Retinexformer论文详解&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;论文为2023年ICCV的Retinexformer: One-stage Retinex-based Transformer for Low-light Image Enhancement。论文链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9icm93c2UuYXJ4aXYub3JnL3BkZi8yMzAzLjA2NzA1LnBkZg==&#34;&gt;browse.arxiv.org/pdf/2303.06705.pdf&lt;/span&gt;，代码链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2NhaXl1YW5oYW8xOTk4L1JldGluZXhmb3JtZXI=&#34;&gt;caiyuanhao1998/Retinexformer: “Retinexformer: One-stage Retinex-based Transformer for Low-light Image Enhancement” (ICCV 2023) (github.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这篇论文在不少数据集上刷了SOTA。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;出发点&#34;&gt;&lt;a href=&#34;#出发点&#34; class=&#34;headerlink&#34; title=&#34;出发点&#34;&gt;&lt;/a&gt;出发点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;In addition, these CNN-based methods show limitations in capturing long-range dependencies and non-local self- similarity, which are critical for image restoration.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;​    &lt;strong&gt;出发点1&lt;/strong&gt;：低光增强领域很多深度学习方法都应用CNN，因此缺少图片的长程依赖关系，作者于是想要在低光处理中运用&lt;code&gt;Transformer&lt;/code&gt;以解决这个问题，实现效果的提升。这其实也并不稀罕，也已经出现过许多基于&lt;code&gt;Transformer&lt;/code&gt;的模型，或者hybrid版本的模型。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;These CNNs are first trained independently and then connected together to be finetuned end-to-end. The training process is tedious and time-consuming.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;​    &lt;strong&gt;出发点2&lt;/strong&gt;：作者看到很多基于Retinex的深度学习方法依赖于多个&lt;code&gt;pipeline&lt;/code&gt;，无法实施真正的一步处理，于是作者想要通过一步处理以实现低光增强。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The computational complexity is quadratic to the in- put spatial size. This computational cost may be unaffordable. Due to this limitation, some CNN-Transformer hybrid algorithms like SNR-Net only employ a single global Transformer layer at the lowest spatial resolution of a U-shaped CNN. Thus, the potential of Transformer for low- light image enhancement still remains under-explored.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;​    &lt;strong&gt;出发点3&lt;/strong&gt;：最近的基于注意力的低光增强方法，并不纯粹地应用&lt;code&gt;Transformer&lt;/code&gt;，而是CNN与Transformer的混合体，这主要源于Transformer的计算复杂度是序列的平方。这就是为什么&lt;code&gt;SNR-Net&lt;/code&gt;只在最低分辨率应用一次全局Transformer，这就限制了Transformer的威力，作者想要解决这个问题。这个是我认为的最核心的一个出发点，作者应该就是得到SNR-Net的启发并进行思考而做的研究。&lt;/p&gt;
-&lt;h2 id=&#34;模型&#34;&gt;&lt;a href=&#34;#模型&#34; class=&#34;headerlink&#34; title=&#34;模型&#34;&gt;&lt;/a&gt;模型&lt;/h2&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/屏幕截图-2024-02-04-161121.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;​    下面是冗杂的流程详述及论文许多没提到的实现细节。&lt;/p&gt;
-&lt;p&gt;​    先说整体。整个模型框架分为两个部分，一部分是ORF，一部分是IGT。ORF对应于(a)图左侧(i)部分，用于光照估计&lt;code&gt;illumination Estimator&lt;/code&gt;。IGT对应于(a)图右侧(ii)部分，用于去噪&lt;code&gt;Corruption Restorer&lt;/code&gt;。上图还有两个部分，即(b)与(c)。(c)是IG-MSA，是光照引导的多头注意力。(c)含在(b)当中，(b)是IGAB，是一个&lt;code&gt;Transformer&lt;/code&gt;的&lt;code&gt;Encoder&lt;/code&gt;架构。&lt;/p&gt;
-&lt;p&gt;​    首先一张低光图片输入ORF，同时计算其光照先验Lp，两者做一个concatenation送入一个1×1卷积层，一个9×9的卷积层。9×9的卷积层输出提亮后的图片特征&lt;code&gt;Light-up Feature&lt;/code&gt;，然后一方面将这个&lt;code&gt;Light-up Feature&lt;/code&gt;做保存以后面使用，另一方面继续经过一个1×1的卷积层处理，变换通道数为3，输出为用于提亮的&lt;code&gt;Lit-up Map&lt;/code&gt;，即论文中的$\overline{L}$。然后输入&lt;code&gt;I&lt;/code&gt;与$\overline{L}$元素乘积，得到提亮后的图片$I_{lu}$。&lt;/p&gt;
-&lt;p&gt;​    IGT类似于U-Net。下采样阶段的第一步，$I_{lu}$经过卷积层$F_0$（Embedding）处理为可供&lt;code&gt;Transformer&lt;/code&gt;处理的图片序列（详见ViT论文）。第二步，经过一个IGAB处理。在代码中，IGAB接收两个参数，一个是图片序列，一个是光照特征引导&lt;code&gt;Light-up Feature&lt;/code&gt;，这两个参数的形状需要保持一致，除此之外，用了一个列表存储不同形状图片序列对应的&lt;code&gt;Light-up Feature&lt;/code&gt;，在这一步，直接存储&lt;code&gt;Light-up Feature&lt;/code&gt;，同时还用了一个列表存储不同形状的图片序列，这都是为了满足后面IG-MSA的处理。第三步，经过卷积层$F_1$，图片序列特征由C变成2C，在代码中，作者也将&lt;code&gt;Light-up Feature&lt;/code&gt;喂给$F_1$，使得&lt;code&gt;Light-up Feature&lt;/code&gt;形状与图片序列保持一致，特征也为2C，然后存储到前面提到的列表中，作者在论文中没有提到，我也是看代码才进一步认识的。后面是类似的，经过两个IGAB，一个卷积层最后得到特征数为4C的图片序列。&lt;/p&gt;
-&lt;p&gt;​    IGT的底层是两个IGAB，输入的图片序列特征数是4C，经过处理图片序列特征数不变。&lt;/p&gt;
-&lt;p&gt;​    上采样阶段。首先经过卷积层$F_2^{‘}$，输出特征不变为4C。第二步，将之前下采样阶段用列表存储的不同形状的图片序列拿出来，把与现在的图片序列A形状匹配的图片序列B，两者进行concatenation，得到特征为2C的图片序列。第三步，经过卷积层处理，输出特征数不变的图片序列，大小为2C。第四步，经过2个IGAB处理，处理细节是：将之前下采样阶段用列表存储的不同形状图片序列对应的&lt;code&gt;Light-up Feature&lt;/code&gt;拿出来，把形状与现在图片序列相同的一个，共同作为IGAB的两个参数，输出特征数不变，为2C。后面是类似的。最后，经过Embedding层$F_0^{’}$映射为3维的图片，然后与经残差连接而来的原始提亮图片$I_{lu}$相加，得到最后处理完的去噪图片$I_{en}$。&lt;/p&gt;
-&lt;p&gt;​    IGAB类似Transformer的Encoder，由两个LayerNorm，一个前馈网络FFN和核心组件IG-MSA组成，输入与输出的形状一样，即IGAB同样地不改变图片序列的形状。IG-MSA接收两个参数，一个是输入的图片序列$F_{in}$，一个是光照特征引导&lt;code&gt;Light-up Feature&lt;/code&gt;。两者维度一致，假设为H×W×C。首先两者都reshape为HW×C。$F_{in}$送入多头注意力，处理为&lt;code&gt;query&lt;/code&gt;，&lt;code&gt;key&lt;/code&gt;，&lt;code&gt;value&lt;/code&gt;。&lt;code&gt;value&lt;/code&gt;单独拿出来与前面的&lt;code&gt;Light-up Feature&lt;/code&gt;元素乘积为A，此即为光照引导的注意力。&lt;code&gt;query&lt;/code&gt;与&lt;code&gt;key&lt;/code&gt;进行矩阵乘法，得到C×C的矩阵B，然后与A做矩阵乘法，送入全连接层进行映射，转换为H×W×C形状的输出，最后加入一个位置信息Position Encoding即可。&lt;/p&gt;
-&lt;h2 id=&#34;创新点&#34;&gt;&lt;a href=&#34;#创新点&#34; class=&#34;headerlink&#34; title=&#34;创新点&#34;&gt;&lt;/a&gt;创新点&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;We formulate a one-stage Retinex-based low-light enhancement framework, ORF, that enjoys an easy one- stage training process and models the corruptions well.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;​    &lt;strong&gt;创新点1&lt;/strong&gt;：从模型框架图可以知道，作者基于&lt;code&gt;Retinex&lt;/code&gt;理论，但是并不在模型中直接将图片I分解为反射量R与光照L，这个是一方面。另一方面，从模型图可以看到，模型分为两部分，ORF(i)与IGT(ii)，ORF的输出结果为&lt;code&gt;light-up image&lt;/code&gt;与&lt;code&gt;light-up feature&lt;/code&gt;，这两个都将继续作为IGT的输入，ORF与IGT是一个整体，实现了&lt;code&gt;end-to-end&lt;/code&gt;，&lt;code&gt;one-stage&lt;/code&gt;的效果。这跟我以往看到的双网络架构（一个用于R，一个用于L）确实不一样。&lt;/p&gt;
-&lt;p&gt;​    &lt;strong&gt;创新点2&lt;/strong&gt;：&lt;code&gt;Retinex&lt;/code&gt;理论将图片分解为&lt;code&gt;R&lt;/code&gt;与&lt;code&gt;L&lt;/code&gt;，即$I = R \odot L$。作者引入两个扰动项$\hat{R}$与$\hat{L}$。分别代表着反射与照度两方面的噪音与伪影，而以往的方法只考虑一个，而没有同时考虑两个。&lt;/p&gt;
-&lt;script type=&#34;math/tex; mode=display&#34;&gt;
-I = (R + \hat{R}) \odot (L + \hat{L}) = R \odot L + R \odot \hat{L} + \hat{R} \odot (L + \hat{L})&lt;/script&gt;&lt;p&gt;这里$\hat{R} \in \mathbb{R}^{H \times W \times 3}$而且$\hat{L} \in \mathbb{R}^{H \times W}$。 R表示一个干净的图片。&lt;/p&gt;
-&lt;p&gt;​    作者在模型中也没有直接分解图片为R与L，而是直接估计$\overline{L}$，然后将低光图片I与$\overline{L}$元素乘积，得到含伪影与噪音的提亮图片：&lt;/p&gt;
-&lt;script type=&#34;math/tex; mode=display&#34;&gt;
-I \odot \overline{L} = R + R \odot (\hat{L} \odot \overline{L}) + (\hat{R} \odot (L + \hat{L})) \odot \overline{L}&lt;/script&gt;&lt;p&gt;这里是因为$\overline{L} \odot L = 1$才有了上面的等式。然后提亮后的图片就成为了：&lt;/p&gt;
-&lt;script type=&#34;math/tex; mode=display&#34;&gt;
-I_{lu} = I \odot \overline{L} = R + C&lt;/script&gt;&lt;p&gt;这里$I_{lu} \in \mathbb{R}^{H \times W \times 3}$代表提亮后的图片，即模型图的&lt;code&gt;lit-up image&lt;/code&gt;，而且$C \in \mathbb{R}^{H \times W \times 3}$则可以认为是全部的扰动项，也就是噪声。所以IGT对上面的C进行去除，得到干净图片R。&lt;/p&gt;
-&lt;p&gt;​    &lt;strong&gt;创新点3&lt;/strong&gt;：提亮后图片的特征往往包含许多纹理信息，这可以应用到去噪中：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Regions with better lighting conditions can provide semantic contextual representations to help enhance the dark regions. Thus, we use the light-up feature Fluen- coding illumination information and interactions of regions with different lighting conditions to direct the computation of self-attention. &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;所以，作者将&lt;code&gt;light-up feature&lt;/code&gt;作为&lt;code&gt;Transformer&lt;/code&gt;中&lt;code&gt;Encoder&lt;/code&gt;的引导，就有了照度引导的Transformer。这感觉是有点低光增强色彩的Transformer。&lt;/p&gt;
-&lt;p&gt;​    &lt;strong&gt;创新点4&lt;/strong&gt;：在IGT部分可以看到，作者将Transformer的Encoder应用到 U-Net的每一层中，&lt;code&gt;U-Net&lt;/code&gt;不仅仅只有CNN。这对于目前的我来说应该算是比较新颖的。&lt;/p&gt;
-&lt;p&gt;​    &lt;strong&gt;创新点5&lt;/strong&gt;：作者指出自己的模型计算复杂度是序列长度的线性倍，不是传统&lt;code&gt;Transformer&lt;/code&gt;的平方倍。&lt;/p&gt;
-&lt;script type=&#34;math/tex; mode=display&#34;&gt;
-Attention(Q, K, V, Y) = (Y \odot V) \times softmax(\frac{K^TQ}{\alpha}))&lt;/script&gt;&lt;p&gt;​    按照他的说法以及矩阵乘法计算复杂度的公式，确实是序列长度的线性倍。&lt;strong&gt;这里用的注意力评分函数与缩放点积注意力评分函数不太一样&lt;/strong&gt;。具体而言，缩放点积注意力是：&lt;/p&gt;
-&lt;script type=&#34;math/tex; mode=display&#34;&gt;
-\frac{QK^T}{\alpha}&lt;/script&gt;&lt;p&gt;而作者使用的评分函数是：&lt;/p&gt;
-&lt;script type=&#34;math/tex; mode=display&#34;&gt;
-\frac{K^TQ}{\alpha}&lt;/script&gt;&lt;p&gt;这个细微的差别，导致了所计算出来的时间复杂度是序列（HW）的线性倍，即：&lt;/p&gt;
-&lt;script type=&#34;math/tex; mode=display&#34;&gt;
-O(n) = O(2HW × C^2)&lt;/script&gt;&lt;p&gt;而原始的缩放点积注意力下的&lt;code&gt;Transformer&lt;/code&gt;时间复杂度是序列HW的平方。这就是他说计算复杂度是序列的线性倍的原因。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这个操作可以在Restormer中看到。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;​    于是这个模型能够在&lt;code&gt;U-Net&lt;/code&gt;的每一层中使用，而非只在最低分辨率用。这就提高了计算速度。&lt;/p&gt;
-&lt;h2 id=&#34;总结&#34;&gt;&lt;a href=&#34;#总结&#34; class=&#34;headerlink&#34; title=&#34;总结&#34;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;p&gt;​    这篇2023年低光增强的&lt;code&gt;sota&lt;/code&gt;文，令&lt;code&gt;Transformer&lt;/code&gt;与&lt;code&gt;U-Net&lt;/code&gt;有机结合，使得提亮后图片的伪影与噪声得到很好的去除。通过直接估计照度$\overline{L}$而非直接分解低光图片为照度L与反射R，实现&lt;code&gt;one-stage&lt;/code&gt;的增强。其为&lt;code&gt;Transformer&lt;/code&gt;引入了光照引导，利用其纹理特征提升去噪能力，提高了&lt;code&gt;Transformer&lt;/code&gt;在低光增强的应用效率。&lt;/p&gt;
-&lt;p&gt;​    这篇文章，新颖度，有效性，问题大小满分都为100分的话，个人认为，新颖度：10分，有效性：100分，问题大小：10分，所以价值可以认为是10000分，这在低光增强这样的&lt;code&gt;low-level&lt;/code&gt;视觉已经是相当大的贡献。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
             <guid isPermalink="true">https://yunhdan.github.io/research/EnlightenGAN%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</guid>
             <title>EnlightenGAN论文详解</title>
             <link>https://yunhdan.github.io/research/EnlightenGAN%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</link>
@@ -1526,6 +1461,71 @@ Loss = L_{SFP}^{Global} + L_{SFP}^{Local} + L_G^{Global} + L_G^{Local}, \tag{8}&
 &lt;blockquote&gt;
 &lt;p&gt;本文毕&lt;/p&gt;
 &lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://yunhdan.github.io/research/Retinexformer%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</guid>
+            <title>Retinexformer论文详解</title>
+            <link>https://yunhdan.github.io/research/Retinexformer%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/</link>
+            <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
+            <pubDate>Sat, 24 Feb 2024 00:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;Retinexformer论文详解&#34;&gt;&lt;a href=&#34;#Retinexformer论文详解&#34; class=&#34;headerlink&#34; title=&#34;Retinexformer论文详解&#34;&gt;&lt;/a&gt;Retinexformer论文详解&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;论文为2023年ICCV的Retinexformer: One-stage Retinex-based Transformer for Low-light Image Enhancement。论文链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9icm93c2UuYXJ4aXYub3JnL3BkZi8yMzAzLjA2NzA1LnBkZg==&#34;&gt;browse.arxiv.org/pdf/2303.06705.pdf&lt;/span&gt;，代码链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2NhaXl1YW5oYW8xOTk4L1JldGluZXhmb3JtZXI=&#34;&gt;caiyuanhao1998/Retinexformer: “Retinexformer: One-stage Retinex-based Transformer for Low-light Image Enhancement” (ICCV 2023) (github.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这篇论文在不少数据集上刷了SOTA。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;出发点&#34;&gt;&lt;a href=&#34;#出发点&#34; class=&#34;headerlink&#34; title=&#34;出发点&#34;&gt;&lt;/a&gt;出发点&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;In addition, these CNN-based methods show limitations in capturing long-range dependencies and non-local self- similarity, which are critical for image restoration.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​    &lt;strong&gt;出发点1&lt;/strong&gt;：低光增强领域很多深度学习方法都应用CNN，因此缺少图片的长程依赖关系，作者于是想要在低光处理中运用&lt;code&gt;Transformer&lt;/code&gt;以解决这个问题，实现效果的提升。这其实也并不稀罕，也已经出现过许多基于&lt;code&gt;Transformer&lt;/code&gt;的模型，或者hybrid版本的模型。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;These CNNs are first trained independently and then connected together to be finetuned end-to-end. The training process is tedious and time-consuming.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​    &lt;strong&gt;出发点2&lt;/strong&gt;：作者看到很多基于Retinex的深度学习方法依赖于多个&lt;code&gt;pipeline&lt;/code&gt;，无法实施真正的一步处理，于是作者想要通过一步处理以实现低光增强。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The computational complexity is quadratic to the in- put spatial size. This computational cost may be unaffordable. Due to this limitation, some CNN-Transformer hybrid algorithms like SNR-Net only employ a single global Transformer layer at the lowest spatial resolution of a U-shaped CNN. Thus, the potential of Transformer for low- light image enhancement still remains under-explored.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​    &lt;strong&gt;出发点3&lt;/strong&gt;：最近的基于注意力的低光增强方法，并不纯粹地应用&lt;code&gt;Transformer&lt;/code&gt;，而是CNN与Transformer的混合体，这主要源于Transformer的计算复杂度是序列的平方。这就是为什么&lt;code&gt;SNR-Net&lt;/code&gt;只在最低分辨率应用一次全局Transformer，这就限制了Transformer的威力，作者想要解决这个问题。这个是我认为的最核心的一个出发点，作者应该就是得到SNR-Net的启发并进行思考而做的研究。&lt;/p&gt;
+&lt;h2 id=&#34;模型&#34;&gt;&lt;a href=&#34;#模型&#34; class=&#34;headerlink&#34; title=&#34;模型&#34;&gt;&lt;/a&gt;模型&lt;/h2&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/屏幕截图-2024-02-04-161121.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;​    下面是冗杂的流程详述及论文许多没提到的实现细节。&lt;/p&gt;
+&lt;p&gt;​    先说整体。整个模型框架分为两个部分，一部分是ORF，一部分是IGT。ORF对应于(a)图左侧(i)部分，用于光照估计&lt;code&gt;illumination Estimator&lt;/code&gt;。IGT对应于(a)图右侧(ii)部分，用于去噪&lt;code&gt;Corruption Restorer&lt;/code&gt;。上图还有两个部分，即(b)与(c)。(c)是IG-MSA，是光照引导的多头注意力。(c)含在(b)当中，(b)是IGAB，是一个&lt;code&gt;Transformer&lt;/code&gt;的&lt;code&gt;Encoder&lt;/code&gt;架构。&lt;/p&gt;
+&lt;p&gt;​    首先一张低光图片输入ORF，同时计算其光照先验Lp，两者做一个concatenation送入一个1×1卷积层，一个9×9的卷积层。9×9的卷积层输出提亮后的图片特征&lt;code&gt;Light-up Feature&lt;/code&gt;，然后一方面将这个&lt;code&gt;Light-up Feature&lt;/code&gt;做保存以后面使用，另一方面继续经过一个1×1的卷积层处理，变换通道数为3，输出为用于提亮的&lt;code&gt;Lit-up Map&lt;/code&gt;，即论文中的$\overline{L}$。然后输入&lt;code&gt;I&lt;/code&gt;与$\overline{L}$元素乘积，得到提亮后的图片$I_{lu}$。&lt;/p&gt;
+&lt;p&gt;​    IGT类似于U-Net。下采样阶段的第一步，$I_{lu}$经过卷积层$F_0$（Embedding）处理为可供&lt;code&gt;Transformer&lt;/code&gt;处理的图片序列（详见ViT论文）。第二步，经过一个IGAB处理。在代码中，IGAB接收两个参数，一个是图片序列，一个是光照特征引导&lt;code&gt;Light-up Feature&lt;/code&gt;，这两个参数的形状需要保持一致，除此之外，用了一个列表存储不同形状图片序列对应的&lt;code&gt;Light-up Feature&lt;/code&gt;，在这一步，直接存储&lt;code&gt;Light-up Feature&lt;/code&gt;，同时还用了一个列表存储不同形状的图片序列，这都是为了满足后面IG-MSA的处理。第三步，经过卷积层$F_1$，图片序列特征由C变成2C，在代码中，作者也将&lt;code&gt;Light-up Feature&lt;/code&gt;喂给$F_1$，使得&lt;code&gt;Light-up Feature&lt;/code&gt;形状与图片序列保持一致，特征也为2C，然后存储到前面提到的列表中，作者在论文中没有提到，我也是看代码才进一步认识的。后面是类似的，经过两个IGAB，一个卷积层最后得到特征数为4C的图片序列。&lt;/p&gt;
+&lt;p&gt;​    IGT的底层是两个IGAB，输入的图片序列特征数是4C，经过处理图片序列特征数不变。&lt;/p&gt;
+&lt;p&gt;​    上采样阶段。首先经过卷积层$F_2^{‘}$，输出特征不变为4C。第二步，将之前下采样阶段用列表存储的不同形状的图片序列拿出来，把与现在的图片序列A形状匹配的图片序列B，两者进行concatenation，得到特征为2C的图片序列。第三步，经过卷积层处理，输出特征数不变的图片序列，大小为2C。第四步，经过2个IGAB处理，处理细节是：将之前下采样阶段用列表存储的不同形状图片序列对应的&lt;code&gt;Light-up Feature&lt;/code&gt;拿出来，把形状与现在图片序列相同的一个，共同作为IGAB的两个参数，输出特征数不变，为2C。后面是类似的。最后，经过Embedding层$F_0^{’}$映射为3维的图片，然后与经残差连接而来的原始提亮图片$I_{lu}$相加，得到最后处理完的去噪图片$I_{en}$。&lt;/p&gt;
+&lt;p&gt;​    IGAB类似Transformer的Encoder，由两个LayerNorm，一个前馈网络FFN和核心组件IG-MSA组成，输入与输出的形状一样，即IGAB同样地不改变图片序列的形状。IG-MSA接收两个参数，一个是输入的图片序列$F_{in}$，一个是光照特征引导&lt;code&gt;Light-up Feature&lt;/code&gt;。两者维度一致，假设为H×W×C。首先两者都reshape为HW×C。$F_{in}$送入多头注意力，处理为&lt;code&gt;query&lt;/code&gt;，&lt;code&gt;key&lt;/code&gt;，&lt;code&gt;value&lt;/code&gt;。&lt;code&gt;value&lt;/code&gt;单独拿出来与前面的&lt;code&gt;Light-up Feature&lt;/code&gt;元素乘积为A，此即为光照引导的注意力。&lt;code&gt;query&lt;/code&gt;与&lt;code&gt;key&lt;/code&gt;进行矩阵乘法，得到C×C的矩阵B，然后与A做矩阵乘法，送入全连接层进行映射，转换为H×W×C形状的输出，最后加入一个位置信息Position Encoding即可。&lt;/p&gt;
+&lt;h2 id=&#34;创新点&#34;&gt;&lt;a href=&#34;#创新点&#34; class=&#34;headerlink&#34; title=&#34;创新点&#34;&gt;&lt;/a&gt;创新点&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;We formulate a one-stage Retinex-based low-light enhancement framework, ORF, that enjoys an easy one- stage training process and models the corruptions well.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​    &lt;strong&gt;创新点1&lt;/strong&gt;：从模型框架图可以知道，作者基于&lt;code&gt;Retinex&lt;/code&gt;理论，但是并不在模型中直接将图片I分解为反射量R与光照L，这个是一方面。另一方面，从模型图可以看到，模型分为两部分，ORF(i)与IGT(ii)，ORF的输出结果为&lt;code&gt;light-up image&lt;/code&gt;与&lt;code&gt;light-up feature&lt;/code&gt;，这两个都将继续作为IGT的输入，ORF与IGT是一个整体，实现了&lt;code&gt;end-to-end&lt;/code&gt;，&lt;code&gt;one-stage&lt;/code&gt;的效果。这跟我以往看到的双网络架构（一个用于R，一个用于L）确实不一样。&lt;/p&gt;
+&lt;p&gt;​    &lt;strong&gt;创新点2&lt;/strong&gt;：&lt;code&gt;Retinex&lt;/code&gt;理论将图片分解为&lt;code&gt;R&lt;/code&gt;与&lt;code&gt;L&lt;/code&gt;，即$I = R \odot L$。作者引入两个扰动项$\hat{R}$与$\hat{L}$。分别代表着反射与照度两方面的噪音与伪影，而以往的方法只考虑一个，而没有同时考虑两个。&lt;/p&gt;
+&lt;script type=&#34;math/tex; mode=display&#34;&gt;
+I = (R + \hat{R}) \odot (L + \hat{L}) = R \odot L + R \odot \hat{L} + \hat{R} \odot (L + \hat{L})&lt;/script&gt;&lt;p&gt;这里$\hat{R} \in \mathbb{R}^{H \times W \times 3}$而且$\hat{L} \in \mathbb{R}^{H \times W}$。 R表示一个干净的图片。&lt;/p&gt;
+&lt;p&gt;​    作者在模型中也没有直接分解图片为R与L，而是直接估计$\overline{L}$，然后将低光图片I与$\overline{L}$元素乘积，得到含伪影与噪音的提亮图片：&lt;/p&gt;
+&lt;script type=&#34;math/tex; mode=display&#34;&gt;
+I \odot \overline{L} = R + R \odot (\hat{L} \odot \overline{L}) + (\hat{R} \odot (L + \hat{L})) \odot \overline{L}&lt;/script&gt;&lt;p&gt;这里是因为$\overline{L} \odot L = 1$才有了上面的等式。然后提亮后的图片就成为了：&lt;/p&gt;
+&lt;script type=&#34;math/tex; mode=display&#34;&gt;
+I_{lu} = I \odot \overline{L} = R + C&lt;/script&gt;&lt;p&gt;这里$I_{lu} \in \mathbb{R}^{H \times W \times 3}$代表提亮后的图片，即模型图的&lt;code&gt;lit-up image&lt;/code&gt;，而且$C \in \mathbb{R}^{H \times W \times 3}$则可以认为是全部的扰动项，也就是噪声。所以IGT对上面的C进行去除，得到干净图片R。&lt;/p&gt;
+&lt;p&gt;​    &lt;strong&gt;创新点3&lt;/strong&gt;：提亮后图片的特征往往包含许多纹理信息，这可以应用到去噪中：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Regions with better lighting conditions can provide semantic contextual representations to help enhance the dark regions. Thus, we use the light-up feature Fluen- coding illumination information and interactions of regions with different lighting conditions to direct the computation of self-attention. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以，作者将&lt;code&gt;light-up feature&lt;/code&gt;作为&lt;code&gt;Transformer&lt;/code&gt;中&lt;code&gt;Encoder&lt;/code&gt;的引导，就有了照度引导的Transformer。这感觉是有点低光增强色彩的Transformer。&lt;/p&gt;
+&lt;p&gt;​    &lt;strong&gt;创新点4&lt;/strong&gt;：在IGT部分可以看到，作者将Transformer的Encoder应用到 U-Net的每一层中，&lt;code&gt;U-Net&lt;/code&gt;不仅仅只有CNN。这对于目前的我来说应该算是比较新颖的。&lt;/p&gt;
+&lt;p&gt;​    &lt;strong&gt;创新点5&lt;/strong&gt;：作者指出自己的模型计算复杂度是序列长度的线性倍，不是传统&lt;code&gt;Transformer&lt;/code&gt;的平方倍。&lt;/p&gt;
+&lt;script type=&#34;math/tex; mode=display&#34;&gt;
+Attention(Q, K, V, Y) = (Y \odot V) \times softmax(\frac{K^TQ}{\alpha}))&lt;/script&gt;&lt;p&gt;​    按照他的说法以及矩阵乘法计算复杂度的公式，确实是序列长度的线性倍。&lt;strong&gt;这里用的注意力评分函数与缩放点积注意力评分函数不太一样&lt;/strong&gt;。具体而言，缩放点积注意力是：&lt;/p&gt;
+&lt;script type=&#34;math/tex; mode=display&#34;&gt;
+\frac{QK^T}{\alpha}&lt;/script&gt;&lt;p&gt;而作者使用的评分函数是：&lt;/p&gt;
+&lt;script type=&#34;math/tex; mode=display&#34;&gt;
+\frac{K^TQ}{\alpha}&lt;/script&gt;&lt;p&gt;这个细微的差别，导致了所计算出来的时间复杂度是序列（HW）的线性倍，即：&lt;/p&gt;
+&lt;script type=&#34;math/tex; mode=display&#34;&gt;
+O(n) = O(2HW × C^2)&lt;/script&gt;&lt;p&gt;而原始的缩放点积注意力下的&lt;code&gt;Transformer&lt;/code&gt;时间复杂度是序列HW的平方。这就是他说计算复杂度是序列的线性倍的原因。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个操作可以在Restormer中看到。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​    于是这个模型能够在&lt;code&gt;U-Net&lt;/code&gt;的每一层中使用，而非只在最低分辨率用。这就提高了计算速度。&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;&lt;a href=&#34;#总结&#34; class=&#34;headerlink&#34; title=&#34;总结&#34;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;p&gt;​    这篇2023年低光增强的&lt;code&gt;sota&lt;/code&gt;文，令&lt;code&gt;Transformer&lt;/code&gt;与&lt;code&gt;U-Net&lt;/code&gt;有机结合，使得提亮后图片的伪影与噪声得到很好的去除。通过直接估计照度$\overline{L}$而非直接分解低光图片为照度L与反射R，实现&lt;code&gt;one-stage&lt;/code&gt;的增强。其为&lt;code&gt;Transformer&lt;/code&gt;引入了光照引导，利用其纹理特征提升去噪能力，提高了&lt;code&gt;Transformer&lt;/code&gt;在低光增强的应用效率。&lt;/p&gt;
+&lt;p&gt;​    这篇文章，新颖度，有效性，问题大小满分都为100分的话，个人认为，新颖度：10分，有效性：100分，问题大小：10分，所以价值可以认为是10000分，这在低光增强这样的&lt;code&gt;low-level&lt;/code&gt;视觉已经是相当大的贡献。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
