@@ -88,7 +88,10 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;解释程序与存储组织&#34;&gt;&lt;a href=&#34;#解释程序与存储组织&#34; class=&#34;headerlink&#34; title=&#34;解释程序与存储组织&#34;&gt;&lt;/a&gt;解释程序与存储组织&lt;/h2&gt;</content>
+&lt;h2 id=&#34;解释程序与存储组织&#34;&gt;&lt;a href=&#34;#解释程序与存储组织&#34; class=&#34;headerlink&#34; title=&#34;解释程序与存储组织&#34;&gt;&lt;/a&gt;解释程序与存储组织&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;解释程序一个个的获取、分析并执行源程序语句，一旦第一个语句分析结束，源程序便开始运行并且生成结果，它特别适合程序员以 [交互方式]{.gap} 工作的情况。 {.quiz .fill}&lt;/li&gt;
+&lt;/ol&gt;
+</content>
         <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
         <updated>2025-01-03T05:36:13.000Z</updated>
     </entry>
