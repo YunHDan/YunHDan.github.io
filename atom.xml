@@ -135,7 +135,46 @@
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;在编译阶段，存储区主要为 &lt;span class=&#34;gap&#34;&gt;源程序 (中间形式)&lt;/span&gt; 和&lt;span class=&#34;gap&#34;&gt;目标代码&lt;/span&gt; 开辟空间，要存放编译需要的各种 &lt;span class=&#34;gap&#34;&gt;表格&lt;/span&gt;。在运行阶段，存储区主要是 &lt;span class=&#34;gap&#34;&gt;目标代码&lt;/span&gt; 和 &lt;span class=&#34;gap&#34;&gt;数据&lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;对下列错误信息，请指出可能是编译的哪个阶段（词法分析、语法分析、语义分析、代码生成）报告的。&lt;br /&gt;
+(1) else 没有匹配的 if。 &lt;span class=&#34;gap&#34;&gt;语法分析&lt;/span&gt;&lt;br /&gt;
+ (2) 数组下标越界。&lt;span class=&#34;gap&#34;&gt;语义分析&lt;/span&gt;&lt;br /&gt;
+ (3) 使用的函数没有定义。&lt;span class=&#34;gap&#34;&gt;语法分析&lt;/span&gt;&lt;br /&gt;
+ (4) 在数中出现非数字字符。 &lt;span class=&#34;gap&#34;&gt;词法分析&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;语法分析通常解决匹配问题。如，使用的函数没有定义，说明没有声明部分与之匹配。又如第一题的 else 没有与 if 匹配。&lt;br /&gt;
+跟字符有关的通常是词法分析&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
+&lt;h1 id=&#34;文法和语言&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文法和语言&#34;&gt;#&lt;/a&gt; 文法和语言&lt;/h1&gt;
+&lt;h2 id=&#34;形式定义&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#形式定义&#34;&gt;#&lt;/a&gt; 形式定义&lt;/h2&gt;
+&lt;ol start=&#34;13&#34;&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;文法 G 定义为四元组（V,Q,P,S）。其中，V 是 &lt;span class=&#34;gap&#34;&gt;非终结符集&lt;/span&gt;；Q 是 &lt;span class=&#34;gap&#34;&gt;终结符集&lt;/span&gt;；P 是 &lt;span class=&#34;gap&#34;&gt;一组产生式&lt;/span&gt;；S 是 &lt;span class=&#34;gap&#34;&gt;文法初始符&lt;/span&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;终结符通常用什么表示？&lt;span class=&#34;gap&#34;&gt;小写字母&lt;/span&gt; 非终结符通常用什么表示？&lt;span class=&#34;gap&#34;&gt;大写字母&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;ABsa 是句子？（）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所有字符为终结符才是句子。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;B-&amp;gt;dAaui，则 dAaui 是句型？（）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;句型是推导得到的符号串，可由终结符和非终结符组成。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;文法描述的语言是该文法一切 &lt;span class=&#34;gap&#34;&gt;句子&lt;/span&gt; 的集合。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;文法类型&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#文法类型&#34;&gt;#&lt;/a&gt; 文法类型&lt;/h2&gt;
+&lt;h2 id=&#34;语法树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#语法树&#34;&gt;#&lt;/a&gt; 语法树&lt;/h2&gt;
+&lt;h2 id=&#34;语法分析初步&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#语法分析初步&#34;&gt;#&lt;/a&gt; 语法分析初步&lt;/h2&gt;
 </content>
         <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
         <updated>2025-01-03T05:36:13.000Z</updated>
