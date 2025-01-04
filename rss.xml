@@ -372,9 +372,20 @@
 &lt;p&gt;DFA 只能有一个初始状态，但是可以有多个终态。（）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz true&#34;&gt;
-&lt;p&gt;DFA 中初态状态冠以 =&amp;gt;，终态用双圈表示。（）&lt;/p&gt;
+&lt;p&gt;DFA 可以表示成一个状态图。其中，初态状态冠以 =&amp;gt;，终态用双圈表示。（）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;考察 DFA 状态图。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;DFA 状态图的弧上允许有空串。（）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DFA 不允许空串转换。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz &#34;&gt;
+&lt;p&gt;DFA 还可以表示成一个状态表。（）&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
  ]]></description>
         </item>
