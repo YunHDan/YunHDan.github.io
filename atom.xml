@@ -385,10 +385,10 @@
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz true&#34;&gt;
-&lt;p&gt;一个符号串，能被自动机识别，在于从初始状态到终止状态存在一条道路。&lt;/p&gt;
+&lt;p&gt;一个符号串，能被自动机识别，在于从初始状态到终止状态存在一条道路。（）&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz false&#34;&gt;
-&lt;p&gt;DFA 的状态图中，从一个状态结点出发的弧的数量是无限制的。&lt;/p&gt;
+&lt;p&gt;DFA 的状态图中，从一个状态结点出发的弧的数量是无限制的。（）&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;DFA 的每个状态结点，只能伸出 n 条弧，这个 n 是输入符号表的长度，即状态转换表中有效列的个数。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -400,10 +400,15 @@
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz true&#34;&gt;
-&lt;p&gt;NFA 的状态图的弧上允许有空串。&lt;/p&gt;
+&lt;p&gt;NFA 的状态图的弧上允许有空串。（）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;NFA 的状态图中，每个状态结点伸出的弧的数量没有限制。（）&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
+&lt;div class=&#34;note warning&#34;&gt;
+&lt;p&gt;值得一提的是，你需要掌握将 NFA 转换为 DFA，使用子集构造法对 DFA 最小化，并判断给定的符号串能否被最小化 DFA 识别。&lt;/p&gt;
+&lt;/div&gt;
 </content>
         <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
         <updated>2025-01-03T05:36:13.000Z</updated>
