@@ -378,9 +378,31 @@
 &lt;p&gt;DFA 不允许空串转换。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li class=&#34;quiz &#34;&gt;
-&lt;p&gt;DFA 还可以表示成一个状态表。（）&lt;/p&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;DFA 还可以表示成一个状态表，行表示状态，列表示输入符号，矩阵元素表示相应状态经过输入符号转换的新状态。（）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;考察 DFA 状态转换表&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;一个符号串，能被自动机识别，在于从初始状态到终止状态存在一条道路。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;DFA 的状态图中，从一个状态结点出发的弧的数量是无限制的。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DFA 的每个状态结点，只能伸出 n 条弧，这个 n 是输入符号表的长度，即状态转换表中有效列的个数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;一个不确定的有穷自动机 NFA 能被一个五元组表示：M=(K,&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;∑&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\sum&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.00001em;vertical-align:-0.25001em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mop op-symbol small-op&#34; style=&#34;position:relative;top:-0.0000050000000000050004em;&#34;&gt;∑&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;f&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8888799999999999em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10764em;&#34;&gt;f&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,S,Z)，其中 K 是状态集、&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;∑&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\sum&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.00001em;vertical-align:-0.25001em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mop op-symbol small-op&#34; style=&#34;position:relative;top:-0.0000050000000000050004em;&#34;&gt;∑&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 是输入符号表、&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;f&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8888799999999999em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.10764em;&#34;&gt;f&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 是转换函数、S 是 &lt;span class=&#34;gap&#34;&gt;非空状态集&lt;/span&gt;、Z 是终态集。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NFA 的初态可以不止一个。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;NFA 的状态图的弧上允许有空串。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
         <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
