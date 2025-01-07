@@ -621,7 +621,7 @@
 &lt;p&gt;若有项目集 IS={.abd [1], .abc [2], .bc [3], .de [4], de.c [5]}，则项目集 IS 对 a 做投影 IS (a)={&lt;span class=&#34;gap&#34;&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2EuYmQ=&#34;&gt;a.bd&lt;/span&gt;[1]&lt;/span&gt;,&lt;span&gt;a.bc[2]&lt;/span&gt;{.gap}}。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;pre&gt;&lt;code&gt;&amp;gt; 以此类推，IS(b)=&amp;#123;b.c[3]&amp;#125;, IS(c)=&amp;#123;dec.[5]&amp;#125;。
+&lt;pre&gt;&lt;code&gt;&amp;gt; 以此类推，IS(b)=&amp;#123;b\.c[3]&amp;#125;, IS(c)=&amp;#123;dec\.[5]&amp;#125;。
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&#34;104&#34;&gt;
 &lt;li&gt;例如有如下文法 G [E&#39;]：&lt;/li&gt;
@@ -659,9 +659,25 @@
 &lt;li&gt;
 &lt;p&gt;LR (0) 分析表由 &lt;span class=&#34;gap&#34;&gt;ACTION 表&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt; GOTO 表&lt;/span&gt;组成。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;LR (0) 分析表&lt;/p&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;LR (0) 分析表中的 ACTION 表的列标是终结符和尾符。（）&lt;/p&gt;
 &lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;LR (0) 分析表中的 GOTO 表的列标是非终结符。（）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;ACTION [k,a] 为 S_j 的含义是，在状态 k，遇到终结符 a，将终结符 a 移入符号栈，将状态 j 压入状态栈。（）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;ACTION [k,a] 为 r_j 的含义是，在状态 k 使用第 j 个产生式（记为 S）对符号栈中的句柄进行归约，弹出符号栈中与 S 同长的符号，弹出状态栈中与 S 同长的状态，同时将 S 的左部非终结符（记为 M）压入栈顶，根据项目集规范族，查看状态栈栈顶非终结符遇到 M 能够 GOTO 到哪个状态（记为 k&#39;），将 k&#39; 压入状态栈栈顶。（）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;LR (0) 分析表的行号的含义是状态，从 0 开始。（）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;找到包含能够归约到文法初始符的接受项目 I，在 LR (0) 分析表中，置 ACTION [I, 尾符]=acc，表示接受。（）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;slr1分析方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#slr1分析方法&#34;&gt;#&lt;/a&gt; SLR (1) 分析方法&lt;/h2&gt;
  ]]></description>
