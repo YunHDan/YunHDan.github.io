@@ -625,13 +625,7 @@
 - E&#39;-&amp;gt;.E {.correct}&lt;br /&gt;
 - E-&amp;gt;.T {.correct}&lt;br /&gt;
 - E-&amp;gt;.E+T {.correct}&lt;br /&gt;
-- E-&amp;gt;E+.T&lt;br /&gt;
-- T-&amp;gt;F.&lt;br /&gt;
-- T-&amp;gt;.F {.correct}&lt;br /&gt;
-- T-&amp;gt;.T*F {.correct}&lt;br /&gt;
-- F-&amp;gt;.id {.correct}&lt;br /&gt;
-- F-&amp;gt;.(E) {.correct}&lt;br /&gt;
-- F-&amp;gt;id.&lt;/p&gt;
+- E-&amp;gt;E+.T&lt;/p&gt;
 &lt;ol start=&#34;105&#34;&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;LR (0) 项目集规范族又称为 &lt;span class=&#34;gap&#34;&gt;LRSM&lt;/span&gt;、&lt;span class=&#34;gap&#34;&gt;LR 自动机&lt;/span&gt;、&lt;span class=&#34;gap&#34;&gt;DFSA&lt;/span&gt;。&lt;/p&gt;
@@ -640,18 +634,18 @@
 &lt;p&gt;如下项目集：&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight latex&#34;&gt;&lt;figcaption data-lang=&#34;LaTeX&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;A-&gt;&lt;span class=&#34;token function selector&#34;&gt;\alpha&lt;/span&gt;.&lt;span class=&#34;token function selector&#34;&gt;\alpha&lt;/span&gt;&lt;span class=&#34;token function selector&#34;&gt;\beta&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;B-&gt;&lt;span class=&#34;token function selector&#34;&gt;\gama&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p class=&#34;quiz fill&#34;&gt;存在 &lt;span class=&#34;gap&#34;&gt;移入 - 归约&lt;/span&gt;冲突。&lt;/p&gt;
+&lt;figure class=&#34;highlight latex&#34;&gt;&lt;figcaption data-lang=&#34;LaTeX&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;A-&gt;&lt;span class=&#34;token equation string&#34;&gt;$&lt;span class=&#34;token equation-command regex&#34;&gt;\alpha&lt;/span&gt;$&lt;/span&gt;.&lt;span class=&#34;token equation string&#34;&gt;$&lt;span class=&#34;token equation-command regex&#34;&gt;\alpha&lt;/span&gt;&lt;span class=&#34;token equation-command regex&#34;&gt;\beta&lt;/span&gt;$&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;B-&gt;&lt;span class=&#34;token equation string&#34;&gt;$&lt;span class=&#34;token equation-command regex&#34;&gt;\gama&lt;/span&gt;$&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p class=&#34;quiz fill&#34;&gt;存在 &lt;span class=&#34;gap&#34;&gt;移入 - 归约&lt;/span&gt;冲突。&lt;/p&gt;
 &lt;ol start=&#34;107&#34;&gt;
 &lt;li&gt;如下项目集：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight latex&#34;&gt;&lt;figcaption data-lang=&#34;LaTeX&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;A-&gt;&lt;span class=&#34;token function selector&#34;&gt;\beta&lt;/span&gt;.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;B-&gt;&lt;span class=&#34;token function selector&#34;&gt;\gama&lt;/span&gt;.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p class=&#34;quiz fill&#34;&gt;存在 &lt;span class=&#34;gap&#34;&gt;归约 - 归约&lt;/span&gt;冲突。&lt;/p&gt;
+&lt;figure class=&#34;highlight latex&#34;&gt;&lt;figcaption data-lang=&#34;LaTeX&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;A-&gt;&lt;span class=&#34;token equation string&#34;&gt;$&lt;span class=&#34;token equation-command regex&#34;&gt;\beta&lt;/span&gt;$&lt;/span&gt;.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;B-&gt;&lt;span class=&#34;token equation string&#34;&gt;$&lt;span class=&#34;token equation-command regex&#34;&gt;\gama&lt;/span&gt;$&lt;/span&gt;.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p class=&#34;quiz fill&#34;&gt;存在 &lt;span class=&#34;gap&#34;&gt;归约 - 归约&lt;/span&gt;冲突。&lt;/p&gt;
 &lt;ol start=&#34;108&#34;&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;对一个文法的 LR (0) 项目集规范族不存在 &lt;span class=&#34;gap&#34;&gt;移入 - 归约冲突&lt;/span&gt;或 &lt;span class=&#34;gap&#34;&gt;归约 - 归约冲突&lt;/span&gt;时，称这个文法是 LR (0) 文法。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre&gt;&lt;code&gt;&amp;gt; LR(0)文法的项目集规范族的任何状态都不允许存在移入-归约冲突和归约-归约冲突。
 &lt;/code&gt;&lt;/pre&gt;
 &lt;ol start=&#34;109&#34;&gt;
-&lt;li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;LR (0) 分析表由 &lt;span class=&#34;gap&#34;&gt;ACTION 表&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt; GOTO 表&lt;/span&gt;组成。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz true&#34;&gt;
@@ -672,9 +666,19 @@
 &lt;li class=&#34;quiz true&#34;&gt;
 &lt;p&gt;找到包含能够归约到文法初始符的接受项目 I，在 LR (0) 分析表中，置 ACTION [I, 尾符]=acc，表示接受。（）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;slr1分析方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#slr1分析方法&#34;&gt;#&lt;/a&gt; SLR (1) 分析方法&lt;/h2&gt;
+&lt;ol start=&#34;116&#34;&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;如果 LR (0) 项目集规范族存在归约 - 归约冲突或移入 - 归约冲突，则这个文法不是 LR (0) 文法。例如，此时出现归约 - 归约冲突的状态涉及的产生式为：A-&amp;gt;\gama.,B-&amp;gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;θ&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\theta&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;θ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.。对所有涉及归约 - 归约冲突状态的产生式的左部非终结符求 FOLLOW 集。如果它们的 FOLLOW 集彼此互不相交，则这个文法是 SLR (1) 文法。（）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;在第 116 题的基础上，对于出现移入 - 归约冲突状态涉及的产生式为：X-&amp;gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;α&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\alpha&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.0037em;&#34;&gt;α&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.b&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;β&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\beta&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8888799999999999em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.05278em;&#34;&gt;β&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;,A-&amp;gt;\gama。移入项目的展望符为 b，如果满足归约项目的左部非终结符的 FOLLOW 集与展望符交集为空，那么这个文法依然是 SLR (1) 文法。（）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;对于 SLR (1) 文法，在冲突状态中，如果输入符号 a 等于移入项目的展望符 b，则选择移入。如果输入符号 a 是某个非终结符的 FOLLOW 集的一个元素，那么则使用这个终结符的产生式进行归约。（）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </content>
         <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
         <updated>2025-01-03T05:36:13.000Z</updated>
