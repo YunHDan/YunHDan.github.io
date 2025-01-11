@@ -303,7 +303,52 @@
 &lt;li&gt;&lt;p&gt;关系数据库模式是关系数据库中 [所有关系模式]{.gap} 的集合，是对关系数据库的描述。关系数据库是这些关系模式在某一时刻对应的 [关系]{.gap} 的集合。 {.quiz .fill}&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;关系操作&#34;&gt;&lt;a href=&#34;#关系操作&#34; class=&#34;headerlink&#34; title=&#34;关系操作&#34;&gt;&lt;/a&gt;关系操作&lt;/h2&gt; ]]></description>
+&lt;h2 id=&#34;关系操作&#34;&gt;&lt;a href=&#34;#关系操作&#34; class=&#34;headerlink&#34; title=&#34;关系操作&#34;&gt;&lt;/a&gt;关系操作&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;哪些是5个基本关系操作？ {.quiz .multi}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;笛卡尔积。 {.correct}&lt;/li&gt;
+&lt;li&gt;交。&lt;/li&gt;
+&lt;li&gt;并。 {.correct}&lt;/li&gt;
+&lt;li&gt;投影。 {.correct}&lt;/li&gt;
+&lt;li&gt;连接。&lt;/li&gt;
+&lt;li&gt;选择。 {.correct}&lt;/li&gt;
+&lt;li&gt;差。 {.correct}&lt;/li&gt;
+&lt;li&gt;补。&lt;/li&gt;
+&lt;li&gt;除。&lt;br&gt;{.options}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一个关系数据语言能够表示关系代数可以表示的查询，则称其具有完备的表达能力，简称 [关系完备性]{.gap} {.quiz .fill}&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;关系数据语言是用于操纵关系数据的语言。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;关系数据语言类型有哪些？ {.quiz .multi}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;关系代数。 {.correct}&lt;/li&gt;
+&lt;li&gt;SQL语言。 {.correct}&lt;/li&gt;
+&lt;li&gt;C语言。&lt;/li&gt;
+&lt;li&gt;关系演算。 {.correct}&lt;br&gt;{.options}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;关系的完整性&#34;&gt;&lt;a href=&#34;#关系的完整性&#34; class=&#34;headerlink&#34; title=&#34;关系的完整性&#34;&gt;&lt;/a&gt;关系的完整性&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;关系模型中有三类完整性约束：[实体完整性]{.gap}、[参照完整性]{.gap}和[用户定义的完整性]{.gap}。 {.quiz .fill}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;关系的两个不变性是指关系模型必须满足实体完整性和用户定义的完整性。 {.quiz .false}&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;关系模式必须满足的两个完整性是实体完整性和参照完整性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;实体完整性约束的关键是“主码非空且唯一”。 {.quiz .true}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参照完整性约束的关键是“外码为空或与被参照表主码相等”。 {.quiz .true}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参照完整性约束中，外码在参照表中，外码与被参照表中的主码值相等。 {.quiz .true}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参照完整性约束中，参照表和被参照表可以是同一张表。 {.quiz .true}&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+ ]]></description>
         </item>
         <item>
             <guid isPermalink="true">https://yunhdan.github.io/knowledge-database/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</guid>
