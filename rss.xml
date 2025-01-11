@@ -45,8 +45,8 @@
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;数据库管理系统是位于 &lt;span class=&#34;gap&#34;&gt;用户&lt;/span&gt; 和 &lt;span class=&#34;gap&#34;&gt;操作系统&lt;/span&gt; 之间的数据管理软件。它和操作系统一样是计算机的基础软件。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;数据库管理系统的主要功能有 [.quiz .multi]&lt;/p&gt;
+&lt;li class=&#34;quiz multi&#34;&gt;
+&lt;p&gt;数据库管理系统的主要功能有&lt;/p&gt;
 &lt;ul class=&#34;options&#34;&gt;
 &lt;li class=&#34;correct&#34;&gt;数据定义功能。&lt;/li&gt;
 &lt;li correct=&#34;&#34;&gt;数据组织、存储和管理功能。 .&lt;/li&gt;
@@ -158,7 +158,7 @@
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
-&lt;p&gt;通常用 [E-R 图] 来描述现实世界的概念模型。&lt;/p&gt;
+&lt;p&gt;通常用 &lt;span class=&#34;gap&#34;&gt;E-R 图&lt;/span&gt; 来描述现实世界的概念模型。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这种方式构建了一个 E-R 模型。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -212,7 +212,7 @@
 &lt;p&gt;&lt;span class=&#34;gap&#34;&gt;域&lt;/span&gt; 表示某一属性的取值范围，通常是一组具有相同数据类型的值的集合。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
-&lt;p&gt;[分量] 是元组中一个属性值。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;gap&#34;&gt;分量&lt;/span&gt; 是元组中一个属性值。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;特指在元组内。&lt;/p&gt;
 &lt;/blockquote&gt;
