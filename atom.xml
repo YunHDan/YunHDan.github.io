@@ -80,7 +80,9 @@
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;查询学号为20180003的学生的详细情况。 []{.gap} {.quiz .fill}&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;sql SELECT * FROM Student WHERE Sno=20180003;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;lang-sql&#34;&gt;SELECT * FROM Student 
+WHERE Sno=20180003;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;查询所有姓刘的学生的姓名、学号和性别。 []{.gap} {.quiz .fill}&lt;/p&gt;
@@ -88,10 +90,17 @@
 &lt;p&gt;&lt;code&gt;sql SELECT Sname, Sno, Ssex FROM Student WHERE Sname LIKE &amp;#39;刘%&amp;#39;;&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;，如果课程号长度为5个字符，查询课程号为81开头，最后一位是6的课程名称和课程号。 []{.gap} {.quiz .fill}&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;如果课程号长度为5个字符，查询课程号为81开头，最后一位是6的课程名称和课程号。 []{.gap} {.quiz .fill}&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;sql SELECT Cname, Cno FROM Course WHERE Cno LIKE &amp;#39;81__6&amp;#39;;&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;lang-sql&#34;&gt;SELECT Cname, Cno FROM Course 
+WHERE Cno LIKE &amp;#39;81__6&amp;#39;;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查询所有不姓刘的学生的姓名、学号和性别。 []{.gap} {.quiz .fill}&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;lang-sql&#34;&gt;SELECT Sname, Sno, Ssex FROM Student
+WHERE Sname NOT LIKE &amp;#39;&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 </content>
