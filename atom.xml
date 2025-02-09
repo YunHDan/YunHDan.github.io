@@ -8,7 +8,20 @@
     <author>
       <name>Derek Runfar</name>
     </author>
-    <updated>2025-01-23T09:46:07.000Z</updated>
+    <updated>2025-02-08T09:33:57.000Z</updated>
+    <entry>
+        <id>https://yunhdan.github.io/%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/</id>
+        <title>胡思乱想</title>
+        <link rel="alternate" href="https://yunhdan.github.io/%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/"/>
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;胡思乱想&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#胡思乱想&#34;&gt;#&lt;/a&gt; 胡思乱想&lt;/h1&gt;
+&lt;h5 id=&#34;zero-ig&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zero-ig&#34;&gt;#&lt;/a&gt;  &lt;code&gt;ZERO-IG&lt;/code&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;为什么是 &lt;code&gt;zero-shot&lt;/code&gt;  的呢？不还是训练了吗？&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
+        <updated>2025-02-08T09:33:57.000Z</updated>
+    </entry>
     <entry>
         <id>https://yunhdan.github.io/knowledge-database/%E4%BF%9D%E7%A0%94%E4%BF%A1%E6%81%AF%E6%B1%87%E6%80%BB/</id>
         <title>保研信息汇总</title>
@@ -67,8 +80,19 @@
 &lt;/ul&gt;
 &lt;h4 id=&#34;未知2022年计算机保研夏令营预推免经验帖2023届-知乎-zhihucom&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#未知2022年计算机保研夏令营预推免经验帖2023届-知乎-zhihucom&#34;&gt;#&lt;/a&gt; （未知）&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC81NDg2NjA5NzY=&#34;&gt;2022 年计算机保研夏令营 &amp;amp; 预推免经验帖（2023 届） - 知乎 (zhihu.com)&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;ing&lt;/code&gt; 。&lt;/p&gt;
-&lt;h4 id=&#34;关于保研的abc1一些常识与概念-sumskys-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关于保研的abc1一些常识与概念-sumskys-blog&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdW1za3kudG9wLzIwMjEvMTAvMTMvYmFveWFuLXNlcmllcy0xLw==&#34;&gt;关于保研的 ABC（1）一些常识与概念 | Sumsky&#39;s Blog&lt;/span&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;code&gt;ing&lt;/code&gt; 。&lt;/p&gt;
+&lt;h4 id=&#34;计算所关于保研的abc1一些常识与概念-sumskys-blog&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算所关于保研的abc1一些常识与概念-sumskys-blog&#34;&gt;#&lt;/a&gt; （计算所）&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdW1za3kudG9wLzIwMjEvMTAvMTMvYmFveWFuLXNlcmllcy0xLw==&#34;&gt;关于保研的 ABC（1）一些常识与概念 | Sumsky&#39;s Blog&lt;/span&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;可以关注相关学院的研招群。&lt;/li&gt;
+&lt;li&gt;申请直博项目或者对于导师水平和方向比较看重的话，请务必抓住夏令营难这一难得机会，很多时候预推免即便上岸，也只能挑夏令营被选过一轮之后剩下的老师了。&lt;/li&gt;
+&lt;li&gt;不确定是否能够拿到推免资格依然可以参加夏令营和预推免，只要用自己的成绩让招生单位相信你预期可以获得推免资格即可。&lt;/li&gt;
+&lt;li&gt;预推免和夏令营都可以报多所学校，只是要注意是否时间会发生冲突。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Offer&lt;/code&gt;  本质上只是一种非正式的 “契约”，因此无论是否签承诺书，这类承诺都不具备法律效力。&lt;/li&gt;
+&lt;li&gt;尽管学校已经给了 &lt;code&gt;Offer&lt;/code&gt; ，确实有学校会鸽学生的情况。&lt;/li&gt;
+&lt;li&gt;不过学校鸽学生这种现象对于学校的声誉是一个重大的打击，因此绝大多数学校一般都不会做这种事情。&lt;/li&gt;
+&lt;li&gt;导师 / 课题组鸽学生的现象其实比学校鸽学生的现象更为普遍， 比如说在夏令营联系好了的实验室，在九推时突然以 “今年名额减少了” 的理由不再承诺一定会录取。&lt;/li&gt;
+&lt;li&gt;推免系统开放前，尽量只保留一个 &lt;code&gt;offer&lt;/code&gt; ，能早放弃尽量早放弃（存疑）&lt;/li&gt;
+&lt;li&gt;毕业要求中，一般学硕略高于专硕，有些学校对于两种类型的硕士同等对待，但是毕业出去学硕的待遇一般比专硕好。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h4 id=&#34;西安电子科技大学杭州研究院2023年24届劣势四非躺平摆烂保研反面经验贴厦大-西北工业-西电杭-知乎-zhihucom&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#西安电子科技大学杭州研究院2023年24届劣势四非躺平摆烂保研反面经验贴厦大-西北工业-西电杭-知乎-zhihucom&#34;&gt;#&lt;/a&gt; （西安电子科技大学杭州研究院）&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NTkxNTQxNDQ=&#34;&gt;2023 年 24 届劣势四非躺平摆烂保研反面经验贴（厦大 西北工业 西电杭） - 知乎 (zhihu.com)&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;ing&lt;/code&gt; 。&lt;/p&gt;
 &lt;h4 id=&#34;成电保研经验分享双非计算机上岸成电-码途拾遗-fangkaipengcom&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#成电保研经验分享双非计算机上岸成电-码途拾遗-fangkaipengcom&#34;&gt;#&lt;/a&gt; （成电）&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mYW5na2FpcGVuZy5jb20vP3A9MjEwMw==&#34;&gt;保研经验分享（双非计算机上岸成电） – 码途拾遗 (fangkaipeng.com)&lt;/span&gt;&lt;/h4&gt;
@@ -1741,7 +1765,7 @@ B-&amp;gt;\gama.&lt;br /&gt;
 &lt;h2 id=&#34;大三寒假&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大三寒假&#34;&gt;#&lt;/a&gt; 大三寒假&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;千恋万花： &lt;code&gt;ciallo~&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;万花镜 5 - 理与迷宫的少女： &lt;code&gt;ing&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;万花镜 5 - 理与迷宫的少女：莲华酱～&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;待入库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#待入库&#34;&gt;#&lt;/a&gt; 待入库&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -1786,23 +1810,23 @@ B-&amp;gt;\gama.&lt;br /&gt;
     </entry>
     <entry>
         <id>https://yunhdan.github.io/research/%E8%AE%BA%E6%96%87%E7%B2%BE%E7%82%BC/</id>
-        <title>CV论文精炼</title>
+        <title>论文精炼</title>
         <link rel="alternate" href="https://yunhdan.github.io/research/%E8%AE%BA%E6%96%87%E7%B2%BE%E7%82%BC/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;low-level&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#low-level&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Low-Level&lt;/code&gt;&lt;/h1&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;low-level-cv&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#low-level-cv&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Low-Level CV&lt;/code&gt;&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这篇博客是无限长的，随着阅读论文数量的增多，将会越来越长。这篇博客的目的与定位就是简介描述的，精简提炼所读论文中的创新点，贡献，个人认为的不足。无详解，只是一个摘要的作用。有时候，我会把某篇论文的详解做出来。当然，看心情和时间吧。能够提炼出要点，说明这篇文章的思想才算是完全吸收。做精炼论文是好习惯，要养成。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;low-light-image-enhancement&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#low-light-image-enhancement&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Low-Light Image Enhancement&lt;/code&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;2024-codeenhance-a-codebook-driven-approach-for-low-light-image-enhancement&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2024-codeenhance-a-codebook-driven-approach-for-low-light-image-enhancement&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2024 CodeEnhance: A Codebook-Driven Approach for Low-Light Image Enhancement&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;../../assets/1.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;贡献&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;贡献（提出哪些解决方法）&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;利用 &lt;code&gt;codebook&lt;/code&gt;  从 &lt;code&gt;High-Quality&lt;/code&gt;  图像中学习先验。&lt;/li&gt;
 &lt;li&gt;在 &lt;code&gt;Unet&lt;/code&gt;  编码器端并行设计预训练的语义信息提取网络 &lt;code&gt;SEE&lt;/code&gt; ，在编码器末端设计一个语义信息融合模块 &lt;code&gt;SEM&lt;/code&gt; ，将语义信息与图像特征融合。&lt;/li&gt;
 &lt;li&gt;因为 &lt;code&gt;codebook&lt;/code&gt;  学习的先验所用数据集和第二阶段训练所用数据集不同，设计了一个 &lt;code&gt;codebook&lt;/code&gt;  偏移机制 &lt;code&gt;CS&lt;/code&gt;  处理引入 codebook 产生的数据分布偏移问题。&lt;/li&gt;
 &lt;li&gt;在预训练的解码器末端附加一个特征转换模块 &lt;code&gt;IFT&lt;/code&gt; 。一方面，利用参考图像 &lt;code&gt;Reference&lt;/code&gt;  丰富解码器 &lt;code&gt;High-Quality&lt;/code&gt;  解码图像的信息，另一方面，在 &lt;code&gt;IFT&lt;/code&gt;  内的 &lt;code&gt;CPT&lt;/code&gt;  加入两个人为设计的 $$\omega$$ 以实现可控式图像提亮。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;创新&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;创新（与其他工作的区别）&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;很明显知道这篇低光的论文是基于 &lt;code&gt;Towards Robust Blind Face Restoration with Codebook Lookup Transformer&lt;/code&gt;  这篇文章的工作，所以创新是相对于 &lt;code&gt;Towards Robust Blind Face Restoration with Codebook Lookup Transformer&lt;/code&gt;  的创新。我们可以把 &lt;code&gt;Towards Robust Blind Face Restoration with Codebook Lookup Transformer&lt;/code&gt;  称为 &lt;code&gt;base work&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1895,6 +1919,8 @@ B-&amp;gt;\gama.&lt;br /&gt;
 &lt;ul&gt;
 &lt;li&gt;对隐式神经表征了解还不够多，应该往这个领域多研究研究。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;2024-zero-ig-zero-shot-illumination-guided-joint-denoising-and-adaptive-enhancement-for-low-light-images&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2024-zero-ig-zero-shot-illumination-guided-joint-denoising-and-adaptive-enhancement-for-low-light-images&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2024 ZERO-IG: Zero-Shot Illumination-Guided Joint Denoising and Adaptive Enhancement for Low-Light Images&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/zero-ig.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;image-dehazing&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#image-dehazing&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Image Dehazing&lt;/code&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;2023-cvpr-ridcp-revitalizing-real-image-dehazing-via-high-quality-codebook-priors&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2023-cvpr-ridcp-revitalizing-real-image-dehazing-via-high-quality-codebook-priors&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2023 CVPR RIDCP: Revitalizing Real Image Dehazing via High-Quality Codebook Priors&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;../../assets/8.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
@@ -1970,8 +1996,16 @@ B-&amp;gt;\gama.&lt;br /&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;不足&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;（暂时未知）&lt;/p&gt;
-&lt;h1 id=&#34;high-level&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#high-level&#34;&gt;#&lt;/a&gt;  &lt;code&gt;High-Level&lt;/code&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;high-level-cv&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#high-level-cv&#34;&gt;#&lt;/a&gt;  &lt;code&gt;High-Level CV&lt;/code&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;implicit-neural-representation&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#implicit-neural-representation&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Implicit Neural Representation&lt;/code&gt;&lt;/h2&gt;
+&lt;h1 id=&#34;多模态&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多模态&#34;&gt;#&lt;/a&gt; 多模态&lt;/h1&gt;
+&lt;h2 id=&#34;clip&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#clip&#34;&gt;#&lt;/a&gt;  &lt;code&gt;CLIP&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/clip.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;贡献&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;对比学习&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#对比学习&#34;&gt;#&lt;/a&gt; 对比学习&lt;/h2&gt;
 </content>
         <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
         <updated>2024-07-26T03:42:00.000Z</updated>
