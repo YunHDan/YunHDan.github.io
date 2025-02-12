@@ -92,6 +92,7 @@
 &lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;2025-02-09&lt;/code&gt; ：如何做出有价值的工作？我的第一篇工作是失败的，毫无创新可言，实验效果也很差，但是为我积累了丰富的科研经验。在放弃第一篇工作后，第二篇工作仅在 2 周的时间内就实现了 &lt;code&gt;idea&lt;/code&gt;  的确定，仅在 2 个月内就进入了论文初稿的撰写，实验结果还是可以说得过去。我并没有取低光照图像增强领域的 &lt;code&gt;SOTA&lt;/code&gt;  作为 &lt;code&gt;baseline&lt;/code&gt; ，而是阅读了其他领域的方法，将其他领域的思想和方法结合，然后应用到低光领域。这种做法需要较为熟练的代码能力，而且较难做出高的实验分数，可能需要不断地更换其他领域的思想和方法。这种做法并不基于本领域的现有 &lt;code&gt;SOTA&lt;/code&gt;  方法，能够避开与现有 &lt;code&gt;SOTA&lt;/code&gt;  方法的比较。如果你的思想方法是本领域没有出现的（需要彻查），那么作为开创工作大胆发 &lt;code&gt;paper&lt;/code&gt;  即可。如果有若干个相关工作，可以与他们进行对比，超越即可。这可以大大降低了实验分数的压力。但是如果想要追求与更高的分数如 &lt;code&gt;SOTA&lt;/code&gt;  的对比，就不太容易，因为这一方面需要优秀的科研直觉、强大代码能力、不错的运气。如果运气好，你结合了其他领域的思想方法正好极其 &lt;code&gt;SOTA&lt;/code&gt; ，那么完全可以投高水平期刊和会议，甚至顶会顶刊。所以也有另一种方法，就是以本领域的 &lt;code&gt;SOTA&lt;/code&gt;  工作的方法为 &lt;code&gt;baseline&lt;/code&gt; ，结合其他领域的思想和方法。这种方式的实验分数普遍偏高，但是会经常见到自己的实验效果反而比 &lt;code&gt;SOTA&lt;/code&gt;  低的现象，因此主要和所参考的本领域 &lt;code&gt;SOTA&lt;/code&gt;  对比，超越之较难。虽然说超越较难，但是一旦超越了，高的实验分数确实可以作为一个不错的亮点。然而，如果以本领域的 &lt;code&gt;SOTA&lt;/code&gt;  方法为 &lt;code&gt;baseline&lt;/code&gt; （也就是已经以该 &lt;code&gt;SOTA&lt;/code&gt;  方法的代码为模板），最终的模型结构会与该 &lt;code&gt;SOTA&lt;/code&gt;  方法较为相似，内行人一看就知道来源于哪篇工作，因此即使有较高的实验分数，想要发高水平期刊和会议还是因为创新点较为雷同而被拒。两种方式各有特点，他们难点不同，前者难在结合其他领域的思想，后者难在超越本领域 &lt;code&gt;SOTA&lt;/code&gt; 。他们发 &lt;code&gt;paper&lt;/code&gt;  的标志不同，前者只要超过相关工作即可，后者需要超过 &lt;code&gt;SOTA&lt;/code&gt; 。他们的 &lt;code&gt;baseline&lt;/code&gt;  不同，前者的 &lt;code&gt;baseline&lt;/code&gt;  是其他领域的思想方法在本领域的效果（一般较低），后者的 &lt;code&gt;baseline&lt;/code&gt;  是本领域的 &lt;code&gt;SOTA&lt;/code&gt; （一般较高）。他们证明自己有效的方式是一致的，都需要超越 &lt;code&gt;baseline&lt;/code&gt; ，才能证明自己的工作有效。&lt;/li&gt;
+&lt;li&gt;其实可以为读过的每一篇论文用自己的理解提炼出关键思想，甚至可以用英文写，这样也有助于语感的保持。&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
@@ -1866,7 +1867,7 @@ B-&amp;gt;\gama.&lt;br /&gt;
 &lt;h2 id=&#34;大三寒假&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大三寒假&#34;&gt;#&lt;/a&gt; 大三寒假&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;千恋万花： &lt;code&gt;ciallo~&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;万花镜 5 - 理与迷宫的少女：莲华酱～&lt;/li&gt;
+&lt;li&gt;万花镜 5 - 理与迷宫的少女：我们一定会遇到在人生迷宫中不断找寻的那个莲华！&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;待入库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#待入库&#34;&gt;#&lt;/a&gt; 待入库&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -2175,6 +2176,22 @@ B-&amp;gt;\gama.&lt;br /&gt;
 &lt;p&gt;&lt;img data-src=&#34;../../assets/groupvit2.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;（测试时，模型输出了两个 &lt;code&gt;token&lt;/code&gt; ，我们指定分割物体的文本标签有 &lt;code&gt;table、dog...potted plant&lt;/code&gt; ，于是可以使用余弦相似度计算得到一个相似度矩阵。对每行取最大的值，对应的文本标签即为该 &lt;code&gt;token&lt;/code&gt;  的类别）&lt;/p&gt;
 &lt;h2 id=&#34;多模态在检测的应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多模态在检测的应用&#34;&gt;#&lt;/a&gt; 多模态在检测的应用&lt;/h2&gt;
+&lt;h3 id=&#34;2022-cvpr-grounded-language-image-pre-trainingglip&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2022-cvpr-grounded-language-image-pre-trainingglip&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2022 CVPR Grounded Language-Image Pre-training(Glip)&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/glip1.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;学习自朱毅老师的逐段精读。&lt;/p&gt;
+&lt;p&gt;与常规目标检测任务相关的一个任务是 &lt;code&gt;Vision Grounding&lt;/code&gt; 。具体是根据提供的文本，在图片中找到文本中出现的物体的位置。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;贡献&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;参考 &lt;code&gt;CLIP&lt;/code&gt;  范式，将图像的 &lt;code&gt;Bounding box&lt;/code&gt;  的 &lt;code&gt;region&lt;/code&gt;  输入图像编码器，将提供的文本输入文本编码器，最后得到每个 &lt;code&gt;Bounding box&lt;/code&gt;  与单词的相似度矩阵。在相似度矩阵上与 &lt;code&gt;Ground-Truth&lt;/code&gt;  的相似度矩阵求定位损失 &lt;code&gt;Localization Loss&lt;/code&gt;  和分类损失 &lt;code&gt;Alignment Loss&lt;/code&gt;  即可完成训练。&lt;/li&gt;
+&lt;li&gt;为了更加充分地学习 &lt;code&gt;Bounding box&lt;/code&gt;  和文本的 &lt;code&gt;Joint Feature&lt;/code&gt; ，也就是多模态特征。在最后的特征相似度计算前，使用交叉注意力对图像特征和文本特征进行多层交互学习，即 &lt;code&gt;Deep Fusion&lt;/code&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;创新&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 &lt;code&gt;Deep Fusion&lt;/code&gt;  技术以辅助学习多模态特征。&lt;/li&gt;
+&lt;li&gt;将 &lt;code&gt;Gounding&lt;/code&gt;  任务与目标检测任务很好地结合，并借鉴 &lt;code&gt;CLIP&lt;/code&gt;  的思想做大规模数据的预训练，成功取得了很好的 &lt;code&gt;Zero-shot&lt;/code&gt;  效果。&lt;/li&gt;
+&lt;/ul&gt;
  ]]></description>
         </item>
         <item>
