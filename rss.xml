@@ -107,13 +107,14 @@
 &lt;/blockquote&gt;
 &lt;h5 id=&#34;zero-ig&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zero-ig&#34;&gt;#&lt;/a&gt;  &lt;code&gt;ZERO-IG&lt;/code&gt;&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;Why it is a zero-shot method? They also train the network in specific downstream datasets.&lt;/li&gt;
+&lt;li&gt;Why it is a zero-shot method? They also train the network in specific downstream datasets?&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5 id=&#34;zs-n2n&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zs-n2n&#34;&gt;#&lt;/a&gt;  &lt;code&gt;ZS-N2N&lt;/code&gt;&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;Their downsampling operation just first divided the original image into non-overlapping patches with each size is 2 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\times&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.66666em;vertical-align:-0.08333em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;×&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 2. Is there a possibility, we could use a cascading network to denoise low light image, which divided the input image with patch size is 2 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\times&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.66666em;vertical-align:-0.08333em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;×&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 2 at first level and then processed the image for denoising. In next level, the network divided the input image with patch size  is 4 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\times&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.66666em;vertical-align:-0.08333em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;×&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 4. And so on?&lt;/li&gt;
 &lt;li&gt;Is there a possibility, we could change the downsampling operation before using 2 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\times&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.66666em;vertical-align:-0.08333em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;×&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 2 convolution kernel process the downsampling patches?&lt;/li&gt;
 &lt;li&gt;Is there a possibility, we could use the two downsampling patches as PairLIE’s input and constructed P-Net, L-Net, R-Net and necessary regularization loss for them?&lt;/li&gt;
+&lt;li&gt;Why mapping the first downsampling patch into the second downsampling patch is equivalent to mapping the original noisy image into the clean image?&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
@@ -2094,11 +2095,18 @@ B-&amp;gt;\gama.&lt;br /&gt;
 &lt;p&gt;&lt;strong&gt;不足&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;（暂时未知）&lt;/p&gt;
 &lt;h2 id=&#34;image-denoise&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#image-denoise&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Image Denoise&lt;/code&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;zero-shot-noise2noise-efficient-image-denoising-without-any-datazs-n2n&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#zero-shot-noise2noise-efficient-image-denoising-without-any-datazs-n2n&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Zero-Shot Noise2Noise: Efficient Image Denoising without any Data(ZS-N2N)&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;2023-cvpr-zero-shot-noise2noise-efficient-image-denoising-without-any-datazs-n2n&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2023-cvpr-zero-shot-noise2noise-efficient-image-denoising-without-any-datazs-n2n&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2023 CVPR Zero-Shot Noise2Noise: Efficient Image Denoising without any Data(ZS-N2N)&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;../../assets/zs-n2n1.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;贡献&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Contributions&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;They offered a downsampling-based unsupervised method. They downsampled the noisy image into two patches by using a special method at the pixel-wise level , and subsequently used two-layer convolution kernels to process the two patches.&lt;/li&gt;
+&lt;li&gt;Mapping between noisy patches can be equivalent to denoising the input image, where a consistency loss is applied to constrain the mapping process.&lt;/li&gt;
+&lt;li&gt;The two patches were considered as similar as possible, so there was a residual loss applied to the mapping process.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Innovations&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;By integrating the Noise2Nosie and Neighbour2Neighbour methods, the paper offered a unsupervised learning paradigm.&lt;/li&gt;
+&lt;li&gt;It was very light-weight.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;多模态&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多模态&#34;&gt;#&lt;/a&gt; 多模态&lt;/h1&gt;
 &lt;h2 id=&#34;clip工作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#clip工作&#34;&gt;#&lt;/a&gt;  &lt;code&gt;CLIP&lt;/code&gt;  工作&lt;/h2&gt;
