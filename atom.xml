@@ -780,7 +780,7 @@ Min(Loss) = Min(- \sum_{t=1}^{T} y_i \hat{y}_i) \\
 &lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  好数对的数目（枚举右，维护左 + 哈希表）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9udW1iZXItb2YtZ29vZC1wYWlycy9kZXNjcmlwdGlvbi8=&#34;&gt;https://leetcode.cn/problems/number-of-good-pairs/description/&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;中等&lt;/strong&gt;：&lt;br /&gt;
  &lt;code&gt;LeetCode——&lt;/code&gt;  可互换矩形的组数（枚举右，维护左 + 哈希表）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9udW1iZXItb2YtcGFpcnMtb2YtaW50ZXJjaGFuZ2VhYmxlLXJlY3RhbmdsZXMvZGVzY3JpcHRpb24v&#34;&gt;https://leetcode.cn/problems/number-of-pairs-of-interchangeable-rectangles/description/&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;前缀和&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前缀和&#34;&gt;#&lt;/a&gt; 前缀和&lt;/h2&gt;
+&lt;h2 id=&#34;前缀和&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#前缀和&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;blue&#34;&gt;前缀和&lt;/span&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;简单&lt;/strong&gt;：&lt;br /&gt;
  &lt;code&gt;LeetCode——&lt;/code&gt;  区域和检索 —— 数组不可变（前缀和入门模板题）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9yYW5nZS1zdW0tcXVlcnktaW1tdXRhYmxlLw==&#34;&gt;https://leetcode.cn/problems/range-sum-query-immutable/&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;中等&lt;/strong&gt;：&lt;/p&gt;
