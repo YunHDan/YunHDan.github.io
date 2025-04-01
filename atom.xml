@@ -1051,7 +1051,7 @@ pip install tensorflow -i https://pypi.mirrors.ustc.edu.cn/simple/
         <id>https://yunhdan.github.io/knowledge-database/ACM%E7%AE%97%E6%B3%95%E9%A2%98%E5%8D%95/</id>
         <title>ACM算法题单</title>
         <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/ACM%E7%AE%97%E6%B3%95%E9%A2%98%E5%8D%95/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;ACM算法题单-blue&#34;&gt;&lt;a href=&#34;#ACM算法题单-blue&#34; class=&#34;headerlink&#34; title=&#34;[ACM算法题单]{.blue}&#34;&gt;&lt;/a&gt;[&lt;code&gt;ACM&lt;/code&gt;算法题单]{.blue}&lt;/h1&gt;&lt;p&gt;:::info&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;ACM算法题单-blue&#34;&gt;&lt;a href=&#34;#ACM算法题单-blue&#34; class=&#34;headerlink&#34; title=&#34;[ACM算法题单]{.blue}&#34;&gt;&lt;/a&gt;[ACM算法题单]{.blue}&lt;/h1&gt;&lt;p&gt;:::info&lt;/p&gt;
 &lt;p&gt;目的：为了备战蓝桥杯（4月12日）和夏令营预推免的机试。&lt;/p&gt;
 &lt;p&gt;每一题目标：彻底弄懂该题思路。&lt;/p&gt;
 &lt;p&gt;:::&lt;/p&gt;
