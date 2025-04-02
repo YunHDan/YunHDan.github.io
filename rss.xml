@@ -789,7 +789,7 @@ Min(Loss) = Min(- \sum_{t=1}^{T} y_i \hat{y}_i) \\
 &lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  统计范围内的元音字符串数：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9jb3VudC12b3dlbC1zdHJpbmdzLWluLXJhbmdlcy8=&#34;&gt;https://leetcode.cn/problems/count-vowel-strings-in-ranges/&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  特殊数组 II（数组奇偶性与前缀和）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9zcGVjaWFsLWFycmF5LWlpLw==&#34;&gt;https://leetcode.cn/problems/special-array-ii/&lt;/span&gt; 🔥&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;前缀和与哈希表&lt;/strong&gt;：&lt;br /&gt;
- &lt;code&gt;LeetCode——&lt;/code&gt;  和为 K 的子数组：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9zdWJhcnJheS1zdW0tZXF1YWxzLWsvZGVzY3JpcHRpb24v&#34;&gt;https://leetcode.cn/problems/subarray-sum-equals-k/description/&lt;/span&gt;&lt;/p&gt;
+ &lt;code&gt;LeetCode——&lt;/code&gt;  和为 K 的子数组（启蒙题，值得反复品味）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9zdWJhcnJheS1zdW0tZXF1YWxzLWsvZGVzY3JpcHRpb24v&#34;&gt;https://leetcode.cn/problems/subarray-sum-equals-k/description/&lt;/span&gt; 🔥&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  和相同的二元子数组：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9iaW5hcnktc3ViYXJyYXlzLXdpdGgtc3VtL2Rlc2NyaXB0aW9uLw==&#34;&gt;https://leetcode.cn/problems/binary-subarrays-with-sum/description/&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;差分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#差分&#34;&gt;#&lt;/a&gt; 差分&lt;/h1&gt;
 &lt;h1 id=&#34;队列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#队列&#34;&gt;#&lt;/a&gt; 队列&lt;/h1&gt;
