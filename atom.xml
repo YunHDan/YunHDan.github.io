@@ -791,12 +791,10 @@ Min(Loss) = Min(- \sum_{t=1}^{T} y_i \hat{y}_i) \\
  &lt;code&gt;LeetCode——&lt;/code&gt;  岛屿数量（入门题，水平垂直方向）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9udW1iZXItb2YtaXNsYW5kcy9kZXNjcmlwdGlvbi8=&#34;&gt;https://leetcode.cn/problems/number-of-islands/description/&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  岛屿的最大面积：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9tYXgtYXJlYS1vZi1pc2xhbmQvZGVzY3JpcHRpb24v&#34;&gt;https://leetcode.cn/problems/max-area-of-island/description/&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  水域大小（加入对角线方向）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9wb25kLXNpemVzLWxjY2kvZGVzY3JpcHRpb24v&#34;&gt;https://leetcode.cn/problems/pond-sizes-lcci/description/&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  主题空间：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9ZZXNkUHcvZGVzY3JpcHRpb24v&#34;&gt;https://leetcode.cn/problems/YesdPw/description/&lt;/span&gt; 🔥&lt;/p&gt;
-&lt;h1 id=&#34;差分&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#差分&#34;&gt;#&lt;/a&gt; 差分&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  主题空间（边界不合法情况）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9ZZXNkUHcvZGVzY3JpcHRpb24v&#34;&gt;https://leetcode.cn/problems/YesdPw/description/&lt;/span&gt; 🔥&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  岛屿的周长：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9pc2xhbmQtcGVyaW1ldGVyL2Rlc2NyaXB0aW9uLw==&#34;&gt;https://leetcode.cn/problems/island-perimeter/description/&lt;/span&gt; 🔥&lt;/p&gt;
 &lt;h1 id=&#34;队列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#队列&#34;&gt;#&lt;/a&gt; 队列&lt;/h1&gt;
-&lt;h1 id=&#34;堆&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#堆&#34;&gt;#&lt;/a&gt; 堆&lt;/h1&gt;
 &lt;h1 id=&#34;二叉树&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二叉树&#34;&gt;#&lt;/a&gt; 二叉树&lt;/h1&gt;
-&lt;h1 id=&#34;回溯&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#回溯&#34;&gt;#&lt;/a&gt; 回溯&lt;/h1&gt;
 </content>
         <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
         <updated>2025-02-20T14:22:05.000Z</updated>
