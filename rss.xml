@@ -883,7 +883,8 @@ Min(Loss) = Min(- \sum_{t=1}^{T} y_i \hat{y}_i) \\
 &lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  删点成林：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9kZWxldGUtbm9kZXMtYW5kLXJldHVybi1mb3Jlc3Qv&#34;&gt;https://leetcode.cn/problems/delete-nodes-and-return-forest/&lt;/span&gt; 🔥&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;二叉搜索树&lt;/strong&gt;：&lt;br /&gt;
  &lt;code&gt;LeetCode——&lt;/code&gt;  二叉搜索树中的搜索：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9zZWFyY2gtaW4tYS1iaW5hcnktc2VhcmNoLXRyZWUv&#34;&gt;https://leetcode.cn/problems/search-in-a-binary-search-tree/&lt;/span&gt; 🔥&lt;/p&gt;
-&lt;h1 id=&#34;队列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#队列&#34;&gt;#&lt;/a&gt; 队列&lt;/h1&gt;
+&lt;h1 id=&#34;优先队列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#优先队列&#34;&gt;#&lt;/a&gt; 优先队列&lt;/h1&gt;
+&lt;h1 id=&#34;贪心&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#贪心&#34;&gt;#&lt;/a&gt; 贪心&lt;/h1&gt;
  ]]></description>
         </item>
         <item>
