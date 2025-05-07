@@ -837,40 +837,47 @@ sudo swapon /swapfile
     </entry>
     <entry>
         <id>https://yunhdan.github.io/research/Embodied-3D-Labs/</id>
-        <title>Embodied &amp; 3D Labs</title>
+        <title>Embodied AI、3D、Multimodel Labs</title>
         <link rel="alternate" href="https://yunhdan.github.io/research/Embodied-3D-Labs/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;Embodied-amp-Multimodel-Labs&#34;&gt;&lt;a href=&#34;#Embodied-amp-Multimodel-Labs&#34; class=&#34;headerlink&#34; title=&#34;Embodied &amp;amp; Multimodel Labs&#34;&gt;&lt;/a&gt;&lt;code&gt;Embodied &amp;amp; Multimodel Labs&lt;/code&gt;&lt;/h1&gt;&lt;p&gt;:::info&lt;/p&gt;
-&lt;p&gt;收集做具身的课题组。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;h2 id=&#34;具身智能&#34;&gt;&lt;a href=&#34;#具身智能&#34; class=&#34;headerlink&#34; title=&#34;具身智能&#34;&gt;&lt;/a&gt;具身智能&lt;/h2&gt;&lt;p&gt;中国人大多媒体计算实验室：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVjLWFpbTMuY29tL2luZGV4Lmh0bWw=&#34;&gt;AIM3 Lab (ruc-aim3.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;中山大学人机物智能融合实验室（&lt;code&gt;HCP Lab&lt;/code&gt;）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc3lzdS1oY3AubmV0L2hvbWUv&#34;&gt;Human Cyber Physical Intelligence Integration Lab (sysu-hcp.net)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;上交大赵波：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb2hvbmdzaHUuY29tL2Rpc2NvdmVyeS9pdGVtLzY2OWY2ZDJiMDAwMDAwMDAwYTAyNDY4Mj9zb3VyY2U9d2Vic2hhcmUmYW1wO3hoc3NoYXJlPXBjX3dlYiZhbXA7eHNlY190b2tlbj1BQlBGOUdnVEk2NVdSTlpBNHFRTUpqemIxRzJwbFUzbjZ5TUtHem80S1ZCZEU9JmFtcDt4c2VjX3NvdXJjZT1wY19zaGFyZQ==&#34;&gt;https://www.xiaohongshu.com/discovery/item/669f6d2b000000000a024682?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABPF9GgTI65WRNZA4qQMJjzb1G2plU3n6yMKGzo4KVBdE=&amp;amp;xsec_source=pc_share&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;清深国际研究生院陈鑫磊：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb2hvbmdzaHUuY29tL2Rpc2NvdmVyeS9pdGVtLzY2YjMyZmExMDAwMDAwMDAxZTAxZmU3Nj9zb3VyY2U9d2Vic2hhcmUmYW1wO3hoc3NoYXJlPXBjX3dlYiZhbXA7eHNlY190b2tlbj1BQm5BLXEtZ2JidXIxckdOUW0ybEh6X29EcUNqYjlvajZkTkdtLUVVOXBORFk9JmFtcDt4c2VjX3NvdXJjZT1wY19zaGFyZQ==&#34;&gt;https://www.xiaohongshu.com/discovery/item/66b32fa1000000001e01fe76?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABnA-q-gbbur1rGNQm2lHz_oDqCjb9oj6dNGm-EU9pNDY=&amp;amp;xsec_source=pc_share&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;清深国际研究生院王智：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb2hvbmdzaHUuY29tL2Rpc2NvdmVyeS9pdGVtLzY3YjQ5YzI1MDAwMDAwMDAwOTAxN2JiYz9zb3VyY2U9d2Vic2hhcmUmYW1wO3hoc3NoYXJlPXBjX3dlYiZhbXA7eHNlY190b2tlbj1BQkxIQzh5SVFfaXF3NGlWQTNtazdOdEdqSl9iM2NHZk81MkFRSkJwdU9iaVk9JmFtcDt4c2VjX3NvdXJjZT1wY19zaGFyZQ==&#34;&gt;https://www.xiaohongshu.com/discovery/item/67b49c250000000009017bbc?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABLHC8yIQ_iqw4iVA3mk7NtGjJ_b3cGfO52AQJBpuObiY=&amp;amp;xsec_source=pc_share&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;上交&lt;code&gt;RethinkLab&lt;/code&gt;杨学：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb2hvbmdzaHUuY29tL2Rpc2NvdmVyeS9pdGVtLzY3YmIzODFmMDAwMDAwMDAwOTAxNTZiNz9zb3VyY2U9d2Vic2hhcmUmYW1wO3hoc3NoYXJlPXBjX3dlYiZhbXA7eHNlY190b2tlbj1BQkpKS0ZTUURtREd1QTBFZnMwc3BVS1hIUEFjZWZUTE0wc01YUGJEaXRKMlE9JmFtcDt4c2VjX3NvdXJjZT1wY19zaGFyZQ==&#34;&gt;https://www.xiaohongshu.com/discovery/item/67bb381f00000000090156b7?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABJJKFSQDmDGuA0Efs0spUKXHPAcefTLM0sMXPbDitJ2Q=&amp;amp;xsec_source=pc_share&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;中山大学郭老师：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zY2hvbGFyLmdvb2dsZS5jb20vY2l0YXRpb25zP3VzZXI9V1FSTnZkc0FBQUFKJmFtcDtobD16aC1DTg==&#34;&gt;‪Yulan Guo‬ - ‪Google 学术搜索‬&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;港科大陈昌浩：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb2hvbmdzaHUuY29tL2Rpc2NvdmVyeS9pdGVtLzY3OWUxZDE4MDAwMDAwMDAxOTAyZmZiZD9zb3VyY2U9d2Vic2hhcmUmYW1wO3hoc3NoYXJlPXBjX3dlYiZhbXA7eHNlY190b2tlbj1BQnNIYkRkS3RSVnZrYnBTR1BSb3d2MzV0bldEQmFwclpjSkxDNmRaR0RrRGs9JmFtcDt4c2VjX3NvdXJjZT1wY19zaGFyZQ==&#34;&gt;https://www.xiaohongshu.com/discovery/item/679e1d18000000001902ffbd?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABsHbDdKtRVvkbpSGPRowv35tnWDBaprZcJLC6dZGDkDk=&amp;amp;xsec_source=pc_share&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;南大智科院推理与学习研究组范琦（&lt;code&gt;R&amp;amp;L Group&lt;/code&gt;）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tLjE2My5jb20vZHkvYXJ0aWNsZS9JVTdTMTEyQTA1MzZBM0Q4Lmh0bWw=&#34;&gt;招生！南京大学智能科学与技术学院范琦老师招收硕士、博士研究生及科研助理|一流学科|南京大学|博士|研究生|硕士|范琦_手机网易网 (163.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;南大智科院朱昊：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy56aHVoYW8uY2MvaG9tZV96aC8=&#34;&gt;- Homepage of Hao (zhuhao.cc)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;南大智科院模式识别与计算机视觉研究组谢晋（&lt;code&gt;PRCV&lt;/code&gt;）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpnNE56WTJOelU1TXclM0QlM0QmYW1wO21pZD0yMjQ3NTU2NzA1JmFtcDtpZHg9MiZhbXA7c249MzhlMmJlNjk3YTkyZDM0MmQxNTZhYjhiYWJjM2IyODcmYW1wO2Noa3NtPWNlNGQ3MGUyOWQxNjIwMTM5MjRiOWEyNjM2NWQ1ZmUwN2QzNWQxNWNhYmU5ODc4YjhjNWZkYWI5MDFiZDFkZDYyNjE3YmQ4YTUyNmImYW1wO3NjZW5lPTI3&#34;&gt;南京大学计算机（含人工智能、计算机视觉等）学科及导师介绍2 (qq.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;南大推理与学习研究组霍静（&lt;code&gt;R&amp;amp;l&lt;/code&gt;）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpnNE56WTJOelU1TXc9PSZhbXA7bWlkPTIyNDc1NTY3MDUmYW1wO2lkeD0xJmFtcDtzbj0yMjczYTUyZjNmNjEyZDFlYWNkNjZlYWUzODM3ODdjNiZhbXA7Y2hrc209Y2Y4NGIwODdmOGYzMzk5MWY5Nzk0NzZhZTA3ZjI1Y2E3NjE2ZWNmYjEwNjY0ZDM1M2NiZDk4NjcyZjc0MWU4NGViZjBhNDNjMWZiYSZhbXA7Y3VyX2FsYnVtX2lkPTIyNTI5MjYzODY4MTIzODczMzMmYW1wO3NjZW5lPTE4OSN3ZWNoYXRfcmVkaXJlY3Q=&#34;&gt;深度好文|南京大学计算机（含人工智能、计算机视觉等）学科及导师介绍1 (qq.com)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;南科大史玉回：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc3VzdGVjaC5lZHUuY24vemgvZmFjdWx0aWVzL3NoaXl1aHVpLmh0bWw=&#34;&gt;史玉回 - 师资概况 - 南方科技大学 (sustech.edu.cn)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;华南理工团队：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tZXRhc28uY24vc2VhcmNoLzg1OTUwNDIxNDE0NDQyODg1MTIvaW50ZXJhY3RpdmU/ZGF0YUlkPTg1OTUwNDIxNDE1NTMzNDA0MTYmYW1wO3RhcmdldFR5cGU9MA==&#34;&gt;华南理工大学具身智能课题组-秘塔AI搜索 (metaso.cn)&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;3D&#34;&gt;&lt;a href=&#34;#3D&#34; class=&#34;headerlink&#34; title=&#34;3D&#34;&gt;&lt;/a&gt;&lt;code&gt;3D&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;南大智能图形和三维视觉研究组（&lt;code&gt;Meta Graphics &amp;amp; 3D Vision Lab&lt;/code&gt;）张振宇：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpnNE56WTJOelU1TXclM0QlM0QmYW1wO21pZD0yMjQ3NTU2NzA1JmFtcDtpZHg9MiZhbXA7c249MzhlMmJlNjk3YTkyZDM0MmQxNTZhYjhiYWJjM2IyODcmYW1wO2Noa3NtPWNlNGQ3MGUyOWQxNjIwMTM5MjRiOWEyNjM2NWQ1ZmUwN2QzNWQxNWNhYmU5ODc4YjhjNWZkYWI5MDFiZDFkZDYyNjE3YmQ4YTUyNmImYW1wO3NjZW5lPTI3&#34;&gt;南京大学计算机（含人工智能、计算机视觉等）学科及导师介绍2 (qq.com)&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;考虑的去处：&#34;&gt;&lt;a href=&#34;#考虑的去处：&#34; class=&#34;headerlink&#34; title=&#34;考虑的去处：&#34;&gt;&lt;/a&gt;考虑的去处：&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;本人强烈反对在&lt;code&gt;928&lt;/code&gt;最终结果出来前的一切否定希望的言论。去尝试并不会有多大的成本，反而自缚才是毁灭任何可能性的根源。&lt;/p&gt;
-&lt;p&gt;本人倾向：学硕&lt;code&gt;or&lt;/code&gt;专硕&lt;code&gt;——3D or Multimodel&lt;/code&gt;、直博&lt;code&gt;or&lt;/code&gt;硕博连读&lt;code&gt;——Embodied AI&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;Embodied AI&lt;/code&gt;：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;南大智能科学与技术学院&lt;/li&gt;
-&lt;li&gt;中山大学&lt;/li&gt;
-&lt;li&gt;南科大&lt;/li&gt;
-&lt;li&gt;华南理工&lt;/li&gt;
-&lt;li&gt;清深&lt;/li&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;中大&#34;&gt;&lt;a href=&#34;#中大&#34; class=&#34;headerlink&#34; title=&#34;中大&#34;&gt;&lt;/a&gt;中大&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;郭裕兰：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zY2hvbGFyLmdvb2dsZS5jb20vY2l0YXRpb25zP3VzZXI9V1FSTnZkc0FBQUFKJmFtcDtobD16aC1DTg==&#34;&gt;‪Yulan Guo‬ - ‪Google 学术搜索‬&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;人机物智能融合实验室（&lt;code&gt;HCP Lab&lt;/code&gt;）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc3lzdS1oY3AubmV0L2hvbWUv&#34;&gt;https://www.sysu-hcp.net/home/&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;3D or Multimodel&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;从双非友好的学校中选（只要不明确歧视双非）一个地域也能接受的。&lt;/p&gt;
+&lt;h2 id=&#34;港中深&#34;&gt;&lt;a href=&#34;#港中深&#34; class=&#34;headerlink&#34; title=&#34;港中深&#34;&gt;&lt;/a&gt;港中深&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;刘桂良：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;港大&#34;&gt;&lt;a href=&#34;#港大&#34; class=&#34;headerlink&#34; title=&#34;港大&#34;&gt;&lt;/a&gt;港大&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MMLab&lt;/code&gt;：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;港科大&#34;&gt;&lt;a href=&#34;#港科大&#34; class=&#34;headerlink&#34; title=&#34;港科大&#34;&gt;&lt;/a&gt;港科大&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;陈昌浩：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb2hvbmdzaHUuY29tL2Rpc2NvdmVyeS9pdGVtLzY3OWUxZDE4MDAwMDAwMDAxOTAyZmZiZD9zb3VyY2U9d2Vic2hhcmUmYW1wO3hoc3NoYXJlPXBjX3dlYiZhbXA7eHNlY190b2tlbj1BQnNIYkRkS3RSVnZrYnBTR1BSb3d2MzV0bldEQmFwclpjSkxDNmRaR0RrRGs9JmFtcDt4c2VjX3NvdXJjZT1wY19zaGFyZQ==&#34;&gt;https://www.xiaohongshu.com/discovery/item/679e1d18000000001902ffbd?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABsHbDdKtRVvkbpSGPRowv35tnWDBaprZcJLC6dZGDkDk=&amp;amp;xsec_source=pc_share&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;南科大&#34;&gt;&lt;a href=&#34;#南科大&#34; class=&#34;headerlink&#34; title=&#34;南科大&#34;&gt;&lt;/a&gt;南科大&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;史玉回：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc3VzdGVjaC5lZHUuY24vemgvZmFjdWx0aWVzL3NoaXl1aHVpLmh0bWw=&#34;&gt;https://www.sustech.edu.cn/zh/faculties/shiyuhui.html&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;南大智科院&#34;&gt;&lt;a href=&#34;#南大智科院&#34; class=&#34;headerlink&#34; title=&#34;南大智科院&#34;&gt;&lt;/a&gt;南大智科院&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;朱昊：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy56aHVoYW8uY2MvaG9tZV96aC8=&#34;&gt;http://www.zhuhao.cc/home_zh/&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;模式识别与计算机视觉研究组谢晋（&lt;code&gt;PRCV&lt;/code&gt;）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpnNE56WTJOelU1TXclM0QlM0QmYW1wO21pZD0yMjQ3NTU2NzA1JmFtcDtpZHg9MiZhbXA7c249MzhlMmJlNjk3YTkyZDM0MmQxNTZhYjhiYWJjM2IyODcmYW1wO2Noa3NtPWNlNGQ3MGUyOWQxNjIwMTM5MjRiOWEyNjM2NWQ1ZmUwN2QzNWQxNWNhYmU5ODc4YjhjNWZkYWI5MDFiZDFkZDYyNjE3YmQ4YTUyNmImYW1wO3NjZW5lPTI3&#34;&gt;https://mp.weixin.qq.com/s?__biz=Mzg4NzY2NzU5Mw%3D%3D&amp;amp;mid=2247556705&amp;amp;idx=2&amp;amp;sn=38e2be697a92d342d156ab8babc3b287&amp;amp;chksm=ce4d70e29d162013924b9a26365d5fe07d35d15cabe9878b8c5fdab901bd1dd62617bd8a526b&amp;amp;scene=27&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;推理与学习研究组霍静：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpnNE56WTJOelU1TXc9PSZhbXA7bWlkPTIyNDc1NTY3MDUmYW1wO2lkeD0xJmFtcDtzbj0yMjczYTUyZjNmNjEyZDFlYWNkNjZlYWUzODM3ODdjNiZhbXA7Y2hrc209Y2Y4NGIwODdmOGYzMzk5MWY5Nzk0NzZhZTA3ZjI1Y2E3NjE2ZWNmYjEwNjY0ZDM1M2NiZDk4NjcyZjc0MWU4NGViZjBhNDNjMWZiYSZhbXA7Y3VyX2FsYnVtX2lkPTIyNTI5MjYzODY4MTIzODczMzMmYW1wO3NjZW5lPTE4OSN3ZWNoYXRfcmVkaXJlY3Q=&#34;&gt;https://mp.weixin.qq.com/s?__biz=Mzg4NzY2NzU5Mw==&amp;amp;mid=2247556705&amp;amp;idx=1&amp;amp;sn=2273a52f3f612d1eacd66eae383787c6&amp;amp;chksm=cf84b087f8f33991f979476ae07f25ca7616ecfb10664d353cbd98672f741e84ebf0a43c1fba&amp;amp;cur_album_id=2252926386812387333&amp;amp;scene=189#wechat_redirect&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;推理与学习研究组范琦（&lt;code&gt;R&amp;amp;L Group&lt;/code&gt;）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tLjE2My5jb20vZHkvYXJ0aWNsZS9JVTdTMTEyQTA1MzZBM0Q4Lmh0bWw=&#34;&gt;https://m.163.com/dy/article/IU7S112A0536A3D8.html&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;清深研究院&#34;&gt;&lt;a href=&#34;#清深研究院&#34; class=&#34;headerlink&#34; title=&#34;清深研究院&#34;&gt;&lt;/a&gt;清深研究院&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;王智：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb2hvbmdzaHUuY29tL2Rpc2NvdmVyeS9pdGVtLzY3YjQ5YzI1MDAwMDAwMDAwOTAxN2JiYz9zb3VyY2U9d2Vic2hhcmUmYW1wO3hoc3NoYXJlPXBjX3dlYiZhbXA7eHNlY190b2tlbj1BQkxIQzh5SVFfaXF3NGlWQTNtazdOdEdqSl9iM2NHZk81MkFRSkJwdU9iaVk9JmFtcDt4c2VjX3NvdXJjZT1wY19zaGFyZQ==&#34;&gt;https://www.xiaohongshu.com/discovery/item/67b49c250000000009017bbc?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABLHC8yIQ_iqw4iVA3mk7NtGjJ_b3cGfO52AQJBpuObiY=&amp;amp;xsec_source=pc_share&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;陈鑫磊：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb2hvbmdzaHUuY29tL2Rpc2NvdmVyeS9pdGVtLzY2YjMyZmExMDAwMDAwMDAxZTAxZmU3Nj9zb3VyY2U9d2Vic2hhcmUmYW1wO3hoc3NoYXJlPXBjX3dlYiZhbXA7eHNlY190b2tlbj1BQm5BLXEtZ2JidXIxckdOUW0ybEh6X29EcUNqYjlvajZkTkdtLUVVOXBORFk9JmFtcDt4c2VjX3NvdXJjZT1wY19zaGFyZQ==&#34;&gt;https://www.xiaohongshu.com/discovery/item/66b32fa1000000001e01fe76?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABnA-q-gbbur1rGNQm2lHz_oDqCjb9oj6dNGm-EU9pNDY=&amp;amp;xsec_source=pc_share&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;华南理工&#34;&gt;&lt;a href=&#34;#华南理工&#34; class=&#34;headerlink&#34; title=&#34;华南理工&#34;&gt;&lt;/a&gt;华南理工&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tZXRhc28uY24vc2VhcmNoLzg1OTUwNDIxNDE0NDQyODg1MTIvaW50ZXJhY3RpdmU/ZGF0YUlkPTg1OTUwNDIxNDE1NTMzNDA0MTYmYW1wO3RhcmdldFR5cGU9MA==&#34;&gt;https://metaso.cn/search/8595042141444288512/interactive?dataId=8595042141553340416&amp;amp;targetType=0&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;上交&#34;&gt;&lt;a href=&#34;#上交&#34; class=&#34;headerlink&#34; title=&#34;上交&#34;&gt;&lt;/a&gt;上交&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;RethinkLab&lt;/code&gt;杨学：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb2hvbmdzaHUuY29tL2Rpc2NvdmVyeS9pdGVtLzY3YmIzODFmMDAwMDAwMDAwOTAxNTZiNz9zb3VyY2U9d2Vic2hhcmUmYW1wO3hoc3NoYXJlPXBjX3dlYiZhbXA7eHNlY190b2tlbj1BQkpKS0ZTUURtREd1QTBFZnMwc3BVS1hIUEFjZWZUTE0wc01YUGJEaXRKMlE9JmFtcDt4c2VjX3NvdXJjZT1wY19zaGFyZQ==&#34;&gt;https://www.xiaohongshu.com/discovery/item/67bb381f00000000090156b7?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABJJKFSQDmDGuA0Efs0spUKXHPAcefTLM0sMXPbDitJ2Q=&amp;amp;xsec_source=pc_share&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;赵波：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueGlhb2hvbmdzaHUuY29tL2Rpc2NvdmVyeS9pdGVtLzY2OWY2ZDJiMDAwMDAwMDAwYTAyNDY4Mj9zb3VyY2U9d2Vic2hhcmUmYW1wO3hoc3NoYXJlPXBjX3dlYiZhbXA7eHNlY190b2tlbj1BQlBGOUdnVEk2NVdSTlpBNHFRTUpqemIxRzJwbFUzbjZ5TUtHem80S1ZCZEU9JmFtcDt4c2VjX3NvdXJjZT1wY19zaGFyZQ==&#34;&gt;https://www.xiaohongshu.com/discovery/item/669f6d2b000000000a024682?source=webshare&amp;amp;xhsshare=pc_web&amp;amp;xsec_token=ABPF9GgTI65WRNZA4qQMJjzb1G2plU3n6yMKGzo4KVBdE=&amp;amp;xsec_source=pc_share&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;人大&#34;&gt;&lt;a href=&#34;#人大&#34; class=&#34;headerlink&#34; title=&#34;人大&#34;&gt;&lt;/a&gt;人大&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;多媒体计算实验室：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVjLWFpbTMuY29tL2luZGV4Lmh0bWw=&#34;&gt;AIM3 Lab (ruc-aim3.com)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;南大本部&#34;&gt;&lt;a href=&#34;#南大本部&#34; class=&#34;headerlink&#34; title=&#34;南大本部&#34;&gt;&lt;/a&gt;南大本部&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;智能图形和三维视觉研究组（&lt;code&gt;Meta Graphics &amp;amp; 3D Vision Lab&lt;/code&gt;）张振宇：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tcC53ZWl4aW4ucXEuY29tL3M/X19iaXo9TXpnNE56WTJOelU1TXclM0QlM0QmYW1wO21pZD0yMjQ3NTU2NzA1JmFtcDtpZHg9MiZhbXA7c249MzhlMmJlNjk3YTkyZDM0MmQxNTZhYjhiYWJjM2IyODcmYW1wO2Noa3NtPWNlNGQ3MGUyOWQxNjIwMTM5MjRiOWEyNjM2NWQ1ZmUwN2QzNWQxNWNhYmU5ODc4YjhjNWZkYWI5MDFiZDFkZDYyNjE3YmQ4YTUyNmImYW1wO3NjZW5lPTI3&#34;&gt;南京大学计算机（含人工智能、计算机视觉等）学科及导师介绍2 (qq.com)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
         <updated>2025-03-02T10:29:16.000Z</updated>
@@ -2127,7 +2134,7 @@ plt.show()
 &lt;li&gt;并不是没过夏令营的初审就不能继续投这个学校。&lt;/li&gt;
 &lt;li&gt;浙大软院最近是“点击就送”。&lt;/li&gt;
 &lt;li&gt;浙大软院夏令营比较长，从6月27日到7月15，认真准备每个环节是有很大机会拿到&lt;code&gt;offer&lt;/code&gt;的。&lt;/li&gt;
-&lt;li&gt;夏令营——凭借好看的简历进营完成项目，得到优营。预推免——机试+面试，。一些学校有了夏令营优营后，预推免初审必过。&lt;/li&gt;
+&lt;li&gt;夏令营——凭借好看的简历进营完成项目，得到优营。预推免——机试+面试。一些学校有了夏令营优营后，预推免初审必过。&lt;/li&gt;
 &lt;li&gt;有些学校老师在面试时可以看到机试成绩，会影响面试打分。当然有些学校的老师可能无法看到机试成绩。&lt;/li&gt;
 &lt;li&gt;面试内容可能还会有人际关系、政治问题。&lt;/li&gt;
 &lt;li&gt;不同组面试的侧重点不同，可能有的抓项目、有的抓专业课。&lt;/li&gt;
@@ -2153,7 +2160,7 @@ plt.show()
 &lt;h1 id=&#34;（北京大学深圳研究院）2022年计算机保研夏令营-amp-预推免经验帖（2023届）-知乎-zhihu-com&#34;&gt;&lt;a href=&#34;#（北京大学深圳研究院）2022年计算机保研夏令营-amp-预推免经验帖（2023届）-知乎-zhihu-com&#34; class=&#34;headerlink&#34; title=&#34;（北京大学深圳研究院）2022年计算机保研夏令营&amp;amp;预推免经验帖（2023届） - 知乎 (zhihu.com)&#34;&gt;&lt;/a&gt;（北京大学深圳研究院）&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC81NDg2NjA5NzY=&#34;&gt;2022年计算机保研夏令营&amp;amp;预推免经验帖（2023届） - 知乎 (zhihu.com)&lt;/span&gt;&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;强&lt;code&gt;Com&lt;/code&gt;的夏令营较侧重&lt;code&gt;rk&lt;/code&gt;，参加弱&lt;code&gt;Com&lt;/code&gt;的夏令营需要提前套磁老师，然后老师往学校推荐自己入营。&lt;/li&gt;
 &lt;li&gt;大多数夏令营通过机试+面试来确定优营，机试推荐复习王道的机试指南。&lt;/li&gt;
-&lt;li&gt;夏令营也可能考察专业课和数学，所以也要做相关的zhun&lt;/li&gt;
+&lt;li&gt;夏令营也可能考察专业课和数学，所以也要做相关的准备。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;（计算所）关于保研的ABC（1）一些常识与概念-Sumsky’s-Blog&#34;&gt;&lt;a href=&#34;#（计算所）关于保研的ABC（1）一些常识与概念-Sumsky’s-Blog&#34; class=&#34;headerlink&#34; title=&#34;（计算所）关于保研的ABC（1）一些常识与概念 | Sumsky’s Blog&#34;&gt;&lt;/a&gt;（计算所）&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zdW1za3kudG9wLzIwMjEvMTAvMTMvYmFveWFuLXNlcmllcy0xLw==&#34;&gt;关于保研的ABC（1）一些常识与概念 | Sumsky’s Blog&lt;/span&gt;&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;可以关注相关学院的研招群。&lt;/li&gt;
@@ -4151,13 +4158,15 @@ int main()
 &lt;h2 id=&#34;大三下&#34;&gt;&lt;a href=&#34;#大三下&#34; class=&#34;headerlink&#34; title=&#34;大三下&#34;&gt;&lt;/a&gt;大三下&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;ATRI-My Dear Moment&lt;/code&gt;：一切事物有起始就有终结，不必为短暂的美好而悲伤，我们活在当下，生命的广度便延长了。&lt;/li&gt;
 &lt;li&gt;星空列车与白的旅行：这个世界就是个巨大的宝石箱，里面塞满了熠熠生辉的宝石。&lt;/li&gt;
+&lt;li&gt;幸运草的约定：呀呀呀~&lt;/li&gt;
+&lt;li&gt;我心里危险的东西第一季、第二季：目前&lt;code&gt;T0&lt;/code&gt;版本恋爱番，看了就知道了。&lt;/li&gt;
+&lt;li&gt;海贼王-粉丝来信：宏大海贼世界里的普通人视角。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;待入库&#34;&gt;&lt;a href=&#34;#待入库&#34; class=&#34;headerlink&#34; title=&#34;待入库&#34;&gt;&lt;/a&gt;待入库&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;这些要么是还没看，要么就是看着看着断了。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;狼与香辛料&lt;/li&gt;
-&lt;li&gt;我心里危险的东西&lt;/li&gt;
 &lt;li&gt;魔法少女小圆&lt;/li&gt;
 &lt;li&gt;言叶之庭&lt;/li&gt;
 &lt;li&gt;冰菓&lt;/li&gt;
@@ -4182,14 +4191,22 @@ int main()
 &lt;li&gt;测不准的阿波连同学&lt;/li&gt;
 &lt;li&gt;青春猪头少年不会梦到怀梦美少女&lt;/li&gt;
 &lt;li&gt;青春猪头少年不会梦到红书包女孩&lt;/li&gt;
-&lt;li&gt;疑似后宫&lt;/li&gt;
 &lt;li&gt;辉夜大小姐系列&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;EVA&lt;/code&gt;新世纪福音战士&lt;/li&gt;
-&lt;li&gt;幸运草的约定&lt;/li&gt;
-&lt;li&gt;爱上火车&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Last Run!!!&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;夏日口袋&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Mono&lt;/code&gt;少女&lt;/li&gt;
+&lt;li&gt;时光流逝，饭菜依旧美味&lt;/li&gt;
+&lt;li&gt;我独自升级&lt;/li&gt;
+&lt;li&gt;为美好世界献上祝福1，2，3&lt;/li&gt;
+&lt;li&gt;百变的七仓同学&lt;/li&gt;
+&lt;li&gt;义妹生活&lt;/li&gt;
+&lt;li&gt;青之箱&lt;/li&gt;
+&lt;li&gt;关于地球的运动&lt;/li&gt;
+&lt;li&gt;胆大党&lt;/li&gt;
+&lt;li&gt;Re0第三季反击篇&lt;/li&gt;
 &lt;/ul&gt;
-&lt;script type=&#34;math/tex; mode=display&#34;&gt;
-\underset{Nearest-Neighbor Matching}{Z_c^{(i,j)} = \underset{c_k \in c}{argmin} || Z_h^{(i,j)} - c_k||}&lt;/script&gt;</content>
+</content>
         <updated>2024-12-04T12:15:53.787Z</updated>
     </entry>
 </feed>
