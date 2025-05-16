@@ -10,9 +10,9 @@
     </author>
     <updated>2025-05-16T13:31:49.000Z</updated>
     <entry>
-        <id>https://yunhdan.github.io/%E4%BF%9D%E7%A0%94%E5%8E%86%E7%A8%8B/</id>
+        <id>https://yunhdan.github.io/baoyan/%E4%BF%9D%E7%A0%94%E5%8E%86%E7%A8%8B/</id>
         <title>保研历程</title>
-        <link rel="alternate" href="https://yunhdan.github.io/%E4%BF%9D%E7%A0%94%E5%8E%86%E7%A8%8B/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/baoyan/%E4%BF%9D%E7%A0%94%E5%8E%86%E7%A8%8B/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;个人基本情况&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#个人基本情况&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;rainbow&#34;&gt;个人基本情况&lt;/span&gt;&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;本科：江西四非，计算机科学与技术，2022 级&lt;/li&gt;
@@ -32,12 +32,13 @@
 &lt;h1 id=&#34;预推免&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#预推免&#34;&gt;#&lt;/a&gt; 预推免&lt;/h1&gt;
 &lt;h1 id=&#34;最后总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最后总结&#34;&gt;#&lt;/a&gt; 最后总结&lt;/h1&gt;
 </content>
+        <category term="保研" scheme="https://yunhdan.github.io/categories/baoyan/" />
         <updated>2025-05-16T13:31:49.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BA/</id>
+        <id>https://yunhdan.github.io/ai/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BA/</id>
         <title>深度学习理论</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BA/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/ai/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%90%86%E8%AE%BA/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;复习深度学习必要的理论，可参考该复习线路。该文内容学自李沐动手学深度学习，更基础详尽的理论可以学习吴恩达深度学习。&lt;/p&gt;
 &lt;/div&gt;
@@ -124,13 +125,13 @@
 &lt;h2 id=&#34;交叉熵损失&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#交叉熵损失&#34;&gt;#&lt;/a&gt; 交叉熵损失&lt;/h2&gt;
 &lt;h1 id=&#34;信息论基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#信息论基础&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;rainbow&#34;&gt;信息论基础&lt;/span&gt;&lt;/h1&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="人工智能" scheme="https://yunhdan.github.io/categories/ai/" />
         <updated>2025-05-09T15:49:32.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/%E5%8D%9A%E5%AE%A2%E6%96%87%E6%A1%A3%E7%BE%8E%E5%8C%96%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</id>
+        <id>https://yunhdan.github.io/other/%E5%8D%9A%E5%AE%A2%E6%96%87%E6%A1%A3%E7%BE%8E%E5%8C%96%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/</id>
         <title>博客文档美化使用说明</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/%E5%8D%9A%E5%AE%A2%E6%96%87%E6%A1%A3%E7%BE%8E%E5%8C%96%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/other/%E5%8D%9A%E5%AE%A2%E6%96%87%E6%A1%A3%E7%BE%8E%E5%8C%96%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;摘自 &lt;code&gt;Hexo-Shoka&lt;/code&gt;  主题拥有者的使用说明：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaG9rYS5sb3N0eXUubWUvY29tcHV0ZXItc2NpZW5jZS9ub3RlL3RoZW1lLXNob2thLWRvYy9zcGVjaWFsLw==&#34;&gt;Step.4 主题特殊功能 - Theme Shoka Documentation - 二进制杂谈 - 计算机科学 | Yume Shoka = 有夢書架 = 吾乃天，壶中之天 (lostyu.me)&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -226,13 +227,13 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;p&gt;&lt;span class=&#34;label danger&#34;&gt;danger&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;&lt;/details&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="琐碎" scheme="https://yunhdan.github.io/categories/other/" />
         <updated>2025-03-06T13:04:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/Deep-Learning-Experiment-Tricks/</id>
+        <id>https://yunhdan.github.io/ai/Deep-Learning-Experiment-Tricks/</id>
         <title>Deep Learning Experiment Tricks</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/Deep-Learning-Experiment-Tricks/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/ai/Deep-Learning-Experiment-Tricks/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;一般在一个新的 &lt;code&gt;trick&lt;/code&gt;  和 &lt;code&gt;experience&lt;/code&gt;  开坑时，都会先暂时粗略地搬运一些其他地方的内容，或者简略描述。偶尔精进与专门研究时，会特别地丰富和细致化该内容。&lt;/p&gt;
 &lt;/div&gt;
@@ -557,13 +558,13 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;p&gt;首先要处理一下现有的交换文件：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 查看当前启用的交换空间&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;swapon&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--show&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 如果存在 /swapfile，先关闭交换文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; swapoff /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 删除旧的交换文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rm&lt;/span&gt; /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;然后创建一个更大内存的交换文件：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 创建 8GB 交换文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; fallocate &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt; 8G /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;chmod&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;600&lt;/span&gt; /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mkswap&lt;/span&gt; /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;swapon&lt;/span&gt; /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="人工智能" scheme="https://yunhdan.github.io/categories/ai/" />
         <updated>2025-03-02T15:58:57.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/research/Embodied-3D-Labs/</id>
+        <id>https://yunhdan.github.io/baoyan/Embodied-3D-Labs/</id>
         <title>Embodied AI Labs</title>
-        <link rel="alternate" href="https://yunhdan.github.io/research/Embodied-3D-Labs/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/baoyan/Embodied-3D-Labs/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;中大报着乐&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中大报着乐&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;rainbow&#34;&gt;中大（报着乐）&lt;/span&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;郭裕兰&lt;/strong&gt;（已读不回）：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zY2hvbGFyLmdvb2dsZS5jb20vY2l0YXRpb25zP3VzZXI9V1FSTnZkc0FBQUFKJmFtcDtobD16aC1DTg==&#34;&gt;‪Yulan Guo‬ - ‪Google 学术搜索‬&lt;/span&gt;&lt;/li&gt;
@@ -715,13 +716,13 @@ H&lt;sub&gt;2&lt;/sub&gt;0&lt;br /&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;/details&gt;
 </content>
-        <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
+        <category term="保研" scheme="https://yunhdan.github.io/categories/baoyan/" />
         <updated>2025-03-02T10:29:16.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</id>
+        <id>https://yunhdan.github.io/ai/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</id>
         <title>强化学习</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/ai/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;学习自李宏毅与蘑菇书。蘑菇书链接：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kYXRhd2hhbGVjaGluYS5naXRodWIuaW8vZWFzeS1ybC8jLw==&#34;&gt;蘑菇书 EasyRL (datawhalechina.github.io)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;搭配李宏毅的强化学习课程使用最佳。&lt;/p&gt;
@@ -876,13 +877,13 @@ Min(Loss) = Min(- \sum_{t=1}^{T} y_i \hat{y}_i) \\
 &lt;h2 id=&#34;on-policy-to-off-policy&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#on-policy-to-off-policy&#34;&gt;#&lt;/a&gt; &lt;ins&gt;On Policy to Off Policy&lt;/ins&gt;&lt;/h2&gt;
 &lt;h1 id=&#34;深度q网络&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#深度q网络&#34;&gt;#&lt;/a&gt; 深度 Q 网络&lt;/h1&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="人工智能" scheme="https://yunhdan.github.io/categories/ai/" />
         <updated>2025-03-01T09:04:23.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/Pip%E3%80%81Conda%E3%80%81github%E9%95%9C%E5%83%8F/</id>
+        <id>https://yunhdan.github.io/cs/Pip%E3%80%81Conda%E3%80%81github%E9%95%9C%E5%83%8F/</id>
         <title>Pip、Conda、Github镜像</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/Pip%E3%80%81Conda%E3%80%81github%E9%95%9C%E5%83%8F/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/cs/Pip%E3%80%81Conda%E3%80%81github%E9%95%9C%E5%83%8F/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;pip&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pip&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Pip&lt;/code&gt;&lt;/h1&gt;
 &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;用 &lt;code&gt;Pip&lt;/code&gt;  安装需要的 &lt;code&gt;Python&lt;/code&gt;  包已经是开发过程的刚需，其中，遇到超时和缓慢的问题也是家常便饭。这里总结一下解决这类问题的方法。&lt;/p&gt;
@@ -911,13 +912,13 @@ Min(Loss) = Min(- \sum_{t=1}^{T} y_i \hat{y}_i) \\
 &lt;p&gt;使用就是如下：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;wget&lt;/span&gt; https://bgithub.xyz/Dao-AILab/causal-conv1d/releases/download/v1.0.0/causal_conv1d-1.0.0+cu118torch1.13cxx11abiFALSE-cp39-cp39-linux_x86_64.whl&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;可见仅仅替换 &lt;code&gt;github.com&lt;/code&gt;  即可。当然，有些镜像站的食用方式并不是这样简单的替代对应域名，也有在 &lt;code&gt;github.com&lt;/code&gt;  前加域名的。&lt;/p&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
         <updated>2025-02-24T12:36:05.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/ACM%E7%AE%97%E6%B3%95%E9%A2%98%E5%8D%95/</id>
+        <id>https://yunhdan.github.io/cs/ACM%E7%AE%97%E6%B3%95%E9%A2%98%E5%8D%95/</id>
         <title>ACM算法题单</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/ACM%E7%AE%97%E6%B3%95%E9%A2%98%E5%8D%95/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/cs/ACM%E7%AE%97%E6%B3%95%E9%A2%98%E5%8D%95/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;目的：为了备战蓝桥杯（4 月 12 日）和夏令营预推免的机试。&lt;/p&gt;
 &lt;p&gt;每一题目标：彻底弄懂该题思路。&lt;/p&gt;
@@ -1202,13 +1203,13 @@ b	\\
 &lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  数组拆分：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9hcnJheS1wYXJ0aXRpb24v&#34;&gt;https://leetcode.cn/problems/array-partition/&lt;/span&gt; 🔥&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;LeetCode——&lt;/code&gt;  数组中最大数对和的最小值：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sZWV0Y29kZS5jbi9wcm9ibGVtcy9taW5pbWl6ZS1tYXhpbXVtLXBhaXItc3VtLWluLWFycmF5Lw==&#34;&gt;https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/&lt;/span&gt; 🔥&lt;/p&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
         <updated>2025-02-20T14:22:05.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/Javascript%E7%9F%A5%E8%AF%86%E6%A0%91/</id>
+        <id>https://yunhdan.github.io/cs/Javascript%E7%9F%A5%E8%AF%86%E6%A0%91/</id>
         <title>Javascript知识树</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/Javascript%E7%9F%A5%E8%AF%86%E6%A0%91/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/cs/Javascript%E7%9F%A5%E8%AF%86%E6%A0%91/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;基础&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#基础&#34;&gt;#&lt;/a&gt; 基础&lt;/h1&gt;
 &lt;h4 id=&#34;作用域菜鸟教程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#作用域菜鸟教程&#34;&gt;#&lt;/a&gt; 作用域：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9qcy9qcy1zY29wZS5odG1s&#34;&gt;菜鸟教程&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;涵盖知识：&lt;strong&gt;局部作用域&lt;/strong&gt;、&lt;strong&gt;全局变量&lt;/strong&gt;、&lt;strong&gt;变量生命周期&lt;/strong&gt;&lt;/p&gt;
@@ -1266,7 +1267,7 @@ b	\\
 &lt;h4 id=&#34;用法菜鸟教程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用法菜鸟教程&#34;&gt;#&lt;/a&gt; 用法：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9qcy9qcy1ob3d0by5odG1s&#34;&gt;菜鸟教程&lt;/span&gt;&lt;/h4&gt;
 &lt;p&gt;涵盖知识：&lt;strong&gt; &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt;  标签&lt;/strong&gt;、&lt;strong&gt; &lt;code&gt;Javascript&lt;/code&gt;  的三种插入方式&lt;/strong&gt;。&lt;/p&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
         <updated>2025-02-14T03:39:52.000Z</updated>
     </entry>
     <entry>
@@ -1338,9 +1339,9 @@ b	\\
         <updated>2025-02-09T17:01:35.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/research/%E6%88%91%E7%9A%84%E7%A7%91%E7%A0%94%E6%9D%82%E8%B0%88/</id>
+        <id>https://yunhdan.github.io/other/%E6%88%91%E7%9A%84%E7%A7%91%E7%A0%94%E6%9D%82%E8%B0%88/</id>
         <title>我的科研杂谈</title>
-        <link rel="alternate" href="https://yunhdan.github.io/research/%E6%88%91%E7%9A%84%E7%A7%91%E7%A0%94%E6%9D%82%E8%B0%88/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/other/%E6%88%91%E7%9A%84%E7%A7%91%E7%A0%94%E6%9D%82%E8%B0%88/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;我的科研杂谈&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#我的科研杂谈&#34;&gt;#&lt;/a&gt; 我的科研杂谈&lt;/h1&gt;
 &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;分享一些，在科研中随感所想的东西。受主观因素以及本人所在科研环境条件的影响，相关观点仅供参考。甚至一些观点可能随着时间的推移而落后，我也会相应地纠正过来。&lt;/p&gt;
@@ -1352,13 +1353,13 @@ b	\\
 &lt;li&gt;&lt;code&gt;2025-03-13&lt;/code&gt; ：从探索的实验中寻找问题是相当重要的事情。&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
+        <category term="琐碎" scheme="https://yunhdan.github.io/categories/other/" />
         <updated>2025-02-09T10:44:36.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/%E4%BF%9D%E7%A0%94%E4%BF%A1%E6%81%AF%E6%B1%87%E6%80%BB/</id>
+        <id>https://yunhdan.github.io/baoyan/%E4%BF%9D%E7%A0%94%E4%BF%A1%E6%81%AF%E6%B1%87%E6%80%BB/</id>
         <title>保研信息汇总</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/%E4%BF%9D%E7%A0%94%E4%BF%A1%E6%81%AF%E6%B1%87%E6%80%BB/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/baoyan/%E4%BF%9D%E7%A0%94%E4%BF%A1%E6%81%AF%E6%B1%87%E6%80%BB/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;保研是信息战。&lt;/p&gt;
 &lt;p&gt;接触更多优质的人和优质的圈子，再加上自身努力，便可改变你的命运。&lt;/p&gt;
@@ -1480,13 +1481,13 @@ b	\\
 &lt;h1 id=&#34;有关港三的信息&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#有关港三的信息&#34;&gt;#&lt;/a&gt; 有关港三的信息&lt;/h1&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3NlYXJjaD90eXBlPWNvbnRlbnQmYW1wO3E9JUU4JUFFJUExJUU3JUFFJTk3JUU2JTlDJUJBJUU0JUJGJTlEJUU3JUEwJTk0JUU1JUE0JThGJUU0JUJCJUE0JUU4JTkwJUE1JUU2JUI4JUFGJUU0JUI4JTg5&#34;&gt;(19 封私信 / 50 条消息) 计算机保研夏令营港三 - 搜索结果 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="保研" scheme="https://yunhdan.github.io/categories/baoyan/" />
         <updated>2025-01-23T09:46:07.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
+        <id>https://yunhdan.github.io/cs/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA%EF%BC%88%E4%BA%8C%EF%BC%89/</id>
         <title>数据库系统概论（二）</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/cs/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;本博文涉及《数据库系统概论》第 6 版的主要理论知识，包含了前 7 章的理论知识。以题单的形式记录核心知识以应对期末考试。如有错误，欢迎纠正。&lt;br /&gt;
 上一期的内容在《数据库系统概论（二）》中，包含了绪论，关系模型，数据库安全与触发器的内容。&lt;/p&gt;
@@ -1694,13 +1695,13 @@ Student(&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&
 &lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
         <updated>2025-01-12T16:11:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+        <id>https://yunhdan.github.io/cs/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA%EF%BC%88%E4%B8%80%EF%BC%89/</id>
         <title>数据库系统概论（一）</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/cs/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA%EF%BC%88%E4%B8%80%EF%BC%89/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;本博文涉及《数据库系统概论》第 6 版的主要理论知识，包含了前 7 章的理论知识。以题单的形式记录核心知识以应对期末考试。如有错误，欢迎纠正。&lt;/p&gt;
 &lt;/div&gt;
@@ -2207,13 +2208,13 @@ Student(&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&
 &lt;p&gt;未完待续...&lt;/p&gt;
 &lt;/div&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
         <updated>2025-01-11T14:43:48.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</id>
+        <id>https://yunhdan.github.io/cs/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/</id>
         <title>编译原理核心知识</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/cs/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;参考教材：清华大学《编译原理》第三版。&lt;br /&gt;
 另参考：本人的编译原理老师的授课内容。&lt;br /&gt;
@@ -2891,7 +2892,7 @@ B-&amp;gt;\gama.&lt;br /&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
         <updated>2025-01-03T05:36:13.000Z</updated>
     </entry>
     <entry>
@@ -2915,9 +2916,9 @@ B-&amp;gt;\gama.&lt;br /&gt;
         <updated>2024-12-16T16:12:28.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/knowledge-database/%E7%BE%BD%E6%AF%9B%E7%90%83%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+        <id>https://yunhdan.github.io/other/%E7%BE%BD%E6%AF%9B%E7%90%83%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/</id>
         <title>羽毛球学习（一）</title>
-        <link rel="alternate" href="https://yunhdan.github.io/knowledge-database/%E7%BE%BD%E6%AF%9B%E7%90%83%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/other/%E7%BE%BD%E6%AF%9B%E7%90%83%E5%AD%A6%E4%B9%A0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;起因&lt;/p&gt;
 &lt;/div&gt;
@@ -2982,7 +2983,7 @@ B-&amp;gt;\gama.&lt;br /&gt;
 &lt;br /&gt;
  从这个视频在启动步上有了启蒙，使我增加了对步伐的重视度。&lt;/p&gt;
 </content>
-        <category term="知识库" scheme="https://yunhdan.github.io/categories/knowledge-database/" />
+        <category term="琐碎" scheme="https://yunhdan.github.io/categories/other/" />
         <updated>2024-12-08T15:34:17.000Z</updated>
     </entry>
     <entry>
@@ -3056,9 +3057,9 @@ B-&amp;gt;\gama.&lt;br /&gt;
         <updated>2024-12-06T07:46:05.000Z</updated>
     </entry>
     <entry>
-        <id>https://yunhdan.github.io/My%20%E4%BA%8C%E6%AC%A1%E5%85%83/</id>
+        <id>https://yunhdan.github.io/other/My%20%E4%BA%8C%E6%AC%A1%E5%85%83/</id>
         <title>My 二次元</title>
-        <link rel="alternate" href="https://yunhdan.github.io/My%20%E4%BA%8C%E6%AC%A1%E5%85%83/"/>
+        <link rel="alternate" href="https://yunhdan.github.io/other/My%20%E4%BA%8C%E6%AC%A1%E5%85%83/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;已入库&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#已入库&#34;&gt;#&lt;/a&gt; 已入库&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;已入坑的二次元作品。&lt;/p&gt;
@@ -3180,6 +3181,7 @@ B-&amp;gt;\gama.&lt;br /&gt;
 &lt;li&gt;Re0 第三季反击篇&lt;/li&gt;
 &lt;/ul&gt;
 </content>
+        <category term="琐碎" scheme="https://yunhdan.github.io/categories/other/" />
         <updated>2024-12-04T12:15:53.787Z</updated>
     </entry>
 </feed>
