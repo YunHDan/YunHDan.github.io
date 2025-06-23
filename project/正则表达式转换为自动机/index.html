@@ -1,0 +1,569 @@
+<!-- build time:Mon Jun 23 2025 12:47:23 GMT+0800 (中国标准时间) --><!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#FFF"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"><link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="alternate" type="application/rss+xml" title="枯萎的花将在另一彼岸悄然绽放" href="https://yunhdan.github.io/rss.xml"><link rel="alternate" type="application/atom+xml" title="枯萎的花将在另一彼岸悄然绽放" href="https://yunhdan.github.io/atom.xml"><link rel="alternate" type="application/json" title="枯萎的花将在另一彼岸悄然绽放" href="https://yunhdan.github.io/feed.json"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.5"><link rel="canonical" href="https://yunhdan.github.io/project/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%B8%BA%E8%87%AA%E5%8A%A8%E6%9C%BA/"><title>正则表达式转换为自动机 - 项目与实践 | Runfar's Zone = 枯萎的花将在另一彼岸悄然绽放</title><meta name="generator" content="Hexo 6.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">正则表达式转换为自动机</h1><div class="meta"><span class="item" title="创建时间：2024-12-06 15:46:05"><span class="icon"><i class="ic i-calendar"></i> </span><span class="text">发表于</span> <time itemprop="dateCreated datePublished" datetime="2024-12-06T15:46:05+08:00">2024-12-06</time> </span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i> </span><span class="text">本文字数</span> <span>15k</span> <span class="text">字</span> </span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i> </span><span class="text">阅读时长</span> <span>14 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span> <span class="line"></span> <span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Runfar's Zone</a></li></ul><ul class="right"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div id="imgs" class="pjax"><ul><li class="item" data-background-image="https://s2.loli.net/2025/05/18/OeAPdY3oX29y5nl.jpg"></li><li class="item" data-background-image="https://s2.loli.net/2024/12/04/2XJnoeYcKy4pS6M.jpg"></li><li class="item" data-background-image="https://s2.loli.net/2025/05/18/PRueEGrUw2AxK9B.jpg"></li><li class="item" data-background-image="https://s2.loli.net/2024/12/07/bA5ectoN26Irm48.jpg"></li><li class="item" data-background-image="https://s2.loli.net/2025/05/18/lkhyaSIx7uTZFbs.jpg"></li><li class="item" data-background-image="https://s2.loli.net/2024/12/07/2aWVgHCsR3DbJ6S.png"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"/><use xlink:href="#gentle-wave" x="48" y="3"/><use xlink:href="#gentle-wave" x="48" y="5"/><use xlink:href="#gentle-wave" x="48" y="7"/></g></svg></div><main><div class="inner"><div id="main" class="pjax"><div class="article wrap"><div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i> <span><a href="/">首页</a></span><i class="ic i-angle-right"></i> <span class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/project/" itemprop="item" rel="index" title="分类于 项目与实践"><span itemprop="name">项目与实践</span></a><meta itemprop="position" content="1"></span></div><article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://yunhdan.github.io/project/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%B8%BA%E8%87%AA%E5%8A%A8%E6%9C%BA/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/me.jpg"><meta itemprop="name" content="Runhua Deng"><meta itemprop="description" content=", 计算机视觉 & 图像恢复"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="枯萎的花将在另一彼岸悄然绽放"></span><div class="body md" itemprop="articleBody"><h1 id="项目说明"><a href="#项目说明" class="headerlink" title="项目说明"></a>项目说明</h1><p>:::info</p><p>项目背景</p><p>:::</p><p>本项目为编译原理课设作业之一，通过输入给定的正则表达式，构建该正则表达式对应的非确定有穷自动机NFA，然后根据该NFA转换为确定有穷自动机DFA，最后对该确定有穷自动机DFA最小化为最简DFA。得到最简DFA后，可以对用户输入的符号串进行判断是否符合正则表达式的要求。</p><p>:::info</p><p>数据结构</p><p>:::</p><p>本实验使用的数据结构以及相关定义如下：</p><ul><li>状态转换表<code>data</code>用邻接表存储。</li><li>用集合存储最小化DFA过程中因子集划分法产生的状态组。</li><li>用栈存储正则表达式中的操作符。</li><li>正则表达式中的空串用空格代表。</li></ul><p>:::info</p><p>实验配置</p><p>:::</p><p>VSCode，c语言。</p><h1 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h1><pre><code class="lang-c">#include&lt;stdio.h&gt;
+#include&lt;string.h&gt;
+#include&lt;stdlib.h&gt;
+#define MAXN 1000       //!定义最大数量
+#define Visible_letter_count (Visible_letter_max - Visible_letter_min + 1)  //可视字符数量
+#define Visible_letter_min 32       //可视字符最小值
+#define Visible_letter_max 126      //可视字符最大值
+
+const char kong = &#39; &#39;;//!空格代表空串
+
+//-a-&gt;to
+typedef struct NODE
+&#123;
+    int to;//1
+    char a;//a
+&#125;NODE;
+typedef struct FA //!用结构体定义自动机FA
+&#123;
+    int n, BEGIN;//!n为节点个数（包括空节点），BEGIN为初态
+    int ENDS[MAXN/100], len_ENDS;//!定义终态集数组，以及数组长度
+    NODE data[MAXN][MAXN];      //!data记录状态转换
+    int len[MAXN];//!方便处理，记录data每一行的长度
+    char alphabet[Visible_letter_count];//!字母表
+    int len_alph;//!字母表的长度
+&#125;FA;
+typedef struct BE//!正则表达式转NFA时，用于记录一个NFA的初态和终态
+&#123;
+    int BEGIN;
+    int END;
+&#125;BE;
+
+
+
+//------------------------------------------------------------------------------1//
+int IsEND(FA *fa, int a)//判断一个节点是否为终态
+&#123;
+    for (int i = 0; i &lt; fa-&gt;len_ENDS; i++)
+    &#123;
+        if (a == fa-&gt;ENDS[i]) return 1;//如果集合中包含之前NFA中的终态，那么该集合就是DFA中的终态
+    &#125;
+    return 0;
+&#125;
+int insert(FA *fa, int from, int to, char a)
+&#123;
+    int i;
+    //!这里是排除异常的情况，保证所加节点在范围内
+    if (from &gt;= fa-&gt;n)      //!检查起始节点 from 是否在当前的节点数量 fa-&gt;n 范围外。如果是，则表示 from 节点尚未存在。
+    &#123;
+        if (fa-&gt;n &gt;= MAXN) &#123;printf(&quot;Error:节点个数过多!&quot;);   return 1;&#125;//!节点个数是否超出最大值
+        fa-&gt;len[fa-&gt;n++] = 0;
+    &#125;
+    if (to &gt;= fa-&gt;n)        //!同样地，检查目标节点 to 是否超出当前节点数量的范围。如果超出，则为 to 创建一个新节点。
+    &#123;
+        if (fa-&gt;n &gt;= MAXN) &#123;printf(&quot;Error:节点个数过多!&quot;);   return 1;&#125;//节点个数是否超出最大值
+        fa-&gt;len[fa-&gt;n++] = 0;
+    &#125;
+
+    //!判断节点是否已经存在，如果已经存在，则不再添加
+    for (i = 0; i &lt; fa-&gt;len[from]; i++)
+        if ((fa-&gt;data[from][i]).a == a &amp;&amp; (fa-&gt;data[from][i]).to == to) return 0;
+
+    if (fa-&gt;len[from] &gt;= MAXN) return 1;
+
+    //!插入节点
+    (fa-&gt;data[from][fa-&gt;len[from]]).a = a;
+    (fa-&gt;data[from][fa-&gt;len[from]++]).to = to;
+    return 0;
+&#125;
+void initAlphabet(FA *fa)//初始化字母表
+&#123;
+    fa-&gt;len_alph = 0;
+    int temp[Visible_letter_count] = &#123;0&#125;;//哈希表
+    for (int i = 0; i &lt; fa-&gt;n; i++)
+    &#123;
+        for (int j = 0; j &lt; fa-&gt;len[i]; j++)
+        &#123;
+            int a = fa-&gt;data[i][j].a;
+            if (a != &#39; &#39;) temp[a-Visible_letter_min] = 1;
+        &#125;
+    &#125;
+    for (int i = 0; i &lt; Visible_letter_count; i++)
+        if (temp[i])
+            fa-&gt;alphabet[fa-&gt;len_alph++] = i + Visible_letter_min;
+&#125;
+int to(FA *fa, int from, char a)//!计算from节点输入a时的下一个节点
+&#123;
+    for (int i = 0; i &lt; fa-&gt;len[from]; i++)
+        if (fa-&gt;data[from][i].a == a) return fa-&gt;data[from][i].to;
+    return -1;
+&#125;
+int AndFa(FA *fa, BE *stack_FA, int *len_stack_FA)//正则表达式转NFA时的连接操作
+&#123;
+    //!将栈中两个 NFA 通过 ε（空字符串）连接起来，生成一个新的 NFA。具体将两个NFA的结束状态通过 ε 连接成一个新的 NFA。
+    if (*len_stack_FA &lt; 2) return 1;        //!要求栈至少有两个元素。因为连接操作需要从栈中弹出两个 NFA,一个起始状态 BEGIN 和一个结束状态 END
+
+    //!从栈中弹出两个 NFA 的起始和结束状态。
+    int b = stack_FA[--*len_stack_FA].BEGIN;
+    int e = stack_FA[*len_stack_FA].END;
+    int b1 = stack_FA[--*len_stack_FA].BEGIN;
+    int e1 = stack_FA[*len_stack_FA].END;
+
+    //!将两个 NFA 通过一个 ε（空字符串）连接起来
+    if (insert(fa, e1, b, kong)) return 1;
+
+    //!更新栈状态
+    stack_FA[*len_stack_FA].BEGIN = b1;
+    stack_FA[(*len_stack_FA)++].END = e;
+    return 0;
+&#125;
+int OrFa(FA *fa, BE *stack_FA, int *len_stack_FA)//!正则表达式转NFA时的|操作，在正则表达式中，a|b 表示要么匹配 a，要么匹配 b，
+&#123;//!这意味着在某个状态之后，我们可以有两条可能的路径：一条通向 a，另一条通向 b
+    if (*len_stack_FA &lt; 2) return 1;    //!这个条件判断是为了确保栈中有至少两个元素。
+
+    int b = stack_FA[--*len_stack_FA].BEGIN;
+    int e = stack_FA[*len_stack_FA].END;
+    int b1 = stack_FA[--*len_stack_FA].BEGIN;
+    int e1 = stack_FA[*len_stack_FA].END;
+    //!这里，栈的栈顶元素是当前正在处理的正则子表达式的状态。每个栈元素 stack_FA 包含 BEGIN 和 END，分别表示该子表达式的初态和终态。
+
+    if (insert(fa, b1, b, kong)) return 1;
+    if (insert(fa, e1, e, kong)) return 1;  
+    //!插入两条可能的空串边
+
+    //!所以新的自动机的初态是 b1，终态是e，更新栈
+    stack_FA[*len_stack_FA].BEGIN = b1;
+    stack_FA[(*len_stack_FA)++].END = e;
+    return 0;
+&#125;
+
+//将正则表达式转换成NFA
+int ReToNFA(char *re, FA *nfa)//此处用&amp;代表连接
+&#123;
+    nfa-&gt;len_ENDS = 0;      //!首先，初始化终态集的个数为0个
+    if (*re != &#39;\0&#39;)        //!这是判断我们输入的正则表达式不是空的
+    &#123;
+        //!我们定义len_stack_op：记录栈顶指针的位置   len_stack_FA：记录栈中元素个数
+        int len_stack_op = 1, len_stack_FA = 0;
+        //!下面用数组定义一个存储操作符的栈   temp用来辅助分析&amp;操作
+        char stack_op[MAXN] = &#123;&#39;(&#39;&#125;, temp;  //!在re的开始和结束添加括号，方便计算
+        BE stack_FA[MAXN];            //!同样为了便于处理，定义一个存放初态到终态的数组
+        nfa-&gt;n = 0;     //!初始化NFA目前存储的节点个数为0
+        strcat(re, &quot;)&quot;);    //!同样，在re的开始和结束添加括号，方便计算
+        while (*re != &#39;\0&#39;)  //!开始处理，这里*re代表正则表达式每一个符号
+        &#123;
+            switch (*re)        //!现在分析每一个符号
+            &#123;
+            case &#39;(&#39;:
+                if (len_stack_op &gt;= MAXN) &#123;printf(&quot;Error:正则表达式过长!&quot;);    return 1;&#125; //判断栈是否溢出
+                stack_op[len_stack_op++] = &#39;(&#39;;     //!把左括号入栈
+                break;
+            //!接着看字符处理
+            case &#39;)&#39;:       //!处理右括号
+                while (1)//!遇到右括号时，执行栈中的运算，直到遇到匹配的左括号
+                &#123;
+                    if (len_stack_op &lt; 1) return 1;//!当前遇到一个右括号，则栈内必有一个左括号与之匹配。如果栈空，代表正则表达式括号不匹配
+                    if (stack_op[--len_stack_op] == &#39;(&#39;) break;     //!如果栈顶就是左括号，则直接匹配
+
+                    //!给定有一对&amp;和|，在栈内他们的相对位置，肯定是&amp;更靠近栈顶，因为是逆向进栈，比如()&amp;()|()
+                    if (stack_op[len_stack_op] == &#39;&amp;&#39;)
+                    &#123;
+                        if (AndFa(nfa, stack_FA, &amp;len_stack_FA)) return 1;
+                    &#125;
+                    else if (stack_op[len_stack_op] == &#39;|&#39;)
+                    &#123;
+                        if (OrFa(nfa, stack_FA, &amp;len_stack_FA)) return 1;
+                    &#125;
+                &#125;
+                //!我们还要考虑下一个符号，如果下一个输入是左括号或字符，则存在隐式的&amp;连接，需要添加一个&amp;
+                temp = *(re+1);
+                if (temp != 0 &amp;&amp; temp != &#39;)&#39; &amp;&amp;  temp != &#39;+&#39; &amp;&amp; temp != &#39;|&#39;)    //如果下一个字符不是 ), +, 或 |（即它可能是字母或者其他字符），表示接下来会有与操作符（&amp;）的隐式连接。
+                &#123;
+                    if (len_stack_op &gt; 0 &amp;&amp; stack_op[len_stack_op-1] == &#39;&amp;&#39;)//如正则表达式中前面有 &amp;，那么需要先执行&amp;连接操作
+                    &#123;
+                        len_stack_op--;
+                        if (AndFa(nfa, stack_FA, &amp;len_stack_FA)) return 1;
+                    &#125;
+                    if (len_stack_op &gt;= MAXN) return 1;
+                    stack_op[len_stack_op++] = &#39;&amp;&#39;;//()b
+                &#125;
+                break;
+            case &#39;+&#39;://!正闭包
+                if (len_stack_FA &lt; 1) return 1;
+                //!这里检查 stack_FA 栈中的状态是否足够。如果栈中没有状态，则返回错误
+
+                if (insert(nfa, stack_FA[len_stack_FA-1].END, stack_FA[len_stack_FA-1].BEGIN, kong)) return 1;
+                //!如果这个正闭包作用在一个终结符（如字母）上，insert 函数将会创建一条转换路径回到自己，表示这个终结符状态可以自循环。
+                //!正符合了正闭包操作可以使状态重复回到自身，即为X+。
+
+                //!不是终结符，是操作符
+                temp = *(re+1);
+                if (temp != 0 &amp;&amp; temp != &#39;)&#39; &amp;&amp;  temp != &#39;+&#39; &amp;&amp; temp != &#39;|&#39;)        //!同样考虑有没有隐式连接
+                &#123;
+                    if (len_stack_op &gt; 0 &amp;&amp; stack_op[len_stack_op-1] == &#39;&amp;&#39;) //!如用户输入ab+b，相当于a&amp;b+b，需要对与进行考虑
+                    &#123;
+                        len_stack_op--;
+                        if (AndFa(nfa, stack_FA, &amp;len_stack_FA)) return 1;
+                    &#125;
+                    if (len_stack_op &gt;= MAXN) return 1;
+                    stack_op[len_stack_op++] = &#39;&amp;&#39;;   //!必须考虑正则表达式潜在的与运算
+                &#125;
+                break;
+            case &#39;|&#39;:   //!因为优先级与大于或，且与和或都是双目运算符 如 a&amp;b|c
+                if (len_stack_op &gt; 0 &amp;&amp; stack_op[len_stack_op-1] == &#39;&amp;&#39;)//!前面有&amp;则先做与运算
+                &#123;
+                    len_stack_op--;
+                    if (AndFa(nfa, stack_FA, &amp;len_stack_FA)) return 1;
+                &#125;
+                if (len_stack_op &gt; 0 &amp;&amp; stack_op[len_stack_op-1] == &#39;|&#39;)//!如果前面有|先做前面的或
+                &#123;
+                    len_stack_op--;
+                    if (OrFa(nfa, stack_FA, &amp;len_stack_FA)) return 1;
+                &#125;
+                if (len_stack_op &gt;= MAXN) return 1;
+                stack_op[len_stack_op++] = &#39;|&#39;; //!将此次的或进栈  a|
+                break;
+            default:        //!这里检测到非操作符
+                //!当遇到字符，在状态表插入节点
+                if (insert(nfa, nfa-&gt;n, nfa-&gt;n+1, *re)) return 1;
+                //!更新状态，将这次初态到终态记录
+                if (len_stack_FA &gt;= MAXN) return 1;
+                stack_FA[len_stack_FA].BEGIN = nfa-&gt;n-2;
+                stack_FA[len_stack_FA++].END = nfa-&gt;n-1;
+                //!预判下一个字符是不是字母，如果是操作符，则进一步处理
+                temp = *(re+1);     //!取出下一个符号
+                if (temp != 0 &amp;&amp; temp != &#39;)&#39; &amp;&amp;  temp != &#39;+&#39; &amp;&amp; temp != &#39;|&#39;)    //!如果下一个字符不是), +, 或 |（即它可能是字母或者其他字符），
+                //!表示接下来会有与操作符（&amp;）的隐式连接。比如ab其实就是a&amp;b
+                &#123;
+                    if (len_stack_op &gt; 0 &amp;&amp; stack_op[len_stack_op-1] == &#39;&amp;&#39;)//!如果当前读取字符前面又包含一个&amp; 如 a&amp;bb，那么首先要处理这个&amp;
+                    &#123;
+                        len_stack_op--;
+                        if (AndFa(nfa, stack_FA, &amp;len_stack_FA)) return 1;  //!处理&amp;
+                    &#125;
+                    if (len_stack_op &gt;= MAXN) &#123;printf(&quot;Error:栈溢出!行:217&quot;);    return 1;&#125;
+                    stack_op[len_stack_op++] = &#39;&amp;&#39;; //!否则将与操作入栈 ab，选择引入&amp;是为了让处理更加有逻辑
+                &#125;
+            &#125;
+            re++;       //!正则表达式数组头往后移动一位，表示读取正则表达式的下一个符号
+        &#125;
+        if (len_stack_op &gt; 0 || len_stack_FA &gt; 1) return 1;
+
+        //!更新
+        nfa-&gt;BEGIN = stack_FA[0].BEGIN;//!初态
+        nfa-&gt;ENDS[nfa-&gt;len_ENDS++] = stack_FA[0].END;//!在此处只有一个终态
+        initAlphabet(nfa);
+    &#125;
+    else
+    &#123;
+        //!如果输入的正则表达式是空
+        nfa-&gt;n = 2;     //!节点个数是2个，从初态到终态
+        nfa-&gt;BEGIN = nfa-&gt;len[0] = nfa-&gt;len[1] = 0;     //!两个状态转换均为空
+        nfa-&gt;ENDS[nfa-&gt;len_ENDS++] = 1;     //!记录终态集
+    &#125;
+    return 0;
+&#125;
+
+
+typedef struct SET//集合
+&#123;
+    int n; //记录当前t中的元素个数
+    int t[MAXN];
+&#125;SET;
+
+int set_insert(SET *set, int a)//集合插入
+&#123;
+    int i;
+    for (i = 0; i &lt; set-&gt;n; i++) if ((set-&gt;t)[i] == a) return 1;
+    if (set-&gt;n &gt;= MAXN) return -1;
+    (set-&gt;t)[set-&gt;n++] = a;
+    return 0;
+&#125;
+int set_delete(SET *set, int a)//删除集合的一个元素
+&#123;
+    int i;
+    for (i = 0; i &lt; set-&gt;n; i++) if (set-&gt;t[i] == a) break;
+    if (i == set-&gt;n) return -1;
+    for (int j = i + 1; j &lt; set-&gt;n; j++) set-&gt;t[j - 1] = set-&gt;t[j];
+    set-&gt;n--;
+    return 0;
+&#125;
+
+//查找集合sets[sets_n]与前面的那个集合一样，如果没有一样的，则将sets[sets_n]加入sets
+//集合内部是有序的
+int if_same(SET *sets, int *sets_n)
+&#123;
+    int i, j, len = sets[*sets_n].n;
+    for (i = 0; i &lt; *sets_n; i++)
+    &#123;
+        if (sets[i].n != len) continue;
+        for (j = 0; j &lt; len; j++)
+            if (sets[i].t[j] != sets[*sets_n].t[j]) break;
+
+        if (j == len)
+        &#123;
+            return i;
+        &#125;
+    &#125;
+    return (*sets_n)++;
+&#125;
+int cmp(const void* _a , const void* _b)//用于qsort
+&#123;
+    return *((int*)_a) - *((int*)_b);
+&#125;
+
+/*-----------------------------------------------------(2)将一个 NFA 转换为 DFA */ 
+SET sets[MAXN];//在NFAToDFA存状态集，在DFA化简中存状态集
+int len_sets = 0;
+int NFAToDFA(FA *nfa, FA *dfa)      //运用子集构造法
+&#123;
+    dfa-&gt;n = 0;     //!初始化DFA 的状态数量为0
+    dfa-&gt;len_ENDS = 0;      //!初始化DFA 的终态数量为0
+    int i, j, k, m;
+
+    //!对于 NFA 中的一个状态，ε-闭包表示从该状态出发，通过 ε 边（空字符边）能够到达的所有状态。
+    len_sets = 1;//!记录当前集合内的个数
+    sets[0].n = 0;      //!初始状态集大小设为0
+    set_insert(sets, 0);        //!将初始状态0插入状态集
+
+
+    for (i = 0; i &lt; sets[0].n; i++)     //!遍历初始状态的所有可能状态，如果有空串转换，则添加空串转换到达的状态加入到状态集中
+    &#123;
+        NODE *temp = (nfa-&gt;data)[sets[0].t[i]];
+        int temp_len = (nfa-&gt;len)[sets[0].t[i]];//每一行的最大长度
+        for (j = 0; j &lt; temp_len; j++)
+            if (temp[j].a == kong) set_insert(sets, temp[j].to);//如果连接的边为空就把状态加入
+    &#125;
+    //!将集合排序，方便判断两个集合是否一样
+    qsort(sets[0].t, sets[0].n, sizeof(int), cmp);
+
+    for (i = 0; i &lt; len_sets; i++)
+    &#123;
+        for (j = 0; j &lt; nfa-&gt;len_alph; j++)
+        &#123;   //!外层循环 i 遍历当前的状态集，内层循环 j 遍历 NFA 的所有字母
+            sets[len_sets].n = 0;       //!对于最新的一个状态，设为空
+
+            //!对 每个状态，检查通过输入字符 可以到达的状态，并将这些状态加入到新的状态集中
+            for (k = 0; k &lt; sets[i].n; k++)
+            &#123;
+                for (m = 0; m &lt; (nfa-&gt;len)[sets[i].t[k]]; m++)
+                    if ((nfa-&gt;data)[sets[i].t[k]][m].a == nfa-&gt;alphabet[j])
+                        set_insert(sets+len_sets, (nfa-&gt;data)[sets[i].t[k]][m].to);
+            &#125;
+            //!对新计算的状态集 再求一次 ε-闭包，确保通过 ε 转换能到达的状态都被包含在内。不能只考虑初始状态的空串转换
+            for (m = 0; m &lt; sets[len_sets].n; m++)//遍历每个状态集中的元素
+            &#123;
+                NODE *temp = (nfa-&gt;data)[sets[len_sets].t[m]];
+                int temp_len = (nfa-&gt;len)[sets[len_sets].t[m]];
+                for (k = 0; k &lt; temp_len; k++)//将通过空能到达的元素插入
+                    if (temp[k].a == kong) set_insert(sets+len_sets, temp[k].to);
+            &#125;
+            qsort(sets[len_sets].t, sets[len_sets].n, sizeof(int), cmp);//!对新状态集进行排序
+
+            //!如果新状态集不为空，则检查它是否是一个新的集合而不是重复的集合。如果是新集合， 在DFA 中添加相应的节点。
+            if (sets[len_sets].n)
+            &#123;
+                k = if_same(sets, &amp;len_sets);
+                insert(dfa, i, k, nfa-&gt;alphabet[j]);//形成DFA新的边
+            &#125;
+        &#125;
+    &#125;
+    dfa-&gt;BEGIN = 0;     //!设置 DFA 的起始状态为 0
+    //!对每个状态集，检查它是否包含终态。如果包含终态，则标记为 DFA 的终态。
+    for (i = 0; i &lt; len_sets; i++)//每个状态集
+    &#123;
+        for (j = 0; j &lt; sets[i].n; j++)//每个状态集的全部元素
+        &#123;
+            if (IsEND(nfa, sets[i].t[j]))//如果包含NFA的终态，则该状态就是终态
+            &#123;
+                dfa-&gt;ENDS[dfa-&gt;len_ENDS++] = i;//加入终态集
+                break;
+            &#125;
+        &#125;
+    &#125;
+
+    //!将 NFA 的字母表复制到 DFA 中，确保 DFA 使用相同的字母表进行状态转移。
+    dfa-&gt;len_alph = nfa-&gt;len_alph;
+    for (i = 0; i &lt; nfa-&gt;len_alph; i++) dfa-&gt;alphabet[i] = nfa-&gt;alphabet[i];
+    return 0;
+&#125;
+
+//找到元素a所在的集合
+int FindInSets(SET *Sets, int set_n, int a)
+&#123;
+    if (a &lt; 0) return -1;
+    for (int i = 0; i &lt; set_n; i++)
+    &#123;
+        for (int j = 0; j &lt;Sets[i].n; j++)
+            if (Sets[i].t[j] == a) return i;
+    &#125;
+    return -1;
+&#125;
+
+/*-----------------------------------------------------（3）对 DFA 进行最小化*/ 
+int type[MAXN], len_type;//在SimplifyDFA中，存每个节点经过映射后所在的集合
+void SimplifyDFA(FA *dfa)       //!最小化
+&#123;
+    initAlphabet(dfa);//初始化字母表
+
+    //!终态和非终态放在两个集合   sets[0]初态    sets[1]终态
+    len_sets = 2;
+    sets[0].n = sets[1].n = 0;
+    for (int i = 0; i &lt; dfa-&gt;n; i++)//!遍历dfa的所有状态，判断状态是否为终态，
+    //!如果是，则将其添加到终态集合，否则添加到非终态集合。这是进行初步的划分。
+        if (IsEND(dfa, i)) set_insert(sets + 1, i);
+        else set_insert(sets, i);
+
+    int flag = 1;   //!进一步划分，我们用flag 用于控制划分是否完成。
+    while (flag)
+    &#123;
+        flag = 0;       
+        for (int i = 0; i &lt; len_sets; i++)//!外层循环遍历每个状态集
+        &#123;
+            len_type = sets[i].n;//获取集合中的元素个数
+            if (len_type &lt; 2) continue;//只有一个元素的集合不用再计算
+
+            for (int j = 0; j &lt; dfa-&gt;len_alph; j++)//!内层循环遍历每个输入字母
+            &#123;
+                sets[len_sets].n = 0;
+
+                //!对于每个输入字母，在输入该字母后转移到哪个状态，并将这些转移后的状态所在的集合记录到type[]数组中。
+                for (int k = 0; k &lt; len_type; k++)//遍历sets集合中的每个元素
+                &#123;
+                    int t = to(dfa, sets[i].t[k], dfa-&gt;alphabet[j]);
+                    //如 type[k]=0; 表示集合sets[i]的第k个元素，在划分后的第0个集合，也就是初态集
+                    type[k] = FindInSets(sets, len_sets, t);//表示集合sets[i]的第k个元素，输入dfa-&gt;alphabet[j]后转向状态t所在的集合
+                //!type[]数组记录了每个状态在输入字母后转移到的状态所在的集合。
+                &#125;
+
+
+                //!现在对type集合进行划分
+                //!以type[0]为基础，若type[k]和type[0]不一样，则将所有不一样的集合放在同一个新的集合，最后得到若干个划分后的集合
+                //type[k]=-1代表没有映射，-2代表已经被移动过
+                for (int k = 1; k &lt; len_type; k++)//遍历集合中的每个元素
+                    if (type[k] != -2 &amp;&amp; type[k] != type[0])
+                    &#123;
+                        flag = 1;//运行到此，则sets有所更新，需要重新循环
+
+                        for (int m = k + 1; m &lt; len_type; m++)
+                            if (type[m] == type[k])//将所有type[m]=type[k]的m放在一个新的集合
+                        &#123;
+                            type[m] = -2;
+                            set_delete(sets + i, m);//将m从原来集合中删除
+                            set_insert(sets + len_sets, m);//将m放入新集合
+                        &#125;
+                        //k和m是一类要放在一起
+                        type[k] = -2;//操作k元素
+                        set_delete(sets + i, k);//将k从原来集合中删除
+                        set_insert(sets + len_sets, k);//将k放入新集合
+                        len_sets++;
+                    &#125;
+            &#125;
+        &#125;
+    &#125;
+
+    //!在dfa中，将在同一个集合的状态合并，对于每个划分后的状态集，选择其中的一个状态作为代表，并将该集合中的其他状态合并为这个代表状态。
+    for (int i = 0; i &lt; len_sets; i++)//遍历所有状态集（相对于划分后的状态集）
+    &#123;
+        int temp0 = sets[i].t[0];
+        for (int j = 1; j &lt; sets[i].n; j++)//遍历所有元素
+        &#123;
+            int tempj = sets[i].t[j];
+
+            //合并tempj发出的边
+            for (int k = 0; k &lt; dfa-&gt;len[tempj]; k++)
+                insert (dfa, temp0, dfa-&gt;data[tempj][k].to, dfa-&gt;data[tempj][k].a);
+
+            //合并发向tempj的边
+            for (int k = 0; k &lt; dfa-&gt;n; k++)
+                for (int m = 0; m &lt; dfa-&gt;len[k]; m++)
+                    if (dfa-&gt;data[k][m].to == tempj) dfa-&gt;data[k][m].to = temp0;
+
+            //将data[tempj]的长度置为-1，代表tempj被弃用
+            dfa-&gt;len[tempj] = -1;
+
+            //如果tempj是终态，则在终态集中删除
+            if (IsEND(dfa, tempj))
+            &#123;
+                for (int k = tempj + 1; k &lt; dfa-&gt;len_ENDS; k++)
+                    dfa-&gt;ENDS[k-1] = dfa-&gt;ENDS[k];
+                dfa-&gt;len_ENDS--;
+            &#125;
+        &#125;
+    &#125;
+&#125;
+
+
+/*-----------------------------------------------------(4)利用 DFA 判断输入的字符串是否为符合词法规则 */ 
+int RunDFA(FA *dfa, char *s)//判断s是否被dfa接受
+&#123;
+    //!初始化当前状态为起始状态
+    int state = dfa-&gt;BEGIN;
+
+    //!遍历输入字符串的每个字符，判断是否能到达DFA的下一个节点
+    while (*s != &#39;\0&#39;)
+    &#123;
+        state = to(dfa, state, *s);
+        if (state &lt; 1) return 1;
+        s++;
+    &#125;
+
+    //!检查是否到达终态
+    if (IsEND(dfa, state)) return 0;
+    else return 1;
+&#125;
+
+void PrintFA(FA *fa) //!通过for循环把自动机数组的信息都打印
+&#123;
+    printf(&quot;BEGIN:%d, END:%d&quot;, fa-&gt;BEGIN, fa-&gt;ENDS[0]);
+    for (int i = 1; i &lt; fa-&gt;len_ENDS; i++) printf(&quot;, %d&quot;, fa-&gt;ENDS[i]);
+    printf(&quot;\n&quot;);
+    for (int i = 0; i &lt; fa-&gt;n; i++)
+    &#123;
+        if (fa-&gt;len[i] &lt; 0) continue;
+        printf(&quot;%d: &quot;, i);
+        for (int j =0; j &lt; fa-&gt;len[i]; j++)
+        &#123;
+            printf(&quot;(value:%c, to:%d) &quot;, (fa-&gt;data[i][j]).a, (fa-&gt;data[i][j]).to);
+        &#125;
+        printf(&quot;\n&quot;);
+    &#125;
+    printf(&quot;\n&quot;);
+&#125;
+
+FA NFA, DFA;//FA所占内存较大，只能为全局变量
+void test()
+&#123;
+
+    FA *nfa = &amp;NFA, *dfa = &amp;DFA;        //!定义不确定自动机和确定自动机
+    //!re记录输入的正则表达式
+    char re[100], s[100];       //!re是输入的正则表达式, s是输入的用于测试处理结果的符号串
+
+    while(1)
+    &#123;
+        // (0(0|1)+ | 1+0(0|1| )+)
+        printf(&quot;请输入一个正则表达式(符号有(,),+,|,空格,空格代表空串),&quot;);
+        printf(&quot;输入Crtl+Z退出正则表达式测试\n&quot;);
+        if (fgets(re, sizeof(re), stdin) == NULL) &#123;break;&#125;      //!用fgets获取输入的正则表达式
+        re[strcspn(re, &quot;\n&quot;)] = &#39;\0&#39;;   //!将换行符换成终止符
+        if (ReToNFA(re, nfa))       //!将正则表达式转换为NFA，如果无法转换，则返回1，打印报错信息，重新让用户输入
+        &#123;
+            printf(&quot;Error:无法将正则表达式转换为NFA,正则表达式不规范,重新输入!\n\n&quot;);    //!比如中文，中文符号
+            continue;
+        &#125;
+
+        NFAToDFA(nfa, dfa);     //!将NFA转换为DFA
+        printf(&quot;\nNFA:\n&quot;);       PrintFA(nfa);     //打印NFA
+        printf(&quot;DFA:\n&quot;);       PrintFA(dfa);       //打印DFA
+        SimplifyDFA(dfa);       //!简化DFA
+        printf(&quot;化简的DFA:\n&quot;); PrintFA(dfa);       //打印化简后的DFA
+        printf(&quot;\n&quot;);
+        while (1)       //!进入测试模式
+        &#123;
+            printf(&quot;输入一个字符串,&quot;);
+            printf(&quot;输入Crtl+Z退出DFA测试\n&quot;);
+            if (fgets(s, sizeof(s), stdin) == NULL) &#123;break;&#125;        //!从键盘获取输入的符号串，存储到s
+            s[strcspn(s, &quot;\n&quot;)] = &#39;\0&#39;;     //同样，将换行符换为终止符
+            //!将字符串放到dfa中运行一遍看能不能走到终态
+            if (RunDFA(dfa, s)) printf(&quot;Input does not match!\n&quot;);//!不能走到终态，不匹配
+            else printf(&quot;Input match!\n&quot;);//!能走到终态，匹配
+            printf(&quot;\n&quot;);
+        &#125;
+    &#125;
+&#125;
+
+int main()
+&#123;
+    test();
+    return 0;
+&#125;
+</code></pre><h1 id="运行样例"><a href="#运行样例" class="headerlink" title="运行样例"></a>运行样例</h1><p>首先输入一个正则表达式，构建自动机：<br><img data-src="../../assets/FA-1.jpg" alt="image"></p><p>这个正则表达式表示的字符串有这些特征：</p><ul><li>符号串仅由0和1组成。</li><li>至少包含1个0。</li><li>符号串长度必须大于等于2。</li></ul><p>自动机构建结果，包含NFA状态转换表，DFA状态转换表以及最小化DFA状态转换表<br><img data-src="../../assets/FA-2.jpg" alt="image"><br>:::warning<br>其中，BEGIN是初态，END是终态。value:0代表接收输入符号0，to:1代表转化的目标状态。value: ，代表空串转换。<br>:::<br>接下来测试00，01，1111，1ba0，10101，abab：<br><img data-src="../../assets/FA-3.jpg" alt="image"></p></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i> </span><span class="text">更新于</span> <time title="修改时间：2025-01-23 22:02:50" itemprop="dateModified" datetime="2025-01-23T22:02:50+08:00">2025-01-23</time> </span><span id="project/正则表达式转换为自动机/" class="item leancloud_visitors" data-flag-title="正则表达式转换为自动机" title="阅读次数"><span class="icon"><i class="ic i-eye"></i> </span><span class="text">阅读次数</span> <span class="leancloud-visitors-count"></span> <span class="text">次</span></span></div><div class="reward"><button><i class="ic i-heartbeat"></i> 赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/images/wechatpay.jpg" alt="Runhua Deng 微信支付"><p>微信支付</p></div><div><img data-src="/images/alipay.png" alt="Runhua Deng alipay"><p>alipay</p></div><div><img data-src="/images/paypal.png" alt="Runhua Deng paypal"><p>paypal</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者： </strong>Runhua Deng <i class="ic i-at"><em>@</em></i>枯萎的花将在另一彼岸悄然绽放</li><li class="link"><strong>本文链接：</strong> <a href="https://yunhdan.github.io/project/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%B8%BA%E8%87%AA%E5%8A%A8%E6%9C%BA/" title="正则表达式转换为自动机">https://yunhdan.github.io/project/正则表达式转换为自动机/</a></li><li class="license"><strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/other/My%20%E4%BA%8C%E6%AC%A1%E5%85%83/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;12&#x2F;04&#x2F;KqSM9hOFDC1uxaH.jpg" title="My 二次元"><span class="type">上一篇</span> <span class="category"><i class="ic i-flag"></i> 琐碎</span><h3>My 二次元</h3></a></div><div class="item right"><a href="/project/GAN%E7%94%9F%E6%88%90%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E5%AE%9E%E8%B7%B5/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;s2.loli.net&#x2F;2024&#x2F;12&#x2F;07&#x2F;bA5ectoN26Irm48.jpg" title="GAN生成手写数字实践"><span class="type">下一篇</span> <span class="category"><i class="ic i-flag"></i> 项目与实践</span><h3>GAN生成手写数字实践</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E8%AF%B4%E6%98%8E"><span class="toc-number">1.</span> <span class="toc-text">项目说明</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%BA%90%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">源码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%A0%B7%E4%BE%8B"><span class="toc-number">3.</span> <span class="toc-text">运行样例</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li class="active"><a href="/project/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%B8%BA%E8%87%AA%E5%8A%A8%E6%9C%BA/" rel="bookmark" title="正则表达式转换为自动机">正则表达式转换为自动机</a></li><li><a href="/project/GAN%E7%94%9F%E6%88%90%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E5%AE%9E%E8%B7%B5/" rel="bookmark" title="GAN生成手写数字实践">GAN生成手写数字实践</a></li><li><a href="/project/%E5%9F%BA%E4%BA%8ECLIP%E7%9A%84%E5%9B%BE%E5%83%8F%E7%89%A9%E4%BD%93%E8%BE%A8%E5%88%AB/" rel="bookmark" title="基于CLIP的图像物体辨别">基于CLIP的图像物体辨别</a></li><li><a href="/project/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0%E5%B0%8F%E5%AE%9E%E8%B7%B5%E2%80%94%E2%80%94%E6%9E%84%E5%BB%BAEnv%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/" rel="bookmark" title="强化学习小实践——构建Env的基本方法">强化学习小实践——构建Env的基本方法</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="Runhua Deng" data-src="/images/me.jpg"><p class="name" itemprop="name">Runhua Deng</p><div class="description" itemprop="description">计算机视觉 & 图像恢复</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">39</span> <span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">7</span> <span class="name">分类</span></a></div></nav><div class="social"><span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL1l1bkhEYW4=" title="https:&#x2F;&#x2F;github.com&#x2F;YunHDan"><i class="ic i-github"></i></span> <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTIxMjYzMjE4OTI=" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;2126321892"><i class="ic i-cloud-music"></i></span> <a href="/alex2312666252@gmail.com" title="alex2312666252@gmail.com" class="item email"><i class="ic i-envelope"></i></a> <span class="exturl item csdn" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzczNTk5NzM4P3NwbT0xMDAwLjIxMTUuMzAwMS41MzQz" title="https:&#x2F;&#x2F;blog.csdn.net&#x2F;m0_73599738?spm&#x3D;1000.2115.3001.5343"><i class="ic i-link"></i></span></div><ul class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="/about/" rel="section"><i class="ic i-user"></i>关于</a><ul class="submenu"><li class="item"><a href="/about/me/" rel="section"><i class="ic i-file"></i>简历</a></li><li class="item"><a href="/about/learn_me/" rel="section"><i class="ic i-smile"></i>了解我</a></li></ul></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友達</a></li></ul></div></div></div><ul id="quick"><li class="prev pjax"><a href="/other/My%20%E4%BA%8C%E6%AC%A1%E5%85%83/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/project/GAN%E7%94%9F%E6%88%90%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E5%AE%9E%E8%B7%B5/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/project/" title="分类于 项目与实践">项目与实践</a></div><span><a href="/project/%E5%9F%BA%E4%BA%8ECLIP%E7%9A%84%E5%9B%BE%E5%83%8F%E7%89%A9%E4%BD%93%E8%BE%A8%E5%88%AB/" title="基于CLIP的图像物体辨别">基于CLIP的图像物体辨别</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/research/" title="分类于 学术">学术</a></div><span><a href="/research/EnlightenGAN%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3/" title="EnlightenGAN论文详解">EnlightenGAN论文详解</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/ai/" title="分类于 人工智能">人工智能</a></div><span><a href="/ai/%E7%8E%B0%E4%BB%A3%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" title="现代深度学习">现代深度学习</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/project/" title="分类于 项目与实践">项目与实践</a></div><span><a href="/project/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E8%BD%AC%E6%8D%A2%E4%B8%BA%E8%87%AA%E5%8A%A8%E6%9C%BA/" title="正则表达式转换为自动机">正则表达式转换为自动机</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/other/" title="分类于 琐碎">琐碎</a></div><span><a href="/other/My%20%E4%BA%8C%E6%AC%A1%E5%85%83/" title="My 二次元">My 二次元</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/other/" title="分类于 琐碎">琐碎</a></div><span><a href="/other/%E5%8D%9A%E5%AE%A2%E6%96%87%E6%A1%A3%E7%BE%8E%E5%8C%96%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" title="博客文档美化使用说明">博客文档美化使用说明</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/cs/" title="分类于 计算机">计算机</a></div><span><a href="/cs/Springboot%E3%80%81Mybatis/" title="Springboot、Mybatis">Springboot、Mybatis</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/cs/" title="分类于 计算机">计算机</a></div><span><a href="/cs/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%90%86%E8%AE%BA2/" title="数据库理论2">数据库理论2</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/cs/" title="分类于 计算机">计算机</a></div><span><a href="/cs/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%90%86%E8%AE%BA1/" title="数据库理论1">数据库理论1</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/ai/" title="分类于 人工智能">人工智能</a></div><span><a href="/ai/%E6%B3%A8%E6%84%8F%E5%8A%9B%E6%9C%BA%E5%88%B6/" title="注意力机制">注意力机制</a></span></li></ul></div><div><h2>最新评论</h2><ul class="leancloud-recent-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2023 – <span itemprop="copyrightYear">2025</span> <span class="with-love"><i class="ic i-sakura rotate"></i> </span><span class="author" itemprop="copyrightHolder">Runhua Deng @ Runfar's Zone</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i> </span><span title="站点总字数">194k 字</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="ic i-coffee"></i> </span><span title="站点阅读时长">2:57</span></div><div class="powered-by">基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL={path:"project/正则表达式转换为自动机/",favicon:{show:"（●´3｀●）やれやれだぜ",hide:"(´Д｀)大変だ！"},search:{placeholder:"文章搜索",empty:"关于 「 ${query} 」，什么也没搜到",stats:"${time} ms 内找到 ${hits} 条结果"},valine:!0,mermaid:!0,fancybox:!0,copyright:'复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',ignores:[function(e){return e.includes("#")},function(e){return new RegExp(LOCAL.path+"$").test(e)}]}</script><script src="https://cdn.polyfill.io/v2/polyfill.js"></script><script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script><script src="/js/app.js?v=0.2.5"></script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({log:!1,pluginJsPath:"lib/",pluginModelPath:"assets/",pluginRootPath:"live2dw/",tagMode:!1})</script></body></html><!-- rebuild by hrmmi -->
