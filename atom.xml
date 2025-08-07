@@ -224,7 +224,7 @@
         <title>2025 CVPR NTIRE Image Denoise报告研究思考</title>
         <link rel="alternate" href="https://yunhdan.github.io/research/2025%20CVPR%20NTIRE%20Image%20Denoise%E6%8A%A5%E5%91%8A%E7%A0%94%E7%A9%B6%E6%80%9D%E8%80%83/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;这次的挑战不可考虑计算效率和模型复杂度，所以用混合架构以最大化性能需求。&lt;/p&gt;
+&lt;p&gt;这次的挑战不考虑计算效率和模型复杂度，所以用混合架构以最大化性能需求。&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;排名情况：&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;

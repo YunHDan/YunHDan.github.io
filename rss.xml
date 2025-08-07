@@ -229,7 +229,7 @@
             <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
             <pubDate>Wed, 02 Jul 2025 22:38:47 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;这次的挑战不可考虑计算效率和模型复杂度，所以用混合架构以最大化性能需求。&lt;/p&gt;
+&lt;p&gt;这次的挑战不考虑计算效率和模型复杂度，所以用混合架构以最大化性能需求。&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;排名情况：&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
