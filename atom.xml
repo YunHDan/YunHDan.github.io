@@ -18,14 +18,15 @@
 &lt;/div&gt;
 &lt;h1 id=&#34;概论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概论&#34;&gt;#&lt;/a&gt; 概论&lt;/h1&gt;
 &lt;ol&gt;
-&lt;li class=&#34;quiz multi&#34;&gt;冯诺依曼体系结构三大思想为？&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li class=&#34;quiz multi&#34;&gt;冯诺依曼体系结构三大思想为？
 &lt;ul class=&#34;options&#34;&gt;
 &lt;li class=&#34;correct&#34;&gt;计算机硬件系统由运算器、存储器、控制器、输入设备、输出设备 5 大部件组成。&lt;/li&gt;
 &lt;li class=&#34;correct&#34;&gt;“存储程序”：指令和数据以同等地位存储在存储器中。&lt;/li&gt;
 &lt;li class=&#34;correct&#34;&gt;指令和数据均用二进制表示。&lt;/li&gt;
 &lt;li&gt;以输入设备和输出设备为中心。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;“存储程序” 的概念是指将指令事先输入计算机的主存，然后取程序在主存的首地址来执行程序的第一条指令，按程序规定的顺序执行其他指令，直到程序结束。&lt;/p&gt;
 &lt;p&gt;这揭示了计算机的工作过程：1）把程序和数据存入主存。2）把主存的源程序转换为可执行文件。3）从可执行文件的首地址开始逐条执行指令。&lt;/p&gt;
@@ -34,14 +35,16 @@
 &lt;p&gt;计算机系统结构层次从高到低分为：应用软件级、高级语言级、汇编语言级、操作系统级、机器语言级、硬件逻辑级。&lt;/p&gt;
 &lt;/div&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li class=&#34;quiz false&#34;&gt;编译是将源程序翻译为可执行的目标程序，也就是汇编语言文件。（）&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;编译是将源程序翻译为可执行的目标程序，也就是汇编语言文件。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;目标程序文件是二进制的机器语言文件。&lt;br /&gt;
 编译包含了汇编过程。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;回顾一下，java 虚拟机 jvm 的作用是什么？&lt;/li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;回顾一下，java 虚拟机 jvm 的作用是什么？&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;details class=&#34;success&#34;&gt;&lt;summary&gt;答案&lt;/summary&gt;&lt;div&gt;
 &lt;p&gt;java 程序并不一步到位编译为目标程序，而是先编译成中间文件字节码，即.class 文件，然后再用解释的方式一条一条执行。而 JVM 的作用就是作为一个中介将字节码逐条解释为目标代码，然后执行。&lt;/p&gt;
