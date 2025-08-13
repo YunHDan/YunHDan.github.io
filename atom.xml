@@ -8,7 +8,88 @@
     <author>
       <name>Runhua Deng</name>
     </author>
-    <updated>2025-08-07T06:55:47.000Z</updated>
+    <updated>2025-08-13T08:37:55.000Z</updated>
+    <entry>
+        <id>https://yunhdan.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%84%E6%88%90/</id>
+        <title>计算机系统组成</title>
+        <link rel="alternate" href="https://yunhdan.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%84%E6%88%90/"/>
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;有用的计算机系统知识，欢迎来闯关！&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;概论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概论&#34;&gt;#&lt;/a&gt; 概论&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li class=&#34;quiz multi&#34;&gt;冯诺依曼体系结构三大思想为？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul class=&#34;options&#34;&gt;
+&lt;li class=&#34;correct&#34;&gt;计算机硬件系统由运算器、存储器、控制器、输入设备、输出设备 5 大部件组成。&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;“存储程序”：指令和数据以同等地位存储在存储器中。&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;指令和数据均用二进制表示。&lt;/li&gt;
+&lt;li&gt;以输入设备和输出设备为中心。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;“存储程序” 的概念是指将指令事先输入计算机的主存，然后取程序在主存的首地址来执行程序的第一条指令，按程序规定的顺序执行其他指令，直到程序结束。&lt;/p&gt;
+&lt;p&gt;这揭示了计算机的工作过程：1）把程序和数据存入主存。2）把主存的源程序转换为可执行文件。3）从可执行文件的首地址开始逐条执行指令。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;计算机系统结构层次从高到低分为：应用软件级、高级语言级、汇编语言级、操作系统级、机器语言级、硬件逻辑级。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li class=&#34;quiz false&#34;&gt;编译是将源程序翻译为可执行的目标程序，也就是汇编语言文件。（）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;目标程序文件是二进制的机器语言文件。&lt;br /&gt;
+编译包含了汇编过程。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;回顾一下，java 虚拟机 jvm 的作用是什么？&lt;/li&gt;
+&lt;/ol&gt;
+&lt;details class=&#34;success&#34;&gt;&lt;summary&gt;答案&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;java 程序并不一步到位编译为目标程序，而是先编译成中间文件字节码，即.class 文件，然后再用解释的方式一条一条执行。而 JVM 的作用就是作为一个中介将字节码逐条解释为目标代码，然后执行。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;描述一下指令的执行过程和程序的执行过程。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;details class=&#34;success&#34;&gt;&lt;summary&gt;答案&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;指令的执行过程：&lt;br /&gt;
+取指：到 PC 取指令的地址，然后在主存中取出指令内容，最终送入指令寄存器 IR。&lt;br /&gt;
+分析指令：控制器根据 IR 译码后送出控制信号。&lt;br /&gt;
+执行指令：控制器根据控制信号在主存取出操作数，在运算器完成指令。&lt;/p&gt;
+&lt;p&gt;程序的执行过程：&lt;br /&gt;
+程序的第一条指令在 PC 中被取出，经过分析和执行后，通过第一条指令的地址计算出下一条指令的地址，用新得到的指令地址继续读出第二条指令并执行，直到程序结束。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;计算机主要四大性能指标：机器字长、数据通路带宽、主存容量、运算速度。运算速度有吞吐量、响应时间、时钟周期、主频、CPI 等指标。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;数据通路带宽是指数据总线一次所能串行传送信息的位数。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;带宽是衡量并行传送信息的能力指标。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;主存容量可以用字数&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\times&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.66666em;vertical-align:-0.08333em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;×&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 字长（如 512K$\times$16 位）来表示。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;吞吐量是指系统单位时间内处理请求或指令的数量。&lt;br /&gt;
+相应时间是指用户向系统发送一个请求，到计算机对该请求做出相应并获得结果的时间。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;CPU 最小的时间单位是时钟周期，又称为节拍脉冲。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;什么是 CPI？&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;details class=&#34;success&#34;&gt;&lt;summary&gt;答案&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;英文全名叫 Clock cycle Per Instruction，即执行一条指令所需的时钟周期数。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+</content>
+        <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
+        <updated>2025-08-13T08:37:55.000Z</updated>
+    </entry>
     <entry>
         <id>https://yunhdan.github.io/book/%E3%80%8A%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92%E3%80%8B/</id>
         <title>《认知觉醒》</title>
@@ -263,8 +344,9 @@
 &lt;li&gt;依然有渐进式训练，随着 patch size 增大，batch size 减小。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;RHAG&lt;/code&gt;  是基于 HAT 的改进版本，也是类似于 Transformer 的架构。可见直筒型在图像恢复的重要性依然很明显。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;第五名优化版restormerpixel-purifiers&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五名优化版restormerpixel-purifiers&#34;&gt;#&lt;/a&gt; 第五名：优化版 &lt;code&gt;Restormer&lt;/code&gt; （Pixel Purifiers）&lt;/h1&gt;
+&lt;h1 id=&#34;第五名纯restormerpixel-purifiers&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五名纯restormerpixel-purifiers&#34;&gt;#&lt;/a&gt; 第五名：纯 &lt;code&gt;Restormer&lt;/code&gt; （Pixel Purifiers）&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise6.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;DDDDDDDDD&lt;/p&gt;
 </content>
         <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
         <updated>2025-07-02T14:38:47.000Z</updated>
@@ -725,98 +807,5 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
 </content>
         <category term="项目与实践" scheme="https://yunhdan.github.io/categories/project/" />
         <updated>2025-05-22T10:50:06.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://yunhdan.github.io/baoyan/%E4%BF%9D%E7%A0%94%E5%8E%86%E7%A8%8B/</id>
-        <title>保研历程</title>
-        <link rel="alternate" href="https://yunhdan.github.io/baoyan/%E4%BF%9D%E7%A0%94%E5%8E%86%E7%A8%8B/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;个人基本情况&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#个人基本情况&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;rainbow&#34;&gt;个人基本情况&lt;/span&gt;&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;本科：江西四非，计算机科学与技术，2022 级。&lt;/li&gt;
-&lt;li&gt;排名：173 人，前 5%。&lt;/li&gt;
-&lt;li&gt;竞赛：若干国奖，若干省奖。&lt;/li&gt;
-&lt;li&gt;科研经历：2 段，low-level vision 相关，一篇会议在投，一篇竞赛产出的 CVPR Workshop。&lt;/li&gt;
-&lt;li&gt;英语：四级 558，六级擦边 428。无雅思。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;定位与计划&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#定位与计划&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;rainbow&#34;&gt;定位与计划&lt;/span&gt;&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;院校倾向：在方向相关的基础上。华五优先，9 优先。有一定的地域考虑，深圳优先。就业前景好优先。&lt;/li&gt;
-&lt;li&gt;方向选择：做 AI，low-level vision 方向，可 3d，可多模态。&lt;/li&gt;
-&lt;li&gt;导师选择：人好肯带我最重要，个人倾向于年轻的导师，我感觉我不是那种给我资源自己找出路就能很好的人，还是希望有年轻的导师多带带我。导师人好，读研生活愉快些很重要！&lt;/li&gt;
-&lt;li&gt;其他的一些考虑：title 强一些更好、学硕最佳、暂时没有直博想法。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;夏令营经历&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#夏令营经历&#34;&gt;#&lt;/a&gt; &lt;span class=&#34;rainbow&#34;&gt;夏令营经历&lt;/span&gt;&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;院校&lt;/th&gt;
-&lt;th&gt;入营情况&lt;/th&gt;
-&lt;th style=&#34;text-align:left&#34;&gt;备注&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;南大计院&lt;/td&gt;
-&lt;td&gt;寄&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;自然是报着乐&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;中大网安&lt;/td&gt;
-&lt;td&gt;寄&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;刚报完名一两天，夏令营就取消了&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;北大信工&lt;/td&gt;
-&lt;td&gt;寄&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;bar 挺高的&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;上科大信院 &lt;code&gt;VDI&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;寄&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;信院 VDI 很强，但需要联系到导师，门槛较高。自然，导师没回我信&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;中科院深先院&lt;/td&gt;
-&lt;td&gt;寄&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;其实是弱 com，联系导师没回复，自然寄&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;南京航空航天计软&lt;/td&gt;
-&lt;td&gt;寄&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;今年夏令营 bar 很高，卡 211，双非 &lt;code&gt;rk1&lt;/code&gt;  也进不去&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;深大计软&lt;/td&gt;
-&lt;td&gt;寄&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;很奇怪很奇怪，我的 bg 居然没入四非的营&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;中科大&lt;/td&gt;
-&lt;td&gt;寄&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;不收双非四非今年居然要申请表上有意向导师签字，第一次见到这种&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;北京师大人智&lt;/td&gt;
-&lt;td&gt;寄&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;今年居然要申请表上有意向导师签字，第一次见到这种&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;南大智科&lt;/td&gt;
-&lt;td&gt;已报&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;老师要我，但学校一般不收双非四非&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;虽然不太敢相信，但还是不得不接受可能夏 0 营的事实。&lt;/p&gt;
-&lt;h1 id=&#34;预推免&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#预推免&#34;&gt;#&lt;/a&gt; 预推免&lt;/h1&gt;
-&lt;p&gt;已考虑：中大≈南大智科 &amp;gt; 中科大≈人大 &amp;gt; 电子科大≈南科大≈北邮≈中科院深先院 &amp;gt; 华东师大 &amp;gt; 北师大 &amp;gt; 深大 &amp;gt; 上科大信院 &amp;gt; 南航&lt;/p&gt;
-&lt;h1 id=&#34;最后总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#最后总结&#34;&gt;#&lt;/a&gt; 最后总结&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;保研是导师和学生之间的双选过程，学生没必要抱着舔的心态去申请。牛导不会因为你的跪舔文案而看上你，对方看不上你，你也没办法，你只能选择水平相较之更低的导。你选择被你 over qualified 的导，即使你因为有更好的去处拒绝了这个导，只要你尽早告知，也没必要为自己的行为愧疚。毕竟还是那句话，双方是互选的过程，这个导也没有理由生你的气，你是出于升学考虑才同时联系多个导师。&lt;/li&gt;
-&lt;li&gt;还是那句话，只要你积极不轻言放弃，该要你的一定会要你，不想要你的一定不会要，尽人事听天命。&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <category term="保研" scheme="https://yunhdan.github.io/categories/baoyan/" />
-        <updated>2025-05-16T13:31:49.000Z</updated>
     </entry>
 </feed>
