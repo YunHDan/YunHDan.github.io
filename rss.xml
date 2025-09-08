@@ -33,15 +33,13 @@
 &lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;操作系统有&lt;span class=&#34;gap&#34;&gt;核心态（管态）&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt;用户态（目态）&lt;/span&gt;两种运行状态，对应将程序划分为&lt;span class=&#34;gap&#34;&gt;内核程序&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt;应用程序&lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;note success&#34;&gt;
-&lt;p&gt;内核是计算机上配置的底层软件。主要包括时钟管理、中断机制、一系列原语、系统控制的数据结构以及如何管理这些数据结构。&lt;/p&gt;
-&lt;/div&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li class=&#34;quiz true&#34;&gt;操作系统需要通过内核的时钟管理，向用户提供标准的系统时间。其次，通过时钟中断的管理，可以实现进程的切换。&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;操作系统需要通过内核的时钟管理，向用户提供标准的系统时间。其次，通过时钟中断的管理，可以实现进程的切换。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;原语是操作系统底层的一些可被调用的公用小程序，用于完成一个规定的操作。&lt;/p&gt;
+&lt;p&gt;内核是计算机上配置的底层软件。主要包括时钟管理、中断机制、一系列原语、系统控制的数据结构以及如何管理这些数据结构。&lt;br /&gt;
+原语是操作系统底层的一些可被调用的公用小程序，用于完成一个规定的操作。&lt;/p&gt;
 &lt;/div&gt;
 &lt;ol start=&#34;4&#34;&gt;
 &lt;li class=&#34;quiz true&#34;&gt;
@@ -83,15 +81,17 @@
 &lt;p&gt;常见中断处理流程是：关中断（CPU 相应中断，从此刻开始不会响应更高级的中断的请求）&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 保存断点（将原来程序的断点，即程序计数器 PC 保存起来）&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 引入中断服务程序 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 保护现场（保存相关寄存器的内容）&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 开中断（允许响应更高级的中断）&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 执行中断服务程序 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 关中断（准备恢复现场，此刻开始不再响应更高级中断的请求）&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 恢复现场 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 开中断、中断返回。&lt;/p&gt;
 &lt;/div&gt;
 &lt;ol start=&#34;11&#34;&gt;
-&lt;li class=&#34;quiz fill&#34;&gt;操作系统的内核类型有&lt;span class=&#34;gap&#34;&gt;大内核（强内核、单内核）&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt;微内核&lt;/span&gt;。&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;操作系统的内核类型有&lt;span class=&#34;gap&#34;&gt;大内核（强内核、单内核）&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt;微内核&lt;/span&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;微内核操作系统因为需要频繁在用户态和核心态之间切换，所以有一定的性能损失。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;note success&#34;&gt;
 &lt;p&gt;大内核将操作系统的功能作为一个紧密结合的整体放到内核中。&lt;br /&gt;
 微内核则是将操作系统分为多个小的、定义良好的功能模块。基本的功能保留到内核，即微内核，而其他的功能模块运行在用户态。&lt;/p&gt;
 &lt;/div&gt;
-&lt;ol start=&#34;12&#34;&gt;
-&lt;li class=&#34;quiz true&#34;&gt;微内核操作系统因为需要频繁在用户态和核心态之间切换，所以有一定的性能损失。&lt;/li&gt;
-&lt;/ol&gt;
  ]]></description>
         </item>
         <item>
