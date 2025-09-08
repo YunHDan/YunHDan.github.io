@@ -8,7 +8,14 @@
     <author>
       <name>Runhua Deng</name>
     </author>
-    <updated>2025-08-20T07:14:54.000Z</updated>
+    <updated>2025-09-08T06:55:47.000Z</updated>
+    <entry>
+        <id>https://yunhdan.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%90%86%E8%AE%BA/</id>
+        <title>操作系统理论</title>
+        <link rel="alternate" href="https://yunhdan.github.io/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%90%86%E8%AE%BA/"/>
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;</content>
+        <updated>2025-09-08T06:55:47.000Z</updated>
+    </entry>
     <entry>
         <id>https://yunhdan.github.io/cs/Web/</id>
         <title>Web</title>
@@ -249,7 +256,7 @@
 ISP 又称互联网服务提供者，比如中国电信，中国移动，中国联通。&lt;/p&gt;
 &lt;/div&gt;
 &lt;ol&gt;
-&lt;li class=&#34;quiz fll&#34;&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
 &lt;p&gt;互联网两个重要特点是&lt;span class=&#34;gap&#34;&gt;连通性和共享&lt;/span&gt; &lt;/p&gt;
 &lt;/li&gt;
 &lt;li class=&#34;quiz fill&#34;&gt;
@@ -798,145 +805,5 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
 </content>
         <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
         <updated>2025-06-04T03:04:06.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://yunhdan.github.io/baoyan/Low-level-Vision-Group/</id>
-        <title>Low-level-Vision-Group</title>
-        <link rel="alternate" href="https://yunhdan.github.io/baoyan/Low-level-Vision-Group/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
-&lt;p&gt;做底层视觉的团队，供保研用。&lt;/p&gt;
-&lt;/div&gt;
-&lt;details class=&#34;danger&#34;&gt;&lt;summary&gt;注意&lt;/summary&gt;&lt;div&gt;
-&lt;p&gt;请做好心理准备，这些导师都很强，申请做他们的学生，在面试考核中一定是会被拷打的。对方的学术水平，能力水平本身就在你之上，你的任何漏洞、问题、毛病都会被看得一清二楚。所以想要做到让对方完全满意是不太可能的，要做好这个心理建设。&lt;/p&gt;
-&lt;/div&gt;&lt;/details&gt;
-&lt;h1 id=&#34;中山大学-网络空间安全学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中山大学-网络空间安全学院&#34;&gt;#&lt;/a&gt; 中山大学 - 网络空间安全学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;任文琦：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaXRlcy5nb29nbGUuY29tL3ZpZXcvd2VucWlyZW4vaG9tZXBhZ2U=&#34;&gt;https://sites.google.com/view/wenqiren/homepage&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个老师特别强，我发过 email2 次都是已阅没回，没看上我。&lt;/p&gt;
-&lt;h1 id=&#34;厦门大学-信息学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#厦门大学-信息学院&#34;&gt;#&lt;/a&gt; 厦门大学 - 信息学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;丁兴号：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly94bXUtc21hcnRkc3AuZ2l0aHViLmlvLw==&#34;&gt;https://xmu-smartdsp.github.io/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;没有联系过，没有实验室主页，情况未知。&lt;/p&gt;
-&lt;h1 id=&#34;南开大学-密码与网络空间安全学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#南开大学-密码与网络空间安全学院&#34;&gt;#&lt;/a&gt; 南开大学 - 密码与网络空间安全学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;程明明实验室李重仪，郭春乐：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tbWNoZW5nLm5ldC9yZWNydWl0L2NvbW1lbnQtcGFnZS0yNS8=&#34;&gt;https://mmcheng.net/recruit/comment-page-25/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;底层视觉顶级组，考核贼强，六级要 480+。考核差不多相当于用 c++ 复现一篇传统论文，感觉非常困难故未考虑。&lt;/p&gt;
-&lt;h1 id=&#34;东南大学-计算机科学与工程学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#东南大学-计算机科学与工程学院&#34;&gt;#&lt;/a&gt; 东南大学 - 计算机科学与工程学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;薛晖：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYWxtLnNldS5lZHUuY24vaHh1ZS8=&#34;&gt;https://palm.seu.edu.cn/hxue/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个是有名的 palm 实验室，不放实习，不建议去。&lt;/p&gt;
-&lt;h1 id=&#34;中山大学-计算机学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中山大学-计算机学院&#34;&gt;#&lt;/a&gt; 中山大学 - 计算机学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;李冠彬：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuc3lzdS1oY3AubmV0L2ZhY3VsdHkvbGlndWFuYmluLmh0bWw=&#34;&gt;https://www.sysu-hcp.net/faculty/liguanbin.html&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;张冬雨：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jc2Uuc3lzdS5lZHUuY24vdGVhY2hlci9aaGFuZ0Rvbmd5dQ==&#34;&gt;https://cse.sysu.edu.cn/teacher/ZhangDongyu&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;联系过李老师 2 次，但是都没有看上我，没回信。&lt;/p&gt;
-&lt;h1 id=&#34;南京理工大学-计算机科学与工程学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#南京理工大学-计算机科学与工程学院&#34;&gt;#&lt;/a&gt; 南京理工大学 - 计算机科学与工程学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;潘金山：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qc3Bhbi5naXRodWIuaW8v&#34;&gt;https://jspan.github.io/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个老师做 low level 特别强。&lt;/p&gt;
-&lt;h1 id=&#34;北京大学-信息工程学院深圳&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#北京大学-信息工程学院深圳&#34;&gt;#&lt;/a&gt; 北京大学 - 信息工程学院（深圳）&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;张健：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZWNlLnBrdS5lZHUuY24vaW5mby8xMDQ2LzI1MDYuaHRt&#34;&gt;https://www.ece.pku.edu.cn/info/1046/2506.htm&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;老师很强，听说对学生也很温和友好。我联系过 2 次，均未搭理，没回信。看了一下他实验室的学生的来向，基本全是 9 和 2，双非和四非根本不可能。&lt;/p&gt;
-&lt;h1 id=&#34;哈尔滨工业大学-计算机学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#哈尔滨工业大学-计算机学院&#34;&gt;#&lt;/a&gt; 哈尔滨工业大学 - 计算机学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;左旺孟：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ob21lcGFnZS5oaXQuZWR1LmNuL3dhbmdtZW5nenVv&#34;&gt;https://homepage.hit.edu.cn/wangmengzuo&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个老师懂得都懂，low level 泰斗。听说对学生也相当好，人品也不错。但因为在本部太远，未考虑。&lt;/p&gt;
-&lt;h1 id=&#34;南京大学-智能科学与技术学院苏州&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#南京大学-智能科学与技术学院苏州&#34;&gt;#&lt;/a&gt; 南京大学 - 智能科学与技术学院（苏州）&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;张凯：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jc3puLmdpdGh1Yi5pby8=&#34;&gt;https://cszn.github.io/&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;邰颖：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90eXNoaXdvLmdpdGh1Yi5pby9pbmRleC5odG1s&#34;&gt;https://tyshiwo.github.io/index.html&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;联系过张凯老师，张凯老师人很好。第一次信没有回复，第二次在 follow 信发过去后很快就回信了，这个是第一个回信的老师，表示欢迎我来。虽然有点类似官回，但给我很大的鼓励。&lt;/p&gt;
-&lt;h1 id=&#34;北京师范大学-人工智能学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#北京师范大学-人工智能学院&#34;&gt;#&lt;/a&gt; 北京师范大学 - 人工智能学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;黄华：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly92bWNsLmJudS5lZHUuY24vZ3JvdXAvdGVhY2hlci9kY2RhZWE3OWI1ZTU0Yjc1YjUzMjc5NTEwOWE4NWEzNC5odG0=&#34;&gt;https://vmcl.bnu.edu.cn/group/teacher/dcdaea79b5e54b75b532795109a85a34.htm&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;有点偏 low level 中的底层，与相机有关，感觉干不来。&lt;/p&gt;
-&lt;h1 id=&#34;南京大学-计算机学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#南京大学-计算机学院&#34;&gt;#&lt;/a&gt; 南京大学 - 计算机学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;路通：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jcy5uanUuZWR1LmNuL2x1dG9uZy9pbmRleC5odG0=&#34;&gt;https://cs.nju.edu.cn/lutong/index.htm&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;联系过但没有回复。&lt;/p&gt;
-&lt;h1 id=&#34;大连理工大学-国际信息科学与工程学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#大连理工大学-国际信息科学与工程学院&#34;&gt;#&lt;/a&gt; 大连理工大学 - 国际信息科学与工程学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;刘日升：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yc2xpdS50ZWNoLw==&#34;&gt;https://rsliu.tech/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这个老师同时也做机器人，很强。因为位置偏远，没有考虑。&lt;/p&gt;
-&lt;h1 id=&#34;四川大学-计算机学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#四川大学-计算机学院&#34;&gt;#&lt;/a&gt; 四川大学 - 计算机学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;彭玺：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wZW5neGkubWUv&#34;&gt;https://pengxi.me/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;电子科技大学-计算机科学与工程学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#电子科技大学-计算机科学与工程学院&#34;&gt;#&lt;/a&gt; 电子科技大学 - 计算机科学与工程学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;顾舒航：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaHVoYW5nZ3UuZ2l0aHViLmlvLw==&#34;&gt;https://shuhanggu.github.io/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;天津大学-智能与计算学部&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#天津大学-智能与计算学部&#34;&gt;#&lt;/a&gt; 天津大学 - 智能与计算学部&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;郭晓杰：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zaXRlcy5nb29nbGUuY29tL3ZpZXcveGpndW8=&#34;&gt;https://sites.google.com/view/xjguo&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;很强，LIME 论文的团队。听说对学生也很好，联系过一次，没有回信，再次未被看上。&lt;/p&gt;
-&lt;h1 id=&#34;电子科技大学-信息与通信工程学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#电子科技大学-信息与通信工程学院&#34;&gt;#&lt;/a&gt; 电子科技大学 - 信息与通信工程学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;刘帅成：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5saXVzaHVhaWNoZW5nLm9yZy8=&#34;&gt;http://www.liushuaicheng.org/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;很强，GLARE 论文的团队，依然是联系过后未被看上，没有回信。&lt;/p&gt;
-&lt;h1 id=&#34;中国科学技术大学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中国科学技术大学&#34;&gt;#&lt;/a&gt; 中国科学技术大学&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;李厚强：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWZmLnVzdGMuZWR1LmNuL35saWhxL2VuLw==&#34;&gt;http://staff.ustc.edu.cn/~lihq/en/&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;熊志伟：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3N0YWZmLnVzdGMuZWR1LmNuL356d3hpb25nLw==&#34;&gt;http://staff.ustc.edu.cn/~zwxiong/&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;刘东：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mYWN1bHR5LnVzdGMuZWR1LmNuL2RvbmdlbGl1Lw==&#34;&gt;https://faculty.ustc.edu.cn/dongeliu/&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;陈志波：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mYWN1bHR5LnVzdGMuZWR1LmNuL2NoZW56aGliby8=&#34;&gt;https://faculty.ustc.edu.cn/chenzhibo/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;武汉大学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#武汉大学&#34;&gt;#&lt;/a&gt; 武汉大学&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;马佳义：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL212cC53aHUuZWR1LmNuL2ppYXlpbWEv&#34;&gt;http://mvp.whu.edu.cn/jiayima/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&#34;西安电子科技大学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#西安电子科技大学&#34;&gt;#&lt;/a&gt; 西安电子科技大学&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;董伟生：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zZWUueGlkaWFuLmVkdS5jbi9mYWN1bHR5L3dzZG9uZy8=&#34;&gt;https://see.xidian.edu.cn/faculty/wsdong/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;联系过董老师 2 次，但都是没有打开看我的信。&lt;/p&gt;
-&lt;h1 id=&#34;西安交通大学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#西安交通大学&#34;&gt;#&lt;/a&gt; 西安交通大学&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;孟德宇：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9nci54anR1LmVkdS5jbi93ZWIvZHltZW5n&#34;&gt;https://gr.xjtu.edu.cn/web/dymeng&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;西交夏令营要本科学校计算机 a 评估。&lt;/p&gt;
-&lt;h1 id=&#34;华东师范大学&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#华东师范大学&#34;&gt;#&lt;/a&gt; 华东师范大学&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;谢源：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mYWN1bHR5LmVjbnUuZWR1LmNuL19zMTYveHkyXzExMzQyL21haW4ucHNw&#34;&gt;https://faculty.ecnu.edu.cn/_s16/xy2_11342/main.psp&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;风评未知，也没有团队主页，暂不考虑。&lt;/p&gt;
-&lt;h1 id=&#34;中科院深先所&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#中科院深先所&#34;&gt;#&lt;/a&gt; 中科院深先所&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;MMLab：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9tbWxhYi5zaWF0LmFjLmNuLw==&#34;&gt;https://mmlab.siat.ac.cn/&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;董超：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3hwaXhlbC5ncm91cC8=&#34;&gt;http://xpixel.group/&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;联系过董超老师 2 次，依然没有打开信看。&lt;/p&gt;
-&lt;h1 id=&#34;同济大学-计算机科学与技术学院软件学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#同济大学-计算机科学与技术学院软件学院&#34;&gt;#&lt;/a&gt; 同济大学 - 计算机科学与技术学院（软件学院）&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;张林：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zc2UudG9uZ2ppLmVkdS5jbi9pbmZvLzEyMTIvNTA1Mi5odG0=&#34;&gt;https://sse.tongji.edu.cn/info/1212/5052.htm&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;同济大学 bar 过高。&lt;/p&gt;
-&lt;h1 id=&#34;北京邮电大学-计算机学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#北京邮电大学-计算机学院&#34;&gt;#&lt;/a&gt; 北京邮电大学 - 计算机学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;明安龙：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90ZWFjaGVyLmJ1cHQuZWR1LmNuL21hbA==&#34;&gt;https://teacher.bupt.edu.cn/mal&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;联系过明老师，明老师做计算摄影、美学评估方向为主，方向有点不太 match。&lt;/p&gt;
-&lt;h1 id=&#34;北京邮电大学-人智学院&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#北京邮电大学-人智学院&#34;&gt;#&lt;/a&gt; 北京邮电大学 - 人智学院&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;鲁鹏：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9jdi14dWViYS5jbHViL3BhZ2VzL21lbWJlcnMvcGx1Lmh0bWw=&#34;&gt;https://cv-xueba.club/pages/members/plu.html&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-        <category term="保研" scheme="https://yunhdan.github.io/categories/baoyan/" />
-        <updated>2025-06-03T03:08:17.000Z</updated>
     </entry>
 </feed>
