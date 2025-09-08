@@ -13,8 +13,10 @@
         <id>https://yunhdan.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%90%86%E8%AE%BA/</id>
         <title>操作系统理论</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%90%86%E8%AE%BA/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;概述&#34;&gt;&lt;a href=&#34;#概述&#34; class=&#34;headerlink&#34; title=&#34;概述&#34;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;什么是操作系统？[（答案如下）]{.gap} {.quiz .fill}&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;概述&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概述&#34;&gt;#&lt;/a&gt; 概述&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;什么是操作系统？&lt;span class=&#34;gap&#34;&gt;（答案如下）&lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;操作系统管理计算机资源，主要对处理机、存储器、文件、作业、设备进行管理。&lt;/li&gt;
@@ -23,56 +25,67 @@
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;操作系统有[核心态（管态）]{.gap}和[用户态（目态）]{.gap}两种运行状态，对应将程序划分为[内核程序]{.gap}和[应用程序]{.gap} {.quiz .fill}&lt;/p&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;操作系统有&lt;span class=&#34;gap&#34;&gt;核心态（管态）&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt;用户态（目态）&lt;/span&gt;两种运行状态，对应将程序划分为&lt;span class=&#34;gap&#34;&gt;内核程序&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt;应用程序&lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;:::success&lt;/p&gt;
+&lt;div class=&#34;note success&#34;&gt;
 &lt;p&gt;内核是计算机上配置的底层软件。主要包括时钟管理、中断机制、一系列原语、系统控制的数据结构以及如何管理这些数据结构。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;操作系统需要通过内核的时钟管理，向用户提供标准的系统时间。其次，通过时钟中断的管理，可以实现进程的切换。 {.quiz .true}&lt;/li&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li class=&#34;quiz true&#34;&gt;操作系统需要通过内核的时钟管理，向用户提供标准的系统时间。其次，通过时钟中断的管理，可以实现进程的切换。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;:::info&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;原语是操作系统底层的一些可被调用的公用小程序，用于完成一个规定的操作。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;原语位于操作系统底层，最接近硬件。{.quiz .true}&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;原语位于操作系统底层，最接近硬件。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;原语可以被中断。{.quiz .false}&lt;/p&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;原语可以被中断。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;原语程序的运行具有原子性，操作只能一气呵成。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;原语调用频繁，运行时间短。{.quiz .true}&lt;/p&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;原语调用频繁，运行时间短。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;:::info&lt;/p&gt;
-&lt;p&gt;中断是CPU对系统发生的事件做出的一个反应，使CPU暂停正在执行的程序，保留现场，并执行相应的处理程序。&lt;br&gt;中断机制的引入，初衷是为了提升多道程序运行环境中CPU的利用率，后面发展为操作系统各项操作的基础。&lt;br&gt;中断具有优先级。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;低级中断不能被高级中断打断。{.quiz .false}&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;中断是 CPU 对系统发生的事件做出的一个反应，使 CPU 暂停正在执行的程序，保留现场，并执行相应的处理程序。&lt;br /&gt;
+中断机制的引入，初衷是为了提升多道程序运行环境中 CPU 的利用率，后面发展为操作系统各项操作的基础。&lt;br /&gt;
+中断具有优先级。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;低级中断不能被高级中断打断。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;外中断通常与CPU执行的指令无关。异常又被称为内中断，主要是由CPU执行的指令产生的事件，比如地址越界，算术溢出等，是CPU执行指令本身时出现的问题。 {.quiz .true}&lt;/p&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;外中断通常与 CPU 执行的指令无关。异常又被称为内中断，主要是由 CPU 执行的指令产生的事件，比如地址越界，算术溢出等，是 CPU 执行指令本身时出现的问题。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;异常是一种特殊的中断。 {.quiz .true}&lt;/p&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;异常是一种特殊的中断。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;对中断的处理方式有[顺序处理]{.gap}和[嵌套处理]{.gap}。 {.quiz .fill}&lt;/p&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;对中断的处理方式有&lt;span class=&#34;gap&#34;&gt;顺序处理&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt;嵌套处理&lt;/span&gt;。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;嵌套处理主要是由于中断优先级的存在，高级的中断打断低级中断。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;:::success&lt;/p&gt;
-&lt;p&gt;常见中断处理流程是：关中断（CPU相应中断，从此刻开始不会响应更高级的中断的请求）$\rightarrow$ 保存断点（将原来程序的断点，即程序计数器PC保存起来）$\rightarrow$ 引入中断服务程序 $\rightarrow$ 保护现场（保存相关寄存器的内容）$\rightarrow$ 开中断（允许响应更高级的中断）$\rightarrow$ 执行中断服务程序 $\rightarrow$ 关中断（准备恢复现场，此刻开始不再响应更高级中断的请求）$\rightarrow$ 恢复现场 $\rightarrow$ 开中断、中断返回。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;操作系统的内核类型有[大内核（强内核、单内核）]{.gap}和[微内核]{.gap}。 {.quiz .fill}&lt;/li&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;p&gt;常见中断处理流程是：关中断（CPU 相应中断，从此刻开始不会响应更高级的中断的请求）&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 保存断点（将原来程序的断点，即程序计数器 PC 保存起来）&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 引入中断服务程序 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 保护现场（保存相关寄存器的内容）&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 开中断（允许响应更高级的中断）&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 执行中断服务程序 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 关中断（准备恢复现场，此刻开始不再响应更高级中断的请求）&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 恢复现场 &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\rightarrow&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.36687em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;→&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 开中断、中断返回。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;11&#34;&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;操作系统的内核类型有&lt;span class=&#34;gap&#34;&gt;大内核（强内核、单内核）&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt;微内核&lt;/span&gt;。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;:::success&lt;/p&gt;
-&lt;p&gt;大内核将操作系统的功能作为一个紧密结合的整体放到内核中。&lt;br&gt;微内核则是将操作系统分为多个小的、定义良好的功能模块。基本的功能保留到内核，即微内核，而其他的功能模块运行在用户态。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;微内核操作系统因为需要频繁在用户态和核心态之间切换，所以有一定的性能损失。 {.quiz .true}&lt;/li&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;p&gt;大内核将操作系统的功能作为一个紧密结合的整体放到内核中。&lt;br /&gt;
+微内核则是将操作系统分为多个小的、定义良好的功能模块。基本的功能保留到内核，即微内核，而其他的功能模块运行在用户态。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;12&#34;&gt;
+&lt;li class=&#34;quiz true&#34;&gt;微内核操作系统因为需要频繁在用户态和核心态之间切换，所以有一定的性能损失。&lt;/li&gt;
 &lt;/ol&gt;
 </content>
         <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
@@ -82,7 +95,8 @@
         <id>https://yunhdan.github.io/cs/Web/</id>
         <title>Web</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/Web/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;网页部署&#34;&gt;&lt;a href=&#34;#网页部署&#34; class=&#34;headerlink&#34; title=&#34;网页部署&#34;&gt;&lt;/a&gt;网页部署&lt;/h1&gt;&lt;ul&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;网页部署&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#网页部署&#34;&gt;#&lt;/a&gt; 网页部署&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;布置静态网页，启蒙介绍：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2FianR4Zi9hcnRpY2xlL2RldGFpbHMvMTQ1NDMxMjI2&#34;&gt;https://blog.csdn.net/abjtxf/article/details/145431226&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;同上，相较更详细一些的启蒙介绍：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9seG5jaGFuLmNuL2Nmd29ya2Vycy13ZWJwYWdlcy5odG1s&#34;&gt;https://lxnchan.cn/cfworkers-webpages.html&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -94,62 +108,82 @@
         <id>https://yunhdan.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%84%E6%88%90/</id>
         <title>计算机系统组成</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E7%BB%84%E6%88%90/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;:::info&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;有用的计算机系统知识，欢迎来闯关！&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;h1 id=&#34;概论&#34;&gt;&lt;a href=&#34;#概论&#34; class=&#34;headerlink&#34; title=&#34;概论&#34;&gt;&lt;/a&gt;概论&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;冯诺依曼体系结构三大思想为？{.quiz .multi}&lt;ul&gt;
-&lt;li&gt;计算机硬件系统由运算器、存储器、控制器、输入设备、输出设备5大部件组成。{.correct}&lt;/li&gt;
-&lt;li&gt;“存储程序”：指令和数据以同等地位存储在存储器中。{.correct}&lt;/li&gt;
-&lt;li&gt;指令和数据均用二进制表示。{.correct}&lt;/li&gt;
-&lt;li&gt;以输入设备和输出设备为中心。&lt;br&gt;{.options}&lt;/li&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;概论&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#概论&#34;&gt;#&lt;/a&gt; 概论&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li class=&#34;quiz multi&#34;&gt;冯诺依曼体系结构三大思想为？
+&lt;ul class=&#34;options&#34;&gt;
+&lt;li class=&#34;correct&#34;&gt;计算机硬件系统由运算器、存储器、控制器、输入设备、输出设备 5 大部件组成。&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;“存储程序”：指令和数据以同等地位存储在存储器中。&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;指令和数据均用二进制表示。&lt;/li&gt;
+&lt;li&gt;以输入设备和输出设备为中心。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;:::info&lt;/p&gt;
-&lt;p&gt;“存储程序”的概念是指将指令事先输入计算机的主存，然后取程序在主存的首地址来执行程序的第一条指令，按程序规定的顺序执行其他指令，直到程序结束。&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;“存储程序” 的概念是指将指令事先输入计算机的主存，然后取程序在主存的首地址来执行程序的第一条指令，按程序规定的顺序执行其他指令，直到程序结束。&lt;/p&gt;
 &lt;p&gt;这揭示了计算机的工作过程：1）把程序和数据存入主存。2）把主存的源程序转换为可执行文件。3）从可执行文件的首地址开始逐条执行指令。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;p&gt;:::info&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;计算机系统结构层次从高到低分为：应用软件级、高级语言级、汇编语言级、操作系统级、机器语言级、硬件逻辑级。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;编译是将源程序翻译为可执行的目标程序，也就是汇编语言文件。{.quiz .false}&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;编译是将源程序翻译为可执行的目标程序，也就是汇编语言文件。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;目标程序文件是二进制的机器语言文件。&lt;br&gt;编译包含了汇编过程。&lt;/p&gt;
+&lt;p&gt;目标程序文件是二进制的机器语言文件。&lt;br /&gt;
+编译包含了汇编过程。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;回顾一下，java虚拟机jvm的作用是什么？&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;回顾一下，java 虚拟机 jvm 的作用是什么？&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;+++success 答案&lt;br&gt;java程序并不一步到位编译为目标程序，而是先编译成中间文件字节码，即.class文件，然后再用解释的方式一条一条执行。而JVM的作用就是作为一个中介将字节码逐条解释为目标代码，然后执行。&lt;br&gt;+++&lt;/p&gt;
-&lt;ol&gt;
+&lt;details class=&#34;success&#34;&gt;&lt;summary&gt;答案&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;java 程序并不一步到位编译为目标程序，而是先编译成中间文件字节码，即.class 文件，然后再用解释的方式一条一条执行。而 JVM 的作用就是作为一个中介将字节码逐条解释为目标代码，然后执行。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;ol start=&#34;4&#34;&gt;
 &lt;li&gt;描述一下指令的执行过程和程序的执行过程。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;+++success 答案&lt;br&gt;指令的执行过程：&lt;br&gt;取指：到PC取指令的地址，然后在主存中取出指令内容，最终送入指令寄存器IR。&lt;br&gt;分析指令：控制器根据IR译码后送出控制信号。&lt;br&gt;执行指令：控制器根据控制信号在主存取出操作数，在运算器完成指令。&lt;/p&gt;
-&lt;p&gt;程序的执行过程：&lt;br&gt;程序的第一条指令在PC中被取出，经过分析和执行后，通过第一条指令的地址计算出下一条指令的地址，用新得到的指令地址继续读出第二条指令并执行，直到程序结束。&lt;br&gt;+++&lt;/p&gt;
-&lt;p&gt;:::info&lt;/p&gt;
-&lt;p&gt;计算机主要四大性能指标：机器字长、数据通路带宽、主存容量、运算速度。运算速度有吞吐量、响应时间、时钟周期、主频、CPI等指标。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;数据通路带宽是指数据总线一次所能串行传送信息的位数。{.quiz .false}&lt;/p&gt;
+&lt;details class=&#34;success&#34;&gt;&lt;summary&gt;答案&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;指令的执行过程：&lt;br /&gt;
+取指：到 PC 取指令的地址，然后在主存中取出指令内容，最终送入指令寄存器 IR。&lt;br /&gt;
+分析指令：控制器根据 IR 译码后送出控制信号。&lt;br /&gt;
+执行指令：控制器根据控制信号在主存取出操作数，在运算器完成指令。&lt;/p&gt;
+&lt;p&gt;程序的执行过程：&lt;br /&gt;
+程序的第一条指令在 PC 中被取出，经过分析和执行后，通过第一条指令的地址计算出下一条指令的地址，用新得到的指令地址继续读出第二条指令并执行，直到程序结束。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;计算机主要四大性能指标：机器字长、数据通路带宽、主存容量、运算速度。运算速度有吞吐量、响应时间、时钟周期、主频、CPI 等指标。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;数据通路带宽是指数据总线一次所能串行传送信息的位数。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;带宽是衡量并行传送信息的能力指标。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;主存容量可以用字数$\times$字长（如512K $\times$ 16位）来表示。{.quiz .true}&lt;/p&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;主存容量可以用字数&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\times&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.66666em;vertical-align:-0.08333em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;×&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 字长（如 512K &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\times&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.66666em;vertical-align:-0.08333em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;×&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; 16 位）来表示。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;:::info&lt;/p&gt;
-&lt;p&gt;吞吐量是指系统单位时间内处理请求或指令的数量。&lt;br&gt;相应时间是指用户向系统发送一个请求，到计算机对该请求做出相应并获得结果的时间。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;CPU最小的时间单位是时钟周期，又称为节拍脉冲。{.quiz .true}&lt;/p&gt;
+&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;吞吐量是指系统单位时间内处理请求或指令的数量。&lt;br /&gt;
+相应时间是指用户向系统发送一个请求，到计算机对该请求做出相应并获得结果的时间。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;CPU 最小的时间单位是时钟周期，又称为节拍脉冲。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;什么是CPI？&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;什么是 CPI？&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;+++success 答案&lt;br&gt;英文全名叫Clock cycle Per Instruction，即执行一条指令所需的时钟周期数。&lt;br&gt;+++&lt;/p&gt;
+&lt;details class=&#34;success&#34;&gt;&lt;summary&gt;答案&lt;/summary&gt;&lt;div&gt;
+&lt;p&gt;英文全名叫 Clock cycle Per Instruction，即执行一条指令所需的时钟周期数。&lt;/p&gt;
+&lt;/div&gt;&lt;/details&gt;
 </content>
         <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
         <updated>2025-08-13T08:37:55.000Z</updated>
@@ -158,67 +192,73 @@
         <id>https://yunhdan.github.io/book/%E3%80%8A%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92%E3%80%8B/</id>
         <title>《认知觉醒》</title>
         <link rel="alternate" href="https://yunhdan.github.io/book/%E3%80%8A%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92%E3%80%8B/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;《认知觉醒：开启自我改变的原动力》&#34;&gt;&lt;a href=&#34;#《认知觉醒：开启自我改变的原动力》&#34; class=&#34;headerlink&#34; title=&#34;《认知觉醒：开启自我改变的原动力》&#34;&gt;&lt;/a&gt;&lt;strong&gt;《认知觉醒：开启自我改变的原动力》&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt; 周岭&lt;/p&gt;
-&lt;h3 id=&#34;第一章-大脑——一切问题的起源&#34;&gt;&lt;a href=&#34;#第一章-大脑——一切问题的起源&#34; class=&#34;headerlink&#34; title=&#34; 第一章 大脑——一切问题的起源&#34;&gt;&lt;/a&gt; &lt;strong&gt;第一章 大脑——一切问题的起源&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;为了适应陆地生活，爬行动物演化出了最初的“本能脑”。本能脑的结构很简单，只有一个原始的反射模块，可以让爬行动物对环境快速做出本能反应，比如遇到危险就战斗或逃跑，遇到猎物就捕食，遇到心仪的异性就追求等。&lt;/li&gt;
-&lt;li&gt;哺乳动物的大脑里也发展出一个独特的情感区域（边缘系统），脑科学家称之为“情绪脑”&lt;/li&gt;
-&lt;li&gt;人类沉迷于自己独有的理智，所以把这个新的脑区称为“理智脑”&lt;/li&gt;
-&lt;li&gt;本能脑已经有近3.6亿年的历史，情绪脑有近2亿年的历史，而理智脑出现的时间只有250万年不到。&lt;/li&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;认知觉醒开启自我改变的原动力&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#认知觉醒开启自我改变的原动力&#34;&gt;#&lt;/a&gt; &lt;strong&gt;《认知觉醒：开启自我改变的原动力》&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;周岭&lt;/p&gt;
+&lt;h3 id=&#34;第一章-大脑一切问题的起源&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一章-大脑一切问题的起源&#34;&gt;#&lt;/a&gt; &lt;strong&gt;第一章 大脑 —— 一切问题的起源&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;为了适应陆地生活，爬行动物演化出了最初的 “本能脑”。本能脑的结构很简单，只有一个原始的反射模块，可以让爬行动物对环境快速做出本能反应，比如遇到危险就战斗或逃跑，遇到猎物就捕食，遇到心仪的异性就追求等。&lt;/li&gt;
+&lt;li&gt;哺乳动物的大脑里也发展出一个独特的情感区域（边缘系统），脑科学家称之为 “情绪脑”&lt;/li&gt;
+&lt;li&gt;人类沉迷于自己独有的理智，所以把这个新的脑区称为 “理智脑”&lt;/li&gt;
+&lt;li&gt;本能脑已经有近 3.6 亿年的历史，情绪脑有近 2 亿年的历史，而理智脑出现的时间只有 250 万年不到。&lt;/li&gt;
 &lt;li&gt;本能脑早在婴儿时期就比较完善了，情绪脑则要等到青春期早期才趋于完善，而理智脑最晚，要等到成年早期才基本发育成熟。&lt;/li&gt;
-&lt;li&gt;我们的大脑里大约有860亿个神经元细胞，而本能脑和情绪脑拥有近八成，所以它们对大脑的掌控力更强。&lt;/li&gt;
+&lt;li&gt;我们的大脑里大约有 860 亿个神经元细胞，而本能脑和情绪脑拥有近八成，所以它们对大脑的掌控力更强。&lt;/li&gt;
 &lt;li&gt;种种迹象表明，理智脑对大脑的控制能力很弱，所以我们在生活中做的大部分决策往往源于本能和情绪，而非理智。当然，不管是何种因素影响我们做出决策，初衷都是让我们好，只不过本能脑和情绪脑的决策往往与现代社会脱节，因为它们以为自己还处于原始社会。&lt;/li&gt;
 &lt;li&gt;进化之手还未来得及完全改造我们，这些在远古社会具有生存优势的天性，在现代社会反而成了阻碍，甚至可以说，我们当前遇到的几乎所有的成长问题都可以归结到目光短浅、即时满足的天性上，不过在现代社会，用避难趋易和急于求成来代指它们显然更加贴切。&lt;/li&gt;
-&lt;li&gt;避难趋易——只做简单和舒适的事，喜欢在核心区域周边打转，待在舒适区内逃避真正的困难；&lt;/li&gt;
-&lt;li&gt;急于求成——凡事希望立即看到结果，对不能马上看到结果的事往往缺乏耐心，非常容易放弃。&lt;/li&gt;
-&lt;li&gt;事实上理智脑很少有主见，大多数时候我们以为自己在思考，其实都是在对自身的行为和欲望进行合理化，这正是人类被称作“自我解释的动物”的原因。&lt;/li&gt;
-&lt;li&gt;理智脑发达的人更能： ·立足长远，主动走出舒适区； ·为潜在的风险克制自己，为可能的收益延时满足； ·保持耐心，坚持做那些短期内看不到效果的“无用之事”； ·抵制诱惑，面对舒适和娱乐时，做出与其他人不同的选择……&lt;/li&gt;
-&lt;li&gt;习惯之所以难以改变，就是因为它是自我巩固的——越用越强，越强越用。要想从既有的习惯中跳出来，最好的方法不是依靠自制力，而是依靠知识&lt;/li&gt;
+&lt;li&gt;避难趋易 —— 只做简单和舒适的事，喜欢在核心区域周边打转，待在舒适区内逃避真正的困难；&lt;/li&gt;
+&lt;li&gt;急于求成 —— 凡事希望立即看到结果，对不能马上看到结果的事往往缺乏耐心，非常容易放弃。&lt;/li&gt;
+&lt;li&gt;事实上理智脑很少有主见，大多数时候我们以为自己在思考，其实都是在对自身的行为和欲望进行合理化，这正是人类被称作 “自我解释的动物” 的原因。&lt;/li&gt;
+&lt;li&gt;理智脑发达的人更能：・立足长远，主动走出舒适区；・为潜在的风险克制自己，为可能的收益延时满足；・保持耐心，坚持做那些短期内看不到效果的 “无用之事”；・抵制诱惑，面对舒适和娱乐时，做出与其他人不同的选择……&lt;/li&gt;
+&lt;li&gt;习惯之所以难以改变，就是因为它是自我巩固的 —— 越用越强，越强越用。要想从既有的习惯中跳出来，最好的方法不是依靠自制力，而是依靠知识&lt;/li&gt;
 &lt;li&gt;很多人在成长的过程中感到极度痛苦，就是因为他们总是用意志力去对抗本能和情绪，最后把自己搞得精疲力竭，却收效甚微&lt;/li&gt;
 &lt;li&gt;无论个体还是群体，人类的安全感都源于自己在某一方面拥有的独特优势：或能力，或财富，或权力，或影响力。&lt;/li&gt;
 &lt;li&gt;归结起来，焦虑的原因就两条：想同时做很多事，又想立即看到效果。&lt;/li&gt;
 &lt;li&gt;焦虑就是因为欲望与能力之间差距过大。&lt;/li&gt;
 &lt;li&gt;焦虑是天性，是人类的默认设置。&lt;/li&gt;
-&lt;li&gt;克制欲望，不要让自己同时做很多事； ·面对现实，看清自己真实的能力水平； ·要事优先，想办法只做最重要的事情； ·接受环境，在局限中做力所能及的事； ·直面核心，狠狠逼自己一把去突破它。&lt;/li&gt;
+&lt;li&gt;克制欲望，不要让自己同时做很多事；・面对现实，看清自己真实的能力水平；・要事优先，想办法只做最重要的事情；・接受环境，在局限中做力所能及的事；・直面核心，狠狠逼自己一把去突破它。&lt;/li&gt;
 &lt;li&gt;很多时候，我们对困难的事物缺乏耐心是因为看不到全局、不知道自己身在何处，所以总是拿着天性这把短视之尺到处衡量，以为做成一件事很简单。事实上，如果我们能了解一些事物发展的基本规律，改用理性这把客观之尺，则会极大地提升耐心。&lt;/li&gt;
-&lt;li&gt;舒适区边缘另一个重要的规律是它揭示了能力成长的普遍法则：无论个体还是群体，其能力都以“舒适区—拉伸区￼—困难区”的形式分布，要想让自己高效成长，必须让自己始终处于舒适区的边缘，贸然跨到困难区会让自己受挫，而始终停留在舒适区会让自己停滞（见图1-4）。 ￼&lt;/li&gt;
-&lt;li&gt;对于学习而言，学习之后的思考、思考之后的行动、行动之后的改变更重要，如果不盯住内层的改变量，那么在表层投入再多的学习量也会事倍功半；因此，从权重上看，改变量﹥行动量﹥思考量﹥学习量（见图1-5）。 &lt;/li&gt;
-&lt;li&gt;另一个值得关注的微观规律是学习的平台期。这个规律表明，学习进展和时间的关系并不是我们想象中的那种线性关系（学多少是多少），而是呈现一种波浪式上升曲线（见图1-6）。 ￼&lt;/li&gt;
+&lt;li&gt;舒适区边缘另一个重要的规律是它揭示了能力成长的普遍法则：无论个体还是群体，其能力都以 “舒适区 — 拉伸区￼— 困难区” 的形式分布，要想让自己高效成长，必须让自己始终处于舒适区的边缘，贸然跨到困难区会让自己受挫，而始终停留在舒适区会让自己停滞（见图 1-4）。 ￼&lt;/li&gt;
+&lt;li&gt;对于学习而言，学习之后的思考、思考之后的行动、行动之后的改变更重要，如果不盯住内层的改变量，那么在表层投入再多的学习量也会事倍功半；因此，从权重上看，改变量﹥行动量﹥思考量﹥学习量（见图 1-5）。&lt;/li&gt;
+&lt;li&gt;另一个值得关注的微观规律是学习的平台期。这个规律表明，学习进展和时间的关系并不是我们想象中的那种线性关系（学多少是多少），而是呈现一种波浪式上升曲线（见图 1-6）。 ￼&lt;/li&gt;
 &lt;li&gt;在平台期，我们可能付出了大量的努力，但看起来毫无进步，甚至可能退步，不过这仅仅是一个假象，因为大脑中的神经元细胞依旧在发生连接并被不停地巩固，到了某一节点后，就会进入下一个快速上升阶段。&lt;/li&gt;
-&lt;li&gt;当我们清楚了上述规律之后，就能在面对长期的冷寂或挫折失败时做出与他人不同的选择：有人选择放弃，而我们继续坚持。同时，我们不会因自己进步缓慢而沮丧，也不会因别人成长迅速而焦虑。就像写公众号，有耐心的人会牢牢盯住长远价值，他们的目光在5年、10年之后，所以不会因眼下文章的阅读量低而缺失动力，也不会因别人写出了10W+的文章（一篇文章的阅读量达到10万以上）而焦虑不安，毕竟各自所处的阶段不同，只要持续创造价值，别人的今天就是自己的明天。&lt;/li&gt;
+&lt;li&gt;当我们清楚了上述规律之后，就能在面对长期的冷寂或挫折失败时做出与他人不同的选择：有人选择放弃，而我们继续坚持。同时，我们不会因自己进步缓慢而沮丧，也不会因别人成长迅速而焦虑。就像写公众号，有耐心的人会牢牢盯住长远价值，他们的目光在 5 年、10 年之后，所以不会因眼下文章的阅读量低而缺失动力，也不会因别人写出了 10W + 的文章（一篇文章的阅读量达到 10 万以上）而焦虑不安，毕竟各自所处的阶段不同，只要持续创造价值，别人的今天就是自己的明天。&lt;/li&gt;
 &lt;li&gt;耐心不是毅力带来的结果，而是具有长远目光的结果。&lt;/li&gt;
-&lt;li&gt;舒适和诱惑是本能脑与情绪脑的最爱，完全放弃舒适和诱惑就相当于和本能脑、情绪脑直接对抗，很显然，理智脑不是它们的对手，失败是迟早的事。明智的做法是和它们沟通，这也是理智脑最擅长的。就像上面自己和自己对话一样，温和地告诉它们：“该有的享受一点都不会少，只是不是现在享受，而是在完成重要的事情之后。”这是一个有效的策略，因为放弃享受，它们是不会同意的，但延迟享受，它们是能接受的。&lt;/li&gt;
-&lt;li&gt;这种“后娱乐”的好处是，将享乐的快感建立在完成重要任务后的成就感之上，很放松、踏实，就像一种奖赏；而“先娱乐”虽然刚开始很快活，但精力会无限发散，拖延重要的工作，随着时间的流逝，人会空虚、焦虑。&lt;/li&gt;
-&lt;li&gt;耐心就是这样，不能急于求成，允许自己缓慢地改变，甚至经常失败。无论结果如何，和自己对话都会产生效果。 &lt;/li&gt;
+&lt;li&gt;舒适和诱惑是本能脑与情绪脑的最爱，完全放弃舒适和诱惑就相当于和本能脑、情绪脑直接对抗，很显然，理智脑不是它们的对手，失败是迟早的事。明智的做法是和它们沟通，这也是理智脑最擅长的。就像上面自己和自己对话一样，温和地告诉它们：“该有的享受一点都不会少，只是不是现在享受，而是在完成重要的事情之后。” 这是一个有效的策略，因为放弃享受，它们是不会同意的，但延迟享受，它们是能接受的。&lt;/li&gt;
+&lt;li&gt;这种 “后娱乐” 的好处是，将享乐的快感建立在完成重要任务后的成就感之上，很放松、踏实，就像一种奖赏；而 “先娱乐” 虽然刚开始很快活，但精力会无限发散，拖延重要的工作，随着时间的流逝，人会空虚、焦虑。&lt;/li&gt;
+&lt;li&gt;耐心就是这样，不能急于求成，允许自己缓慢地改变，甚至经常失败。无论结果如何，和自己对话都会产生效果。&lt;/li&gt;
 &lt;li&gt;要想办法看清那些想做之事的意义和好处，你看到的维度越多，耐心就会越强。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;第二章-潜意识——生命留给我们的彩蛋&#34;&gt;&lt;a href=&#34;#第二章-潜意识——生命留给我们的彩蛋&#34; class=&#34;headerlink&#34; title=&#34; 第二章 潜意识——生命留给我们的彩蛋&#34;&gt;&lt;/a&gt; &lt;strong&gt;第二章 潜意识——生命留给我们的彩蛋&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;人生也像是一场消除模糊的比赛，谁的模糊越严重，谁就越混沌；谁的模糊越轻微，谁就越清醒。 &lt;/li&gt;
+&lt;h3 id=&#34;第二章-潜意识生命留给我们的彩蛋&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二章-潜意识生命留给我们的彩蛋&#34;&gt;#&lt;/a&gt; &lt;strong&gt;第二章 潜意识 —— 生命留给我们的彩蛋&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;人生也像是一场消除模糊的比赛，谁的模糊越严重，谁就越混沌；谁的模糊越轻微，谁就越清醒。&lt;/li&gt;
 &lt;li&gt;而具体事件一旦变模糊，其边界就会无限扩大，原本并不困难的小事，也会在模糊的潜意识里变得难以解决。&lt;/li&gt;
 &lt;li&gt;真正的困难总比想象的要小很多。人们拖延、纠结、畏惧、害怕的根本原因往往不是事情本身有多难，而是内心的想法变得模糊。&lt;/li&gt;
-&lt;li&gt;记住，任何痛苦事件都不会自动消失，哪怕再小的事情也是如此。要想不受其困扰，唯一的办法就是正视它、看清它、拆解它、化解它，不给它进入潜意识的机会，不给它变模糊的机会；即使已经进入潜意识，也要想办法将它挖出来。所以，当你感到心里有说不清、道不明的难受的感觉时，赶紧坐下来，向自己提问。 ·到底是什么让自己烦躁不安？是上台演讲、会见某人，还是思绪纷乱？ ·具体是什么让自己恐惧担忧？是能力不足、准备不够，还是害怕某事发生？ ·面对困境，我能做什么？不能做什么？如果做不到或搞砸了，最坏的结果是什么？ 一层层挖下去，直到挖不动为止。坦然地承认、接纳那些难以启齿的想法，让情绪极度透明。虽然直面情绪不会让痛苦马上消失，甚至短时间内还会加剧痛苦，但这会让你主导形势，至少不会被情绪无端恐吓。 恐惧就是一个欺软怕硬的货色，你躲避它，它就张牙舞爪，你正视它，它就原形毕露。一旦把它看得清清楚楚，情绪就会慢慢从潜意识中消散，你的生活将会舒畅无比。&lt;/li&gt;
+&lt;li&gt;记住，任何痛苦事件都不会自动消失，哪怕再小的事情也是如此。要想不受其困扰，唯一的办法就是正视它、看清它、拆解它、化解它，不给它进入潜意识的机会，不给它变模糊的机会；即使已经进入潜意识，也要想办法将它挖出来。所以，当你感到心里有说不清、道不明的难受的感觉时，赶紧坐下来，向自己提问。・到底是什么让自己烦躁不安？是上台演讲、会见某人，还是思绪纷乱？・具体是什么让自己恐惧担忧？是能力不足、准备不够，还是害怕某事发生？・面对困境，我能做什么？不能做什么？如果做不到或搞砸了，最坏的结果是什么？ 一层层挖下去，直到挖不动为止。坦然地承认、接纳那些难以启齿的想法，让情绪极度透明。虽然直面情绪不会让痛苦马上消失，甚至短时间内还会加剧痛苦，但这会让你主导形势，至少不会被情绪无端恐吓。 恐惧就是一个欺软怕硬的货色，你躲避它，它就张牙舞爪，你正视它，它就原形毕露。一旦把它看得清清楚楚，情绪就会慢慢从潜意识中消散，你的生活将会舒畅无比。&lt;/li&gt;
 &lt;li&gt;行动力不足的真正原因是选择模糊。 所谓选择模糊，就是我们在面对众多可能性时无法做出清晰、明确的选择。&lt;/li&gt;
-&lt;li&gt;当我们的头脑中有很多模糊的选项时，我们就会不自觉地选择那个最清晰、简单和确定的选项。也就是说，当我们没有足够清晰的指令或者目标时，就很容易选择享乐，放弃那些本该坚持但比较烧脑的选项。 因此，在现代生活中，要想让自己更胜一筹，就必须学会花费更多的脑力和心力去思考如何拥有足够清晰的目标。我们要把目标和过程细化、具体化，在诸多可能性中建立一条单行通道，让自己始终处于“没得选”的状态。￼&lt;/li&gt;
-&lt;li&gt;“凭感觉”之所以被称为顶级的方法，是因为它能帮我们感知真正适合自己并需要的东西，让自己处于学习的“拉伸区”。如果单纯运用理性，我们通常会向优等生看齐，把眼光放在那些最难的题目上，想着如何追赶他们；如果顺从天性，我们就会在最简单的题目上打转（见图2-1）。 ￼ 图2-1　理性、感性、天性的选择倾向&lt;/li&gt;
-&lt;li&gt;读书方法——只取一个全书最触动自己的点，然后尽可能去实践、改变。这样读书不仅收获更大，而且也不会焦虑。&lt;/li&gt;
-&lt;li&gt;学习虽然不是一件轻松的事，但在合适的区域内，我们依旧可以体验到轻松和有趣，如果你感受到的总是痛苦和无趣，那十有八九是感觉不对——要么在困难区煎熬，要么在舒适区打转。&lt;/li&gt;
+&lt;li&gt;当我们的头脑中有很多模糊的选项时，我们就会不自觉地选择那个最清晰、简单和确定的选项。也就是说，当我们没有足够清晰的指令或者目标时，就很容易选择享乐，放弃那些本该坚持但比较烧脑的选项。 因此，在现代生活中，要想让自己更胜一筹，就必须学会花费更多的脑力和心力去思考如何拥有足够清晰的目标。我们要把目标和过程细化、具体化，在诸多可能性中建立一条单行通道，让自己始终处于 “没得选” 的状态。￼&lt;/li&gt;
+&lt;li&gt;“凭感觉” 之所以被称为顶级的方法，是因为它能帮我们感知真正适合自己并需要的东西，让自己处于学习的 “拉伸区”。如果单纯运用理性，我们通常会向优等生看齐，把眼光放在那些最难的题目上，想着如何追赶他们；如果顺从天性，我们就会在最简单的题目上打转（见图 2-1）。 ￼ 图 2-1　理性、感性、天性的选择倾向&lt;/li&gt;
+&lt;li&gt;读书方法 —— 只取一个全书最触动自己的点，然后尽可能去实践、改变。这样读书不仅收获更大，而且也不会焦虑。&lt;/li&gt;
+&lt;li&gt;学习虽然不是一件轻松的事，但在合适的区域内，我们依旧可以体验到轻松和有趣，如果你感受到的总是痛苦和无趣，那十有八九是感觉不对 —— 要么在困难区煎熬，要么在舒适区打转。&lt;/li&gt;
 &lt;li&gt;理智的分析和计算无法解出内心的真正需求，唯有感性的觉知和洞察才能让答案浮出水面。&lt;/li&gt;
 &lt;li&gt;直视死亡可以简化一切事物，让自己把注意力重新集中在真正重要的事情上；对于你喜欢的人物，不管是虚构的还是真实的，只要让你深深地着迷，就可以从这些人物身上反射出内心理想的自己&lt;/li&gt;
 &lt;li&gt;小事听从你的脑，大事听从你的心。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;第三章-元认知——人类的终极能力&#34;&gt;&lt;a href=&#34;#第三章-元认知——人类的终极能力&#34; class=&#34;headerlink&#34; title=&#34; 第三章 元认知——人类的终极能力&#34;&gt;&lt;/a&gt; &lt;strong&gt;第三章 元认知——人类的终极能力&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;高级的元认知——时刻帮你从高处、深处、远处看待现在的自己，让自己保持清醒、不迷失，保持动力、不懈怠，保持平和、不冲动。&lt;/li&gt;
+&lt;h3 id=&#34;第三章-元认知人类的终极能力&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三章-元认知人类的终极能力&#34;&gt;#&lt;/a&gt; &lt;strong&gt;第三章 元认知 —— 人类的终极能力&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;高级的元认知 —— 时刻帮你从高处、深处、远处看待现在的自己，让自己保持清醒、不迷失，保持动力、不懈怠，保持平和、不冲动。&lt;/li&gt;
 &lt;li&gt;冥想就是那种只要静坐在某处，然后放松身体，把注意力完全集中到呼吸和感受上的活动。 冥想带来的极度专注可以帮大脑做健身操。通过持续锻炼，大脑可以直接从物理上提升人的元认知能力，如果过程中觉察到自己走神了，我们只需柔和地将注意力拉回来。&lt;/li&gt;
 &lt;li&gt;反馈是这个世界的进化机制。有反馈，并形成回路，就可能使任何系统开始自我进化，无论机械设计还是软件系统都是如此。&lt;/li&gt;
 &lt;li&gt;元认知能力就是觉察力和自控力的组合。所以从实用角度讲，元认知能力可以被重新定义为：自我审视、主动控制，防止被潜意识左右的能力。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;第四章-专注力——情绪和智慧的交叉地带&#34;&gt;&lt;a href=&#34;#第四章-专注力——情绪和智慧的交叉地带&#34; class=&#34;headerlink&#34; title=&#34; 第四章 专注力——情绪和智慧的交叉地带&#34;&gt;&lt;/a&gt; &lt;strong&gt;第四章 专注力——情绪和智慧的交叉地带&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;第四章-专注力情绪和智慧的交叉地带&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四章-专注力情绪和智慧的交叉地带&#34;&gt;#&lt;/a&gt; &lt;strong&gt;第四章 专注力 —— 情绪和智慧的交叉地带&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;目标定义越明确，注意力的感知精度就会越高，精力越集中，技能越精进。如果目标太大，那就将它分解成小目标，这样做也是为了使目标更具体、精细。&lt;/li&gt;
-&lt;li&gt;在短时间内投入100%的精力比长时间投入70%的精力好，因为专注的真正动力并不是毅力和耐心，而是不断发现技巧上的微妙差异和持续存在的关注点，精力越集中则感知越细微。&lt;/li&gt;
+&lt;li&gt;在短时间内投入 100% 的精力比长时间投入 70% 的精力好，因为专注的真正动力并不是毅力和耐心，而是不断发现技巧上的微妙差异和持续存在的关注点，精力越集中则感知越细微。&lt;/li&gt;
 &lt;li&gt;先保持极度专注，想不出答案时再将注意力转换到另一件与此毫不相干的事情上。即事前聚精会神，让意识极度投入；事后完全忘记，让意识彻底撒手。这样，灵感和答案就会大概率地出现。&lt;/li&gt;
-&lt;li&gt;当人们对当前的活动感到厌倦时，说明应该提高难度；当人们对当前的活动感到焦虑时，说明应该保持这个水平专注练习，如此反复交替就可以让自己进入心流通道，沉浸其中。 &lt;/li&gt;
+&lt;li&gt;当人们对当前的活动感到厌倦时，说明应该提高难度；当人们对当前的活动感到焦虑时，说明应该保持这个水平专注练习，如此反复交替就可以让自己进入心流通道，沉浸其中。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;第五章-学习力——学习不是一味地努力&#34;&gt;&lt;a href=&#34;#第五章-学习力——学习不是一味地努力&#34; class=&#34;headerlink&#34; title=&#34; 第五章 学习力——学习不是一味地努力&#34;&gt;&lt;/a&gt; &lt;strong&gt;第五章 学习力——学习不是一味地努力&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;“教”是最好的“学”，如果一件事情你不能讲清楚，十有八九你还没有完全理解。当然，教的最高境界是用最简洁的话让一个外行人明白你讲的东西。&lt;/li&gt;
+&lt;h3 id=&#34;第五章-学习力学习不是一味地努力&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五章-学习力学习不是一味地努力&#34;&gt;#&lt;/a&gt; &lt;strong&gt;第五章 学习力 —— 学习不是一味地努力&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;“教” 是最好的 “学”，如果一件事情你不能讲清楚，十有八九你还没有完全理解。当然，教的最高境界是用最简洁的话让一个外行人明白你讲的东西。&lt;/li&gt;
 &lt;li&gt;每读完一本有价值的好书，就用写作的方式把作者的思想用自己的语言重构出来，尽力结合自身经历、学识、立场，去解释、去延伸，而不是简单地把书本的要点进行罗列。&lt;/li&gt;
 &lt;li&gt;在重构时，我们可以只取最触动自己的观点，其他观点可以放弃，即使它们很有道理。&lt;/li&gt;
 &lt;li&gt;选择一些值得关注的人，和他们保持联结。他们释放的一些有价值的信息会引领我们走向更广阔的世界，但无论如何，最终要自己去读、自己去想、自己去做。&lt;/li&gt;
@@ -234,24 +274,25 @@
 &lt;li&gt;这就是打卡心态的特性：学不到，假装一下；学到了，立即停止。所以单纯抱着打卡这一任务心态去学习，很少会有强烈的主动性，毕竟在任务心态的驱使下，人们关注的是完成情况，对任务本身没有更大的热情。&lt;/li&gt;
 &lt;li&gt;任务心态破坏了身心合一的状态，这种不良体验会加剧人们对学习活动的厌恶感，形成恶性循环。&lt;/li&gt;
 &lt;li&gt;我们在任务设置时要使用新策略：设下限，不设上限。&lt;/li&gt;
-&lt;li&gt;科学的学习策略是产出作品、获取反馈，驱动本能脑和情绪脑去“玩玩玩”，而不是一味地努力坚持，让理智脑苦苦地去“学学学”&lt;/li&gt;
+&lt;li&gt;科学的学习策略是产出作品、获取反馈，驱动本能脑和情绪脑去 “玩玩玩”，而不是一味地努力坚持，让理智脑苦苦地去 “学学学”&lt;/li&gt;
 &lt;li&gt;想创造全新的学习动机，就得放弃一味打卡输入的做法，想办法直接运用或产出作品，获取反馈。&lt;/li&gt;
 &lt;li&gt;不能一味地学学学而毫无产出，因为没有反馈的学习不仅是痛苦的，而且十有八九会失败。&lt;/li&gt;
-&lt;li&gt;·教是最好的学； ·用是最好的学； ·输出倒逼输入； ·请用作品说话……&lt;/li&gt;
+&lt;li&gt;・教是最好的学；・用是最好的学；・输出倒逼输入；・请用作品说话……&lt;/li&gt;
 &lt;li&gt;分享不是随意分享半成品，而是尽最大力气将作品打磨成自己当前能力范围内可完成的最好的样子。&lt;/li&gt;
-&lt;li&gt;古典的跃迁理论：打磨作品—到达一个小山的头部—受到更多关注—移动到一个更大山头的头部—借助系统推力，实现人生跃迁。&lt;/li&gt;
+&lt;li&gt;古典的跃迁理论：打磨作品 — 到达一个小山的头部 — 受到更多关注 — 移动到一个更大山头的头部 — 借助系统推力，实现人生跃迁。&lt;/li&gt;
 &lt;li&gt;有效学习的关键是保持极度专注，而非一味比拼毅力和耐心。&lt;/li&gt;
 &lt;li&gt;轻松的学霸，他们学习时从不过度消耗自己，只要感到精力不足，就停下来主动休息，这反而使他们精力桶的水位得到快速回升。&lt;/li&gt;
 &lt;li&gt;让自己先尽力保持短时间的极度专注，到有些累的时候就主动停下来，这是更加明智的生活和学习策略。&lt;/li&gt;
-&lt;li&gt;太容易的内容会让人因无聊而走神，太困难的内容会让人因畏惧而逃避，所以选择做那些“跳一跳就能够得着”的学习或工作，是最容易进入专注状态&lt;/li&gt;
+&lt;li&gt;太容易的内容会让人因无聊而走神，太困难的内容会让人因畏惧而逃避，所以选择做那些 “跳一跳就能够得着” 的学习或工作，是最容易进入专注状态&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;第六章-行动力——没有行动世界只是个概念&#34;&gt;&lt;a href=&#34;#第六章-行动力——没有行动世界只是个概念&#34; class=&#34;headerlink&#34; title=&#34; 第六章 行动力——没有行动世界只是个概念&#34;&gt;&lt;/a&gt; &lt;strong&gt;第六章 行动力——没有行动世界只是个概念&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;在初始阶段，强迫自己先做重要的事情，一旦进入正向的增强回路，你便能拥有强大的行动力——这正是增强自制力、提升行动力的秘密&lt;/li&gt;
-&lt;li&gt;清晰力，也就是把目标细化、具体化的能力——行动力只有在清晰力的支撑下才能得到重构。&lt;/li&gt;
-&lt;li&gt;从某种程度上说，有自己热爱的事，比行动力本身要重要得多，因为一旦有了热情，你就会自带“要事第一”和“提高清晰力”等各种属性。&lt;/li&gt;
-&lt;li&gt;正如爱因斯坦所说：“如果给我1小时解答一道决定我生死的问题，我会花55分钟弄清楚这道题到底在问什么。一旦清楚它到底在问什么，剩下的5分钟足够回答这个问题。”&lt;/li&gt;
+&lt;h3 id=&#34;第六章-行动力没有行动世界只是个概念&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第六章-行动力没有行动世界只是个概念&#34;&gt;#&lt;/a&gt; &lt;strong&gt;第六章 行动力 —— 没有行动世界只是个概念&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;在初始阶段，强迫自己先做重要的事情，一旦进入正向的增强回路，你便能拥有强大的行动力 —— 这正是增强自制力、提升行动力的秘密&lt;/li&gt;
+&lt;li&gt;清晰力，也就是把目标细化、具体化的能力 —— 行动力只有在清晰力的支撑下才能得到重构。&lt;/li&gt;
+&lt;li&gt;从某种程度上说，有自己热爱的事，比行动力本身要重要得多，因为一旦有了热情，你就会自带 “要事第一” 和 “提高清晰力” 等各种属性。&lt;/li&gt;
+&lt;li&gt;正如爱因斯坦所说：“如果给我 1 小时解答一道决定我生死的问题，我会花 55 分钟弄清楚这道题到底在问什么。一旦清楚它到底在问什么，剩下的 5 分钟足够回答这个问题。”&lt;/li&gt;
 &lt;li&gt;想先看到结果再行动的人往往无法看到结果。耍小聪明的人会因为结果不明朗，担心付出没有回报，所以不愿行动，以致永远停留在原地&lt;/li&gt;
-&lt;li&gt;不要垂涎别人二十几岁身家百万，不要羡慕别人一夜成名，他们的故事若无法真实地改变你，那对你而言都是幻想。还不如踏踏实实地用行动让自己一点一点变好，毕竟，现实结果才是最好的“评判师”。&lt;/li&gt;
+&lt;li&gt;不要垂涎别人二十几岁身家百万，不要羡慕别人一夜成名，他们的故事若无法真实地改变你，那对你而言都是幻想。还不如踏踏实实地用行动让自己一点一点变好，毕竟，现实结果才是最好的 “评判师”。&lt;/li&gt;
 &lt;li&gt;比如我开始早起和跑步的时候，起初是有一些痛苦的，但扛过去之后，我就体会到了早起和跑步给自己身心带来的不可思议的体验。回头想，最难坚持的时候可能就是突破阈值的时候&lt;/li&gt;
 &lt;li&gt;如果你觉得别人讲的道理有理有据，而自己暂时无法反驳，碰巧自己又非常想做这件事，那就相信他们说的是对的，然后笃定地行动&lt;/li&gt;
 &lt;li&gt;在实践途中，你自然也要保持思考，用行动反复验证他们的理论，不适则改、适则用，直到自己真正做到为止。届时你不仅能做成那件事，还能探索出自己的理论，成为别人眼中的高手。&lt;/li&gt;
@@ -259,21 +300,22 @@
 &lt;li&gt;不发生真正改变的学习都是无效的学习&lt;/li&gt;
 &lt;li&gt;懂得百点不如改变一点。真正的成长不在于自己懂得了多少道理，而在于自己改变了多少。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;第七章-情绪力——情绪是多角度看问题的智慧&#34;&gt;&lt;a href=&#34;#第七章-情绪力——情绪是多角度看问题的智慧&#34; class=&#34;headerlink&#34; title=&#34; 第七章 情绪力——情绪是多角度看问题的智慧&#34;&gt;&lt;/a&gt; &lt;strong&gt;第七章 情绪力——情绪是多角度看问题的智慧&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;当一个人同时面临很多任务的时候，他的心智带宽就会降低，反而没有了行动力和自控力。有生活经验的人都会尽量克制自己的欲望，在做重要之事的同时主动安排娱乐活动，尽量保持日程的闲余——这种方法是科学的、智慧的。 &lt;/li&gt;
+&lt;h3 id=&#34;第七章-情绪力情绪是多角度看问题的智慧&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第七章-情绪力情绪是多角度看问题的智慧&#34;&gt;#&lt;/a&gt; &lt;strong&gt;第七章 情绪力 —— 情绪是多角度看问题的智慧&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;当一个人同时面临很多任务的时候，他的心智带宽就会降低，反而没有了行动力和自控力。有生活经验的人都会尽量克制自己的欲望，在做重要之事的同时主动安排娱乐活动，尽量保持日程的闲余 —— 这种方法是科学的、智慧的。&lt;/li&gt;
 &lt;li&gt;真正的行动力高手不是有能耐在同一时间做很多事的人，而是会想办法避免同时做很多事的人。这样的人自然不会把自己的日程安排得太满，无论做学习计划，还是做工作安排，他们都会给自己留足够的闲余，让自己从容地面对每一刻。&lt;/li&gt;
 &lt;li&gt;适当的闲余是我们应对压力和意外的宝贵资源，但是过多的闲余可不是什么好事，如果有大量的金钱，就容易萌生无谓的欲望；有大量的时间，也容易陷入低效的状态。&lt;/li&gt;
 &lt;li&gt;那些习惯从单一角度识人的人，往往比较单纯，也更容易受伤，本质上是因为他们缺乏多角度认知事物的意识。&lt;/li&gt;
 &lt;li&gt;每个人因为生活环境不同、经历不同、学识不同，所以在看待同一个问题时，理解层次和还原程度也不尽相同。&lt;/li&gt;
 &lt;li&gt;困难和压力总能把人的情绪和注意力抓得死死的，让你很难看到其他角度。&lt;/li&gt;
 &lt;li&gt;这个世界比我们想象的要积极，我们以为自己没得选，其实还有很多角度可供选择，毕竟任何事物都是多维、立体的。看似悲观的事物背后肯定有乐观的一面，严肃事物的背后必然有好玩的一面，我们暂时看不见不代表它不存在。&lt;/li&gt;
-&lt;li&gt;当你遇到那些“不想做但必须做”的事情时，只要在心里默念一句“咒语”，就可以让自己跳出事情本身。这句“咒语”便是：我并不是在做这件事，我只是在做另外一件事。&lt;/li&gt;
+&lt;li&gt;当你遇到那些 “不想做但必须做” 的事情时，只要在心里默念一句 “咒语”，就可以让自己跳出事情本身。这句 “咒语” 便是：我并不是在做这件事，我只是在做另外一件事。&lt;/li&gt;
 &lt;li&gt;产生内部动机最好的方式莫过于立足于让自己变好。&lt;/li&gt;
 &lt;li&gt;当人的注意力都在享受上时，他对跑步的心态就不一样了。相比起来，别人为了身材和身体苦苦坚持，而他只是享受愉快的跑步过程。&lt;/li&gt;
 &lt;li&gt;比如阅读这件事。我从来不认为自己是在阅读，而是设想自己在和智者聊天。&lt;/li&gt;
 &lt;li&gt;事实上，人是一种自我解释的动物，世界的意义是人类赋予的。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 </content>
         <category term="读书" scheme="https://yunhdan.github.io/categories/book/" />
         <updated>2025-08-07T06:55:47.000Z</updated>
@@ -282,63 +324,82 @@
         <id>https://yunhdan.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%90%86%E8%AE%BA/</id>
         <title>计算机网络理论</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%90%86%E8%AE%BA/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;计算机网络体系结构&#34;&gt;&lt;a href=&#34;#计算机网络体系结构&#34; class=&#34;headerlink&#34; title=&#34;计算机网络体系结构&#34;&gt;&lt;/a&gt;计算机网络体系结构&lt;/h1&gt;&lt;p&gt;:::success&lt;/p&gt;
-&lt;p&gt;互联网相较互连网，范围更大。互连网是多个互连网互连而来的。&lt;br&gt;互联网由核心部分与边缘部分组成，边缘部分主要是大部分的主机构成，核心部分主要是大部分的路由器组成。&lt;br&gt;ISP又称互联网服务提供者，比如中国电信，中国移动，中国联通。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;计算机网络体系结构&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#计算机网络体系结构&#34;&gt;#&lt;/a&gt; 计算机网络体系结构&lt;/h1&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;p&gt;互联网相较互连网，范围更大。互连网是多个互连网互连而来的。&lt;br /&gt;
+互联网由核心部分与边缘部分组成，边缘部分主要是大部分的主机构成，核心部分主要是大部分的路由器组成。&lt;br /&gt;
+ISP 又称互联网服务提供者，比如中国电信，中国移动，中国联通。&lt;/p&gt;
+&lt;/div&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;互联网两个重要特点是[连通性和共享]{.gap}  {.quiz .fill}&lt;/p&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;互联网两个重要特点是&lt;span class=&#34;gap&#34;&gt;连通性和共享&lt;/span&gt; &lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;计算机之间的通信，本质上是[进程和进程]{.gap}之间的通信。{.quiz .fill}&lt;/p&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;计算机之间的通信，本质上是&lt;span class=&#34;gap&#34;&gt;进程和进程&lt;/span&gt;之间的通信。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;主机与主机之间的通信方式有两种，分别是[客户-服务器方式（C/S）]{.gap}和[对等方式（P2P）]{.gap} {.quiz .fill}&lt;/p&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;主机与主机之间的通信方式有两种，分别是&lt;span class=&#34;gap&#34;&gt;客户 - 服务器方式（C/S）&lt;/span&gt;和&lt;span class=&#34;gap&#34;&gt;对等方式（P2P）&lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;电路交换，表现在链路上的一个重要特点是[通话全部时间内链路始终被两端用户占用]{.gap} {.quiz .fill}&lt;/p&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;电路交换，表现在链路上的一个重要特点是&lt;span class=&#34;gap&#34;&gt;通话全部时间内链路始终被两端用户占用&lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;:::success&lt;/p&gt;
-&lt;p&gt;分组转发采用的是存储转发技术。&lt;br&gt;1GB = 1024MB = $2^{10}$MB = $2^{20}$KB = $2^{30}$B。（存储-字节视角）&lt;br&gt;1Gb = $10^3$ Mb = $10^6$ Kb = $10^9$ b。（网络-比特视角）&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;分组转发有哪四大优点？{.quiz .multi}&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;方便 &lt;/li&gt;
-&lt;li&gt;高效 {.correct}&lt;/li&gt;
-&lt;li&gt;迅速 {.correct}&lt;/li&gt;
-&lt;li&gt;可靠 {.correct}&lt;/li&gt;
-&lt;li&gt;灵活 {.correct}&lt;br&gt;{.options}&lt;/li&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;p&gt;分组转发采用的是存储转发技术。&lt;br /&gt;
+1GB = 1024MB = &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;2^{10}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8141079999999999em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141079999999999em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mord mtight&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;MB = &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mn&gt;20&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;2^{20}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8141079999999999em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141079999999999em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;mord mtight&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;KB = &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mn&gt;30&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;2^{30}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8141079999999999em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141079999999999em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;mord mtight&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; B。（存储 - 字节视角）&lt;br /&gt;
+1Gb = &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;msup&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;10^3&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8141079999999999em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141079999999999em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;3&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; Mb = &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;msup&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;10^6&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8141079999999999em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141079999999999em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;6&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; Kb = &lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;msup&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mn&gt;9&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;10^9&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8141079999999999em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8141079999999999em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;9&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; b。（网络 - 比特视角）&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li class=&#34;quiz multi&#34;&gt;
+&lt;p&gt;分组转发有哪四大优点？&lt;/p&gt;
+&lt;ul class=&#34;options&#34;&gt;
+&lt;li&gt;方便&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;高效&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;迅速&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;可靠&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;灵活&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;计算机网络有哪些性能指标？ {.quiz .multi}&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;速率 {.correct}&lt;/li&gt;
-&lt;li&gt;带宽 {.correct}&lt;/li&gt;
-&lt;li&gt;吞吐量 {.correct}&lt;/li&gt;
-&lt;li&gt;时延 {.correct}&lt;/li&gt;
-&lt;li&gt;往返时间RTT {.correct}&lt;br&gt;{.options}&lt;blockquote&gt;
-&lt;p&gt;还有利用率、时延带宽积这两个指标。&lt;br&gt;时延又有分为发送时延、传播时延、排队时延、处理时延。&lt;br&gt;带宽是某个信道，单位时间内最大通过数据量，和速率一样单位是bit/s。吞吐量是指单位时间内通过某个网络的实际数据量，更强调实际，单位是bit。&lt;br&gt;时延带宽积正如其名，是传播时延与带宽的乘积，反映的是某条链路最大的比特容量。往返时间RTT是指发送方发送信息开始，到收到对方确认信息所花的时间。&lt;/p&gt;
+&lt;li class=&#34;quiz multi&#34;&gt;
+&lt;p&gt;计算机网络有哪些性能指标？&lt;/p&gt;
+&lt;ul class=&#34;options&#34;&gt;
+&lt;li class=&#34;correct&#34;&gt;速率&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;带宽&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;吞吐量&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;时延&lt;/li&gt;
+&lt;li class=&#34;correct&#34;&gt;往返时间 RTT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;还有利用率、时延带宽积这两个指标。&lt;br /&gt;
+时延又有分为发送时延、传播时延、排队时延、处理时延。&lt;br /&gt;
+带宽是某个信道，单位时间内最大通过数据量，和速率一样单位是 bit/s。吞吐量是指单位时间内通过某个网络的实际数据量，更强调实际，单位是 bit。&lt;br /&gt;
+时延带宽积正如其名，是传播时延与带宽的乘积，反映的是某条链路最大的比特容量。往返时间 RTT 是指发送方发送信息开始，到收到对方确认信息所花的时间。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;note success&#34;&gt;
+&lt;p&gt;OSI 和 TCP/IP 模型主要有五层：应用层、传输层、网络层、数据链路层、物理层。当然还有一些辅助的层：表示层、会话层。这两个暂时不是学习重点。&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;应用层为&lt;span class=&#34;gap&#34;&gt;应用程序&lt;/span&gt;提供数据传输服务，数据单位是报文。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;传输层为&lt;span class=&#34;gap&#34;&gt;进程&lt;/span&gt;提供端到端的数据传输服务，数据单位是报文段。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;网络层主要为&lt;span class=&#34;gap&#34;&gt;主机&lt;/span&gt;提供数据传输服务，数据单位是数据包（packet—— 分组交换的数据单元）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;数据链路层为同一链路的&lt;span class=&#34;gap&#34;&gt;主机&lt;/span&gt;提供数据传输服务，数据单位是帧。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;:::success&lt;/p&gt;
-&lt;p&gt;OSI和TCP/IP模型主要有五层：应用层、传输层、网络层、数据链路层、物理层。当然还有一些辅助的层：表示层、会话层。这两个暂时不是学习重点。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;应用层为[应用程序]{.gap}提供数据传输服务，数据单位是报文。 {.quiz .fill}&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;传输层为[进程]{.gap}提供端到端的数据传输服务，数据单位是报文段。{.quiz .fill}&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;网络层主要为[主机]{.gap}提供数据传输服务，数据单位是数据包（packet——分组交换的数据单元）。{.quiz .fill}&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;数据链路层为同一链路的[主机]{.gap}提供数据传输服务，数据单位是帧。 {.quiz .fill}&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;:::success &lt;/p&gt;
+&lt;div class=&#34;note success&#34;&gt;
 &lt;p&gt;物理层主要负责在物理介质上传输数据比特流。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;为什么计算机网络要分层？[（答案如下）]{.gap} {.quiz .fill}&lt;/p&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;11&#34;&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;为什么计算机网络要分层？&lt;span class=&#34;gap&#34;&gt;（答案如下）&lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;各层可以相互独立，上下层只需要知道对方的接口即可，无需知道内部实现。&lt;/li&gt;
@@ -349,23 +410,27 @@
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如果数据帧长度为1Kb，发送速率是200bit/s，求发送时延。[（答案如下）]{.gap} {.quiz .fill}&lt;/p&gt;
+&lt;li class=&#34;quiz fill&#34;&gt;
+&lt;p&gt;如果数据帧长度为 1Kb，发送速率是 200bit/s，求发送时延。&lt;span class=&#34;gap&#34;&gt;（答案如下）&lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;发送时延 = 数据帧长度（bit） / 发送速率（bit / s）。因此答案为5s。&lt;/p&gt;
+&lt;p&gt;发送时延 = 数据帧长度（bit） / 发送速率（bit /s）。因此答案为 5s。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;传播时延随着信道的长度增大而增大。{.quiz .true}&lt;/p&gt;
+&lt;li class=&#34;quiz true&#34;&gt;
+&lt;p&gt;传播时延随着信道的长度增大而增大。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;传播时延 = 信道长度（m） / 光速（m/s）。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;信道利用率增加，则该信道的时延降低。{.quiz .false}&lt;/p&gt;
+&lt;li class=&#34;quiz false&#34;&gt;
+&lt;p&gt;信道利用率增加，则该信道的时延降低。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;时延应该更高，公式反映为：当前时延D = 空闲时延D0 / （1-利用率U）。空闲时延D0一般是不变的。&lt;/p&gt;
+&lt;p&gt;时延应该更高，公式反映为：当前时延 D = 空闲时延 D0 / （1 - 利用率 U）。空闲时延 D0 一般是不变的。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&#34;应用层&#34;&gt;&lt;a href=&#34;#应用层&#34; class=&#34;headerlink&#34; title=&#34;应用层&#34;&gt;&lt;/a&gt;应用层&lt;/h1&gt;&lt;ol&gt;
+&lt;h1 id=&#34;应用层&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#应用层&#34;&gt;#&lt;/a&gt; 应用层&lt;/h1&gt;
+&lt;ol start=&#34;15&#34;&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </content>
@@ -376,16 +441,18 @@
         <id>https://yunhdan.github.io/cs/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/</id>
         <title>图像处理</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;小波变换&#34;&gt;&lt;a href=&#34;#小波变换&#34; class=&#34;headerlink&#34; title=&#34;小波变换&#34;&gt;&lt;/a&gt;小波变换&lt;/h1&gt;&lt;ul&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;小波变换&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#小波变换&#34;&gt;#&lt;/a&gt; 小波变换&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;十分易懂的关于小波变换的介绍，可以形成初步的感性上的认知：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yMjQ1MDgxOA==&#34;&gt;https://zhuanlan.zhihu.com/p/22450818&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;这一篇在第一篇的基础上，深入了更多的内容：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxOTkwMjk0L2FydGljbGUvZGV0YWlscy8xMTQyMzg1MTU=&#34;&gt;https://blog.csdn.net/qq_41990294/article/details/114238515&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;+++info Summary&lt;/p&gt;
+&lt;details class=&#34;info&#34;&gt;&lt;summary&gt;Summary&lt;/summary&gt;&lt;div&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;小波变换的完全展开由母小波（波函数&lt;code&gt;wavelet function&lt;/code&gt;）和父小波（尺度函数&lt;code&gt;scale function&lt;/code&gt;）定义，wavelet function等同于对信号做高通滤波保留变化细节，而scaling function等同于对信号做低通滤波保留平滑的shape。&lt;br&gt;+++&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NjA1NjQyL2FydGljbGUvZGV0YWlscy8xMzU1OTgwNTc=&#34;&gt;https://blog.csdn.net/m0_37605642/article/details/135598057&lt;/span&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;小波变换的完全展开由母小波（波函数 &lt;code&gt;wavelet function&lt;/code&gt; ）和父小波（尺度函数 &lt;code&gt;scale function&lt;/code&gt; ）定义，wavelet function 等同于对信号做高通滤波保留变化细节，而 scaling function 等同于对信号做低通滤波保留平滑的 shape。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzM3NjA1NjQyL2FydGljbGUvZGV0YWlscy8xMzU1OTgwNTc=&#34;&gt;https://blog.csdn.net/m0_37605642/article/details/135598057&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
@@ -395,9 +462,9 @@
         <id>https://yunhdan.github.io/other/%E8%B0%88%E5%88%A4%E6%8A%80%E5%B7%A7/</id>
         <title>实用谈判技巧</title>
         <link rel="alternate" href="https://yunhdan.github.io/other/%E8%B0%88%E5%88%A4%E6%8A%80%E5%B7%A7/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;:::info &lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;学习自白斌老师的谈判实用技巧。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
+&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;移花接木：若对方的要求十分难以接受，当面拒绝不合适时，可以首先进行同意，然后再提出一个让对方难以接受的条件进行拒绝。“送我宝马”“可以，但有个条件，我要让你送我一栋别墅”。&lt;/li&gt;
 &lt;li&gt;降低对方期待值：如果对方想要让你接受一个比较坏的结果，你可以告知他接受该结果后的一个更坏的局面。反之亦然，让对方接受一个东西，若对方不接受，则告知将会面临一个更大的后果。&lt;/li&gt;
@@ -410,12 +477,14 @@
         <id>https://yunhdan.github.io/research/%E6%9C%9F%E5%88%8A%E3%80%81%E4%BC%9A%E8%AE%AE%E6%8A%95%E7%A8%BF%E7%BB%8F%E9%AA%8C/</id>
         <title>期刊、会议投稿经验</title>
         <link rel="alternate" href="https://yunhdan.github.io/research/%E6%9C%9F%E5%88%8A%E3%80%81%E4%BC%9A%E8%AE%AE%E6%8A%95%E7%A8%BF%E7%BB%8F%E9%AA%8C/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;Rebuttal经验&#34;&gt;&lt;a href=&#34;#Rebuttal经验&#34; class=&#34;headerlink&#34; title=&#34;Rebuttal经验&#34;&gt;&lt;/a&gt;Rebuttal经验&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;基础的关于Rebuttal的介绍，以及一些有用经验，可以当作入门学习，便于建立基本的认识：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3RhcmRpcy96bS9hcnQvMTA0Mjk4OTIzP3NvdXJjZV9pZD0xMDA1&#34;&gt;https://www.zhihu.com/tardis/zm/art/104298923?source_id=1005&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;《站着，还把论文中了》，浓缩Rebuttal时期中的精华：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MDIwMjQ0ODnjgILku6Xlj4rlj6blpJbnmoTkuIDkuKrlhbPkuo5SZWJ1dHRhbOeahOWbnuetlO+8jOS5n+aYr+a1k+e8qeiIrOeahOeyvuWNju+8mmh0dHBzOi8vd3d3LnpoaWh1LmNvbS9xdWVzdGlvbi8zMjA1NTk5Ni9hbnN3ZXIvNDg2NzUzNDExMzY=&#34;&gt;https://zhuanlan.zhihu.com/p/602024489。以及另外的一个关于Rebuttal的回答，也是浓缩般的精华：https://www.zhihu.com/question/32055996/answer/48675341136&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;和Rebuttal格式与模板有关的教程：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODk1MDAzL2FydGljbGUvZGV0YWlscy8xMzUwNTA5NTc=&#34;&gt;https://blog.csdn.net/qq_41895003/article/details/135050957&lt;/span&gt;&lt;/li&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;rebuttal经验&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rebuttal经验&#34;&gt;#&lt;/a&gt; Rebuttal 经验&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;基础的关于 Rebuttal 的介绍，以及一些有用经验，可以当作入门学习，便于建立基本的认识：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuemhpaHUuY29tL3RhcmRpcy96bS9hcnQvMTA0Mjk4OTIzP3NvdXJjZV9pZD0xMDA1&#34;&gt;https://www.zhihu.com/tardis/zm/art/104298923?source_id=1005&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;《站着，还把论文中了》，浓缩 Rebuttal 时期中的精华：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MDIwMjQ0ODklRTMlODAlODIlRTQlQkIlQTUlRTUlOEYlOEElRTUlOEYlQTYlRTUlQTQlOTYlRTclOUElODQlRTQlQjglODAlRTQlQjglQUElRTUlODUlQjMlRTQlQkElOEVSZWJ1dHRhbCVFNyU5QSU4NCVFNSU5QiU5RSVFNyVBRCU5NCVFRiVCQyU4QyVFNCVCOSU5RiVFNiU5OCVBRiVFNiVCNSU5MyVFNyVCQyVBOSVFOCU4OCVBQyVFNyU5QSU4NCVFNyVCMiVCRSVFNSU4RCU4RSVFRiVCQyU5QWh0dHBzOi8vd3d3LnpoaWh1LmNvbS9xdWVzdGlvbi8zMjA1NTk5Ni9hbnN3ZXIvNDg2NzUzNDExMzY=&#34;&gt;https://zhuanlan.zhihu.com/p/602024489。以及另外的一个关于 Rebuttal 的回答，也是浓缩般的精华：https://www.zhihu.com/question/32055996/answer/48675341136&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;和 Rebuttal 格式与模板有关的教程：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxODk1MDAzL2FydGljbGUvZGV0YWlscy8xMzUwNTA5NTc=&#34;&gt;https://blog.csdn.net/qq_41895003/article/details/135050957&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;一些Rebuttal经历&#34;&gt;&lt;a href=&#34;#一些Rebuttal经历&#34; class=&#34;headerlink&#34; title=&#34;一些Rebuttal经历&#34;&gt;&lt;/a&gt;一些Rebuttal经历&lt;/h1&gt;&lt;ul&gt;
+&lt;h1 id=&#34;一些rebuttal经历&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一些rebuttal经历&#34;&gt;#&lt;/a&gt; 一些 Rebuttal 经历&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;不建议学，算是特殊情况，只有在审稿人十分脑残时才用：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zNTM3NjE5MjA=&#34;&gt;https://zhuanlan.zhihu.com/p/353761920&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
@@ -426,29 +495,36 @@
         <id>https://yunhdan.github.io/other/%E6%80%9D%E6%83%B3%E5%BB%BA%E8%AE%BE/</id>
         <title>思想建设</title>
         <link rel="alternate" href="https://yunhdan.github.io/other/%E6%80%9D%E6%83%B3%E5%BB%BA%E8%AE%BE/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;:::info&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;自有记载以来，所有宝贵的思想。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;h1 id=&#34;2024-05&#34;&gt;&lt;a href=&#34;#2024-05&#34; class=&#34;headerlink&#34; title=&#34;2024-05&#34;&gt;&lt;/a&gt;&lt;code&gt;2024-05&lt;/code&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;2024-05&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2024-05&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2024-05&lt;/code&gt;&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;不要看外界认为对方很牛逼你就觉得牛逼，而是要亲身与之经历后，实实在在因为某个地方你觉得对方牛逼而牛逼。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2024-07&#34;&gt;&lt;a href=&#34;#2024-07&#34; class=&#34;headerlink&#34; title=&#34;2024-07&#34;&gt;&lt;/a&gt;&lt;code&gt;2024-07&lt;/code&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;h1 id=&#34;2024-07&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2024-07&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2024-07&lt;/code&gt;&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;如果心中感觉到困惑、混乱、不知所从，可以尝试将心中的问题清晰、明确化，多问是什么、为什么、怎么办，在纸上写出来。&lt;/li&gt;
 &lt;li&gt;人感到困惑是很正常的，本质上是新旧思想冲突的表现。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2024-08&#34;&gt;&lt;a href=&#34;#2024-08&#34; class=&#34;headerlink&#34; title=&#34;2024-08&#34;&gt;&lt;/a&gt;&lt;code&gt;2024-08&lt;/code&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;h1 id=&#34;2024-08&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2024-08&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2024-08&lt;/code&gt;&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;要尊重、留心、观察自己一瞬而过的小想法，说不定就能萌发很多灵感。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2024-10&#34;&gt;&lt;a href=&#34;#2024-10&#34; class=&#34;headerlink&#34; title=&#34;2024-10&#34;&gt;&lt;/a&gt;&lt;code&gt;2024-10&lt;/code&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;h1 id=&#34;2024-10&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2024-10&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2024-10&lt;/code&gt;&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;什么是稀缺人才，要么在某个领域做到顶尖，要么在交叉领域做到第一梯队。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2024-11&#34;&gt;&lt;a href=&#34;#2024-11&#34; class=&#34;headerlink&#34; title=&#34;2024-11&#34;&gt;&lt;/a&gt;&lt;code&gt;2024-11&lt;/code&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;h1 id=&#34;2024-11&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2024-11&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2024-11&lt;/code&gt;&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;人际交往的本质是利益交换。建立合作关系的前提是信任，而信任的前提是对对方有充分的认识。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2025-04&#34;&gt;&lt;a href=&#34;#2025-04&#34; class=&#34;headerlink&#34; title=&#34;2025-04&#34;&gt;&lt;/a&gt;&lt;code&gt;2025-04&lt;/code&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;h1 id=&#34;2025-04&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2025-04&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2025-04&lt;/code&gt;&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;尽可能要让一个环境内的资源向自己倾斜，尽管这很难，但这是相当重要的，而且这不仅是一种能力和本事，更是一种意识。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;2025-07&#34;&gt;&lt;a href=&#34;#2025-07&#34; class=&#34;headerlink&#34; title=&#34;2025-07&#34;&gt;&lt;/a&gt;&lt;code&gt;2025-07&lt;/code&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;h1 id=&#34;2025-07&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2025-07&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2025-07&lt;/code&gt;&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;在绝境中，与其认定自己已经注定败局，不如相信自己将来能赢。&lt;/li&gt;
 &lt;li&gt;一切事物都有两面性，正如一条发布到网上的评论，无论有多少人喷，一定会有站在你的立场，理解你支持你的人。风险与机遇并存，巨大的挑战背景下，一定伴有着令人垂涎的宝物。&lt;/li&gt;
 &lt;li&gt;想让一个人成长、变强很简单，就是让他主动承担，担任领头人，主负责人。&lt;/li&gt;
@@ -461,61 +537,72 @@
         <id>https://yunhdan.github.io/research/2025%20CVPR%20NTIRE%20Image%20Denoise%E6%8A%A5%E5%91%8A%E7%A0%94%E7%A9%B6%E6%80%9D%E8%80%83/</id>
         <title>2025 CVPR NTIRE Image Denoise报告研究思考</title>
         <link rel="alternate" href="https://yunhdan.github.io/research/2025%20CVPR%20NTIRE%20Image%20Denoise%E6%8A%A5%E5%91%8A%E7%A0%94%E7%A9%B6%E6%80%9D%E8%80%83/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;:::info &lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
 &lt;p&gt;这次的挑战不考虑计算效率和模型复杂度，所以用混合架构以最大化性能需求。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;排名情况：&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;第一名：自制200万张训练集（SRC-B）&#34;&gt;&lt;a href=&#34;#第一名：自制200万张训练集（SRC-B）&#34; class=&#34;headerlink&#34; title=&#34;第一名：自制200万张训练集（SRC-B）&#34;&gt;&lt;/a&gt;第一名：自制200万张训练集（&lt;code&gt;SRC-B&lt;/code&gt;）&lt;/h1&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise4.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;h1 id=&#34;第一名自制200万张训练集src-b&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第一名自制200万张训练集src-b&#34;&gt;#&lt;/a&gt; 第一名：自制 200 万张训练集（ &lt;code&gt;SRC-B&lt;/code&gt; ）&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;网络结构如上图所示，先使用基于Transformer的&lt;code&gt;Restormer&lt;/code&gt;提取全局信息，然后再使用基于卷积的&lt;code&gt;NAFNet&lt;/code&gt;进行局部细节的增强，最后使用特征融合模块整合上述两部分的特征，平衡去噪和细节保留，提升整体性能。&lt;/li&gt;
-&lt;li&gt;用自制200万张训练集进行训练整个网络，再使用官方的训练集集微调细节增强网络，最后用官方验证集和自定义训练集中的1000张图像继续微调整个网络。&lt;/li&gt;
-&lt;li&gt;对数据进行了一定的筛选，选择拉普拉斯Var、&lt;code&gt;BRISQUE&lt;/code&gt;和&lt;code&gt;NIQE&lt;/code&gt;三个指标排名前30%的图像。另外，基于Clip特征进行了语义选择，保证数据集反映各种场景的多样性。&lt;/li&gt;
-&lt;li&gt;使用渐进式学习，&lt;code&gt;patch&lt;/code&gt;从256到448和768。&lt;/li&gt;
+&lt;li&gt;网络结构如上图所示，先使用基于 Transformer 的 &lt;code&gt;Restormer&lt;/code&gt;  提取全局信息，然后再使用基于卷积的 &lt;code&gt;NAFNet&lt;/code&gt;  进行局部细节的增强，最后使用特征融合模块整合上述两部分的特征，平衡去噪和细节保留，提升整体性能。&lt;/li&gt;
+&lt;li&gt;用自制 200 万张训练集进行训练整个网络，再使用官方的训练集集微调细节增强网络，最后用官方验证集和自定义训练集中的 1000 张图像继续微调整个网络。&lt;/li&gt;
+&lt;li&gt;对数据进行了一定的筛选，选择拉普拉斯 Var、 &lt;code&gt;BRISQUE&lt;/code&gt;  和 &lt;code&gt;NIQE&lt;/code&gt;  三个指标排名前 30% 的图像。另外，基于 Clip 特征进行了语义选择，保证数据集反映各种场景的多样性。&lt;/li&gt;
+&lt;li&gt;使用渐进式学习， &lt;code&gt;patch&lt;/code&gt;  从 256 到 448 和 768。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;第二名：混合架构与集成学习的典范（SNUCV）&#34;&gt;&lt;a href=&#34;#第二名：混合架构与集成学习的典范（SNUCV）&#34; class=&#34;headerlink&#34; title=&#34;第二名：混合架构与集成学习的典范（SNUCV）&#34;&gt;&lt;/a&gt;第二名：混合架构与集成学习的典范（&lt;code&gt;SNUCV&lt;/code&gt;）&lt;/h1&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;第二名混合架构与集成学习的典范snucv&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第二名混合架构与集成学习的典范snucv&#34;&gt;#&lt;/a&gt; 第二名：混合架构与集成学习的典范（ &lt;code&gt;SNUCV&lt;/code&gt; ）&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise2.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;MambaIRv2+Xformer+Restormer&lt;/code&gt;混合架构，最后再利用&lt;code&gt;Xformer&lt;/code&gt;集成。这三个网络的最深层特征被拼接到一起，然后集成到集成模型的最深层特征中，这种做法有点类似于残差学习，确保前面网络的特征能够有效、无损失地保留到后面的集成模型中。&lt;/li&gt;
-&lt;li&gt;依然是渐进式训练，patch大小逐渐增加为 [128, 160, 192, 256, 320, 384]，对应的batch大小为 [8, 5, 4, 2, 1, 1]。训练是先训练前面三个网络，然后再单独训练后面的集成模型，如果前面三个网络没有训练好，后面的集成模型训练是没有意义的。&lt;/li&gt;
-&lt;li&gt;前面的去噪模型使用&lt;code&gt;L1&lt;/code&gt;损失训练，后面的集成模型使用&lt;code&gt;L1&lt;/code&gt;、&lt;code&gt;MSE&lt;/code&gt;和高频损失组合训练。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MambaIRv2+Xformer+Restormer&lt;/code&gt;  混合架构，最后再利用 &lt;code&gt;Xformer&lt;/code&gt;  集成。这三个网络的最深层特征被拼接到一起，然后集成到集成模型的最深层特征中，这种做法有点类似于残差学习，确保前面网络的特征能够有效、无损失地保留到后面的集成模型中。&lt;/li&gt;
+&lt;li&gt;依然是渐进式训练，patch 大小逐渐增加为 [128, 160, 192, 256, 320, 384]，对应的 batch 大小为 [8, 5, 4, 2, 1, 1]。训练是先训练前面三个网络，然后再单独训练后面的集成模型，如果前面三个网络没有训练好，后面的集成模型训练是没有意义的。&lt;/li&gt;
+&lt;li&gt;前面的去噪模型使用 &lt;code&gt;L1&lt;/code&gt;  损失训练，后面的集成模型使用 &lt;code&gt;L1&lt;/code&gt; 、 &lt;code&gt;MSE&lt;/code&gt;  和高频损失组合训练。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;第三名：边缘特征学习（BuptMM）&#34;&gt;&lt;a href=&#34;#第三名：边缘特征学习（BuptMM）&#34; class=&#34;headerlink&#34; title=&#34;第三名：边缘特征学习（BuptMM）&#34;&gt;&lt;/a&gt;第三名：边缘特征学习（&lt;code&gt;BuptMM&lt;/code&gt;）&lt;/h1&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;第三名边缘特征学习buptmm&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第三名边缘特征学习buptmm&#34;&gt;#&lt;/a&gt; 第三名：边缘特征学习（ &lt;code&gt;BuptMM&lt;/code&gt; ）&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise3.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;这个模型在推理的时候用TLC技术增强&lt;code&gt;Restormer&lt;/code&gt;的推理性能。这是一种通过去除纹理中的退化表征来提升图像恢复效果的一种技术。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;这个模型在推理的时候用 TLC 技术增强 &lt;code&gt;Restormer&lt;/code&gt;  的推理性能。这是一种通过去除纹理中的退化表征来提升图像恢复效果的一种技术。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;分别训练&lt;code&gt;Restormer&lt;/code&gt;和HAT，而且分别都用渐进式的训练方法。HAT是一个通过激活像素的方式提升Transformer在图像恢复上性能的方法。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;分别训练 &lt;code&gt;Restormer&lt;/code&gt;  和 HAT，而且分别都用渐进式的训练方法。HAT 是一个通过激活像素的方式提升 Transformer 在图像恢复上性能的方法。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;对&lt;code&gt;Restormer&lt;/code&gt;和HAT的输出结果用Canny算子处理为边缘纹理二值图，然后进行OR和XOR操作，边缘像素点统一使用HAT的输出，而其他非边缘位置像素点，取两个模型输出的均值。可能是考虑到&lt;code&gt;Restormer&lt;/code&gt;的全局注意力可能会过度平滑细节，导致边缘模糊。具体的步骤可以参考&lt;code&gt;Deepseek&lt;/code&gt;的分析：&lt;/p&gt;
-&lt;p&gt;  &lt;img data-src=&#34;../../assets/2025NtireDenoise7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;对 &lt;code&gt;Restormer&lt;/code&gt;  和 HAT 的输出结果用 Canny 算子处理为边缘纹理二值图，然后进行 OR 和 XOR 操作，边缘像素点统一使用 HAT 的输出，而其他非边缘位置像素点，取两个模型输出的均值。可能是考虑到 &lt;code&gt;Restormer&lt;/code&gt;  的全局注意力可能会过度平滑细节，导致边缘模糊。具体的步骤可以参考 &lt;code&gt;Deepseek&lt;/code&gt;  的分析：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise7.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;第四名：直筒型依然有效（HMiDenoise）&#34;&gt;&lt;a href=&#34;#第四名：直筒型依然有效（HMiDenoise）&#34; class=&#34;headerlink&#34; title=&#34;第四名：直筒型依然有效（HMiDenoise）&#34;&gt;&lt;/a&gt;第四名：直筒型依然有效（&lt;code&gt;HMiDenoise&lt;/code&gt;）&lt;/h1&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;第四名直筒型依然有效hmidenoise&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第四名直筒型依然有效hmidenoise&#34;&gt;#&lt;/a&gt; 第四名：直筒型依然有效（ &lt;code&gt;HMiDenoise&lt;/code&gt; ）&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise5.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;依然有渐进式训练，随着patch size增大，batch size减小。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;RHAG&lt;/code&gt;是基于HAT的改进版本，也是类似于Transformer的架构。可见直筒型在图像恢复的重要性依然很明显。&lt;/li&gt;
+&lt;li&gt;依然有渐进式训练，随着 patch size 增大，batch size 减小。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;RHAG&lt;/code&gt;  是基于 HAT 的改进版本，也是类似于 Transformer 的架构。可见直筒型在图像恢复的重要性依然很明显。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;第五名：纯Restormer-数据增强（Pixel-Purifiers）&#34;&gt;&lt;a href=&#34;#第五名：纯Restormer-数据增强（Pixel-Purifiers）&#34; class=&#34;headerlink&#34; title=&#34;第五名：纯Restormer+数据增强（Pixel Purifiers）&#34;&gt;&lt;/a&gt;第五名：纯&lt;code&gt;Restormer&lt;/code&gt;+数据增强（Pixel Purifiers）&lt;/h1&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;第五名纯restormer数据增强pixel-purifiers&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第五名纯restormer数据增强pixel-purifiers&#34;&gt;#&lt;/a&gt; 第五名：纯 &lt;code&gt;Restormer&lt;/code&gt;  + 数据增强（Pixel Purifiers）&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise6.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;模型架构是原封不动的Restormer。&lt;/li&gt;
-&lt;li&gt;使用硬数据挖掘技术提升PSNR。目前我的理解是在训练集中挑出训练损失较高的patch，统一放到最后训练完后的进一步微调，做迁移学习，提升泛化性。&lt;/li&gt;
+&lt;li&gt;模型架构是原封不动的 Restormer。&lt;/li&gt;
+&lt;li&gt;使用硬数据挖掘技术提升 PSNR。目前我的理解是在训练集中挑出训练损失较高的 patch，统一放到最后训练完后的进一步微调，做迁移学习，提升泛化性。&lt;/li&gt;
 &lt;li&gt;推理采用分块推理，将大尺寸图像分割为与训练相同尺寸的小块（patch），逐块输入模型。因为块和块之间的边界拼接容易带来伪影，所以相邻的块设置重叠区域，重叠宽度大，图像质量高，但速度慢。最终拼接时对重叠区域的像素进行加权平均。&lt;/li&gt;
 &lt;li&gt;在推理时使用自集成技术提升推理性能。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;第六名：纯Restormer-迁移学习-Alwaysu&#34;&gt;&lt;a href=&#34;#第六名：纯Restormer-迁移学习-Alwaysu&#34; class=&#34;headerlink&#34; title=&#34;第六名：纯Restormer+迁移学习(Alwaysu)&#34;&gt;&lt;/a&gt;第六名：纯&lt;code&gt;Restormer&lt;/code&gt;+迁移学习(&lt;code&gt;Alwaysu&lt;/code&gt;)&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;架构采用原封不动的Restormer。&lt;/li&gt;
-&lt;li&gt;预训练的Restormer并未对噪声图像进行强度裁剪，因此性能较差。如果要对比赛的数据集采用强度裁剪，同时又要使用冻结的Restormer，那么就要解决数据分布不匹配的问题，需要Restormer适应新的经过强度裁剪的数据。&lt;/li&gt;
-&lt;li&gt;为什么直接让预训练的Restormer在新的数据上微调、更新不合适？因为这需要更新所有的参数，计算成本高，而且容易破坏预训练的知识。&lt;/li&gt;
-&lt;li&gt;冻结主体的Restormer权重，然后在现有网络的层添加偏置参数，作为一种分布适配器，也相当于为原网络增加自适应校准层，将预训练知识适配新的噪声分布。&lt;/li&gt;
+&lt;h1 id=&#34;第六名纯restormer迁移学习alwaysu&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第六名纯restormer迁移学习alwaysu&#34;&gt;#&lt;/a&gt; 第六名：纯 &lt;code&gt;Restormer&lt;/code&gt;  + 迁移学习 ( &lt;code&gt;Alwaysu&lt;/code&gt; )&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;架构采用原封不动的 Restormer。&lt;/li&gt;
+&lt;li&gt;预训练的 Restormer 并未对噪声图像进行强度裁剪，因此性能较差。如果要对比赛的数据集采用强度裁剪，同时又要使用冻结的 Restormer，那么就要解决数据分布不匹配的问题，需要 Restormer 适应新的经过强度裁剪的数据。&lt;/li&gt;
+&lt;li&gt;为什么直接让预训练的 Restormer 在新的数据上微调、更新不合适？因为这需要更新所有的参数，计算成本高，而且容易破坏预训练的知识。&lt;/li&gt;
+&lt;li&gt;冻结主体的 Restormer 权重，然后在现有网络的层添加偏置参数，作为一种分布适配器，也相当于为原网络增加自适应校准层，将预训练知识适配新的噪声分布。&lt;/li&gt;
 &lt;li&gt;在推理依然采用分块推理、小重叠、自集成技术。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;第七名：xxIR-xxIR-xxxxIR（Tcler-Denosing）&#34;&gt;&lt;a href=&#34;#第七名：xxIR-xxIR-xxxxIR（Tcler-Denosing）&#34; class=&#34;headerlink&#34; title=&#34;第七名：xxIR+xxIR=xxxxIR（Tcler Denosing）&#34;&gt;&lt;/a&gt;第七名：xxIR+xxIR=xxxxIR（&lt;code&gt;Tcler Denosing&lt;/code&gt;）&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;模型结构采用PromptIR+MambaIRv2的方案，最后融合两个模型的恢复结果。这个好像有点类似于集成学习。&lt;/li&gt;
-&lt;li&gt;训练策略依然采用渐进式的训练，使用的损失函数不是一般的L1损失，是两个改进的L1损失：Charbonnier loss和Gradient-weighted L1 loss。&lt;/li&gt;
-&lt;li&gt;使用了USM sharpen这个数据增强方法。&lt;/li&gt;
+&lt;h1 id=&#34;第七名xxirxxirxxxxirtcler-denosing&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第七名xxirxxirxxxxirtcler-denosing&#34;&gt;#&lt;/a&gt; 第七名：xxIR+xxIR=xxxxIR（ &lt;code&gt;Tcler Denosing&lt;/code&gt; ）&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;模型结构采用 PromptIR+MambaIRv2 的方案，最后融合两个模型的恢复结果。这个好像有点类似于集成学习。&lt;/li&gt;
+&lt;li&gt;训练策略依然采用渐进式的训练，使用的损失函数不是一般的 L1 损失，是两个改进的 L1 损失：Charbonnier loss 和 Gradient-weighted L1 loss。&lt;/li&gt;
+&lt;li&gt;使用了 USM sharpen 这个数据增强方法。&lt;/li&gt;
 &lt;li&gt;推理采用了自集成策略。&lt;/li&gt;
-&lt;li&gt;貌似MambaIRv2解决了MambaIR的因果长局建模问题。&lt;/li&gt;
+&lt;li&gt;貌似 MambaIRv2 解决了 MambaIR 的因果长局建模问题。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;第八名：（cipher-vision）&#34;&gt;&lt;a href=&#34;#第八名：（cipher-vision）&#34; class=&#34;headerlink&#34; title=&#34;第八名：（cipher vision）&#34;&gt;&lt;/a&gt;第八名：（&lt;code&gt;cipher vision&lt;/code&gt;）&lt;/h1&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise8.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;第八名cipher-vision&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#第八名cipher-vision&#34;&gt;#&lt;/a&gt; 第八名：（ &lt;code&gt;cipher vision&lt;/code&gt; ）&lt;/h1&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/2025NtireDenoise8.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
         <updated>2025-07-02T14:38:47.000Z</updated>
@@ -524,44 +611,22 @@
         <id>https://yunhdan.github.io/cs/Linux/</id>
         <title>Linux</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/Linux/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;关于移动命令mv&#34;&gt;&lt;a href=&#34;#关于移动命令mv&#34; class=&#34;headerlink&#34; title=&#34;关于移动命令mv&#34;&gt;&lt;/a&gt;关于移动命令&lt;code&gt;mv&lt;/code&gt;&lt;/h1&gt;&lt;p&gt;移动某个文件夹中所有内容到另一个文件夹内：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;mv /path/to/source/folder/* /path/to/destination/folder/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;但是，如果源文件夹的文件量过大，就会报这样的错误：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;bash: /usr/bin/mv: 参数列表过长
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;当使用通配符 &lt;code&gt;*&lt;/code&gt; 扩展的文件数量超过了系统允许的最大命令行参数限制时就会报这个错误。这是 Linux 系统的一个保护机制，防止用户意外执行可能破坏系统的命令。&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;关于移动命令mv&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关于移动命令mv&#34;&gt;#&lt;/a&gt; 关于移动命令 &lt;code&gt;mv&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;移动某个文件夹中所有内容到另一个文件夹内：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mv&lt;/span&gt; /path/to/source/folder/* /path/to/destination/folder/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;但是，如果源文件夹的文件量过大，就会报这样的错误：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash: /usr/bin/mv: 参数列表过长&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;当使用通配符  &lt;code&gt;*&lt;/code&gt;  扩展的文件数量超过了系统允许的最大命令行参数限制时就会报这个错误。这是 Linux 系统的一个保护机制，防止用户意外执行可能破坏系统的命令。&lt;/p&gt;
 &lt;p&gt;用这个命令替代以解决：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;find /path/to/source/folder/* -mindepth 1 -maxdepth 1 -print0 | xargs -0 mv -t /path/to/destination/folder/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;查看某个文件夹下有多少个文件&#34;&gt;&lt;a href=&#34;#查看某个文件夹下有多少个文件&#34; class=&#34;headerlink&#34; title=&#34;查看某个文件夹下有多少个文件&#34;&gt;&lt;/a&gt;查看某个文件夹下有多少个文件&lt;/h1&gt;&lt;p&gt;配合&lt;code&gt;ls&lt;/code&gt;和&lt;code&gt;wc&lt;/code&gt;使用：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;ls /path/to/source/folder | wc -l
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;export-PYTHONPATH-quot-PWD-PYTHONPATH-quot&#34;&gt;&lt;a href=&#34;#export-PYTHONPATH-quot-PWD-PYTHONPATH-quot&#34; class=&#34;headerlink&#34; title=&#34;export PYTHONPATH=&amp;quot;$PWD:$PYTHONPATH&amp;quot;&#34;&gt;&lt;/a&gt;&lt;code&gt;export PYTHONPATH=&amp;quot;$PWD:$PYTHONPATH&amp;quot;&lt;/code&gt;&lt;/h1&gt;&lt;p&gt;这是一个通过&lt;code&gt;PYTHONPATH&lt;/code&gt;手动指定项目根目录的命令。&lt;/p&gt;
-&lt;p&gt;以深度学习项目&lt;code&gt;Retinexformer&lt;/code&gt;为例，这个项目文件夹内包含了训练的代码&lt;code&gt;train.py&lt;/code&gt;，以及模型架构文件等。&lt;/p&gt;
-&lt;p&gt;有时候直接在终端通过&lt;code&gt;python train.py&lt;/code&gt;的绝对路径会报一些代码文件中的库引用错误，但是你反复检查了路径，觉得代码里导包的方式没问题。&lt;/p&gt;
-&lt;p&gt;这时候你就可以先通过&lt;code&gt;cd&lt;/code&gt;命令进入项目文件夹中，然后再执行这个&lt;code&gt;export&lt;/code&gt;命令手动指定项目根目录：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;&amp;gt; cd Retinexformer
-&amp;gt; export PYTHONPATH=&amp;quot;$PWD:$PYTHONPATH&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;当Linux内存不足时，扩大交换空间&#34;&gt;&lt;a href=&#34;#当Linux内存不足时，扩大交换空间&#34; class=&#34;headerlink&#34; title=&#34;当Linux内存不足时，扩大交换空间&#34;&gt;&lt;/a&gt;当&lt;code&gt;Linux&lt;/code&gt;内存不足时，扩大交换空间&lt;/h1&gt;&lt;p&gt;首先要处理一下现有的交换文件：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;# 查看当前启用的交换空间
-sudo swapon --show
-
-# 如果存在 /swapfile，先关闭交换文件
-sudo swapoff /swapfile
-
-# 删除旧的交换文件
-sudo rm /swapfile
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;然后创建一个更大内存的交换文件：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;# 创建8GB交换文件
-sudo fallocate -l 8G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-&lt;/code&gt;&lt;/pre&gt;
-</content>
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; /path/to/source/folder/* &lt;span class=&#34;token parameter variable&#34;&gt;-mindepth&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-maxdepth&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-print0&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;xargs&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-0&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mv&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-t&lt;/span&gt; /path/to/destination/folder/&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;查看某个文件夹下有多少个文件&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#查看某个文件夹下有多少个文件&#34;&gt;#&lt;/a&gt; 查看某个文件夹下有多少个文件&lt;/h1&gt;
+&lt;p&gt;配合 &lt;code&gt;ls&lt;/code&gt;  和 &lt;code&gt;wc&lt;/code&gt;  使用：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt; /path/to/source/folder &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;wc&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;export-pythonpathpwdpythonpath&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#export-pythonpathpwdpythonpath&#34;&gt;#&lt;/a&gt;  &lt;code&gt;export PYTHONPATH=&amp;quot;$PWD:$PYTHONPATH&amp;quot;&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;这是一个通过 &lt;code&gt;PYTHONPATH&lt;/code&gt;  手动指定项目根目录的命令。&lt;/p&gt;
+&lt;p&gt;以深度学习项目 &lt;code&gt;Retinexformer&lt;/code&gt;  为例，这个项目文件夹内包含了训练的代码 &lt;code&gt;train.py&lt;/code&gt; ，以及模型架构文件等。&lt;/p&gt;
+&lt;p&gt;有时候直接在终端通过 &lt;code&gt;python train.py&lt;/code&gt;  的绝对路径会报一些代码文件中的库引用错误，但是你反复检查了路径，觉得代码里导包的方式没问题。&lt;/p&gt;
+&lt;p&gt;这时候你就可以先通过 &lt;code&gt;cd&lt;/code&gt;  命令进入项目文件夹中，然后再执行这个 &lt;code&gt;export&lt;/code&gt;  命令手动指定项目根目录：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; Retinexformer&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token assign-left variable&#34;&gt;PYTHONPATH&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;&lt;span class=&#34;token environment constant&#34;&gt;$PWD&lt;/span&gt;:&lt;span class=&#34;token variable&#34;&gt;$PYTHONPATH&lt;/span&gt;&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;当linux内存不足时扩大交换空间&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#当linux内存不足时扩大交换空间&#34;&gt;#&lt;/a&gt; 当 &lt;code&gt;Linux&lt;/code&gt;  内存不足时，扩大交换空间&lt;/h1&gt;
+&lt;p&gt;首先要处理一下现有的交换文件：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 查看当前启用的交换空间&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;swapon&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--show&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 如果存在 /swapfile，先关闭交换文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; swapoff /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 删除旧的交换文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;rm&lt;/span&gt; /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;然后创建一个更大内存的交换文件：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 创建 8GB 交换文件&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; fallocate &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt; 8G /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;chmod&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;600&lt;/span&gt; /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;mkswap&lt;/span&gt; /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;swapon&lt;/span&gt; /swapfile&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
         <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
         <updated>2025-07-01T15:39:51.000Z</updated>
     </entry>
@@ -569,15 +634,16 @@ sudo swapon /swapfile
         <id>https://yunhdan.github.io/other/%E7%BE%BD%E6%AF%9B%E7%90%832/</id>
         <title>羽毛球2</title>
         <link rel="alternate" href="https://yunhdan.github.io/other/%E7%BE%BD%E6%AF%9B%E7%90%832/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;:::info &lt;/p&gt;
-&lt;p&gt;25年6月23日，今日单挑一名对手，明明感觉并不强，差不多，但是就是打不过。经过反思，在全方面的技术上要落后一筹，故决定今后系统地学习羽毛球。&lt;/p&gt;
-&lt;p&gt;:::&lt;/p&gt;
-&lt;h1 id=&#34;正手龙卷风搓球&#34;&gt;&lt;a href=&#34;#正手龙卷风搓球&#34; class=&#34;headerlink&#34; title=&#34;正手龙卷风搓球&#34;&gt;&lt;/a&gt;正手龙卷风搓球&lt;/h1&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;div class=&#34;note info&#34;&gt;
+&lt;p&gt;25 年 6 月 23 日，今日单挑一名对手，明明感觉并不强，差不多，但是就是打不过。经过反思，在全方面的技术上要落后一筹，故决定今后系统地学习羽毛球。&lt;/p&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;正手龙卷风搓球&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#正手龙卷风搓球&#34;&gt;#&lt;/a&gt; 正手龙卷风搓球&lt;/h1&gt;
+&lt;p&gt;
 &lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 75%;&#34;&gt;
 &lt;iframe src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;aid=113409198789085&amp;bvid=BV1Z9SZYdEBn&amp;cid=26571309405&amp;p=1&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;
 style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
+&lt;/p&gt;
 &lt;p&gt;总结要点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;跑到位，抢到高点。&lt;/li&gt;
@@ -585,12 +651,13 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
 &lt;li&gt;龙卷风式搓球转的关键是，引完拍，球就差不多快接触到拍面，这样一刚要发力就会搓到，这样就会很转。&lt;/li&gt;
 &lt;li&gt;龙卷风式搓球一般在身体正前面搓。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;展搓&#34;&gt;&lt;a href=&#34;#展搓&#34; class=&#34;headerlink&#34; title=&#34;展搓&#34;&gt;&lt;/a&gt;展搓&lt;/h1&gt;
+&lt;h1 id=&#34;展搓&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#展搓&#34;&gt;#&lt;/a&gt; 展搓&lt;/h1&gt;
+&lt;p&gt;
 &lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 75%;&#34;&gt;
 &lt;iframe src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;aid=1606338008&amp;bvid=BV1Tm42137xB&amp;cid=1623571024&amp;p=1&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;
 style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-
+&lt;/p&gt;
 </content>
         <category term="琐碎" scheme="https://yunhdan.github.io/categories/other/" />
         <updated>2025-06-23T15:15:22.000Z</updated>
@@ -599,8 +666,9 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
         <id>https://yunhdan.github.io/cs/Springboot%E3%80%81Mybatis/</id>
         <title>Springboot、Mybatis</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/Springboot%E3%80%81Mybatis/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;Mybatis是怎么防止SQL注入的？&#34;&gt;&lt;a href=&#34;#Mybatis是怎么防止SQL注入的？&#34; class=&#34;headerlink&#34; title=&#34;Mybatis是怎么防止SQL注入的？&#34;&gt;&lt;/a&gt;Mybatis是怎么防止SQL注入的？&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;这篇文章介绍了什么是SQL注入，以及Mybatis是怎么防止注入的，算是填补一下当时做项目不求甚解带来的漏洞：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzQ4MTIzNC9hcnRpY2xlL2RldGFpbHMvMTIwOTUwMDAz&#34;&gt;https://blog.csdn.net/weixin_43481234/article/details/120950003&lt;/span&gt;&lt;/li&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;mybatis是怎么防止sql注入的&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#mybatis是怎么防止sql注入的&#34;&gt;#&lt;/a&gt; Mybatis 是怎么防止 SQL 注入的？&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;这篇文章介绍了什么是 SQL 注入，以及 Mybatis 是怎么防止注入的，算是填补一下当时做项目不求甚解带来的漏洞：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzQ4MTIzNC9hcnRpY2xlL2RldGFpbHMvMTIwOTUwMDAz&#34;&gt;https://blog.csdn.net/weixin_43481234/article/details/120950003&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
@@ -610,8 +678,9 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
         <id>https://yunhdan.github.io/cs/%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97/</id>
         <title>边缘计算</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/%E8%BE%B9%E7%BC%98%E8%AE%A1%E7%AE%97/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;TFlite-GPU-Delegate&#34;&gt;&lt;a href=&#34;#TFlite-GPU-Delegate&#34; class=&#34;headerlink&#34; title=&#34;TFlite GPU Delegate&#34;&gt;&lt;/a&gt;TFlite GPU Delegate&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;这篇算是比较通俗易懂地简要概览一下TFlite GPU Delegate的文章了：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xNDM1NjEwNDA=&#34;&gt;https://zhuanlan.zhihu.com/p/143561040&lt;/span&gt;&lt;/li&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;tflite-gpu-delegate&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#tflite-gpu-delegate&#34;&gt;#&lt;/a&gt; TFlite GPU Delegate&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;这篇算是比较通俗易懂地简要概览一下 TFlite GPU Delegate 的文章了：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xNDM1NjEwNDA=&#34;&gt;https://zhuanlan.zhihu.com/p/143561040&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
@@ -621,12 +690,14 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
         <id>https://yunhdan.github.io/cs/Conda%E3%80%81Pip%E3%80%81Cuda/</id>
         <title>Conda、Pip、Cuda</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/Conda%E3%80%81Pip%E3%80%81Cuda/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;安装mamba-ssm和causal-conv1d&#34;&gt;&lt;a href=&#34;#安装mamba-ssm和causal-conv1d&#34; class=&#34;headerlink&#34; title=&#34;安装mamba_ssm和causal_conv1d&#34;&gt;&lt;/a&gt;安装mamba_ssm和causal_conv1d&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;Windows居然也支持mamba_ssim和causal_conv1d了：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTAwMjAwL2FydGljbGUvZGV0YWlscy8xMzk3NTQyMzE=&#34;&gt;https://blog.csdn.net/qq_45100200/article/details/139754231&lt;/span&gt;&lt;/li&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;安装mamba_ssm和causal_conv1d&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装mamba_ssm和causal_conv1d&#34;&gt;#&lt;/a&gt; 安装 mamba_ssm 和 causal_conv1d&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows 居然也支持 mamba_ssim 和 causal_conv1d 了：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MTAwMjAwL2FydGljbGUvZGV0YWlscy8xMzk3NTQyMzE=&#34;&gt;https://blog.csdn.net/qq_45100200/article/details/139754231&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;cuda系列&#34;&gt;&lt;a href=&#34;#cuda系列&#34; class=&#34;headerlink&#34; title=&#34;cuda系列&#34;&gt;&lt;/a&gt;cuda系列&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;简要介绍cudatoolkit和CUDA Toolkit的区别：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yNzQzNDA5MTEzNQ==&#34;&gt;https://zhuanlan.zhihu.com/p/27434091135&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;进一步详解CUDA和cudatoolkit，拓展至cudnn和nvcc：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMDk0MDU4L2FydGljbGUvZGV0YWlscy8xMTYyMDczMzM=&#34;&gt;https://blog.csdn.net/qq_41094058/article/details/116207333&lt;/span&gt;&lt;/li&gt;
+&lt;h1 id=&#34;cuda系列&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#cuda系列&#34;&gt;#&lt;/a&gt; cuda 系列&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;简要介绍 cudatoolkit 和 CUDA Toolkit 的区别：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yNzQzNDA5MTEzNQ==&#34;&gt;https://zhuanlan.zhihu.com/p/27434091135&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;进一步详解 CUDA 和 cudatoolkit，拓展至 cudnn 和 nvcc：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQxMDk0MDU4L2FydGljbGUvZGV0YWlscy8xMTYyMDczMzM=&#34;&gt;https://blog.csdn.net/qq_41094058/article/details/116207333&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
@@ -636,16 +707,20 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
         <id>https://yunhdan.github.io/ai/%E7%8E%B0%E4%BB%A3%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</id>
         <title>现代深度学习</title>
         <link rel="alternate" href="https://yunhdan.github.io/ai/%E7%8E%B0%E4%BB%A3%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;知识蒸馏方法&#34;&gt;&lt;a href=&#34;#知识蒸馏方法&#34; class=&#34;headerlink&#34; title=&#34;知识蒸馏方法&#34;&gt;&lt;/a&gt;知识蒸馏方法&lt;/h1&gt;&lt;ul&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;知识蒸馏方法&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#知识蒸馏方法&#34;&gt;#&lt;/a&gt; 知识蒸馏方法&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;一文了解知识蒸馏，通俗易懂：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzY5NDA5Ni9hcnRpY2xlL2RldGFpbHMvMTI3NTA1OTQ2&#34;&gt;https://blog.csdn.net/weixin_43694096/article/details/127505946&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;重参数化技术&#34;&gt;&lt;a href=&#34;#重参数化技术&#34; class=&#34;headerlink&#34; title=&#34;重参数化技术&#34;&gt;&lt;/a&gt;重参数化技术&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;重参数化的2篇根基论文&lt;code&gt;RepVGG&lt;/code&gt;和&lt;code&gt;RepMLP&lt;/code&gt;：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zNzA0Mzg5OTk=&#34;&gt;https://zhuanlan.zhihu.com/p/370438999&lt;/span&gt;&lt;/li&gt;
+&lt;h1 id=&#34;重参数化技术&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#重参数化技术&#34;&gt;#&lt;/a&gt; 重参数化技术&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;重参数化的 2 篇根基论文 &lt;code&gt;RepVGG&lt;/code&gt;  和 &lt;code&gt;RepMLP&lt;/code&gt; ：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zNzA0Mzg5OTk=&#34;&gt;https://zhuanlan.zhihu.com/p/370438999&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;NTIRE图像恢复赛事&#34;&gt;&lt;a href=&#34;#NTIRE图像恢复赛事&#34; class=&#34;headerlink&#34; title=&#34;NTIRE图像恢复赛事&#34;&gt;&lt;/a&gt;&lt;code&gt;NTIRE&lt;/code&gt;图像恢复赛事&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;23年超分辨率赛道技术报告解读，文末有赛事原报告：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzgwMDU3Ny9hcnRpY2xlL2RldGFpbHMvMTMxNjY4Nzgy&#34;&gt;https://blog.csdn.net/weixin_43800577/article/details/131668782&lt;/span&gt;&lt;/li&gt;
+&lt;h1 id=&#34;ntire图像恢复赛事&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#ntire图像恢复赛事&#34;&gt;#&lt;/a&gt;  &lt;code&gt;NTIRE&lt;/code&gt;  图像恢复赛事&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;23 年超分辨率赛道技术报告解读，文末有赛事原报告：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzgwMDU3Ny9hcnRpY2xlL2RldGFpbHMvMTMxNjY4Nzgy&#34;&gt;https://blog.csdn.net/weixin_43800577/article/details/131668782&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;显存占用&#34;&gt;&lt;a href=&#34;#显存占用&#34; class=&#34;headerlink&#34; title=&#34;显存占用&#34;&gt;&lt;/a&gt;显存占用&lt;/h1&gt;&lt;ul&gt;
+&lt;h1 id=&#34;显存占用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#显存占用&#34;&gt;#&lt;/a&gt; 显存占用&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;分析显存占用的内在机理：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NDE4OTQwMTQ=&#34;&gt;https://zhuanlan.zhihu.com/p/641894014&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
@@ -656,15 +731,18 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
         <id>https://yunhdan.github.io/cs/Pytorch/</id>
         <title>Pytorch</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/Pytorch/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;Pytorch算子&#34;&gt;&lt;a href=&#34;#Pytorch算子&#34; class=&#34;headerlink&#34; title=&#34;Pytorch算子&#34;&gt;&lt;/a&gt;Pytorch算子&lt;/h1&gt;&lt;ul&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;pytorch算子&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#pytorch算子&#34;&gt;#&lt;/a&gt; Pytorch 算子&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;简要介绍算子：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC81NzQxNjY5MjA=&#34;&gt;https://zhuanlan.zhihu.com/p/574166920&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;矩阵乘法、矩阵点乘&#34;&gt;&lt;a href=&#34;#矩阵乘法、矩阵点乘&#34; class=&#34;headerlink&#34; title=&#34;矩阵乘法、矩阵点乘&#34;&gt;&lt;/a&gt;矩阵乘法、矩阵点乘&lt;/h1&gt;&lt;ul&gt;
+&lt;h1 id=&#34;矩阵乘法-矩阵点乘&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#矩阵乘法-矩阵点乘&#34;&gt;#&lt;/a&gt; 矩阵乘法、矩阵点乘&lt;/h1&gt;
+&lt;ul&gt;
 &lt;li&gt;这篇分别为矩阵乘法和矩阵点乘介绍了两种广义算子：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNzI4NjY3L2FydGljbGUvZGV0YWlscy8xMzQwMTM4OTk=&#34;&gt;https://blog.csdn.net/qq_40728667/article/details/134013899&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;关于num-worker&#34;&gt;&lt;a href=&#34;#关于num-worker&#34; class=&#34;headerlink&#34; title=&#34;关于num_worker&#34;&gt;&lt;/a&gt;关于num_worker&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;简明扼要地介绍pytorch中dataloader的num_worker：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4MDU3Mzc5L2FydGljbGUvZGV0YWlscy8xMTU0MjcwNTI=&#34;&gt;https://blog.csdn.net/qq_28057379/article/details/115427052&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;一些关于num_worker的独特思考：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NDUzNjQwODk=&#34;&gt;https://zhuanlan.zhihu.com/p/645364089&lt;/span&gt;&lt;/li&gt;
+&lt;h1 id=&#34;关于num_worker&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#关于num_worker&#34;&gt;#&lt;/a&gt; 关于 num_worker&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;简明扼要地介绍 pytorch 中 dataloader 的 num_worker：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4MDU3Mzc5L2FydGljbGUvZGV0YWlscy8xMTU0MjcwNTI=&#34;&gt;https://blog.csdn.net/qq_28057379/article/details/115427052&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;一些关于 num_worker 的独特思考：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NDUzNjQwODk=&#34;&gt;https://zhuanlan.zhihu.com/p/645364089&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
@@ -674,15 +752,15 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
         <id>https://yunhdan.github.io/cs/Flask/</id>
         <title>Flask</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/Flask/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;安装&#34;&gt;&lt;a href=&#34;#安装&#34; class=&#34;headerlink&#34; title=&#34;安装&#34;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;pre&gt;&lt;code class=&#34;lang-bash&#34;&gt;pip install Flask
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;Overview、铺垫资料&#34;&gt;&lt;a href=&#34;#Overview、铺垫资料&#34; class=&#34;headerlink&#34; title=&#34;Overview、铺垫资料&#34;&gt;&lt;/a&gt;Overview、铺垫资料&lt;/h1&gt;&lt;p&gt;参考资料：&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;安装&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;pip &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; Flask&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;overview-铺垫资料&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#overview-铺垫资料&#34;&gt;#&lt;/a&gt; Overview、铺垫资料&lt;/h1&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9mbGFzay9mbGFzay10dXRvcmlhbC5odG1s&#34;&gt;Flask 教程 | 菜鸟教程&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9mbGFzay9mbGFzay1iYXNpYy1jb25jZXB0Lmh0bWw=&#34;&gt;Flask 基本概念 | 菜鸟教程&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9mbGFzay9mbGFzay1sYXlvdXQuaHRtbA==&#34;&gt;Flask 项目结构 | 菜鸟教程&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;这部分主要是了解Flask的背景。同时了解路由、视图函数、请求对象和响应对象、模板文件、应用工厂、蓝图、配置对象、静态文件是什么。了解Flask的项目结构如何。&lt;/p&gt;
+&lt;p&gt;这部分主要是了解 Flask 的背景。同时了解路由、视图函数、请求对象和响应对象、模板文件、应用工厂、蓝图、配置对象、静态文件是什么。了解 Flask 的项目结构如何。&lt;/p&gt;
 </content>
         <category term="计算机" scheme="https://yunhdan.github.io/categories/cs/" />
         <updated>2025-06-13T05:10:41.000Z</updated>
@@ -691,18 +769,21 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
         <id>https://yunhdan.github.io/cs/Vue/</id>
         <title>Vue</title>
         <link rel="alternate" href="https://yunhdan.github.io/cs/Vue/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;循环语句&#34;&gt;&lt;a href=&#34;#循环语句&#34; class=&#34;headerlink&#34; title=&#34;循环语句&#34;&gt;&lt;/a&gt;循环语句&lt;/h1&gt;&lt;p&gt;参考资料：&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;循环语句&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#循环语句&#34;&gt;#&lt;/a&gt; 循环语句&lt;/h1&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1hTTF9IUi9hcnRpY2xlL2RldGFpbHMvMTI3MzEyNjMyP29wc19yZXF1ZXN0X21pc2M9JTdCJTIycmVxdWVzdCU1RmlkJTIyJTNBJTIyY2JhNzE1ZjNiNzcwOTk1MDVlNzRhOGNlMmUzYzE3MmMlMjIlMkMlMjJzY20lMjIlM0ElMjIyMDE0MDcxMy4xMzAxMDIzMzQuLiUyMiU3RCZhbXA7cmVxdWVzdF9pZD1jYmE3MTVmM2I3NzA5OTUwNWU3NGE4Y2UyZTNjMTcyYyZhbXA7Yml6X2lkPTAmYW1wO3V0bV9tZWRpdW09ZGlzdHJpYnV0ZS5wY19zZWFyY2hfcmVzdWx0Lm5vbmUtdGFzay1ibG9nLTJ+YWxsfnRvcF9wb3NpdGl2ZX5kZWZhdWx0LTEtMTI3MzEyNjMyLW51bGwtbnVsbC4xNDJedjEwMl5wY19zZWFyY2hfcmVzdWx0X2Jhc2UzJmFtcDt1dG1fdGVybT12LWZvciZhbXA7c3BtPTEwMTguMjIyNi4zMDAxLjQxODc=&#34;&gt;vue3【列表渲染】v-for 详细介绍（vue中的“循环”）_vue3 v-for-CSDN博客&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1hTTF9IUi9hcnRpY2xlL2RldGFpbHMvMTI3MzEyNjMyP29wc19yZXF1ZXN0X21pc2M9JTdCJTIycmVxdWVzdCU1RmlkJTIyJTNBJTIyY2JhNzE1ZjNiNzcwOTk1MDVlNzRhOGNlMmUzYzE3MmMlMjIlMkMlMjJzY20lMjIlM0ElMjIyMDE0MDcxMy4xMzAxMDIzMzQuLiUyMiU3RCZhbXA7cmVxdWVzdF9pZD1jYmE3MTVmM2I3NzA5OTUwNWU3NGE4Y2UyZTNjMTcyYyZhbXA7Yml6X2lkPTAmYW1wO3V0bV9tZWRpdW09ZGlzdHJpYnV0ZS5wY19zZWFyY2hfcmVzdWx0Lm5vbmUtdGFzay1ibG9nLTJ+YWxsfnRvcF9wb3NpdGl2ZX5kZWZhdWx0LTEtMTI3MzEyNjMyLW51bGwtbnVsbC4xNDIlNUV2MTAyJTVFcGNfc2VhcmNoX3Jlc3VsdF9iYXNlMyZhbXA7dXRtX3Rlcm09di1mb3ImYW1wO3NwbT0xMDE4LjIyMjYuMzAwMS40MTg3&#34;&gt;vue3【列表渲染】v-for 详细介绍（vue 中的 “循环”）_vue3 v-for-CSDN 博客&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS92dWUzL3Z1ZTMtdi1mb3IuaHRtbA==&#34;&gt;Vue3 循环语句 | 菜鸟教程&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;主要围绕如何使用v-for遍历数组、对象。v-for的几种基本用法要掌握。&lt;/p&gt;
-&lt;h1 id=&#34;安装Vue项目&#34;&gt;&lt;a href=&#34;#安装Vue项目&#34; class=&#34;headerlink&#34; title=&#34;安装Vue项目&#34;&gt;&lt;/a&gt;安装Vue项目&lt;/h1&gt;&lt;p&gt;参考资料：&lt;/p&gt;
+&lt;p&gt;主要围绕如何使用 v-for 遍历数组、对象。v-for 的几种基本用法要掌握。&lt;/p&gt;
+&lt;h1 id=&#34;安装vue项目&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装vue项目&#34;&gt;#&lt;/a&gt; 安装 Vue 项目&lt;/h1&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS92dWUzL3Z1ZTMtaW5zdGFsbC5odG1s&#34;&gt;Vue3 安装 | 菜鸟教程&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS92dWUzL3Z1ZTMtY3JlYXRlLXByb2plY3QuaHRtbA==&#34;&gt;Vue3 创建项目 | 菜鸟教程&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;Vue项目结构说明&#34;&gt;&lt;a href=&#34;#Vue项目结构说明&#34; class=&#34;headerlink&#34; title=&#34;Vue项目结构说明&#34;&gt;&lt;/a&gt;Vue项目结构说明&lt;/h1&gt;&lt;p&gt;参考资料：&lt;/p&gt;
+&lt;h1 id=&#34;vue项目结构说明&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vue项目结构说明&#34;&gt;#&lt;/a&gt; Vue 项目结构说明&lt;/h1&gt;
+&lt;p&gt;参考资料：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS92dWUzL3Z1ZTMtcHJvamVjdC1pbnRyby5odG1s&#34;&gt;Vue3 项目说明 | 菜鸟教程&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -714,105 +795,87 @@ style=&#34;position:absolute; height: 100%; width: 100%;&#34;&gt;&lt;/iframe&gt;
         <id>https://yunhdan.github.io/research/%E5%A4%9A%E6%A8%A1%E6%80%81%E8%AE%BA%E6%96%87%E7%B2%BE%E7%82%BC/</id>
         <title>多模态论文精炼</title>
         <link rel="alternate" href="https://yunhdan.github.io/research/%E5%A4%9A%E6%A8%A1%E6%80%81%E8%AE%BA%E6%96%87%E7%B2%BE%E7%82%BC/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;CLIP工作&#34;&gt;&lt;a href=&#34;#CLIP工作&#34; class=&#34;headerlink&#34; title=&#34;CLIP工作&#34;&gt;&lt;/a&gt;&lt;code&gt;CLIP&lt;/code&gt;工作&lt;/h1&gt;&lt;h2 id=&#34;2021-Learning-Transferable-Visual-Models-From-Natural-Language-Supervision-CLIP&#34;&gt;&lt;a href=&#34;#2021-Learning-Transferable-Visual-Models-From-Natural-Language-Supervision-CLIP&#34; class=&#34;headerlink&#34; title=&#34;2021 Learning Transferable Visual Models From Natural Language Supervision(CLIP)&#34;&gt;&lt;/a&gt;&lt;code&gt;2021 Learning Transferable Visual Models From Natural Language Supervision(CLIP)&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/clip.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;clip工作&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#clip工作&#34;&gt;#&lt;/a&gt;  &lt;code&gt;CLIP&lt;/code&gt;  工作&lt;/h1&gt;
+&lt;h2 id=&#34;2021-learning-transferable-visual-models-from-natural-language-supervisionclip&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2021-learning-transferable-visual-models-from-natural-language-supervisionclip&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2021 Learning Transferable Visual Models From Natural Language Supervision(CLIP)&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/clip.png&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;学习自朱毅老师的&lt;code&gt;CLIP&lt;/code&gt;逐段精读。&lt;/p&gt;
+&lt;p&gt;学习自朱毅老师的 &lt;code&gt;CLIP&lt;/code&gt;  逐段精读。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;贡献&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;（1）通过文本和图像的对比学习，模型学习到文本-图像对的匹配关系。&lt;/li&gt;
+&lt;li&gt;（1）通过文本和图像的对比学习，模型学习到文本 - 图像对的匹配关系。&lt;/li&gt;
 &lt;li&gt;（2）能够实现通过给定一张图像，在多个文本标签中选择出与图像最相关的文本。也可以实现给定一个文本，选择最符合相关的图像。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;创新&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;实现文本与图像的多模态学习。&lt;/li&gt;
-&lt;li&gt;实现实现无标签限制的图像分类，也可以实现无图像限制的文本-图像配对。前者可以用于图像中的物体识别，后者可以用于文本检索图像。&lt;/li&gt;
+&lt;li&gt;实现实现无标签限制的图像分类，也可以实现无图像限制的文本 - 图像配对。前者可以用于图像中的物体识别，后者可以用于文本检索图像。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;CLIP&lt;/code&gt;对比学习训练代码&lt;/strong&gt;：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;lang-python&#34;&gt;# image_encoder - ResNet 或者 Vision Transformer
-# text_encoder - CBOW 或者 Text Transformer
-# I[n, h, w, c] - 图像形状
-# T[n, l] - 文本形状，l是序列长度
-# W_i[d_i, d_e] - 图像的线性投射矩阵
-# W_t[d_t, d_e] - 文本的线性投射矩阵
-# t - learned temperature parameter
-
-# 分别提取图像特征和文本特征
-I_f = image_encoder(I) #[n, d_i]
-T_f = text_encoder(T) #[n, d_t]
-
-# 对两个特征进行线性投射，得到相同维度的特征，并进行l2归一化
-I_e = l2_normalize(np.dot(I_f, W_i), axis=1)
-T_e = l2_normalize(np.dot(T_f, W_t), axis=1)
-
-# 计算缩放的余弦相似度：[n, n]
-logits = np.dot(I_e, T_e.T) * np.exp(t)
-
-# 对称的对比学习损失：等价于N个类别的cross_entropy_loss
-labels = np.arange(n) # 对角线元素的labels
-loss_i = cross_entropy_loss(logits, labels, axis=0)
-loss_t = cross_entropy_loss(logits, labels, axis=1)
-loss = (loss_i + loss_t)/2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;多模态在分割的应用&#34;&gt;&lt;a href=&#34;#多模态在分割的应用&#34; class=&#34;headerlink&#34; title=&#34;多模态在分割的应用&#34;&gt;&lt;/a&gt;多模态在分割的应用&lt;/h1&gt;&lt;h2 id=&#34;2022-ICLR-Language-driven-semantic-segmentation-LSeg&#34;&gt;&lt;a href=&#34;#2022-ICLR-Language-driven-semantic-segmentation-LSeg&#34; class=&#34;headerlink&#34; title=&#34;2022 ICLR Language-driven semantic segmentation(LSeg)&#34;&gt;&lt;/a&gt;&lt;code&gt;2022 ICLR Language-driven semantic segmentation(LSeg)&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/lseg1.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt; &lt;code&gt;CLIP&lt;/code&gt;  对比学习训练代码&lt;/strong&gt;：&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;figcaption data-lang=&#34;python&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# image_encoder - ResNet 或者 Vision Transformer&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# text_encoder - CBOW 或者 Text Transformer&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# I [n, h, w, c] - 图像形状&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# T [n, l] - 文本形状，l 是序列长度&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# W_i [d_i, d_e] - 图像的线性投射矩阵&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# W_t [d_t, d_e] - 文本的线性投射矩阵&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# t - learned temperature parameter&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 分别提取图像特征和文本特征&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;I_f &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; image_encoder&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;I&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#[n, d_i]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;T_f &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; text_encoder&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;T&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#[n, d_t]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 对两个特征进行线性投射，得到相同维度的特征，并进行 l2 归一化&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;I_e &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; l2_normalize&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;dot&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;I_f&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; W_i&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; axis&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;T_e &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; l2_normalize&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;dot&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;T_f&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; W_t&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; axis&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 计算缩放的余弦相似度：[n, n]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;logits &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;dot&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;I_e&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; T_e&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;T&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;*&lt;/span&gt; np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;exp&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;t&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 对称的对比学习损失：等价于 N 个类别的 cross_entropy_loss&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;labels &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; np&lt;span class=&#34;token punctuation&#34;&gt;.&lt;/span&gt;arange&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;n&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;# 对角线元素的 labels&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;loss_i &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; cross_entropy_loss&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;logits&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; labels&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; axis&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;loss_t &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; cross_entropy_loss&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;logits&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; labels&lt;span class=&#34;token punctuation&#34;&gt;,&lt;/span&gt; axis&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;loss &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;loss_i &lt;span class=&#34;token operator&#34;&gt;+&lt;/span&gt; loss_t&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;token number&#34;&gt;2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;多模态在分割的应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多模态在分割的应用&#34;&gt;#&lt;/a&gt; 多模态在分割的应用&lt;/h1&gt;
+&lt;h2 id=&#34;2022-iclr-language-driven-semantic-segmentationlseg&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2022-iclr-language-driven-semantic-segmentationlseg&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2022 ICLR Language-driven semantic segmentation(LSeg)&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/lseg1.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;学习自朱毅老师的逐段精读。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;贡献&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;将&lt;code&gt;CLIP&lt;/code&gt;的原始文本编码器作为需分割的物体标签的文本编码器，以充分提取文本特征。&lt;/li&gt;
-&lt;li&gt;将文本特征与图像特征通过矩阵相乘融合得到多模态特征，上采样后与&lt;code&gt;Ground-truth&lt;/code&gt;在像素级使用&lt;code&gt;cross entropy loss&lt;/code&gt;进行训练。&lt;/li&gt;
+&lt;li&gt;将 &lt;code&gt;CLIP&lt;/code&gt;  的原始文本编码器作为需分割的物体标签的文本编码器，以充分提取文本特征。&lt;/li&gt;
+&lt;li&gt;将文本特征与图像特征通过矩阵相乘融合得到多模态特征，上采样后与 &lt;code&gt;Ground-truth&lt;/code&gt;  在像素级使用 &lt;code&gt;cross entropy loss&lt;/code&gt;  进行训练。&lt;/li&gt;
 &lt;li&gt;测试时可以实现，根据需要分割的对象的文本标签，分割特定图像的内容。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;创新&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;一篇把&lt;code&gt;CLIP&lt;/code&gt;模型运用到分割任务且有效果的工作。&lt;/li&gt;
+&lt;li&gt;一篇把 &lt;code&gt;CLIP&lt;/code&gt;  模型运用到分割任务且有效果的工作。&lt;/li&gt;
 &lt;li&gt;采用监督学习的方式训练，而不是对比学习去训练，也是为了更好地与特定分割任务适应。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;不足&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;依然是有监督学习，目标函数不是对比学习的目标函数。&lt;/li&gt;
 &lt;li&gt;文本特征只是用于融合多模态特征，并没有提供监督信号。&lt;/li&gt;
-&lt;li&gt;依然依赖于手工标注&lt;code&gt;segmentation mask&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;依然依赖于手工标注 &lt;code&gt;segmentation mask&lt;/code&gt; 。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;（可以做识别物体位置的实践）&lt;/p&gt;
-&lt;h2 id=&#34;2022-CVPR-GroupViT-Semantic-Segmentation-Emerges-from-Text-Supervision-GroupViT&#34;&gt;&lt;a href=&#34;#2022-CVPR-GroupViT-Semantic-Segmentation-Emerges-from-Text-Supervision-GroupViT&#34; class=&#34;headerlink&#34; title=&#34;2022 CVPR GroupViT:Semantic Segmentation Emerges from Text Supervision(GroupViT)&#34;&gt;&lt;/a&gt;&lt;code&gt;2022 CVPR GroupViT:Semantic Segmentation Emerges from Text Supervision(GroupViT)&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/groupvit1.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2022-cvpr-groupvitsemantic-segmentation-emerges-from-text-supervisiongroupvit&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2022-cvpr-groupvitsemantic-segmentation-emerges-from-text-supervisiongroupvit&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2022 CVPR GroupViT:Semantic Segmentation Emerges from Text Supervision(GroupViT)&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/groupvit1.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;学习自朱毅老师的逐段精读。&lt;/p&gt;
-&lt;p&gt;这篇是分割采用无监督学习的思路。主要使用的是分割中的&lt;code&gt;Grouping&lt;/code&gt;思想。展开来讲，&lt;code&gt;Grouping&lt;/code&gt;将图像分割做为一种聚类任务，首先在图像确定聚类中心点，然后在模型训练的过程中，不断学习聚类中心周围像素点与聚类中心的相互关系，将与聚类中心相关的像素点并入该聚类中心的&lt;code&gt;Group&lt;/code&gt;中。&lt;/p&gt;
+&lt;p&gt;这篇是分割采用无监督学习的思路。主要使用的是分割中的 &lt;code&gt;Grouping&lt;/code&gt;  思想。展开来讲， &lt;code&gt;Grouping&lt;/code&gt;  将图像分割做为一种聚类任务，首先在图像确定聚类中心点，然后在模型训练的过程中，不断学习聚类中心周围像素点与聚类中心的相互关系，将与聚类中心相关的像素点并入该聚类中心的 &lt;code&gt;Group&lt;/code&gt;  中。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;贡献&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;使用了文本作为监督信号训练分割任务，不再依赖人工标注的图像&lt;code&gt;Ground-Truth&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;使用&lt;code&gt;Vision Transformer&lt;/code&gt;作为图像编码器。在每个&lt;code&gt;Transformer&lt;/code&gt;层的输入&lt;code&gt;tokens&lt;/code&gt;中加入若干个&lt;code&gt;group tokens&lt;/code&gt;，这些&lt;code&gt;group tokens&lt;/code&gt;实际上就是预先设想的聚类中心数，也就是猜测的图像有哪些物体类别。经过多个&lt;code&gt;Transformer Layer&lt;/code&gt;，&lt;code&gt;Image tokens&lt;/code&gt;和这几个&lt;code&gt;group tokens&lt;/code&gt;之间的关系被自注意力不断建模与学习。与特定聚类中心接近的&lt;code&gt;image tokens&lt;/code&gt;，其特征也越接近该&lt;code&gt;group token&lt;/code&gt;的特征。&lt;/li&gt;
-&lt;li&gt;多个&lt;code&gt;Transformer&lt;/code&gt;层后跟一个&lt;code&gt;Grouping Block&lt;/code&gt;层。&lt;code&gt;Grouping Block&lt;/code&gt;的本质是一个交叉注意力机制，将&lt;code&gt;Image tokens&lt;/code&gt;并入所属的&lt;code&gt;Group tokens&lt;/code&gt;。每个&lt;code&gt;Grouping Block&lt;/code&gt;都将总&lt;code&gt;tokens&lt;/code&gt;数降低，因此也减小了计算成本。&lt;/li&gt;
-&lt;li&gt;使用对比学习的方式进行训练，带监督信号的文本被编码后的特征与最后的图像&lt;code&gt;tokens&lt;/code&gt;特征两者交叉熵损失。&lt;/li&gt;
+&lt;li&gt;使用了文本作为监督信号训练分割任务，不再依赖人工标注的图像 &lt;code&gt;Ground-Truth&lt;/code&gt; 。&lt;/li&gt;
+&lt;li&gt;使用 &lt;code&gt;Vision Transformer&lt;/code&gt;  作为图像编码器。在每个 &lt;code&gt;Transformer&lt;/code&gt;  层的输入 &lt;code&gt;tokens&lt;/code&gt;  中加入若干个 &lt;code&gt;group tokens&lt;/code&gt; ，这些 &lt;code&gt;group tokens&lt;/code&gt;  实际上就是预先设想的聚类中心数，也就是猜测的图像有哪些物体类别。经过多个 &lt;code&gt;Transformer Layer&lt;/code&gt; ， &lt;code&gt;Image tokens&lt;/code&gt;  和这几个 &lt;code&gt;group tokens&lt;/code&gt;  之间的关系被自注意力不断建模与学习。与特定聚类中心接近的 &lt;code&gt;image tokens&lt;/code&gt; ，其特征也越接近该 &lt;code&gt;group token&lt;/code&gt;  的特征。&lt;/li&gt;
+&lt;li&gt;多个 &lt;code&gt;Transformer&lt;/code&gt;  层后跟一个 &lt;code&gt;Grouping Block&lt;/code&gt;  层。 &lt;code&gt;Grouping Block&lt;/code&gt;  的本质是一个交叉注意力机制，将 &lt;code&gt;Image tokens&lt;/code&gt;  并入所属的 &lt;code&gt;Group tokens&lt;/code&gt; 。每个 &lt;code&gt;Grouping Block&lt;/code&gt;  都将总 &lt;code&gt;tokens&lt;/code&gt;  数降低，因此也减小了计算成本。&lt;/li&gt;
+&lt;li&gt;使用对比学习的方式进行训练，带监督信号的文本被编码后的特征与最后的图像 &lt;code&gt;tokens&lt;/code&gt;  特征两者交叉熵损失。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;创新&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;首先使用了文本标注分割的&lt;code&gt;Ground-Truth&lt;/code&gt;，不再依赖繁琐的手工标注。&lt;/li&gt;
+&lt;li&gt;首先使用了文本标注分割的 &lt;code&gt;Ground-Truth&lt;/code&gt; ，不再依赖繁琐的手工标注。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;不足&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;只能分割特定数量的类别，无法分割任意数量的物体。测试时，必须指定分割物体的数目，最后得到模型输出的&lt;code&gt;tokens&lt;/code&gt;与文本标签进行余弦相似度的计算，确定分割物体的文本标签。&lt;/li&gt;
+&lt;li&gt;只能分割特定数量的类别，无法分割任意数量的物体。测试时，必须指定分割物体的数目，最后得到模型输出的 &lt;code&gt;tokens&lt;/code&gt;  与文本标签进行余弦相似度的计算，确定分割物体的文本标签。&lt;/li&gt;
 &lt;li&gt;训练中没有侧重语义信息，仅训练出了较好的分割能力。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;../../assets/groupvit2.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
-&lt;p&gt;（测试时，模型输出了两个&lt;code&gt;token&lt;/code&gt;，我们指定分割物体的文本标签有&lt;code&gt;table、dog...potted plant&lt;/code&gt;，于是可以使用余弦相似度计算得到一个相似度矩阵。对每行取最大的值，对应的文本标签即为该&lt;code&gt;token&lt;/code&gt;的类别）&lt;/p&gt;
-&lt;h1 id=&#34;多模态在检测的应用&#34;&gt;&lt;a href=&#34;#多模态在检测的应用&#34; class=&#34;headerlink&#34; title=&#34;多模态在检测的应用&#34;&gt;&lt;/a&gt;多模态在检测的应用&lt;/h1&gt;&lt;h2 id=&#34;2022-CVPR-Grounded-Language-Image-Pre-training-Glip&#34;&gt;&lt;a href=&#34;#2022-CVPR-Grounded-Language-Image-Pre-training-Glip&#34; class=&#34;headerlink&#34; title=&#34;2022 CVPR Grounded Language-Image Pre-training(Glip)&#34;&gt;&lt;/a&gt;&lt;code&gt;2022 CVPR Grounded Language-Image Pre-training(Glip)&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;&lt;img data-src=&#34;../../assets/glip1.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/groupvit2.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;（测试时，模型输出了两个 &lt;code&gt;token&lt;/code&gt; ，我们指定分割物体的文本标签有 &lt;code&gt;table、dog...potted plant&lt;/code&gt; ，于是可以使用余弦相似度计算得到一个相似度矩阵。对每行取最大的值，对应的文本标签即为该 &lt;code&gt;token&lt;/code&gt;  的类别）&lt;/p&gt;
+&lt;h1 id=&#34;多模态在检测的应用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#多模态在检测的应用&#34;&gt;#&lt;/a&gt; 多模态在检测的应用&lt;/h1&gt;
+&lt;h2 id=&#34;2022-cvpr-grounded-language-image-pre-trainingglip&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2022-cvpr-grounded-language-image-pre-trainingglip&#34;&gt;#&lt;/a&gt;  &lt;code&gt;2022 CVPR Grounded Language-Image Pre-training(Glip)&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img data-src=&#34;../../assets/glip1.jpg&#34; alt=&#34;image&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;学习自朱毅老师的逐段精读。&lt;/p&gt;
-&lt;p&gt;与常规目标检测任务相关的一个任务是&lt;code&gt;Vision Grounding&lt;/code&gt;。具体是根据提供的文本，在图片中找到文本中出现的物体的位置。&lt;/p&gt;
+&lt;p&gt;与常规目标检测任务相关的一个任务是 &lt;code&gt;Vision Grounding&lt;/code&gt; 。具体是根据提供的文本，在图片中找到文本中出现的物体的位置。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;贡献&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;参考&lt;code&gt;CLIP&lt;/code&gt;范式，将图像的&lt;code&gt;Bounding box&lt;/code&gt;的&lt;code&gt;region&lt;/code&gt;输入图像编码器，将提供的文本输入文本编码器，最后得到每个&lt;code&gt;Bounding box&lt;/code&gt;与单词的相似度矩阵。在相似度矩阵上与&lt;code&gt;Ground-Truth&lt;/code&gt;的相似度矩阵求定位损失&lt;code&gt;Localization Loss&lt;/code&gt;和分类损失&lt;code&gt;Alignment Loss&lt;/code&gt;即可完成训练。&lt;/li&gt;
-&lt;li&gt;为了更加充分地学习&lt;code&gt;Bounding box&lt;/code&gt;和文本的&lt;code&gt;Joint Feature&lt;/code&gt;，也就是多模态特征。在最后的特征相似度计算前，使用交叉注意力对图像特征和文本特征进行多层交互学习，即&lt;code&gt;Deep Fusion&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;参考 &lt;code&gt;CLIP&lt;/code&gt;  范式，将图像的 &lt;code&gt;Bounding box&lt;/code&gt;  的 &lt;code&gt;region&lt;/code&gt;  输入图像编码器，将提供的文本输入文本编码器，最后得到每个 &lt;code&gt;Bounding box&lt;/code&gt;  与单词的相似度矩阵。在相似度矩阵上与 &lt;code&gt;Ground-Truth&lt;/code&gt;  的相似度矩阵求定位损失 &lt;code&gt;Localization Loss&lt;/code&gt;  和分类损失 &lt;code&gt;Alignment Loss&lt;/code&gt;  即可完成训练。&lt;/li&gt;
+&lt;li&gt;为了更加充分地学习 &lt;code&gt;Bounding box&lt;/code&gt;  和文本的 &lt;code&gt;Joint Feature&lt;/code&gt; ，也就是多模态特征。在最后的特征相似度计算前，使用交叉注意力对图像特征和文本特征进行多层交互学习，即 &lt;code&gt;Deep Fusion&lt;/code&gt; 。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;创新&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;使用&lt;code&gt;Deep Fusion&lt;/code&gt;技术以辅助学习多模态特征。&lt;/li&gt;
-&lt;li&gt;将&lt;code&gt;Gounding&lt;/code&gt;任务与目标检测任务很好地结合，并借鉴&lt;code&gt;CLIP&lt;/code&gt;的思想做大规模数据的预训练，成功取得了很好的&lt;code&gt;Zero-shot&lt;/code&gt;效果。&lt;/li&gt;
+&lt;li&gt;使用 &lt;code&gt;Deep Fusion&lt;/code&gt;  技术以辅助学习多模态特征。&lt;/li&gt;
+&lt;li&gt;将 &lt;code&gt;Gounding&lt;/code&gt;  任务与目标检测任务很好地结合，并借鉴 &lt;code&gt;CLIP&lt;/code&gt;  的思想做大规模数据的预训练，成功取得了很好的 &lt;code&gt;Zero-shot&lt;/code&gt;  效果。&lt;/li&gt;
 &lt;/ul&gt;
 </content>
         <category term="学术" scheme="https://yunhdan.github.io/categories/research/" />
